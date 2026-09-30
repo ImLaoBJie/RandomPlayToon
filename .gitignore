@@ -4,6 +4,7 @@
 !/.gitignore
 !/.gitattributes
 !/README.md
+!/LICENSE
 !/addons/
 /addons/*
 !/addons/random_play_toon/

@@ -72,7 +72,13 @@ flowchart TD
 | ![Toon 实际操作面板](docs/images/toon-panel.png) | ![Copy 实际操作面板](docs/images/copy-panel.png) |
 | 填写模型、纹理、渲染素材和输出位置，点击“一键重建”。完成后打开结果，也可以查看构建报告 | 填写着色模板、ABC 和输出位置，点击“将渲染效果套用到 ABC”。相机面板负责导入镜头、换算帧率和对齐预热 |
 
-重建后，3D 视图按 **N**，在角色英文名对应的侧栏中调风格。Copy 的风格面板位于 **ABC渲染**。
+打开重建结果后，先激活角色参数面板：
+
+1. 把任意窗口切换为 Blender 的 **文本编辑器**。
+2. 在顶部的文本列表中选择 **`01_启用风格面板`**，点击 **运行脚本**（鼠标放在文本编辑器内，按 **Alt+P** 也可以）。
+3. 回到 3D 视图，按 **N**，在角色英文名对应的侧栏中调风格。
+
+运行一次就能启用面板，不会重新导入模型或重建材质。重新启动 Blender 后，如果面板没有出现，再运行一次。Copy 的风格面板位于 **ABC渲染**。
 
 可以先选“默认、柔和、清晰、暗场”等风格，再调整全局或某个部位。参数包括光向、亮暗、颜色、高光、透明度、描边、透眼和辉光。满意后保存 `.blend`，也可以导出个人预设供以后使用。
 
@@ -81,8 +87,8 @@ flowchart TD
 - [RandomPlayToon 操作说明](addons/random_play_toon/README.md)
 - [RandomPlayCopy 操作说明](addons/random_play_copy/README.md)
 
-## Git 保存了哪些东西
+## 许可证
 
-保存两个插件的代码、角色设置、必要的节点和校准数据、维护／打包脚本、说明文档及精选图片。模型包、原始渲染素材、动作缓存、完整实验场景、测试输出、日志和生成的 `dist/` 安装包留在本地。
+本项目采用 [GPL-3.0](LICENSE) 许可证。
 
-PMX 导入使用内置的 [MMD Tools](https://github.com/MMD-Blender/blender_mmd_tools) 开源代码，保留原作者署名和 GPL 许可证。源码来源与许可见各插件的 `NOTICE` 和 `LICENSE`；角色资产和动作的使用条件仍由原发布者规定。
+PMX 导入使用内置的 [MMD Tools](https://github.com/MMD-Blender/blender_mmd_tools) 开源代码，保留原作者署名和许可。其他开源代码的来源与许可见 [Toon 的 NOTICE](addons/random_play_toon/NOTICE) 和 [Copy 的 NOTICE](addons/random_play_copy/NOTICE)。角色模型、素材和动作的使用条件仍由原发布者规定。
