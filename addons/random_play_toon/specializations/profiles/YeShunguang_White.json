@@ -1,0 +1,2136 @@
+{
+  "schema": 1,
+  "id": "YeShunguang_White",
+  "character": "YeShunguang",
+  "variant": "white",
+  "kind": "character_alternative",
+  "pmx_sha256": "08d5536ed7e54756334768ed8703947006bfaab13fb95c24825faae911511bc0",
+  "pmx": "characters/YeShunguang/models/叶瞬光_白__a372664772/叶瞬光_白.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/YeShunguang",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "颜",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 1700,
+      "role": "face",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YeShunguangFaceADiffuse.dds",
+          "sha256": "6f67d9935bf306d458a245eca47ce58531150797a33ebb1a217e46d27e1f9c46"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "866857f2a95a191898922bef2903b61e7b63520fd3eff98bd9424144891b15b5",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.054340790299430036,
+          "p95": 0.32716727976999155,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 21.07510653463678,
+          "p95": 106.90070430710912,
+          "below12": 0.7314285714285714
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 43.324724631751614,
+          "p95": 140.93356582627192,
+          "below12": 0.21761904761904763
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 43.96498122415988,
+          "p95": 137.6697102864583,
+          "below12": 0.2030952380952381
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 24.63804565478657,
+        "names": [
+          "YeShunguangFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.054340790299430036,
+        "p95": 0.32716727976999155,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 1,
+      "name": "颜2",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1700,
+      "face_count": 72,
+      "role": "face",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YeShunguangFaceADiffuse.dds",
+          "sha256": "6f67d9935bf306d458a245eca47ce58531150797a33ebb1a217e46d27e1f9c46"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "866857f2a95a191898922bef2903b61e7b63520fd3eff98bd9424144891b15b5",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.27836071235484455,
+          "p95": 0.6309408921500079,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 22.050893567347263,
+          "p95": 55.003306952848604,
+          "below12": 0.32407407407407407
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 23.858199780870805,
+          "p95": 47.878494792307414,
+          "below12": 0.2638888888888889
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 25.001417261656645,
+          "p95": 49.49640232324607,
+          "below12": 0.3148148148148148
+        }
+      ],
+      "evidence": {
+        "sample_count": 216,
+        "visible_count": 216,
+        "texture_rgb_std": 14.40940237017989,
+        "names": [
+          "YeShunguangFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.27836071235484455,
+        "p95": 0.6309408921500079,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 2,
+      "name": "口舌",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1772,
+      "face_count": 448,
+      "role": "mouth",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YeShunguangFaceADiffuse.dds",
+          "sha256": "6f67d9935bf306d458a245eca47ce58531150797a33ebb1a217e46d27e1f9c46"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "866857f2a95a191898922bef2903b61e7b63520fd3eff98bd9424144891b15b5",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YeShunguangBackHairBraidsADiffuse.dds",
+            "YeShunguangHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 18.574398489062492,
+          "p95": 29.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 35.141252484357175,
+          "p95": 72.5261294169028,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 36.520450280672364,
+          "p95": 60.5646842447916,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 1344,
+        "visible_count": 1344,
+        "texture_rgb_std": 6.887488656977918,
+        "names": [
+          "YeShunguangFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 3,
+      "name": "齿",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2220,
+      "face_count": 144,
+      "role": "mouth",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YeShunguangFaceADiffuse.dds",
+          "sha256": "6f67d9935bf306d458a245eca47ce58531150797a33ebb1a217e46d27e1f9c46"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "866857f2a95a191898922bef2903b61e7b63520fd3eff98bd9424144891b15b5",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 18.136146219186248,
+          "p95": 49.734198697857096,
+          "below12": 0.39814814814814814
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 25.362756000020337,
+          "p95": 27.333333333333332,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 92.72430420132252,
+          "p95": 173.31258812506996,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 432,
+        "visible_count": 432,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "YeShunguangFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 4,
+      "name": "口线",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2364,
+      "face_count": 72,
+      "role": "mouth_line",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YeShunguangFaceADiffuse.dds",
+          "sha256": "6f67d9935bf306d458a245eca47ce58531150797a33ebb1a217e46d27e1f9c46"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "866857f2a95a191898922bef2903b61e7b63520fd3eff98bd9424144891b15b5",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.09883522188794157,
+          "p95": 0.32319936384759157,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 29.068215380959895,
+          "p95": 52.087393449688456,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 30.691380534253195,
+          "p95": 56.50262102504577,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangBackHairBraidsADiffuse.dds",
+            "YeShunguangHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 41.065486344484306,
+          "p95": 58.95911775102227,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 216,
+        "visible_count": 216,
+        "texture_rgb_std": 16.982561840023727,
+        "names": [
+          "YeShunguangFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.09883522188794157,
+        "p95": 0.32319936384759157,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 5,
+      "name": "睫眉",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2436,
+      "face_count": 784,
+      "role": "brows_lashes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YeShunguangFaceADiffuse.dds",
+          "sha256": "6f67d9935bf306d458a245eca47ce58531150797a33ebb1a217e46d27e1f9c46"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "866857f2a95a191898922bef2903b61e7b63520fd3eff98bd9424144891b15b5",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.14816834290238473,
+          "p95": 0.5170433588574118,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 53.441009982143235,
+          "p95": 108.882816766103,
+          "below12": 0.0017006802721088435
+        },
+        {
+          "names": [
+            "YeShunguangBackHairBraidsADiffuse.dds",
+            "YeShunguangHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 55.73973259246548,
+          "p95": 81.42131161945628,
+          "below12": 0.006802721088435374
+        },
+        {
+          "names": [
+            "YeShunguangBackHairBraidsADiffuse.dds",
+            "YeShunguangHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.40537946983141,
+          "p95": 94.33333333333333,
+          "below12": 0.006802721088435374
+        }
+      ],
+      "evidence": {
+        "sample_count": 2352,
+        "visible_count": 2352,
+        "texture_rgb_std": 35.4190688863352,
+        "names": [
+          "YeShunguangFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.14816834290238473,
+        "p95": 0.5170433588574118,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 6,
+      "name": "白目",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3220,
+      "face_count": 148,
+      "role": "eye_white",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YeShunguangFaceADiffuse.dds",
+          "sha256": "6f67d9935bf306d458a245eca47ce58531150797a33ebb1a217e46d27e1f9c46"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "866857f2a95a191898922bef2903b61e7b63520fd3eff98bd9424144891b15b5",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.04165576102902265,
+          "p95": 0.20205335648504505,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 19.98984749196992,
+          "p95": 20.333333333333332,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 41.81014357310799,
+          "p95": 149.04871785481754,
+          "below12": 0.09684684684684684
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 86.192918523865,
+          "p95": 169.18473110909258,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 444,
+        "visible_count": 444,
+        "texture_rgb_std": 12.730481006716879,
+        "names": [
+          "YeShunguangFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.04165576102902265,
+        "p95": 0.20205335648504505,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 7,
+      "name": "目",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3368,
+      "face_count": 404,
+      "role": "eyes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YeShunguangFaceADiffuse.dds",
+          "sha256": "6f67d9935bf306d458a245eca47ce58531150797a33ebb1a217e46d27e1f9c46"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "866857f2a95a191898922bef2903b61e7b63520fd3eff98bd9424144891b15b5",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.18822511633208125,
+          "p95": 0.77293747928429,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 56.27943708685459,
+          "p95": 129.0,
+          "below12": 0.026402640264026403
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 57.38116786237868,
+          "p95": 128.02065230433195,
+          "below12": 0.03382838283828383
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 63.22389984225168,
+          "p95": 174.92880859374986,
+          "below12": 0.05528052805280528
+        }
+      ],
+      "evidence": {
+        "sample_count": 1212,
+        "visible_count": 1212,
+        "texture_rgb_std": 66.63543287367045,
+        "names": [
+          "YeShunguangFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.18822511633208125,
+        "p95": 0.77293747928429,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 8,
+      "name": "目影",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3772,
+      "face_count": 44,
+      "role": "eye_shadow",
+      "source_texture": "tex\\颜.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "866857f2a95a191898922bef2903b61e7b63520fd3eff98bd9424144891b15b5",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 24.551046914296222,
+          "p95": 35.333333333333336,
+          "below12": 0.14393939393939395
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 27.530675482675093,
+          "p95": 38.0,
+          "below12": 0.11363636363636363
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 29.906829591755276,
+          "p95": 57.0,
+          "below12": 0.2803030303030303
+        },
+        {
+          "names": [
+            "YeShunguangBackHairBraidsADiffuse.dds",
+            "YeShunguangHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 31.523541035729178,
+          "p95": 36.004115634163206,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 132,
+        "visible_count": 132,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "YeShunguangBraidsBowsADiffuse.dds",
+          "YeShunguangFrontHairADiffuse.dds",
+          "YeShunguangFrontHairBDiffuse.dds",
+          "YeShunguangHairADiffuse.dds",
+          "YeShunguangHairBDiffuse.dds",
+          "YeShunguangTopHairRibbonADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 24.551046914296222,
+        "p95": 35.333333333333336,
+        "below12": 0.14393939393939395
+      }
+    },
+    {
+      "index": 9,
+      "name": "目光",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.30000001192092896
+      ],
+      "face_start": 3816,
+      "face_count": 40,
+      "role": "eye_highlight",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YeShunguangFaceADiffuse.dds",
+          "sha256": "6f67d9935bf306d458a245eca47ce58531150797a33ebb1a217e46d27e1f9c46"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "866857f2a95a191898922bef2903b61e7b63520fd3eff98bd9424144891b15b5",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.08015552553923264,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 22.810824136719134,
+          "p95": 23.333333333333332,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 32.89756874236341,
+          "p95": 47.18558027362832,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangBackHairBraidsADiffuse.dds",
+            "YeShunguangHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 47.485351880305664,
+          "p95": 68.66666666666667,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 120,
+        "visible_count": 115,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "YeShunguangFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.08015552553923264,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 10,
+      "name": "髮1",
+      "texture": "tex\\白髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3856,
+      "face_count": 4044,
+      "role": "hair",
+      "source_texture": "tex\\白髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YeShunguangHairADiffuse.dds",
+          "sha256": "ab792f5aa9d89b6511e93bae046473b60765b3f67d91832a739d753a57e773ee"
+        },
+        "NormalMap": {
+          "file": "YeShunguangHairANormalMap.dds",
+          "sha256": "632d4849e8dfb0e04e6439c22a3b049e17d2a4ff649f62db13483e6664902b3b"
+        },
+        "LightMap": {
+          "file": "YeShunguangHairALightMap.dds",
+          "sha256": "b8bb7eba8c1eff4766636214acad3aa3a787a91785897a3bc0094129aa5642b5"
+        },
+        "MaterialMap": {
+          "file": "YeShunguangHairAMaterialMap.dds",
+          "sha256": "86bc64ee2a3b0c8caf23da8a0dcc992300ec197184c10b36d9c1a03770d14eb7"
+        }
+      },
+      "matching": "game_vertex_uv_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "74c0a50290d179d093ac7b54ce031e2fada0b5566647cb3fa9af684ea28ffeb9",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 48.89799851184585,
+          "p95": 121.21459671010572,
+          "below12": 0.0030952380952380953
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 52.23622530215553,
+          "p95": 130.72097500612313,
+          "below12": 0.1438095238095238
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 52.50112846699363,
+          "p95": 130.26496826763776,
+          "below12": 0.12285714285714286
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 53.04415312666776,
+          "p95": 120.0305496484455,
+          "below12": 0.002619047619047619
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 36.71406602509515,
+        "names": [
+          "YeShunguangFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 48.89799851184585,
+        "p95": 121.21459671010572,
+        "below12": 0.0030952380952380953
+      },
+      "atlas": "HairA",
+      "dds_flip_v": true,
+      "uv_control_evidence": {
+        "method": "game_vertex_uv",
+        "vertices": 6207,
+        "prefix": "YeShunguangHairA",
+        "fraction_under_0_001": 1.0,
+        "p95": 0.0002527295378968119,
+        "max": 0.0003390818019397557
+      }
+    },
+    {
+      "index": 11,
+      "name": "髮2",
+      "texture": "tex\\白髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 7900,
+      "face_count": 11406,
+      "role": "hair",
+      "source_texture": "tex\\白髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YeShunguangHairADiffuse.dds",
+          "sha256": "ab792f5aa9d89b6511e93bae046473b60765b3f67d91832a739d753a57e773ee"
+        },
+        "NormalMap": {
+          "file": "YeShunguangHairANormalMap.dds",
+          "sha256": "632d4849e8dfb0e04e6439c22a3b049e17d2a4ff649f62db13483e6664902b3b"
+        },
+        "LightMap": {
+          "file": "YeShunguangHairALightMap.dds",
+          "sha256": "b8bb7eba8c1eff4766636214acad3aa3a787a91785897a3bc0094129aa5642b5"
+        },
+        "MaterialMap": {
+          "file": "YeShunguangHairAMaterialMap.dds",
+          "sha256": "86bc64ee2a3b0c8caf23da8a0dcc992300ec197184c10b36d9c1a03770d14eb7"
+        }
+      },
+      "matching": "same_verified_atlas",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "74c0a50290d179d093ac7b54ce031e2fada0b5566647cb3fa9af684ea28ffeb9",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 37.94964944103522,
+          "p95": 115.66971354166665,
+          "below12": 0.18023809523809523
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 41.78311499117567,
+          "p95": 113.78781582196555,
+          "below12": 0.15428571428571428
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 46.59685309103248,
+          "p95": 157.35345743815103,
+          "below12": 0.025
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 57.12755191475552,
+          "p95": 175.67010366477567,
+          "below12": 0.018095238095238095
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 20.12306385613988,
+        "names": [
+          "YeShunguangArmsRibbonsADiffuse.dds",
+          "YeShunguangBodyADiffuse.dds",
+          "YeShunguangTransparentClothADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 37.94964944103522,
+        "p95": 115.66971354166665,
+        "below12": 0.18023809523809523
+      },
+      "atlas": "HairA",
+      "dds_flip_v": true,
+      "uv_control_evidence": {
+        "method": "identical_pmx_atlas_peer",
+        "peer_slot": 10,
+        "source_sha256": "74c0a50290d179d093ac7b54ce031e2fada0b5566647cb3fa9af684ea28ffeb9",
+        "note": "Same recolored diffuse atlas as UV-certified slot 10; different hair geometry has different UV vertices."
+      }
+    },
+    {
+      "index": 12,
+      "name": "头饰",
+      "texture": "tex\\白髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 19306,
+      "face_count": 482,
+      "role": "cloth",
+      "source_texture": "tex\\白髮.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "74c0a50290d179d093ac7b54ce031e2fada0b5566647cb3fa9af684ea28ffeb9",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 17.24506129892884,
+          "p95": 39.361929364974316,
+          "below12": 0.5394190871369294
+        },
+        {
+          "names": [
+            "YeShunguangBackHairBraidsADiffuse.dds",
+            "YeShunguangHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.47376650117366,
+          "p95": 125.50814175089204,
+          "below12": 0.1839557399723375
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 61.438438413252875,
+          "p95": 91.30069402774203,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 66.34625942549911,
+          "p95": 127.01052352123791,
+          "below12": 0.11341632088520055
+        }
+      ],
+      "evidence": {
+        "sample_count": 1446,
+        "visible_count": 1446,
+        "texture_rgb_std": 54.80243860214875,
+        "names": [
+          "YeShunguangBraidsBowsADiffuse.dds",
+          "YeShunguangFrontHairADiffuse.dds",
+          "YeShunguangFrontHairBDiffuse.dds",
+          "YeShunguangHairADiffuse.dds",
+          "YeShunguangHairBDiffuse.dds",
+          "YeShunguangTopHairRibbonADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 17.24506129892884,
+        "p95": 39.361929364974316,
+        "below12": 0.5394190871369294
+      }
+    },
+    {
+      "index": 13,
+      "name": "头饰2",
+      "texture": "tex\\髮2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 19788,
+      "face_count": 1822,
+      "role": "cloth",
+      "source_texture": "tex\\髮2.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YeShunguangBackHairBraidsADiffuse.dds",
+          "sha256": "19fe6dfc25d5bcadbc1cfda2b7bd795f50d674f66ad980a3940ef0e86b19d88c"
+        },
+        "NormalMap": {
+          "file": "YeShunguangBackHairBraidsANormalMap.dds",
+          "sha256": "43f55f87e6b179b94333d75d32b22a86b8a5148c3f5735cee01712ab88f62bfe"
+        },
+        "LightMap": {
+          "file": "YeShunguangBackHairBraidsALightMap.dds",
+          "sha256": "ca3e496861a2a896395cd98d7e5cd2e071a19e6e0b0589ab347bb5fa24a27a41"
+        },
+        "MaterialMap": {
+          "file": "YeShunguangBackHairBraidsAMaterialMap.dds",
+          "sha256": "a7dba114eb5277cbde56678c26cda7b14c5d1a14cb3f2af35286b181c33c6465"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "6c3c555503691acea22848e500fd024dfe0eb4ed9b59b5adb2fd4a0140dd6a24",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangBackHairBraidsADiffuse.dds",
+            "YeShunguangHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.09893028742862617,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YeShunguangBackHairBraidsADiffuse.dds",
+            "YeShunguangHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 39.043891272402,
+          "p95": 96.66666666666667,
+          "below12": 0.3007142857142857
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 57.86169520387222,
+          "p95": 91.96381966660088,
+          "below12": 0.029285714285714286
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.686787617427264,
+          "p95": 116.07312729120258,
+          "below12": 0.04238095238095238
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 49.66821819259015,
+        "names": [
+          "YeShunguangBackHairBraidsADiffuse.dds",
+          "YeShunguangHairRibbonADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.09893028742862617,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BackHairBraidsA"
+    },
+    {
+      "index": 14,
+      "name": "体",
+      "texture": "tex\\体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 21610,
+      "face_count": 15033,
+      "role": "cloth",
+      "source_texture": "tex\\体2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "345f3fd559e33c8154c53b8f1cb262c1e3c6e59b15d481ded1a12e1f471e965e",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 11.777093475345461,
+          "p95": 79.33382296851525,
+          "below12": 0.8864285714285715
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 43.07714196481748,
+          "p95": 153.30209640642056,
+          "below12": 0.2469047619047619
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 51.052328840914555,
+          "p95": 137.53198589309554,
+          "below12": 0.13142857142857142
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 56.02190733957679,
+          "p95": 191.0130379314775,
+          "below12": 0.15785714285714286
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 35.767367529333896,
+        "names": [
+          "YeShunguangArmsRibbonsADiffuse.dds",
+          "YeShunguangBodyADiffuse.dds",
+          "YeShunguangTransparentClothADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 11.777093475345461,
+        "p95": 79.33382296851525,
+        "below12": 0.8864285714285715
+      }
+    },
+    {
+      "index": 15,
+      "name": "体2",
+      "texture": "tex\\腿2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 36643,
+      "face_count": 4640,
+      "role": "cloth",
+      "source_texture": "tex\\腿2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "f995855a30ab5859796a40a51eb45d9ef7d2aeabafb13a4241decf354ac2456f",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 18.345367140025985,
+          "p95": 127.66666666666667,
+          "below12": 0.8216666666666667
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 60.51837399267209,
+          "p95": 142.88164469401036,
+          "below12": 0.13595238095238096
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 63.78660587313147,
+          "p95": 107.67353027343746,
+          "below12": 0.06190476190476191
+        },
+        {
+          "names": [
+            "YeShunguangBackHairBraidsADiffuse.dds",
+            "YeShunguangHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 65.40696975742077,
+          "p95": 128.66835327418642,
+          "below12": 0.04476190476190476
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 71.46758052830539,
+        "names": [
+          "YeShunguangLegsADiffuse.dds",
+          "YeShunguangTailADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 18.345367140025985,
+        "p95": 127.66666666666667,
+        "below12": 0.8216666666666667
+      }
+    },
+    {
+      "index": 16,
+      "name": "饰",
+      "texture": "tex\\饰.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 41283,
+      "face_count": 386,
+      "role": "cloth",
+      "source_texture": "tex\\饰.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "05542a1317c90de73a85ba7b3a9609e3d938f7f2388ed9d41d30ed53be67581f",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 8.376001505646881,
+          "p95": 14.334892924626702,
+          "below12": 0.7844364937388193
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 41.8261864246121,
+          "p95": 145.69342447916674,
+          "below12": 0.19499105545617174
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 42.69408939343388,
+          "p95": 193.33333333333334,
+          "below12": 0.19767441860465115
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 84.68449498828902,
+          "p95": 175.9224633194404,
+          "below12": 0.05456171735241502
+        }
+      ],
+      "evidence": {
+        "sample_count": 1158,
+        "visible_count": 1118,
+        "texture_rgb_std": 16.321469446338565,
+        "names": [
+          "YeShunguangArmsRibbonsADiffuse.dds",
+          "YeShunguangBodyADiffuse.dds",
+          "YeShunguangTransparentClothADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 8.376001505646881,
+        "p95": 14.334892924626702,
+        "below12": 0.7844364937388193
+      }
+    },
+    {
+      "index": 17,
+      "name": "挂饰",
+      "texture": "tex\\腿2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 41669,
+      "face_count": 1516,
+      "role": "cloth",
+      "source_texture": "tex\\腿2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "f995855a30ab5859796a40a51eb45d9ef7d2aeabafb13a4241decf354ac2456f",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 39.74163296473671,
+          "p95": 88.0,
+          "below12": 0.54
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 43.38911340702113,
+          "p95": 105.78333716039297,
+          "below12": 0.019761904761904762
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 48.49763093124554,
+          "p95": 102.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 51.45978094216375,
+          "p95": 89.85339102273181,
+          "below12": 0.06619047619047619
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 44.87341177174171,
+        "names": [
+          "YeShunguangLegsADiffuse.dds",
+          "YeShunguangTailADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 39.74163296473671,
+        "p95": 88.0,
+        "below12": 0.54
+      }
+    },
+    {
+      "index": 18,
+      "name": "肌",
+      "texture": "tex\\肌_2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 43185,
+      "face_count": 6508,
+      "role": "skin",
+      "source_texture": "tex\\肌_2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "a2332602c4feed3171aee660244577ed874537766d04d30ec5fd0f303623240d",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 11.184972822496375,
+          "p95": 13.432290251673738,
+          "below12": 0.9336228287841191
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 27.85828012619383,
+          "p95": 176.9868975657473,
+          "below12": 0.6538461538461539
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 48.369644479559284,
+          "p95": 199.0395057840215,
+          "below12": 0.3948511166253102
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 51.232742811974354,
+          "p95": 148.26156055049748,
+          "below12": 0.15043424317617865
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 3224,
+        "texture_rgb_std": 14.291614897016624,
+        "names": [
+          "YeShunguangArmsRibbonsADiffuse.dds",
+          "YeShunguangBodyADiffuse.dds",
+          "YeShunguangTransparentClothADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 11.184972822496375,
+        "p95": 13.432290251673738,
+        "below12": 0.9336228287841191
+      }
+    },
+    {
+      "index": 19,
+      "name": "肌2",
+      "texture": "tex\\肌2_2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 49693,
+      "face_count": 1726,
+      "role": "skin",
+      "source_texture": "tex\\肌2_2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "10040b4b165cb3416f44201885becddef18b29154e9409b162475f1892f5187b",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 45.67046895452025,
+          "p95": 130.00418701678512,
+          "below12": 0.614498319731157
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 59.9381200398864,
+          "p95": 149.6726230927805,
+          "below12": 0.26212193951032164
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 62.441529425643296,
+          "p95": 140.60270123126327,
+          "below12": 0.12361977916466635
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 65.79798454694235,
+          "p95": 154.63356022172502,
+          "below12": 0.07873259721555449
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4166,
+        "texture_rgb_std": 61.89205708276801,
+        "names": [
+          "YeShunguangLegsADiffuse.dds",
+          "YeShunguangTailADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 45.67046895452025,
+        "p95": 130.00418701678512,
+        "below12": 0.614498319731157
+      }
+    },
+    {
+      "index": 20,
+      "name": "尾",
+      "texture": "tex\\腿2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 51419,
+      "face_count": 1734,
+      "role": "cloth",
+      "source_texture": "tex\\腿2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "f995855a30ab5859796a40a51eb45d9ef7d2aeabafb13a4241decf354ac2456f",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 40.456390628263925,
+          "p95": 98.9034464909584,
+          "below12": 0.18452380952380953
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 44.484787550804775,
+          "p95": 85.24595567907888,
+          "below12": 0.0064285714285714285
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 53.330638176330126,
+          "p95": 127.66365854667083,
+          "below12": 0.08142857142857143
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 66.0302489940556,
+          "p95": 139.25693362804245,
+          "below12": 0.017619047619047618
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 34.541004738617055,
+        "names": [
+          "YeShunguangArmsRibbonsADiffuse.dds",
+          "YeShunguangBodyADiffuse.dds",
+          "YeShunguangTransparentClothADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 40.456390628263925,
+        "p95": 98.9034464909584,
+        "below12": 0.18452380952380953
+      }
+    },
+    {
+      "index": 21,
+      "name": "带",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 53153,
+      "face_count": 1136,
+      "role": "cloth",
+      "source_texture": "tex\\体.png",
+      "maps": {},
+      "matching": "ambiguous_companion_maps",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ea33d72aa32211923673edbe3b35a9dd75653c8af03c68cceb64b71c0bccb7a9",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.11774817365943085,
+          "p95": 0.47153310864061854,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 51.7368053633832,
+          "p95": 127.15673828125,
+          "below12": 0.12294600938967136
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 62.944582094692244,
+          "p95": 169.62351424892736,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 64.22977511651786,
+          "p95": 99.40770890235892,
+          "below12": 0.008215962441314555
+        }
+      ],
+      "evidence": {
+        "sample_count": 3408,
+        "visible_count": 3408,
+        "texture_rgb_std": 59.353399451531,
+        "names": [
+          "YeShunguangArmsRibbonsADiffuse.dds",
+          "YeShunguangBodyADiffuse.dds",
+          "YeShunguangTransparentClothADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.11774817365943085,
+        "p95": 0.47153310864061854,
+        "below12": 1.0
+      }
+    },
+    {
+      "index": 22,
+      "name": "髮+",
+      "texture": "tex\\sp2.png",
+      "sphere": "spa\\hair_s.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 54289,
+      "face_count": 15450,
+      "role": "hair_overlay",
+      "source_texture": "tex\\sp2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "464e43255dff2a6c6fef1fc1c09be4ba2f7a39fa1adcb1932e25ca5056518799",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 7.929614037275314,
+          "p95": 7.929614037275314,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 16.873616536458332,
+          "p95": 16.873616536458332,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 19.521948352456093,
+          "p95": 19.521948352456093,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 21.55763357381026,
+          "p95": 21.55763357381026,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 1,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "YeShunguangArmsRibbonsADiffuse.dds",
+          "YeShunguangBodyADiffuse.dds",
+          "YeShunguangTransparentClothADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 7.929614037275314,
+        "p95": 7.929614037275314,
+        "below12": 1.0
+      }
+    },
+    {
+      "index": 23,
+      "name": "角",
+      "texture": "tex\\角.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 69739,
+      "face_count": 212,
+      "role": "cloth",
+      "source_texture": "tex\\角.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "085469b596f5e1fef9a76b38ca21a180f0203fd005030aa4444c928fb537dc94",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 46.72270724142355,
+          "p95": 129.0,
+          "below12": 0.0137221269296741
+        },
+        {
+          "names": [
+            "YeShunguangFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 52.71822860221495,
+          "p95": 108.0,
+          "below12": 0.0137221269296741
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 69.13374232676085,
+          "p95": 165.86666666666665,
+          "below12": 0.015437392795883362
+        },
+        {
+          "names": [
+            "YeShunguangArmsRibbonsADiffuse.dds",
+            "YeShunguangBodyADiffuse.dds",
+            "YeShunguangTransparentClothADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 83.56840579119057,
+          "p95": 178.31555402391157,
+          "below12": 0.005145797598627788
+        }
+      ],
+      "evidence": {
+        "sample_count": 636,
+        "visible_count": 583,
+        "texture_rgb_std": 55.16424094057896,
+        "names": [
+          "YeShunguangFaceADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 46.72270724142355,
+        "p95": 129.0,
+        "below12": 0.0137221269296741
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 8,
+      "name": "目影",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 12,
+      "name": "头饰",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 14,
+      "name": "体",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 15,
+      "name": "体2",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 16,
+      "name": "饰",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 17,
+      "name": "挂饰",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 18,
+      "name": "肌",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 19,
+      "name": "肌2",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 20,
+      "name": "尾",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 21,
+      "name": "带",
+      "reason": "ambiguous_companion_maps",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 22,
+      "name": "髮+",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 23,
+      "name": "角",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": true,
+    "eyes": true
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

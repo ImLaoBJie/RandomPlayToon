@@ -1,0 +1,1710 @@
+{
+  "schema": 1,
+  "id": "SunnaMaid",
+  "character": "SunnaMaid",
+  "variant": "default",
+  "kind": "character_primary",
+  "pmx_sha256": "545a9ba0d601cfc5209dc9029a805a38f752d5ab8e3b4a819dca9c79d9ff394e",
+  "pmx": "characters/SunnaMaid/models/千夏皮肤__2a80c06363/千夏皮肤.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/SunnaMaid",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "颜",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 1724,
+      "role": "face",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidEyebrowsADiffuse.dds",
+          "sha256": "93ab74c4b6ee764ba0d49e20305345019cd8a1265fb7108f214efc426b8509ab"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "82b457c39ec65634f91af3e723588ffe8455eeb2d14455edcdc0be09416b1ac4",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.07988106321280114,
+          "p95": 0.2822998046875303,
+          "below12": 0.9990476190476191
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 7.883165649696633,
+          "p95": 21.333333333333332,
+          "below12": 0.8547619047619047
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 26.16565524821326,
+          "p95": 48.666666666666664,
+          "below12": 0.24285714285714285
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 28.7886007423632,
+          "p95": 134.0,
+          "below12": 0.24023809523809525
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 6.02792490788723,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.07988106321280114,
+        "p95": 0.2822998046875303,
+        "below12": 0.9990476190476191
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 2
+    },
+    {
+      "index": 1,
+      "name": "颜2",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1724,
+      "face_count": 74,
+      "role": "face",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidEyebrowsADiffuse.dds",
+          "sha256": "93ab74c4b6ee764ba0d49e20305345019cd8a1265fb7108f214efc426b8509ab"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "82b457c39ec65634f91af3e723588ffe8455eeb2d14455edcdc0be09416b1ac4",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.2332754120638395,
+          "p95": 0.5078695409298556,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 14.798229484405068,
+          "p95": 24.17075717502154,
+          "below12": 0.34684684684684686
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 22.03041003851809,
+          "p95": 32.931442877517874,
+          "below12": 0.013513513513513514
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 22.03041003851809,
+          "p95": 32.931442877517874,
+          "below12": 0.013513513513513514
+        }
+      ],
+      "evidence": {
+        "sample_count": 222,
+        "visible_count": 222,
+        "texture_rgb_std": 6.960933471157908,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.2332754120638395,
+        "p95": 0.5078695409298556,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 2
+    },
+    {
+      "index": 2,
+      "name": "口线",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1798,
+      "face_count": 56,
+      "role": "mouth_line",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidEyebrowsADiffuse.dds",
+          "sha256": "93ab74c4b6ee764ba0d49e20305345019cd8a1265fb7108f214efc426b8509ab"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "82b457c39ec65634f91af3e723588ffe8455eeb2d14455edcdc0be09416b1ac4",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.17139913586843752,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 33.8691939087351,
+          "p95": 37.505533854166664,
+          "below12": 0.011904761904761904
+        },
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 57.57588676018798,
+          "p95": 73.0172301254891,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 83.32871156970359,
+          "p95": 154.36345757378467,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 168,
+        "visible_count": 168,
+        "texture_rgb_std": 23.028392482284243,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.17139913586843752,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 3,
+      "name": "口舌",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1854,
+      "face_count": 312,
+      "role": "mouth",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidEyebrowsADiffuse.dds",
+          "sha256": "93ab74c4b6ee764ba0d49e20305345019cd8a1265fb7108f214efc426b8509ab"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "82b457c39ec65634f91af3e723588ffe8455eeb2d14455edcdc0be09416b1ac4",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 48.16757559345771,
+          "p95": 55.333333333333336,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 48.16757559345771,
+          "p95": 55.333333333333336,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 49.84615384615384,
+          "p95": 56.666666666666664,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 936,
+        "visible_count": 936,
+        "texture_rgb_std": 6.997698503965352,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 2
+    },
+    {
+      "index": 4,
+      "name": "齿",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2166,
+      "face_count": 144,
+      "role": "mouth",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidEyebrowsADiffuse.dds",
+          "sha256": "93ab74c4b6ee764ba0d49e20305345019cd8a1265fb7108f214efc426b8509ab"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "82b457c39ec65634f91af3e723588ffe8455eeb2d14455edcdc0be09416b1ac4",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 12.625276692952161,
+          "p95": 18.081593506023278,
+          "below12": 0.4444444444444444
+        },
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 14.520818634304858,
+          "p95": 26.666666666666668,
+          "below12": 0.5138888888888888
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 28.0,
+          "p95": 28.0,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 432,
+        "visible_count": 432,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 2
+    },
+    {
+      "index": 5,
+      "name": "睫眉",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2310,
+      "face_count": 756,
+      "role": "brows_lashes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidEyebrowsADiffuse.dds",
+          "sha256": "93ab74c4b6ee764ba0d49e20305345019cd8a1265fb7108f214efc426b8509ab"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "82b457c39ec65634f91af3e723588ffe8455eeb2d14455edcdc0be09416b1ac4",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.15498153446446733,
+          "p95": 0.48451173757957566,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 68.832560636912,
+          "p95": 104.99741483510036,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 99.24560182550108,
+          "p95": 175.84758389237308,
+          "below12": 0.013227513227513227
+        },
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 99.35689510140652,
+          "p95": 185.33333333333334,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 2268,
+        "visible_count": 2268,
+        "texture_rgb_std": 32.28671180618655,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.15498153446446733,
+        "p95": 0.48451173757957566,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 6,
+      "name": "睫2",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3066,
+      "face_count": 296,
+      "role": "brows_lashes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidEyebrowsADiffuse.dds",
+          "sha256": "93ab74c4b6ee764ba0d49e20305345019cd8a1265fb7108f214efc426b8509ab"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "82b457c39ec65634f91af3e723588ffe8455eeb2d14455edcdc0be09416b1ac4",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.02546632464608258,
+          "p95": 0.2784428250238582,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 55.56702365462156,
+          "p95": 90.71035301216303,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 82.91820170765669,
+          "p95": 107.92897949218748,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 93.20184886985213,
+          "p95": 158.9611467558643,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 888,
+        "visible_count": 888,
+        "texture_rgb_std": 10.147100357507279,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.02546632464608258,
+        "p95": 0.2784428250238582,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 7,
+      "name": "白目",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3362,
+      "face_count": 146,
+      "role": "eye_white",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidEyebrowsADiffuse.dds",
+          "sha256": "93ab74c4b6ee764ba0d49e20305345019cd8a1265fb7108f214efc426b8509ab"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "82b457c39ec65634f91af3e723588ffe8455eeb2d14455edcdc0be09416b1ac4",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.037337276950741766,
+          "p95": 0.2869012187719895,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 12.877847381677935,
+          "p95": 28.940878873360557,
+          "below12": 0.817351598173516
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 14.59779901745428,
+          "p95": 17.917904679891148,
+          "below12": 0.06621004566210045
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 42.415425729035135,
+          "p95": 61.666666666666664,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 438,
+        "visible_count": 438,
+        "texture_rgb_std": 2.715003637245543,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.037337276950741766,
+        "p95": 0.2869012187719895,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 2
+    },
+    {
+      "index": 8,
+      "name": "目",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3508,
+      "face_count": 368,
+      "role": "eyes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidEyebrowsADiffuse.dds",
+          "sha256": "93ab74c4b6ee764ba0d49e20305345019cd8a1265fb7108f214efc426b8509ab"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "82b457c39ec65634f91af3e723588ffe8455eeb2d14455edcdc0be09416b1ac4",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.2025812039836813,
+          "p95": 0.6099207571546261,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 51.83099343556945,
+          "p95": 104.7430190505736,
+          "below12": 0.07336956521739131
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 51.83099343556945,
+          "p95": 104.7430190505736,
+          "below12": 0.07336956521739131
+        },
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 56.12412184405573,
+          "p95": 133.16940511067696,
+          "below12": 0.07608695652173914
+        }
+      ],
+      "evidence": {
+        "sample_count": 1104,
+        "visible_count": 1104,
+        "texture_rgb_std": 42.847664246582895,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.2025812039836813,
+        "p95": 0.6099207571546261,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 9,
+      "name": "目光",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3876,
+      "face_count": 236,
+      "role": "eye_highlight",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidEyebrowsADiffuse.dds",
+          "sha256": "93ab74c4b6ee764ba0d49e20305345019cd8a1265fb7108f214efc426b8509ab"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "82b457c39ec65634f91af3e723588ffe8455eeb2d14455edcdc0be09416b1ac4",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.08128044917015828,
+          "p95": 0.46650967645652824,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 36.75916324306623,
+          "p95": 68.77948719872404,
+          "below12": 0.002824858757062147
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 43.8145433736611,
+          "p95": 54.333333333333336,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 53.90268495350507,
+          "p95": 66.66666666666667,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 708,
+        "visible_count": 708,
+        "texture_rgb_std": 37.1676506220808,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.08128044917015828,
+        "p95": 0.46650967645652824,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 10,
+      "name": "目光2",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.30000001192092896
+      ],
+      "face_start": 4112,
+      "face_count": 88,
+      "role": "eye_highlight",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidEyebrowsADiffuse.dds",
+          "sha256": "93ab74c4b6ee764ba0d49e20305345019cd8a1265fb7108f214efc426b8509ab"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "82b457c39ec65634f91af3e723588ffe8455eeb2d14455edcdc0be09416b1ac4",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.09699934548400473,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 33.218212950984245,
+          "p95": 36.4916011719207,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 33.218212950984245,
+          "p95": 36.4916011719207,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 37.93949470392616,
+          "p95": 101.0,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 264,
+        "visible_count": 264,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.09699934548400473,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 2
+    },
+    {
+      "index": 11,
+      "name": "目影",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 4200,
+      "face_count": 38,
+      "role": "eye_shadow",
+      "source_texture": "tex\\颜.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "82b457c39ec65634f91af3e723588ffe8455eeb2d14455edcdc0be09416b1ac4",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 47.7637202217838,
+          "p95": 116.33333333333333,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 53.74928457504443,
+          "p95": 74.02279389131397,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 53.91727434692291,
+          "p95": 68.66666666666667,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 60.865584888370314,
+          "p95": 70.29105070504357,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 114,
+        "visible_count": 114,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "SunnaMaidBodyADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 47.7637202217838,
+        "p95": 116.33333333333333,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 12,
+      "name": "髮",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 4238,
+      "face_count": 6359,
+      "role": "hair",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidHairADiffuse.dds",
+          "sha256": "ec4044fad372c42988a0e54a5dfd00ccba3836326a2051f3d0d1f3da1c7bc347"
+        },
+        "NormalMap": {
+          "file": "SunnaMaidHairANormalMap.dds",
+          "sha256": "6399e3c2ed68fe32b53e84f03be14e9c5da0082d8fd293668bee128264e81d30"
+        },
+        "LightMap": {
+          "file": "SunnaMaidHairALightMap.dds",
+          "sha256": "adfa23c179bfd6ad5fa65a53b029e957442d04176e4b4dbc0a61385bef0ca35d"
+        },
+        "MaterialMap": {
+          "file": "SunnaMaidHairAMaterialMap.dds",
+          "sha256": "69a114b8c041e3b961e104e86fbc95c8f6bf576abee25444bd07fae66978269c"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2bbc84c4f01a7991c9de2b979ec492504929fb628d983735ab8b7252cbc55ab9",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.05339345050859305,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.21463365267179157,
+          "p95": 0.3333333333333333,
+          "below12": 0.9971428571428571
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 29.2042874362776,
+          "p95": 98.1984535342057,
+          "below12": 0.33976190476190476
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 32.05902471923071,
+          "p95": 61.666666666666664,
+          "below12": 0.08357142857142857
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 12.927630741436175,
+        "names": [
+          "SunnaMaidHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.05339345050859305,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 13,
+      "name": "前髪",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 10597,
+      "face_count": 1949,
+      "role": "hair",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidHairADiffuse.dds",
+          "sha256": "ec4044fad372c42988a0e54a5dfd00ccba3836326a2051f3d0d1f3da1c7bc347"
+        },
+        "NormalMap": {
+          "file": "SunnaMaidHairANormalMap.dds",
+          "sha256": "6399e3c2ed68fe32b53e84f03be14e9c5da0082d8fd293668bee128264e81d30"
+        },
+        "LightMap": {
+          "file": "SunnaMaidHairALightMap.dds",
+          "sha256": "adfa23c179bfd6ad5fa65a53b029e957442d04176e4b4dbc0a61385bef0ca35d"
+        },
+        "MaterialMap": {
+          "file": "SunnaMaidHairAMaterialMap.dds",
+          "sha256": "69a114b8c041e3b961e104e86fbc95c8f6bf576abee25444bd07fae66978269c"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2bbc84c4f01a7991c9de2b979ec492504929fb628d983735ab8b7252cbc55ab9",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0726570776881883,
+          "p95": 0.3333333333333523,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.132565107718777,
+          "p95": 0.33333333333336224,
+          "below12": 0.9990476190476191
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 24.004727681630822,
+          "p95": 53.182343631688084,
+          "below12": 0.3333333333333333
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 30.947423552241357,
+          "p95": 116.3462416189689,
+          "below12": 0.3392857142857143
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 14.279506582707072,
+        "names": [
+          "SunnaMaidHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0726570776881883,
+        "p95": 0.3333333333333523,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 14,
+      "name": "新規",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 12546,
+      "face_count": 5264,
+      "role": "cloth",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidBodyADiffuse.dds",
+          "sha256": "63e21700346755582a87a4627c43d6b725f450b8005d8ceba2a5d6abf832a4a7"
+        },
+        "NormalMap": {
+          "file": "SunnaMaidBodyANormalMap.dds",
+          "sha256": "aa7bd3624bca49a8047750417f4560771c8968f083e5ed4b97a6e0de9cdb5920"
+        },
+        "LightMap": {
+          "file": "SunnaMaidBodyALightMap.dds",
+          "sha256": "921abb173ab7fe940b3bc3b148d39950f3b612e016d233747c84a1a19c55e1bc"
+        },
+        "MaterialMap": {
+          "file": "SunnaMaidBodyAMaterialMap.dds",
+          "sha256": "cd932db78487de95a52fda7fc0e07adda9e9132138df77f74e3ffacfbceaa1a1"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "02a207786653c78d869f789573d51803ee1d4925f93ad126f239d475f204fc86",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.10587700868636604,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 36.20669899470233,
+          "p95": 108.98025987413203,
+          "below12": 0.07380952380952381
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 42.37762170311418,
+          "p95": 129.66789008246525,
+          "below12": 0.030952380952380953
+        },
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 44.84759678796344,
+          "p95": 134.00876188497742,
+          "below12": 0.0980952380952381
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 56.520605423049126,
+        "names": [
+          "SunnaMaidBodyADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.10587700868636604,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 15,
+      "name": "肌",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 17810,
+      "face_count": 4808,
+      "role": "skin",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidBodyADiffuse.dds",
+          "sha256": "63e21700346755582a87a4627c43d6b725f450b8005d8ceba2a5d6abf832a4a7"
+        },
+        "NormalMap": {
+          "file": "SunnaMaidBodyANormalMap.dds",
+          "sha256": "aa7bd3624bca49a8047750417f4560771c8968f083e5ed4b97a6e0de9cdb5920"
+        },
+        "LightMap": {
+          "file": "SunnaMaidBodyALightMap.dds",
+          "sha256": "921abb173ab7fe940b3bc3b148d39950f3b612e016d233747c84a1a19c55e1bc"
+        },
+        "MaterialMap": {
+          "file": "SunnaMaidBodyAMaterialMap.dds",
+          "sha256": "cd932db78487de95a52fda7fc0e07adda9e9132138df77f74e3ffacfbceaa1a1"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "02a207786653c78d869f789573d51803ee1d4925f93ad126f239d475f204fc86",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.07178697655828964,
+          "p95": 0.3333333333333239,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 12.25770670049318,
+          "p95": 21.506295776367192,
+          "below12": 0.5954761904761905
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 26.031402045763432,
+          "p95": 50.666666666666664,
+          "below12": 0.08452380952380953
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 30.830948524302528,
+          "p95": 52.29320126034316,
+          "below12": 0.07523809523809524
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 19.35055574637157,
+        "names": [
+          "SunnaMaidBodyADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.07178697655828964,
+        "p95": 0.3333333333333239,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 16,
+      "name": "体",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 22618,
+      "face_count": 13084,
+      "role": "cloth",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidBodyADiffuse.dds",
+          "sha256": "63e21700346755582a87a4627c43d6b725f450b8005d8ceba2a5d6abf832a4a7"
+        },
+        "NormalMap": {
+          "file": "SunnaMaidBodyANormalMap.dds",
+          "sha256": "aa7bd3624bca49a8047750417f4560771c8968f083e5ed4b97a6e0de9cdb5920"
+        },
+        "LightMap": {
+          "file": "SunnaMaidBodyALightMap.dds",
+          "sha256": "921abb173ab7fe940b3bc3b148d39950f3b612e016d233747c84a1a19c55e1bc"
+        },
+        "MaterialMap": {
+          "file": "SunnaMaidBodyAMaterialMap.dds",
+          "sha256": "cd932db78487de95a52fda7fc0e07adda9e9132138df77f74e3ffacfbceaa1a1"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "02a207786653c78d869f789573d51803ee1d4925f93ad126f239d475f204fc86",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.13215613551652083,
+          "p95": 0.5253014957088468,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 58.25809898062677,
+          "p95": 141.52931603569448,
+          "below12": 0.09309523809523809
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 60.17695031785428,
+          "p95": 145.65711520623282,
+          "below12": 0.10785714285714286
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 60.95311847940244,
+          "p95": 154.38412393573907,
+          "below12": 0.0761904761904762
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 68.40177186632233,
+        "names": [
+          "SunnaMaidBodyADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.13215613551652083,
+        "p95": 0.5253014957088468,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 17,
+      "name": "饰",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 35702,
+      "face_count": 8970,
+      "role": "cloth",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "SunnaMaidHairADiffuse.dds",
+          "sha256": "ec4044fad372c42988a0e54a5dfd00ccba3836326a2051f3d0d1f3da1c7bc347"
+        },
+        "NormalMap": {
+          "file": "SunnaMaidHairANormalMap.dds",
+          "sha256": "6399e3c2ed68fe32b53e84f03be14e9c5da0082d8fd293668bee128264e81d30"
+        },
+        "LightMap": {
+          "file": "SunnaMaidHairALightMap.dds",
+          "sha256": "adfa23c179bfd6ad5fa65a53b029e957442d04176e4b4dbc0a61385bef0ca35d"
+        },
+        "MaterialMap": {
+          "file": "SunnaMaidHairAMaterialMap.dds",
+          "sha256": "69a114b8c041e3b961e104e86fbc95c8f6bf576abee25444bd07fae66978269c"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2bbc84c4f01a7991c9de2b979ec492504929fb628d983735ab8b7252cbc55ab9",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.10580935057386025,
+          "p95": 0.4131945800781106,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 43.010318594796324,
+          "p95": 137.6309308596844,
+          "below12": 0.02976190476190476
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.405523649526515,
+          "p95": 94.60561023569772,
+          "below12": 0.015476190476190477
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 47.25446544222563,
+          "p95": 106.25373972671214,
+          "below12": 0.030476190476190476
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 50.81428049123053,
+        "names": [
+          "SunnaMaidHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.10580935057386025,
+        "p95": 0.4131945800781106,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 18,
+      "name": "饰2",
+      "texture": "tex\\武器.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 44672,
+      "face_count": 736,
+      "role": "cloth",
+      "source_texture": "tex\\武器.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "7077a973a42de2f47b5657f8800ec23e2103d2fa63ccd59cdada286c66256250",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 19.611157051217752,
+          "p95": 63.333333333333336,
+          "below12": 0.6557971014492754
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 41.05679984289951,
+          "p95": 134.66666666666666,
+          "below12": 0.11096014492753623
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.32927555291843,
+          "p95": 117.66666666666667,
+          "below12": 0.007246376811594203
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.6734102722763,
+          "p95": 117.62893342646183,
+          "below12": 0.007246376811594203
+        }
+      ],
+      "evidence": {
+        "sample_count": 2208,
+        "visible_count": 2208,
+        "texture_rgb_std": 51.12155534818918,
+        "names": [
+          "SunnaMaidHammerADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 19.611157051217752,
+        "p95": 63.333333333333336,
+        "below12": 0.6557971014492754
+      }
+    },
+    {
+      "index": 19,
+      "name": "髮+",
+      "texture": "tex\\sp.png",
+      "sphere": "spa\\hair_s.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 45408,
+      "face_count": 8308,
+      "role": "hair_overlay",
+      "source_texture": "tex\\sp.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "cec868e2af2a816a1adf937a8db36224d528797a4f14daaa31c9ea8c5e7a90d6",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 130.73185924446292,
+          "p95": 234.0,
+          "below12": 0.0009523809523809524
+        },
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 138.50013856271434,
+          "p95": 237.63598600042317,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 159.85294932092054,
+          "p95": 214.00291476779512,
+          "below12": 0.0014285714285714286
+        },
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 170.91993418061386,
+          "p95": 230.00212635119755,
+          "below12": 0.0033333333333333335
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 17.65327324377702,
+        "names": [
+          "SunnaMaidHammerADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 130.73185924446292,
+        "p95": 234.0,
+        "below12": 0.0009523809523809524
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 11,
+      "name": "目影",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 18,
+      "name": "饰2",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 19,
+      "name": "髮+",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": true,
+    "eyes": true
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

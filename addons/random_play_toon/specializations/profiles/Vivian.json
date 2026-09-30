@@ -1,0 +1,1475 @@
+{
+  "schema": 1,
+  "id": "Vivian",
+  "character": "Vivian",
+  "variant": "default",
+  "kind": "character_primary",
+  "pmx_sha256": "c6b0f02794a1cc89a1aeef1e3cc1f5a20891e3c2f25370981dffe1f6b827cc6f",
+  "pmx": "characters/Vivian/models/薇薇安__1daa30c86d/薇薇安.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Vivian",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "颜",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 1670,
+      "role": "face",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianFaceADiffuse.dds",
+          "sha256": "0c8291b40739161ceb80184ec9d9d5bb66961f610a24717a0408836fa89c905d"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "1d55d87a6f119c0704dd183605aa0bb7a978f474cd18cf3a110171e2d9cd6707",
+      "candidates": [
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.6029054046190663,
+          "p95": 3.1316489159663194,
+          "below12": 0.9988095238095238
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 14.314650904663118,
+          "p95": 104.3915008532736,
+          "below12": 0.7764285714285715
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 87.38549377819737,
+          "p95": 219.0597139961601,
+          "below12": 0.017619047619047618
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 89.62465036167286,
+          "p95": 219.33333333333334,
+          "below12": 0.01380952380952381
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 18.693334866902802,
+        "names": [
+          "VivianFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.6029054046190663,
+        "p95": 3.1316489159663194,
+        "below12": 0.9988095238095238
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 1,
+      "name": "颜2",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1670,
+      "face_count": 65,
+      "role": "face",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianFaceADiffuse.dds",
+          "sha256": "0c8291b40739161ceb80184ec9d9d5bb66961f610a24717a0408836fa89c905d"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "1d55d87a6f119c0704dd183605aa0bb7a978f474cd18cf3a110171e2d9cd6707",
+      "candidates": [
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.11609433121491074,
+          "p95": 0.4075620320638267,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 14.251331558380596,
+          "p95": 30.457275390625,
+          "below12": 0.6256410256410256
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 74.21874405124804,
+          "p95": 218.0690993509999,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 83.33946235068763,
+          "p95": 196.5837717980752,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 195,
+        "visible_count": 195,
+        "texture_rgb_std": 25.85036600143181,
+        "names": [
+          "VivianFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.11609433121491074,
+        "p95": 0.4075620320638267,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 2,
+      "name": "眉睫",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1735,
+      "face_count": 376,
+      "role": "brows_lashes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianFaceADiffuse.dds",
+          "sha256": "0c8291b40739161ceb80184ec9d9d5bb66961f610a24717a0408836fa89c905d"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "1d55d87a6f119c0704dd183605aa0bb7a978f474cd18cf3a110171e2d9cd6707",
+      "candidates": [
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 4.576701381287224,
+          "p95": 38.215350354711376,
+          "below12": 0.8865248226950354
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 59.297030104218734,
+          "p95": 175.0,
+          "below12": 0.13829787234042554
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 60.91516549208767,
+          "p95": 167.72057696183586,
+          "below12": 0.0035460992907801418
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 79.25422778269156,
+          "p95": 184.31412912646934,
+          "below12": 0.031914893617021274
+        }
+      ],
+      "evidence": {
+        "sample_count": 1128,
+        "visible_count": 1128,
+        "texture_rgb_std": 50.306344626431546,
+        "names": [
+          "VivianFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 4.576701381287224,
+        "p95": 38.215350354711376,
+        "below12": 0.8865248226950354
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 3,
+      "name": "目",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2111,
+      "face_count": 300,
+      "role": "eyes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianFaceADiffuse.dds",
+          "sha256": "0c8291b40739161ceb80184ec9d9d5bb66961f610a24717a0408836fa89c905d"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "1d55d87a6f119c0704dd183605aa0bb7a978f474cd18cf3a110171e2d9cd6707",
+      "candidates": [
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.34347063812820944,
+          "p95": 1.090795533524987,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 73.5156052255918,
+          "p95": 185.63445790608725,
+          "below12": 0.03333333333333333
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 82.37358865673302,
+          "p95": 171.204883112842,
+          "below12": 0.025555555555555557
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 87.49079622873023,
+          "p95": 225.79337959766383,
+          "below12": 0.09888888888888889
+        }
+      ],
+      "evidence": {
+        "sample_count": 900,
+        "visible_count": 900,
+        "texture_rgb_std": 72.38602101732124,
+        "names": [
+          "VivianFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.34347063812820944,
+        "p95": 1.090795533524987,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 4,
+      "name": "目光",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.800000011920929
+      ],
+      "face_start": 2411,
+      "face_count": 58,
+      "role": "eye_highlight",
+      "source_texture": "tex\\颜.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "1d55d87a6f119c0704dd183605aa0bb7a978f474cd18cf3a110171e2d9cd6707",
+      "candidates": [
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 65.36046376546567,
+          "p95": 100.0,
+          "below12": 0.007692307692307693
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 67.6490922006766,
+          "p95": 97.66666666666667,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 70.20415583252414,
+          "p95": 73.2756892903646,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 73.75817138925505,
+          "p95": 93.6636447129647,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 174,
+        "visible_count": 130,
+        "texture_rgb_std": 0.32020381293186767,
+        "names": [
+          "VivianBodyADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 65.36046376546567,
+        "p95": 100.0,
+        "below12": 0.007692307692307693
+      }
+    },
+    {
+      "index": 5,
+      "name": "白目",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2469,
+      "face_count": 98,
+      "role": "eye_white",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianFaceADiffuse.dds",
+          "sha256": "0c8291b40739161ceb80184ec9d9d5bb66961f610a24717a0408836fa89c905d"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "1d55d87a6f119c0704dd183605aa0bb7a978f474cd18cf3a110171e2d9cd6707",
+      "candidates": [
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 23.965835799777217,
+          "p95": 28.482559625347438,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 81.99263245386553,
+          "p95": 242.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 101.32239968208178,
+          "p95": 207.9526578229691,
+          "below12": 0.12244897959183673
+        }
+      ],
+      "evidence": {
+        "sample_count": 294,
+        "visible_count": 294,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "VivianFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 6,
+      "name": "口线",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2567,
+      "face_count": 59,
+      "role": "mouth_line",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianFaceADiffuse.dds",
+          "sha256": "0c8291b40739161ceb80184ec9d9d5bb66961f610a24717a0408836fa89c905d"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "1d55d87a6f119c0704dd183605aa0bb7a978f474cd18cf3a110171e2d9cd6707",
+      "candidates": [
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.05594659623053823,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 39.03140171956105,
+          "p95": 48.666666666666664,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 48.830067583473934,
+          "p95": 62.333333333333336,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 77.54534262817445,
+          "p95": 97.66666666666667,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 177,
+        "visible_count": 177,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "VivianFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.05594659623053823,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 7,
+      "name": "口舌",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2626,
+      "face_count": 442,
+      "role": "mouth",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianFaceADiffuse.dds",
+          "sha256": "0c8291b40739161ceb80184ec9d9d5bb66961f610a24717a0408836fa89c905d"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "1d55d87a6f119c0704dd183605aa0bb7a978f474cd18cf3a110171e2d9cd6707",
+      "candidates": [
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 63.15246956660433,
+          "p95": 72.93123372395833,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 71.19573386029329,
+          "p95": 109.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 80.4562126370063,
+          "p95": 132.33333333333334,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 1326,
+        "visible_count": 1326,
+        "texture_rgb_std": 11.009055043180133,
+        "names": [
+          "VivianFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 8,
+      "name": "齿",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3068,
+      "face_count": 144,
+      "role": "mouth",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianFaceADiffuse.dds",
+          "sha256": "0c8291b40739161ceb80184ec9d9d5bb66961f610a24717a0408836fa89c905d"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "1d55d87a6f119c0704dd183605aa0bb7a978f474cd18cf3a110171e2d9cd6707",
+      "candidates": [
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 48.23514479287479,
+          "p95": 76.1581428821204,
+          "below12": 0.011574074074074073
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 67.93221146444726,
+          "p95": 83.00642049153647,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 101.25806787227454,
+          "p95": 255.0,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 432,
+        "visible_count": 432,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "VivianFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 9,
+      "name": "目影",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3212,
+      "face_count": 44,
+      "role": "eye_shadow",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianFaceADiffuse.dds",
+          "sha256": "0c8291b40739161ceb80184ec9d9d5bb66961f610a24717a0408836fa89c905d"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "1d55d87a6f119c0704dd183605aa0bb7a978f474cd18cf3a110171e2d9cd6707",
+      "candidates": [
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.30105599798388877,
+          "p95": 0.5586366753777129,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 34.17554657894234,
+          "p95": 66.99595079803443,
+          "below12": 0.16666666666666666
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.622431527934076,
+          "p95": 75.41214366114161,
+          "below12": 0.015151515151515152
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 53.09818986923322,
+          "p95": 74.44108083822343,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 132,
+        "visible_count": 132,
+        "texture_rgb_std": 14.704848413853265,
+        "names": [
+          "VivianFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.30105599798388877,
+        "p95": 0.5586366753777129,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 10,
+      "name": "体",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3256,
+      "face_count": 8293,
+      "role": "cloth",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianBodyADiffuse.dds",
+          "sha256": "1aef28e0ddffe3300d3c636bede1ddc63b868555faa65ee4ba5a6429d791e8a9"
+        },
+        "NormalMap": {
+          "file": "VivianBodyANormalMap.dds",
+          "sha256": "67ef07da0269a33b96f73a08bc6283ba44bf25fbeb64588cc4b0272394f3f874"
+        },
+        "LightMap": {
+          "file": "VivianBodyALightMap.dds",
+          "sha256": "09c6901549ab7b6e5553508c9d39cce37ce8167ddce38c763f5e4a3a742794bb"
+        },
+        "MaterialMap": {
+          "file": "VivianBodyAMaterialMap.dds",
+          "sha256": "6fb7bb237b59c8f40158913724f3ab694c9d028f36c8d85d0a1afb4cc22b46d8"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "3c92ed6471be1f681e7815b8789cb263aac8fa24167f7e4666a69e97832d0cd3",
+      "candidates": [
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 3.8579797365834185,
+          "p95": 22.352736668586868,
+          "below12": 0.9245238095238095
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 72.17864784166129,
+          "p95": 174.4476709353427,
+          "below12": 0.09714285714285714
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 81.12430376763328,
+          "p95": 203.67483176541683,
+          "below12": 0.0980952380952381
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 84.41823047095765,
+          "p95": 172.3540711930231,
+          "below12": 0.09238095238095238
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 76.53534369386495,
+        "names": [
+          "VivianBodyADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 3.8579797365834185,
+        "p95": 22.352736668586868,
+        "below12": 0.9245238095238095
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 11,
+      "name": "肌",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 11549,
+      "face_count": 3506,
+      "role": "skin",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianBodyADiffuse.dds",
+          "sha256": "1aef28e0ddffe3300d3c636bede1ddc63b868555faa65ee4ba5a6429d791e8a9"
+        },
+        "NormalMap": {
+          "file": "VivianBodyANormalMap.dds",
+          "sha256": "67ef07da0269a33b96f73a08bc6283ba44bf25fbeb64588cc4b0272394f3f874"
+        },
+        "LightMap": {
+          "file": "VivianBodyALightMap.dds",
+          "sha256": "09c6901549ab7b6e5553508c9d39cce37ce8167ddce38c763f5e4a3a742794bb"
+        },
+        "MaterialMap": {
+          "file": "VivianBodyAMaterialMap.dds",
+          "sha256": "6fb7bb237b59c8f40158913724f3ab694c9d028f36c8d85d0a1afb4cc22b46d8"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "3c92ed6471be1f681e7815b8789cb263aac8fa24167f7e4666a69e97832d0cd3",
+      "candidates": [
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 5.1773186002643214,
+          "p95": 11.667312251190259,
+          "below12": 0.9538095238095238
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 33.07821292442734,
+          "p95": 138.16414366875088,
+          "below12": 0.3354761904761905
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 76.83726000508834,
+          "p95": 219.143859610596,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 82.08564828023685,
+          "p95": 215.6551534835106,
+          "below12": 0.0030952380952380953
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 44.71281898046781,
+        "names": [
+          "VivianBodyADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 5.1773186002643214,
+        "p95": 11.667312251190259,
+        "below12": 0.9538095238095238
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 12,
+      "name": "体2",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 15055,
+      "face_count": 4546,
+      "role": "cloth",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianGemADiffuse.dds",
+          "sha256": "06b7357f7e32e670a0d386a9b9ba17ba314329d5a68332081d9b88ecd3c68c4d"
+        },
+        "NormalMap": {
+          "file": "VivianGemANormalMap.dds",
+          "sha256": "43a4c8627925d8d90c390f68c379ce3f92ce1cd9248d6fa00e79f41ad0bbf8ab"
+        },
+        "LightMap": {
+          "file": "VivianGemALightMap.dds",
+          "sha256": "410bf590db061d19a78959db67a4f6dbbebb6916dc42f96adc17e78bbdd63d83"
+        },
+        "MaterialMap": {
+          "file": "VivianGemAMaterialMap.dds",
+          "sha256": "4bc5525dec42cced69adafe2ef02c97aa35a6479c5723fb71d1e9579523d4609"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "4fff4f9dba1af0d80fc1e46b5e4d47f45db33e3b142f76e3f27b24465a23ba83",
+      "candidates": [
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.587160887083997,
+          "p95": 1.1651753657364474,
+          "below12": 0.9964285714285714
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 59.0445675997638,
+          "p95": 170.73509755261657,
+          "below12": 0.1392857142857143
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 95.59448131825121,
+          "p95": 180.85480840869727,
+          "below12": 0.033095238095238094
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 96.87802147352711,
+          "p95": 183.0760496631899,
+          "below12": 0.06261904761904762
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 60.41991626075791,
+        "names": [
+          "VivianGemADiffuse.dds",
+          "VivianHairADiffuse.dds",
+          "VivianHairBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.587160887083997,
+        "p95": 1.1651753657364474,
+        "below12": 0.9964285714285714
+      },
+      "dds_flip_v": true,
+      "atlas": "GemA"
+    },
+    {
+      "index": 13,
+      "name": "足",
+      "texture": "tex\\髮.png",
+      "sphere": "spa\\stk.png",
+      "sphere_mode": 1,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 19601,
+      "face_count": 1456,
+      "role": "cloth",
+      "source_texture": "tex\\髮.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "4fff4f9dba1af0d80fc1e46b5e4d47f45db33e3b142f76e3f27b24465a23ba83",
+      "candidates": [
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 14.311957559759794,
+          "p95": 31.181234951814016,
+          "below12": 0.4664285714285714
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 38.412458197276536,
+          "p95": 136.27741539154155,
+          "below12": 0.35404761904761906
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 57.77989432685446,
+          "p95": 175.0236720951688,
+          "below12": 0.1357142857142857
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.08080631269994,
+          "p95": 176.2516303041243,
+          "below12": 0.24428571428571427
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 20.71594488144417,
+        "names": [
+          "VivianGemADiffuse.dds",
+          "VivianHairADiffuse.dds",
+          "VivianHairBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 14.311957559759794,
+        "p95": 31.181234951814016,
+        "below12": 0.4664285714285714
+      }
+    },
+    {
+      "index": 14,
+      "name": "髮",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 21057,
+      "face_count": 8973,
+      "role": "hair",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianGemADiffuse.dds",
+          "sha256": "06b7357f7e32e670a0d386a9b9ba17ba314329d5a68332081d9b88ecd3c68c4d"
+        },
+        "NormalMap": {
+          "file": "VivianGemANormalMap.dds",
+          "sha256": "43a4c8627925d8d90c390f68c379ce3f92ce1cd9248d6fa00e79f41ad0bbf8ab"
+        },
+        "LightMap": {
+          "file": "VivianGemALightMap.dds",
+          "sha256": "410bf590db061d19a78959db67a4f6dbbebb6916dc42f96adc17e78bbdd63d83"
+        },
+        "MaterialMap": {
+          "file": "VivianGemAMaterialMap.dds",
+          "sha256": "4bc5525dec42cced69adafe2ef02c97aa35a6479c5723fb71d1e9579523d4609"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "4fff4f9dba1af0d80fc1e46b5e4d47f45db33e3b142f76e3f27b24465a23ba83",
+      "candidates": [
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 3.7247946452365626,
+          "p95": 7.330832092603352,
+          "below12": 0.969047619047619
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 56.174802007704386,
+          "p95": 138.57728743924034,
+          "below12": 0.05619047619047619
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 66.48182386344452,
+          "p95": 153.3337450663249,
+          "below12": 0.03142857142857143
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 74.72328418504043,
+          "p95": 194.66666666666666,
+          "below12": 0.18928571428571428
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 20.65452857473958,
+        "names": [
+          "VivianGemADiffuse.dds",
+          "VivianHairADiffuse.dds",
+          "VivianHairBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 3.7247946452365626,
+        "p95": 7.330832092603352,
+        "below12": 0.969047619047619
+      },
+      "dds_flip_v": true,
+      "atlas": "GemA"
+    },
+    {
+      "index": 15,
+      "name": "髮+",
+      "texture": "tex\\spa_h.png",
+      "sphere": "spa\\hair_s.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 30030,
+      "face_count": 8973,
+      "role": "hair_overlay",
+      "source_texture": "tex\\spa_h.png",
+      "maps": {
+        "Diffuse": {
+          "file": "VivianGemADiffuse.dds",
+          "sha256": "06b7357f7e32e670a0d386a9b9ba17ba314329d5a68332081d9b88ecd3c68c4d"
+        },
+        "NormalMap": {
+          "file": "VivianGemANormalMap.dds",
+          "sha256": "43a4c8627925d8d90c390f68c379ce3f92ce1cd9248d6fa00e79f41ad0bbf8ab"
+        },
+        "LightMap": {
+          "file": "VivianGemALightMap.dds",
+          "sha256": "410bf590db061d19a78959db67a4f6dbbebb6916dc42f96adc17e78bbdd63d83"
+        },
+        "MaterialMap": {
+          "file": "VivianGemAMaterialMap.dds",
+          "sha256": "4bc5525dec42cced69adafe2ef02c97aa35a6479c5723fb71d1e9579523d4609"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "b84a8997969dd0d0de04895650ff879a74dd5b00e9cdf33c82973e367e80530f",
+      "candidates": [
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 2.2222222222222223,
+          "p95": 3.7666666666666666,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 116.3165411587115,
+          "p95": 162.03217848963206,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 128.61131898738725,
+          "p95": 178.59792064348866,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 139.99999999999997,
+          "p95": 157.6,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 3,
+        "texture_rgb_std": 11.78848586998433,
+        "names": [
+          "VivianGemADiffuse.dds",
+          "VivianHairADiffuse.dds",
+          "VivianHairBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 2.2222222222222223,
+        "p95": 3.7666666666666666,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "GemA"
+    },
+    {
+      "index": 16,
+      "name": "宝石",
+      "texture": "tex\\spa_h.png",
+      "sphere": "spa\\jewel.png",
+      "sphere_mode": 2,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 39003,
+      "face_count": 34,
+      "role": "cloth",
+      "source_texture": "tex\\spa_h.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "b84a8997969dd0d0de04895650ff879a74dd5b00e9cdf33c82973e367e80530f",
+      "candidates": [
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 38.791654417133444,
+          "p95": 53.644219914530716,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 57.71300551199181,
+          "p95": 140.8946405014194,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "VivianBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 66.14262755316712,
+          "p95": 177.29923113544777,
+          "below12": 0.09803921568627451
+        },
+        {
+          "names": [
+            "VivianGemADiffuse.dds",
+            "VivianHairADiffuse.dds",
+            "VivianHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 113.47717588698153,
+          "p95": 145.14482631088546,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 102,
+        "visible_count": 102,
+        "texture_rgb_std": 23.155802228443495,
+        "names": [
+          "VivianBodyADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 38.791654417133444,
+        "p95": 53.644219914530716,
+        "below12": 0.0
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 4,
+      "name": "目光",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 13,
+      "name": "足",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 16,
+      "name": "宝石",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": true,
+    "eyes": true
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

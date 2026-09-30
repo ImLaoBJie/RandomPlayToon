@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "Alice_Weapon_d3c2",
+  "character": "Alice",
+  "variant": "default",
+  "kind": "weapon",
+  "pmx_sha256": "3e7f079701efcf2aea0fe0722d129f7a45a923c9bf1012fd743a41f95d7af661",
+  "pmx": "characters/Alice/models/武器__d3c276bacc/武器.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Alice",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "武器",
+      "texture": "tex\\武器.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 2192,
+      "role": "weapon",
+      "source_texture": "tex\\武器.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceBackpackADiffuse.dds",
+          "sha256": "03468a420490fa6ff369ebdc3bdde98900ba3f63cf4a5101a4502c1dd995bac3"
+        },
+        "NormalMap": {
+          "file": "AliceBackpackANormalMap.dds",
+          "sha256": "6f8dfe682962a1a7527ee600978090208f3cbb7ab16c5e8da2a63d89a1fe2a88"
+        },
+        "LightMap": {
+          "file": "AliceBackpackALightMap.dds",
+          "sha256": "d12783595ed625601684cd6cd5459c38652cc2b0654e469c91a6b1d302579bcf"
+        },
+        "MaterialMap": {
+          "file": "AliceBackpackAMaterialMap.dds",
+          "sha256": "156ad0a338e61500fae7be6d0420fbec55c81f6fc9069092a9b1e0d34300c709"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "8cb7720d7973c02ce95f0996d3d7d597298beede416d4445578ddb61a965c7a5",
+      "candidates": [
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.36980823421240444,
+          "p95": 0.6275172853469838,
+          "below12": 0.9883333333333333
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 47.96322615514333,
+          "p95": 130.3200527330239,
+          "below12": 0.3107142857142857
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 80.16980530846878,
+          "p95": 143.46973572395385,
+          "below12": 0.024285714285714285
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 80.48557749986706,
+          "p95": 142.85820041232643,
+          "below12": 0.07119047619047619
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 52.775308358973014,
+        "names": [
+          "AliceBackpackADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.36980823421240444,
+        "p95": 0.6275172853469838,
+        "below12": 0.9883333333333333
+      },
+      "dds_flip_v": true,
+      "atlas": "BackpackA"
+    }
+  ],
+  "warnings": [],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "Yuzuha_Weapon_961d",
+  "character": "Yuzuha",
+  "variant": "default",
+  "kind": "weapon",
+  "pmx_sha256": "d7d0c5b215f7301a292ad6e6daf51c6a78177fb15b000324aa702d7df80b66bd",
+  "pmx": "characters/Yuzuha/models/武器__961d0908cf/武器.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Yuzuha",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "武器",
+      "texture": "tex\\武器.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 3669,
+      "role": "weapon",
+      "source_texture": "tex\\武器.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "0fefa0f4556f360cc7e9d6ece32c20cc5ceff1c6f669ff2687c651faf4ed2704",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 67.91478550808846,
+          "p95": 154.14247887572387,
+          "below12": 0.0419047619047619
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 71.23635490643859,
+          "p95": 149.85677212367386,
+          "below12": 0.05714285714285714
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 74.67853759453561,
+          "p95": 162.2869597411155,
+          "below12": 0.030476190476190476
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 76.16886770374782,
+          "p95": 148.60819056892538,
+          "below12": 0.036904761904761905
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 49.96415126500986,
+        "names": [
+          "YuzuhaHairADiffuse.dds",
+          "YuzuhaHairBDiffuse.dds",
+          "YuzuhaLegsADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 67.91478550808846,
+        "p95": 154.14247887572387,
+        "below12": 0.0419047619047619
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 0,
+      "name": "武器",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

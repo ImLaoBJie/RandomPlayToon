@@ -1,0 +1,25 @@
+# Normalize source and documentation line endings in Git.
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+*.shader text eol=lf
+*.hlsl text eol=lf
+
+*.dds binary
+*.tga binary
+*.png binary
+*.jpg binary
+*.bmp binary
+*.gif binary
+*.exr binary
+*.pmx binary
+*.blend binary
+*.blend1 binary
+*.zip binary
+*.npz binary
+
+# Preserve bytes of the resource checked against manifest.json.
+/addons/random_play_toon/specializations/vivian/resources/profile.json binary

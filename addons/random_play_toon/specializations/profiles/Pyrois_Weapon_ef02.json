@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Pyrois_Weapon_ef02",
+  "character": "Pyrois",
+  "variant": "default",
+  "kind": "weapon",
+  "pmx_sha256": "5e0f500976aa5c0a48910afe0798a79bd6fb0f41e0367426834797bd4e40ed5f",
+  "pmx": "characters/Pyrois/models/武器__ef02c368f1/武器.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Pyrois",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "武器",
+      "texture": "Texture\\武器.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 2904,
+      "role": "weapon",
+      "source_texture": "Texture\\武器.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "e1f9f35b91109a653e86e9fd95931d3334a14f66f72a61f52fccac35dfebdd30",
+      "candidates": [
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 63.831915684306765,
+          "p95": 132.91501541769264,
+          "below12": 0.11285714285714285
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 75.5984921245783,
+          "p95": 141.7137922727401,
+          "below12": 0.08642857142857142
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 76.4013129095094,
+          "p95": 128.68069118923603,
+          "below12": 0.030238095238095238
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 83.24043614146498,
+          "p95": 146.17651886639499,
+          "below12": 0.018333333333333333
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 51.828394222288786,
+        "names": [
+          "PyroisBodyADiffuse.dds",
+          "PyroisLeftArmADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 63.831915684306765,
+        "p95": 132.91501541769264,
+        "below12": 0.11285714285714285
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 0,
+      "name": "武器",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

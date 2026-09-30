@@ -1,0 +1,189 @@
+{
+  "schema": 1,
+  "id": "AriaDiscordant_Weapon_d386",
+  "character": "AriaDiscordant",
+  "variant": "default",
+  "kind": "weapon",
+  "pmx_sha256": "df8c92d6ae107d7a8d374a5c5b24807870e02fe98e1503a081128ca9ce9e30e9",
+  "pmx": "characters/AriaDiscordant/models/武器__d3866f6c2e/武器.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/AriaDiscordant",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "武器",
+      "texture": "tex\\武器.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 10814,
+      "role": "weapon",
+      "source_texture": "tex\\武器.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "20997c9e4a936e11e3d6ff50f2c7c76c9e3cb5153441186a0453f2e59d3f2755",
+      "candidates": [
+        {
+          "names": [
+            "AriaDiscordantTorsoADiffuse.dds",
+            "AriaDiscordantTorsoBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 48.28205471204176,
+          "p95": 139.0,
+          "below12": 0.21261904761904762
+        },
+        {
+          "names": [
+            "AriaDiscordantTorsoADiffuse.dds",
+            "AriaDiscordantTorsoBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 72.61210053320389,
+          "p95": 156.06066720008823,
+          "below12": 0.12047619047619047
+        },
+        {
+          "names": [
+            "AriaDiscordantHairADiffuse.dds",
+            "AriaDiscordantHairBDiffuse.dds",
+            "AriaDiscordantLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 79.33548725456868,
+          "p95": 161.97367386370897,
+          "below12": 0.09261904761904761
+        },
+        {
+          "names": [
+            "AriaDiscordantHairADiffuse.dds",
+            "AriaDiscordantHairBDiffuse.dds",
+            "AriaDiscordantLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 94.7603510466591,
+          "p95": 163.50233941078173,
+          "below12": 0.058333333333333334
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 43.84616129227428,
+        "names": [
+          "AriaDiscordantTorsoADiffuse.dds",
+          "AriaDiscordantTorsoBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 48.28205471204176,
+        "p95": 139.0,
+        "below12": 0.21261904761904762
+      }
+    },
+    {
+      "index": 1,
+      "name": "武器2",
+      "texture": "tex\\武器.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 10814,
+      "face_count": 920,
+      "role": "weapon",
+      "source_texture": "tex\\武器.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "20997c9e4a936e11e3d6ff50f2c7c76c9e3cb5153441186a0453f2e59d3f2755",
+      "candidates": [
+        {
+          "names": [
+            "AriaDiscordantTorsoADiffuse.dds",
+            "AriaDiscordantTorsoBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 36.044783526865494,
+          "p95": 105.53325342722745,
+          "below12": 0.41594202898550725
+        },
+        {
+          "names": [
+            "AriaDiscordantEyebrowsADiffuse.dds",
+            "AriaDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.55844064332059,
+          "p95": 65.04626274956587,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaDiscordantTorsoADiffuse.dds",
+            "AriaDiscordantTorsoBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 62.78223166169818,
+          "p95": 70.04290409559005,
+          "below12": 0.011594202898550725
+        },
+        {
+          "names": [
+            "AriaDiscordantHairADiffuse.dds",
+            "AriaDiscordantHairBDiffuse.dds",
+            "AriaDiscordantLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 89.69841026080397,
+          "p95": 117.40615736219543,
+          "below12": 0.020289855072463767
+        }
+      ],
+      "evidence": {
+        "sample_count": 2760,
+        "visible_count": 2760,
+        "texture_rgb_std": 3.300745455555935,
+        "names": [
+          "AriaDiscordantTorsoADiffuse.dds",
+          "AriaDiscordantTorsoBDiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 36.044783526865494,
+        "p95": 105.53325342722745,
+        "below12": 0.41594202898550725
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 0,
+      "name": "武器",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 1,
+      "name": "武器2",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

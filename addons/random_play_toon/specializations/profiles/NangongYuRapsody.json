@@ -1,0 +1,1804 @@
+{
+  "schema": 1,
+  "id": "NangongYuRapsody",
+  "character": "NangongYuRapsody",
+  "variant": "default",
+  "kind": "character_primary",
+  "pmx_sha256": "07fdd2d2edbc7cd3482d229baaf1386b1425268a17857ade352e9bff96fcbdee",
+  "pmx": "characters/NangongYuRapsody/models/南宫羽__0d3f30519e/南宫羽.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/NangongYuRapsody",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "颜",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 1658,
+      "role": "face",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "sha256": "5dae5714ccafd1ae7209183bd599fa908adf24d5c90174747f48bfc2b1bbedd3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "88649a4bbf14220a9384e03697643004578a946bbefc517ef8bb1b9e27fd248f",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.3628368198856164,
+          "p95": 0.2819207493662827,
+          "below12": 0.9830952380952381
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 8.147258962914991,
+          "p95": 37.0,
+          "below12": 0.8597619047619047
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 105.73366292774365,
+          "p95": 168.05465039277988,
+          "below12": 0.040952380952380955
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 111.92161474634099,
+          "p95": 169.64022291803406,
+          "below12": 0.034761904761904765
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 7.508864559812238,
+        "names": [
+          "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "NangongYuRapsodyFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.3628368198856164,
+        "p95": 0.2819207493662827,
+        "below12": 0.9830952380952381
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 1,
+      "name": "颜2",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1658,
+      "face_count": 112,
+      "role": "face",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "sha256": "5dae5714ccafd1ae7209183bd599fa908adf24d5c90174747f48bfc2b1bbedd3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "88649a4bbf14220a9384e03697643004578a946bbefc517ef8bb1b9e27fd248f",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.18425934926030385,
+          "p95": 0.4287880490775251,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 16.28224167025196,
+          "p95": 37.25087669913948,
+          "below12": 0.46726190476190477
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 79.62901606454747,
+          "p95": 173.81967742707985,
+          "below12": 0.008928571428571428
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 95.52962117389848,
+          "p95": 162.7829077156383,
+          "below12": 0.002976190476190476
+        }
+      ],
+      "evidence": {
+        "sample_count": 336,
+        "visible_count": 336,
+        "texture_rgb_std": 11.917962574399619,
+        "names": [
+          "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "NangongYuRapsodyFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.18425934926030385,
+        "p95": 0.4287880490775251,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 2,
+      "name": "口线",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1770,
+      "face_count": 56,
+      "role": "mouth_line",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "sha256": "5dae5714ccafd1ae7209183bd599fa908adf24d5c90174747f48bfc2b1bbedd3"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "88649a4bbf14220a9384e03697643004578a946bbefc517ef8bb1b9e27fd248f",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.015568441853216616,
+          "p95": 0.1202687115867995,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 28.269609516446508,
+          "p95": 50.333333333333336,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 34.55398583009246,
+          "p95": 48.598366128265475,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 52.946105162128546,
+          "p95": 84.36142496744795,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 168,
+        "visible_count": 168,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "NangongYuRapsodyFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.015568441853216616,
+        "p95": 0.1202687115867995,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 3,
+      "name": "白目",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1826,
+      "face_count": 96,
+      "role": "eye_white",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "sha256": "5dae5714ccafd1ae7209183bd599fa908adf24d5c90174747f48bfc2b1bbedd3"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "88649a4bbf14220a9384e03697643004578a946bbefc517ef8bb1b9e27fd248f",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0013157787936290471,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 37.293670526788354,
+          "p95": 38.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 148.9992609864693,
+          "p95": 204.33333333333334,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 154.64812637678926,
+          "p95": 203.82589634047014,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 288,
+        "visible_count": 288,
+        "texture_rgb_std": 0.017381414178695095,
+        "names": [
+          "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "NangongYuRapsodyFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0013157787936290471,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 4,
+      "name": "目",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1922,
+      "face_count": 294,
+      "role": "eyes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "sha256": "5dae5714ccafd1ae7209183bd599fa908adf24d5c90174747f48bfc2b1bbedd3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "88649a4bbf14220a9384e03697643004578a946bbefc517ef8bb1b9e27fd248f",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.2158267696914246,
+          "p95": 0.7985839843749242,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 59.38102139548004,
+          "p95": 158.23647657514172,
+          "below12": 0.15419501133786848
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 62.51991974864972,
+          "p95": 105.71248785972598,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 70.1641628652068,
+          "p95": 133.7927081574996,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 882,
+        "visible_count": 882,
+        "texture_rgb_std": 60.29314037334384,
+        "names": [
+          "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "NangongYuRapsodyFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.2158267696914246,
+        "p95": 0.7985839843749242,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 5,
+      "name": "目光",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.3499999940395355
+      ],
+      "face_start": 2216,
+      "face_count": 56,
+      "role": "eye_highlight",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "sha256": "5dae5714ccafd1ae7209183bd599fa908adf24d5c90174747f48bfc2b1bbedd3"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "88649a4bbf14220a9384e03697643004578a946bbefc517ef8bb1b9e27fd248f",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.026538984857626007,
+          "p95": 0.32095865885410796,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 49.2204443605757,
+          "p95": 77.910278579702,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 55.09871643859456,
+          "p95": 56.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 62.17251594049083,
+          "p95": 65.66666666666667,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 168,
+        "visible_count": 142,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "NangongYuRapsodyFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.026538984857626007,
+        "p95": 0.32095865885410796,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 6,
+      "name": "目影",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2272,
+      "face_count": 46,
+      "role": "eye_shadow",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "sha256": "5dae5714ccafd1ae7209183bd599fa908adf24d5c90174747f48bfc2b1bbedd3"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "88649a4bbf14220a9384e03697643004578a946bbefc517ef8bb1b9e27fd248f",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 30.509526336614133,
+          "p95": 44.333333333333336,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 36.193830535623896,
+          "p95": 81.66666666666667,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 56.85558292707433,
+          "p95": 65.43461531400709,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 138,
+        "visible_count": 138,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "NangongYuRapsodyFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 7,
+      "name": "睫眉",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2318,
+      "face_count": 522,
+      "role": "brows_lashes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "sha256": "5dae5714ccafd1ae7209183bd599fa908adf24d5c90174747f48bfc2b1bbedd3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "88649a4bbf14220a9384e03697643004578a946bbefc517ef8bb1b9e27fd248f",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 4.161124222490443,
+          "p95": 20.481564694998188,
+          "below12": 0.860897435897436
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 22.588295051634905,
+          "p95": 49.42232499096748,
+          "below12": 0.3243589743589744
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 49.45597738401273,
+          "p95": 131.82323407568026,
+          "below12": 0.05961538461538462
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 53.94635690775514,
+          "p95": 133.83497349529344,
+          "below12": 0.021153846153846155
+        }
+      ],
+      "evidence": {
+        "sample_count": 1566,
+        "visible_count": 1560,
+        "texture_rgb_std": 22.27236644019241,
+        "names": [
+          "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "NangongYuRapsodyFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 4.161124222490443,
+        "p95": 20.481564694998188,
+        "below12": 0.860897435897436
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 8,
+      "name": "口舌",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2840,
+      "face_count": 312,
+      "role": "mouth",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "sha256": "5dae5714ccafd1ae7209183bd599fa908adf24d5c90174747f48bfc2b1bbedd3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "88649a4bbf14220a9384e03697643004578a946bbefc517ef8bb1b9e27fd248f",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.64921480690746,
+          "p95": 71.21058662511683,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 62.26894872634585,
+          "p95": 99.3012735684713,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 67.96341825255678,
+          "p95": 138.69193369527628,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 936,
+        "visible_count": 936,
+        "texture_rgb_std": 9.996712148521961,
+        "names": [
+          "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "NangongYuRapsodyFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 9,
+      "name": "齿",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3152,
+      "face_count": 164,
+      "role": "mouth",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "sha256": "5dae5714ccafd1ae7209183bd599fa908adf24d5c90174747f48bfc2b1bbedd3"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "88649a4bbf14220a9384e03697643004578a946bbefc517ef8bb1b9e27fd248f",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 54.28207953965195,
+          "p95": 55.666666666666664,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 132.55705961288825,
+          "p95": 200.35651041666765,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 133.81960148740518,
+          "p95": 201.59437392403416,
+          "below12": 0.0040650406504065045
+        }
+      ],
+      "evidence": {
+        "sample_count": 492,
+        "visible_count": 492,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "NangongYuRapsodyEyebrowsADiffuse.dds",
+          "NangongYuRapsodyFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 10,
+      "name": "髮",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3316,
+      "face_count": 4332,
+      "role": "hair",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyHairADiffuse.dds",
+          "sha256": "c14fc403e73d2327632658a243a705724625da04932699c0085b28d5be84bf4c"
+        },
+        "NormalMap": {
+          "file": "NangongYuRapsodyHairANormalMap.dds",
+          "sha256": "645f4fd9ba4aacd066894e4adf7eb722f71d0f9ea1c11a6c262479e82c8b22d8"
+        },
+        "LightMap": {
+          "file": "NangongYuRapsodyHairALightMap.dds",
+          "sha256": "f775299f4e09b4e2dd8d3ad94e5c5f4b2bd4982c8f9700ebea658bde0da890a2"
+        },
+        "MaterialMap": {
+          "file": "NangongYuRapsodyHairAMaterialMap.dds",
+          "sha256": "35bb3c98a4b6979fcf0bdc86e6910a22439de22280a52620d4dc4f4299aa81e1"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "36744ab5f9a1d068b39958ec02184f53fd956e6a7c852b63c83af56f35e19874",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.036303255345987044,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 40.4159455222057,
+          "p95": 154.9712144639758,
+          "below12": 0.34214285714285714
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 55.08347413175653,
+          "p95": 164.18541579825188,
+          "below12": 0.3019047619047619
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 57.84416577543947,
+          "p95": 156.12336981903533,
+          "below12": 0.03333333333333333
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 11.829704564562148,
+        "names": [
+          "NangongYuRapsodyHairADiffuse.dds",
+          "NangongYuRapsodyHairBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.036303255345987044,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 11,
+      "name": "髮粉",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 7648,
+      "face_count": 2327,
+      "role": "hair",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyHairADiffuse.dds",
+          "sha256": "c14fc403e73d2327632658a243a705724625da04932699c0085b28d5be84bf4c"
+        },
+        "NormalMap": {
+          "file": "NangongYuRapsodyHairANormalMap.dds",
+          "sha256": "645f4fd9ba4aacd066894e4adf7eb722f71d0f9ea1c11a6c262479e82c8b22d8"
+        },
+        "LightMap": {
+          "file": "NangongYuRapsodyHairALightMap.dds",
+          "sha256": "f775299f4e09b4e2dd8d3ad94e5c5f4b2bd4982c8f9700ebea658bde0da890a2"
+        },
+        "MaterialMap": {
+          "file": "NangongYuRapsodyHairAMaterialMap.dds",
+          "sha256": "35bb3c98a4b6979fcf0bdc86e6910a22439de22280a52620d4dc4f4299aa81e1"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "36744ab5f9a1d068b39958ec02184f53fd956e6a7c852b63c83af56f35e19874",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.03408732074696166,
+          "p95": 0.31875620524094234,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 33.08341142888151,
+          "p95": 40.333333333333336,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 58.08297555785551,
+          "p95": 154.26690177070085,
+          "below12": 0.0004761904761904762
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 72.94099958630707,
+          "p95": 150.65874226888033,
+          "below12": 0.006666666666666667
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 12.049636984161737,
+        "names": [
+          "NangongYuRapsodyHairADiffuse.dds",
+          "NangongYuRapsodyHairBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.03408732074696166,
+        "p95": 0.31875620524094234,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 12,
+      "name": "髮+",
+      "texture": "tex\\sp.png",
+      "sphere": "spa\\hair_s.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 9975,
+      "face_count": 4332,
+      "role": "hair_overlay",
+      "source_texture": "tex\\sp.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "09f3adee782bd9109542a16322094aaa6039b1149fe61822dc69de35f823fa69",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 52.90713931956346,
+          "p95": 72.0,
+          "below12": 0.012857142857142857
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 64.46945593963314,
+          "p95": 211.39119047376892,
+          "below12": 0.30976190476190474
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 66.41227013770032,
+          "p95": 206.4915125868123,
+          "below12": 0.28809523809523807
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 83.5691521855635,
+          "p95": 202.33333333333334,
+          "below12": 0.0009523809523809524
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 7.901248806736654,
+        "names": [
+          "NangongYuRapsodyHairADiffuse.dds",
+          "NangongYuRapsodyHairBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 52.90713931956346,
+        "p95": 72.0,
+        "below12": 0.012857142857142857
+      }
+    },
+    {
+      "index": 13,
+      "name": "光环",
+      "texture": "tex\\体.png",
+      "sphere": "spa\\s2.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 14307,
+      "face_count": 336,
+      "role": "emissive",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyBodyADiffuse.dds",
+          "sha256": "9a0b813e1db340e3e4b29c37dd60cce12a838d34fdbe548996666034a198d30b"
+        },
+        "NormalMap": {
+          "file": "NangongYuRapsodyBodyANormalMap.dds",
+          "sha256": "0cb342206c694f9ba09124cc6a2a612a492ec8b79f16815fa9eddbe8a8b83afb"
+        },
+        "LightMap": {
+          "file": "NangongYuRapsodyBodyALightMap.dds",
+          "sha256": "4d588defba79fce08a9d26d0859121bbbdd87d1aa2288f3360c43d10fe226065"
+        },
+        "MaterialMap": {
+          "file": "NangongYuRapsodyBodyAMaterialMap.dds",
+          "sha256": "265e4edb97959b37a271f6113b16ccbd3a0a4e2e17ee32d348b277fecdd2b8c8"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "07d62536e8eee38152e3e90db148a57797a3f893ed85afa88866293002ab9bcc",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 62.099095553507176,
+          "p95": 69.33333333333333,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 66.16418269848616,
+          "p95": 70.33333333333333,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 90.79370842780285,
+          "p95": 160.08912597656257,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 1008,
+        "visible_count": 1008,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "NangongYuRapsodyBodyADiffuse.dds",
+          "NangongYuRapsodyHaloADiffuse.dds",
+          "NangongYuRapsodyWingsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA",
+      "matching_peer_slot": 14
+    },
+    {
+      "index": 14,
+      "name": "体",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 14643,
+      "face_count": 19460,
+      "role": "cloth",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyBodyADiffuse.dds",
+          "sha256": "9a0b813e1db340e3e4b29c37dd60cce12a838d34fdbe548996666034a198d30b"
+        },
+        "NormalMap": {
+          "file": "NangongYuRapsodyBodyANormalMap.dds",
+          "sha256": "0cb342206c694f9ba09124cc6a2a612a492ec8b79f16815fa9eddbe8a8b83afb"
+        },
+        "LightMap": {
+          "file": "NangongYuRapsodyBodyALightMap.dds",
+          "sha256": "4d588defba79fce08a9d26d0859121bbbdd87d1aa2288f3360c43d10fe226065"
+        },
+        "MaterialMap": {
+          "file": "NangongYuRapsodyBodyAMaterialMap.dds",
+          "sha256": "265e4edb97959b37a271f6113b16ccbd3a0a4e2e17ee32d348b277fecdd2b8c8"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "07d62536e8eee38152e3e90db148a57797a3f893ed85afa88866293002ab9bcc",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.13374761827364812,
+          "p95": 0.6261316405137002,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.672193192203444,
+          "p95": 139.67662150065098,
+          "below12": 0.2745238095238095
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 53.016131238989914,
+          "p95": 154.96863002458107,
+          "below12": 0.26071428571428573
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 60.482150090089704,
+          "p95": 151.0624077523983,
+          "below12": 0.26285714285714284
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 60.697701394815944,
+        "names": [
+          "NangongYuRapsodyBodyADiffuse.dds",
+          "NangongYuRapsodyHaloADiffuse.dds",
+          "NangongYuRapsodyWingsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.13374761827364812,
+        "p95": 0.6261316405137002,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 15,
+      "name": "饰",
+      "texture": "tex\\体.png",
+      "sphere": "spa\\s1.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 34103,
+      "face_count": 798,
+      "role": "cloth",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyBodyADiffuse.dds",
+          "sha256": "9a0b813e1db340e3e4b29c37dd60cce12a838d34fdbe548996666034a198d30b"
+        },
+        "NormalMap": {
+          "file": "NangongYuRapsodyBodyANormalMap.dds",
+          "sha256": "0cb342206c694f9ba09124cc6a2a612a492ec8b79f16815fa9eddbe8a8b83afb"
+        },
+        "LightMap": {
+          "file": "NangongYuRapsodyBodyALightMap.dds",
+          "sha256": "4d588defba79fce08a9d26d0859121bbbdd87d1aa2288f3360c43d10fe226065"
+        },
+        "MaterialMap": {
+          "file": "NangongYuRapsodyBodyAMaterialMap.dds",
+          "sha256": "265e4edb97959b37a271f6113b16ccbd3a0a4e2e17ee32d348b277fecdd2b8c8"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "07d62536e8eee38152e3e90db148a57797a3f893ed85afa88866293002ab9bcc",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.7519615165745434,
+          "p95": 10.314977925794873,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 73.72943673234064,
+          "p95": 158.84899950315545,
+          "below12": 0.24310776942355888
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 78.06476133712067,
+          "p95": 162.66666666666666,
+          "below12": 0.272765246449457
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 80.21344025068358,
+          "p95": 160.40970185121705,
+          "below12": 0.14452798663324978
+        }
+      ],
+      "evidence": {
+        "sample_count": 2394,
+        "visible_count": 2394,
+        "texture_rgb_std": 67.9398697479683,
+        "names": [
+          "NangongYuRapsodyBodyADiffuse.dds",
+          "NangongYuRapsodyHaloADiffuse.dds",
+          "NangongYuRapsodyWingsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.7519615165745434,
+        "p95": 10.314977925794873,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 16,
+      "name": "肌",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 34901,
+      "face_count": 4486,
+      "role": "skin",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyBodyADiffuse.dds",
+          "sha256": "9a0b813e1db340e3e4b29c37dd60cce12a838d34fdbe548996666034a198d30b"
+        },
+        "NormalMap": {
+          "file": "NangongYuRapsodyBodyANormalMap.dds",
+          "sha256": "0cb342206c694f9ba09124cc6a2a612a492ec8b79f16815fa9eddbe8a8b83afb"
+        },
+        "LightMap": {
+          "file": "NangongYuRapsodyBodyALightMap.dds",
+          "sha256": "4d588defba79fce08a9d26d0859121bbbdd87d1aa2288f3360c43d10fe226065"
+        },
+        "MaterialMap": {
+          "file": "NangongYuRapsodyBodyAMaterialMap.dds",
+          "sha256": "265e4edb97959b37a271f6113b16ccbd3a0a4e2e17ee32d348b277fecdd2b8c8"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "07d62536e8eee38152e3e90db148a57797a3f893ed85afa88866293002ab9bcc",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0840575726974886,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 22.12939304644598,
+          "p95": 173.4597990910212,
+          "below12": 0.7438095238095238
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 29.867753861442374,
+          "p95": 112.96277574327253,
+          "below12": 0.5242857142857142
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 87.14692617541479,
+          "p95": 168.33333333333334,
+          "below12": 0.07404761904761904
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 13.241062259365345,
+        "names": [
+          "NangongYuRapsodyBodyADiffuse.dds",
+          "NangongYuRapsodyHaloADiffuse.dds",
+          "NangongYuRapsodyWingsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0840575726974886,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 17,
+      "name": "袜",
+      "texture": "tex\\体.png",
+      "sphere": "spa\\stk.png",
+      "sphere_mode": 1,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 39387,
+      "face_count": 1026,
+      "role": "stocking",
+      "source_texture": "tex\\体.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "07d62536e8eee38152e3e90db148a57797a3f893ed85afa88866293002ab9bcc",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 13.655473433764433,
+          "p95": 21.211126423319087,
+          "below12": 0.37524366471734893
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 36.95938620127947,
+          "p95": 76.08836948314311,
+          "below12": 0.14782326185834957
+        },
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 71.69048081415578,
+          "p95": 128.25055027229095,
+          "below12": 0.00682261208576998
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 71.98288234913781,
+          "p95": 126.23878250901915,
+          "below12": 0.00649772579597141
+        }
+      ],
+      "evidence": {
+        "sample_count": 3078,
+        "visible_count": 3078,
+        "texture_rgb_std": 23.729898735301106,
+        "names": [
+          "NangongYuRapsodyBodyADiffuse.dds",
+          "NangongYuRapsodyHaloADiffuse.dds",
+          "NangongYuRapsodyWingsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 13.655473433764433,
+        "p95": 21.211126423319087,
+        "below12": 0.37524366471734893
+      }
+    },
+    {
+      "index": 18,
+      "name": "屏幕",
+      "texture": "tex\\饰.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 40413,
+      "face_count": 22,
+      "role": "emissive",
+      "source_texture": "tex\\饰.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "8f07030e7e4f77bc2e8cd5785c82b2e741bb101facaf77c63869caa5a83c14e5",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 52.321601925421014,
+          "p95": 160.673925976538,
+          "below12": 0.07575757575757576
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 60.48259810755077,
+          "p95": 118.33640260828838,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 76.79519766473781,
+          "p95": 212.3135888504483,
+          "below12": 0.09090909090909091
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 80.10549859916726,
+          "p95": 186.1592675613854,
+          "below12": 0.015151515151515152
+        }
+      ],
+      "evidence": {
+        "sample_count": 66,
+        "visible_count": 66,
+        "texture_rgb_std": 62.46780988277842,
+        "names": [
+          "NangongYuRapsodyHairADiffuse.dds",
+          "NangongYuRapsodyHairBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 52.321601925421014,
+        "p95": 160.673925976538,
+        "below12": 0.07575757575757576
+      }
+    },
+    {
+      "index": 19,
+      "name": "翼",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 40435,
+      "face_count": 1552,
+      "role": "wing",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NangongYuRapsodyBodyADiffuse.dds",
+          "sha256": "9a0b813e1db340e3e4b29c37dd60cce12a838d34fdbe548996666034a198d30b"
+        },
+        "NormalMap": {
+          "file": "NangongYuRapsodyBodyANormalMap.dds",
+          "sha256": "0cb342206c694f9ba09124cc6a2a612a492ec8b79f16815fa9eddbe8a8b83afb"
+        },
+        "LightMap": {
+          "file": "NangongYuRapsodyBodyALightMap.dds",
+          "sha256": "4d588defba79fce08a9d26d0859121bbbdd87d1aa2288f3360c43d10fe226065"
+        },
+        "MaterialMap": {
+          "file": "NangongYuRapsodyBodyAMaterialMap.dds",
+          "sha256": "265e4edb97959b37a271f6113b16ccbd3a0a4e2e17ee32d348b277fecdd2b8c8"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "07d62536e8eee38152e3e90db148a57797a3f893ed85afa88866293002ab9bcc",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.1933341976460899,
+          "p95": 0.8243815104165151,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 63.24079589565414,
+          "p95": 160.0,
+          "below12": 0.008809523809523809
+        },
+        {
+          "names": [
+            "NangongYuRapsodyEyebrowsADiffuse.dds",
+            "NangongYuRapsodyFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 64.88269662456234,
+          "p95": 143.33333333333334,
+          "below12": 0.007619047619047619
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 84.95749918367736,
+          "p95": 164.36148227373738,
+          "below12": 0.06642857142857143
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 51.72483166263199,
+        "names": [
+          "NangongYuRapsodyBodyADiffuse.dds",
+          "NangongYuRapsodyHaloADiffuse.dds",
+          "NangongYuRapsodyWingsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.1933341976460899,
+        "p95": 0.8243815104165151,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    }
+  ],
+  "warnings": [
+    {
+      "material": 12,
+      "name": "髮+",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 17,
+      "name": "袜",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 18,
+      "name": "屏幕",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": true,
+    "eyes": true
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

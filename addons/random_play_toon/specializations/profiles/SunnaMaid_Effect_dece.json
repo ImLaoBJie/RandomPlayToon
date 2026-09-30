@@ -1,0 +1,340 @@
+{
+  "schema": 1,
+  "id": "SunnaMaid_Effect_dece",
+  "character": "SunnaMaid",
+  "variant": "default",
+  "kind": "effect",
+  "pmx_sha256": "634b33718ccb5df28028c0fdcaa1d7cb31a55538df86e7563683fcb1c4742bee",
+  "pmx": "characters/SunnaMaid/models/泡泡__dece96a425/泡泡.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/SunnaMaid",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "泡泡",
+      "texture": "tex\\泡泡.png",
+      "sphere": "spa\\s1.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 3414,
+      "role": "cloth",
+      "source_texture": "tex\\泡泡.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "996968e7cedff00e216a6a66f2433857dc8c1d2a0cd2f18b7381ab35ad10126b",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 38.00951938287169,
+          "p95": 113.47830261230467,
+          "below12": 0.11714285714285715
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 39.8514713413195,
+          "p95": 135.49406704372834,
+          "below12": 0.15
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 43.12644992648358,
+          "p95": 111.33333333333333,
+          "below12": 0.015476190476190477
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.45654808813791,
+          "p95": 111.0,
+          "below12": 0.006904761904761905
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 23.40512165185545,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 38.00951938287169,
+        "p95": 113.47830261230467,
+        "below12": 0.11714285714285715
+      }
+    },
+    {
+      "index": 1,
+      "name": "目1",
+      "texture": "tex\\泡泡.png",
+      "sphere": "spa\\s1.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3414,
+      "face_count": 76,
+      "role": "eyes",
+      "source_texture": "tex\\泡泡.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "996968e7cedff00e216a6a66f2433857dc8c1d2a0cd2f18b7381ab35ad10126b",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 26.0,
+          "p95": 26.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 31.922161377746196,
+          "p95": 54.05377662046003,
+          "below12": 0.14912280701754385
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 31.970505319993247,
+          "p95": 54.05377662046003,
+          "below12": 0.14912280701754385
+        },
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 32.28631654939655,
+          "p95": 131.6031328224639,
+          "below12": 0.706140350877193
+        }
+      ],
+      "evidence": {
+        "sample_count": 228,
+        "visible_count": 228,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 26.0,
+        "p95": 26.0,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 2,
+      "name": "目2",
+      "texture": "tex\\泡泡.png",
+      "sphere": "spa\\s1.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "face_start": 3490,
+      "face_count": 160,
+      "role": "eyes",
+      "source_texture": "tex\\泡泡.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "996968e7cedff00e216a6a66f2433857dc8c1d2a0cd2f18b7381ab35ad10126b",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 22.604366481703163,
+          "p95": 120.73672607421875,
+          "below12": 0.4041666666666667
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 26.0,
+          "p95": 26.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 30.398946180846938,
+          "p95": 48.333333333333336,
+          "below12": 0.15833333333333333
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 30.398946180846938,
+          "p95": 48.333333333333336,
+          "below12": 0.15833333333333333
+        }
+      ],
+      "evidence": {
+        "sample_count": 480,
+        "visible_count": 480,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "SunnaMaidBodyADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 22.604366481703163,
+        "p95": 120.73672607421875,
+        "below12": 0.4041666666666667
+      }
+    },
+    {
+      "index": 3,
+      "name": "目3",
+      "texture": "tex\\泡泡.png",
+      "sphere": "spa\\s1.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "face_start": 3650,
+      "face_count": 88,
+      "role": "eyes",
+      "source_texture": "tex\\泡泡.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "996968e7cedff00e216a6a66f2433857dc8c1d2a0cd2f18b7381ab35ad10126b",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 28.64164868490357,
+          "p95": 35.0,
+          "below12": 0.03787878787878788
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 38.663448136865,
+          "p95": 52.333333333333336,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 38.663448136865,
+          "p95": 52.333333333333336,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 40.351428790162004,
+          "p95": 152.59273193255066,
+          "below12": 0.19318181818181818
+        }
+      ],
+      "evidence": {
+        "sample_count": 264,
+        "visible_count": 264,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 28.64164868490357,
+        "p95": 35.0,
+        "below12": 0.03787878787878788
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 0,
+      "name": "泡泡",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 1,
+      "name": "目1",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 2,
+      "name": "目2",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 3,
+      "name": "目3",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": true
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

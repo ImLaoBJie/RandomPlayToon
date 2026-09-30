@@ -1,0 +1,195 @@
+{
+  "source": "experiments/Vivian/07_rebuild/vivian_stage7_rebuilt.blend",
+  "source_sha256": "5af17306090a9fe0bdff7f9cb82b532686f7352dc79d1a5c7dacec8eec61faa4",
+  "entries": [
+    {
+      "key": "Key Gain",
+      "label": "角色受光亮度",
+      "category": "01 全局明暗",
+      "description": "缩放原卡通受光颜色；1为现有亮度。调暗场可降低此值，自定义自发光不受它影响。"
+    },
+    {
+      "key": "Body Threshold",
+      "label": "身体明暗分界",
+      "category": "01 明暗",
+      "description": "增大时暗部扩大，减小时亮部扩大；不改变贴图颜色。"
+    },
+    {
+      "key": "Body Softness",
+      "label": "身体过渡宽度",
+      "category": "01 明暗",
+      "description": "越小越接近硬边赛璐璐，越大阴影过渡越柔和。"
+    },
+    {
+      "key": "Global Specular",
+      "label": "基础高光强度",
+      "category": "03 基础高光与边缘光",
+      "description": "原卡通高光强度；金属和皮革独立反光使用下方专门参数。"
+    },
+    {
+      "key": "Highlight Width",
+      "label": "基础高光宽度",
+      "category": "03 基础高光与边缘光",
+      "description": "增大时卡通高光更宽；与法线、光向和贴图遮罩共同生效。"
+    },
+    {
+      "key": "Rim Strength",
+      "label": "边缘光强度",
+      "category": "03 基础高光与边缘光",
+      "description": "增强掠视角处的风格化亮边；不等于几何描边。"
+    },
+    {
+      "key": "Outline Width",
+      "label": "描边厚度（场景单位）",
+      "category": "07 描边",
+      "description": "几何描边壳厚度；0关闭厚度。随模型尺度和镜头改变观感，不是恒定像素宽度。"
+    },
+    {
+      "key": "Eye Reveal Enabled",
+      "label": "启用刘海透眼",
+      "category": "08 刘海透眼",
+      "description": "关闭只停止透眼混合，保留第五步遮挡结构。最终效果看F12合成。"
+    },
+    {
+      "key": "Eye Reveal Strength",
+      "label": "透眼强度",
+      "category": "08 刘海透眼",
+      "description": "只在第五步有效刘海与眼部交叠域内增强眼睛，不降低整片头发Alpha。"
+    },
+    {
+      "key": "Eye Reveal Texture Influence",
+      "label": "透眼贴图影响",
+      "category": "08 刘海透眼",
+      "description": "0使用均匀候选强度，1完全遵循已匹配的透眼控制图。"
+    },
+    {
+      "key": "Eye Reveal Brow Strength",
+      "label": "眉睫透出比例",
+      "category": "08 刘海透眼",
+      "description": "调整眉毛与睫毛相对眼球的透出程度。"
+    },
+    {
+      "key": "Eye Reveal Front Angle",
+      "label": "开始衰减角度（度）",
+      "category": "08 刘海透眼",
+      "description": "从正面算起，超过此观察角度开始变弱；应小于完全关闭角度。"
+    },
+    {
+      "key": "Eye Reveal Side Angle",
+      "label": "完全关闭角度（度）",
+      "category": "08 刘海透眼",
+      "description": "从正面算起，达到此角度停止透眼。脚本同时保证两个阈值至少相差1度。"
+    },
+    {
+      "key": "Bloom Strength",
+      "label": "辉光强度",
+      "category": "09 画面效果",
+      "description": "光晕能量倍率。0关闭，1为一倍，3为三倍；超过1仍持续增强。只改变后期光晕，不改变材质自发光。"
+    },
+    {
+      "key": "Bloom Threshold",
+      "label": "辉光亮度阈值",
+      "category": "09 画面效果",
+      "description": "只提取超过此线性亮度的区域。数值越低，参与发光的区域越多；数值越高，光晕越少。常规材质可先从0.8试起，10通常几乎没有光晕。"
+    },
+    {
+      "key": "Bloom Size",
+      "label": "光晕扩散范围",
+      "category": "09 画面效果",
+      "description": "0到1控制光晕由紧贴亮部到向外扩散；先将强度和阈值调到能看见光晕，再比较范围。仅影响F12合成。"
+    },
+    {
+      "key": "Warmth",
+      "label": "暖色调比例",
+      "category": "09 画面效果",
+      "description": "0中性；1等于原暖色满档；1到3继续增加红色并降低蓝色。仅影响最终合成，不改材质与真实灯光颜色。"
+    },
+    {
+      "key": "Outline Tint",
+      "label": "描边颜色",
+      "category": "07 描边",
+      "description": "几何描边壳颜色；与边缘光独立。"
+    },
+    {
+      "key": "Studio Mode",
+      "label": "独立展示光照",
+      "category": "00 光照方式",
+      "description": "关闭：保留原KeySun及场景响应。开启：使用虚拟光向，隔离实际场景灯光与反光。不会修改任何真实灯光。",
+      "global": false
+    },
+    {
+      "key": "Studio Azimuth",
+      "label": "虚拟光水平角（度）",
+      "category": "00 光照方式",
+      "description": "与 ZZZ_StudioLightDirection 的旋转同步；在侧栏改角度或旋转箭头。此节点输入为方向读数。",
+      "global": false
+    },
+    {
+      "key": "Studio Elevation",
+      "label": "虚拟光俯仰角（度）",
+      "category": "00 光照方式",
+      "description": "与 ZZZ_StudioLightDirection 的旋转同步；在侧栏改角度或旋转箭头。此节点输入为方向读数。",
+      "global": false
+    },
+    {
+      "key": "Black Background",
+      "label": "黑色出图背景",
+      "category": "00 光照方式",
+      "description": "在最终合成中铺纯黑背景并输出不透明Alpha，不改世界照明；关闭可保留原透明背景。",
+      "global": false
+    },
+    {
+      "key": "Studio Emission",
+      "label": "展示自发光增强",
+      "category": "00 光照方式",
+      "description": "只在独立展示生效：沿用角色原贴图发光遮罩，并适量增强眼部、饰件和宝石内光。0取消展示额外增强；场景响应下完全不参与计算。",
+      "global": false
+    },
+    {
+      "key": "Display Light",
+      "label": "展示亮面亮度",
+      "category": "00 光照方式",
+      "description": "仅独立展示：增强受光面的明亮感，保留虚拟阴影。",
+      "global": false
+    },
+    {
+      "key": "Display Shadow",
+      "label": "展示暗面深度",
+      "category": "00 光照方式",
+      "description": "仅独立展示：增大时暗部颜色更深，明暗反差更明显；不修改其他预设的阴影色。",
+      "global": false
+    }
+  ],
+  "defaults": {
+    "角色受光亮度": 1.0,
+    "身体明暗分界": 0.019999999552965164,
+    "身体过渡宽度": 0.04500000178813934,
+    "基础高光强度": 1.0,
+    "基础高光宽度": 1.0,
+    "边缘光强度": 0.04500000178813934,
+    "描边厚度（场景单位）": 0.0006500000017695129,
+    "描边颜色": [
+      0.017999999225139618,
+      0.012000000104308128,
+      0.03099999949336052,
+      1.0
+    ],
+    "启用刘海透眼": true,
+    "透眼强度": 0.800000011920929,
+    "透眼贴图影响": 0.5,
+    "眉睫透出比例": 0.5,
+    "开始衰减角度（度）": 45.00054931640625,
+    "完全关闭角度（度）": 79.99989318847656,
+    "辉光强度": 0.550000011920929,
+    "辉光亮度阈值": 0.800000011920929,
+    "光晕扩散范围": 0.30000001192092896,
+    "暖色调比例": 1.0,
+    "独立展示光照": true,
+    "虚拟光水平角（度）": -124.50852966308594,
+    "虚拟光俯仰角（度）": 45.84812545776367,
+    "黑色出图背景": true,
+    "展示自发光增强": 1.600000023841858,
+    "展示亮面亮度": 1.1200000047683716,
+    "展示暗面深度": 1.5
+  }
+}

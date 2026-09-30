@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "Norma_Weapon_fb4c",
+  "character": "Norma",
+  "variant": "default",
+  "kind": "weapon",
+  "pmx_sha256": "4eef0edf85283bbd41ebfc7a0ba63d629d50de4ccdd7561a5fd6d33857a6af37",
+  "pmx": "characters/Norma/models/武器__fb4cb39891/武器.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Norma",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "武器",
+      "texture": "Texture\\武器1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 8650,
+      "role": "weapon",
+      "source_texture": "Texture\\武器1.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "3fd9ebb35e483342893d1284d0d864b5f891debff2cd9c627fbdcbc7886b6068",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 59.7578525181031,
+          "p95": 148.00930620343595,
+          "below12": 0.07904761904761905
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 62.925524278239116,
+          "p95": 147.61242626442652,
+          "below12": 0.04833333333333333
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 90.81711584132681,
+          "p95": 179.04003768173922,
+          "below12": 0.025
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 92.5598202790093,
+          "p95": 176.02979085286452,
+          "below12": 0.011904761904761904
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 63.31910262878489,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 59.7578525181031,
+        "p95": 148.00930620343595,
+        "below12": 0.07904761904761905
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 0,
+      "name": "武器",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

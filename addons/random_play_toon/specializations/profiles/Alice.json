@@ -1,0 +1,1771 @@
+{
+  "schema": 1,
+  "id": "Alice",
+  "character": "Alice",
+  "variant": "default",
+  "kind": "character_primary",
+  "pmx_sha256": "4a016ba663ea9be46679a074119585135ab7840dd306dfab9b84567bb4cb53af",
+  "pmx": "characters/Alice/models/爱丽丝__79acd52f2b/爱丽丝.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Alice",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "颜",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 1716,
+      "role": "face",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceFaceADiffuse.dds",
+          "sha256": "7888024e61e89821b8b0c6dee9ded9a7102fc049d35c7a8a4757ea51be8b132b"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "56fd2abb4c4a19161fd10bcb8ae79395a8dded49dae2b19f958041d7de5d895f",
+      "candidates": [
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.22537673610803272,
+          "p95": 0.2959300614352874,
+          "below12": 0.9980952380952381
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 13.092302297859792,
+          "p95": 65.33333333333333,
+          "below12": 0.7807142857142857
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 56.757816232621735,
+          "p95": 211.33534478081597,
+          "below12": 0.30238095238095236
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 61.496863080238356,
+          "p95": 214.66666666666666,
+          "below12": 0.2857142857142857
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 8.237192728278899,
+        "names": [
+          "AliceFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.22537673610803272,
+        "p95": 0.2959300614352874,
+        "below12": 0.9980952380952381
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 1,
+      "name": "颜2",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1716,
+      "face_count": 120,
+      "role": "face",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceFaceADiffuse.dds",
+          "sha256": "7888024e61e89821b8b0c6dee9ded9a7102fc049d35c7a8a4757ea51be8b132b"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "56fd2abb4c4a19161fd10bcb8ae79395a8dded49dae2b19f958041d7de5d895f",
+      "candidates": [
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.30173942709702123,
+          "p95": 0.7135607441542468,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 17.206809355744912,
+          "p95": 46.950664462015574,
+          "below12": 0.45555555555555555
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 17.883456833794394,
+          "p95": 35.0151363769021,
+          "below12": 0.3333333333333333
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 29.41245813321083,
+          "p95": 56.60768202142346,
+          "below12": 0.3388888888888889
+        }
+      ],
+      "evidence": {
+        "sample_count": 360,
+        "visible_count": 360,
+        "texture_rgb_std": 15.149395620713042,
+        "names": [
+          "AliceFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.30173942709702123,
+        "p95": 0.7135607441542468,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 2,
+      "name": "白目",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1836,
+      "face_count": 156,
+      "role": "eye_white",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceFaceADiffuse.dds",
+          "sha256": "7888024e61e89821b8b0c6dee9ded9a7102fc049d35c7a8a4757ea51be8b132b"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "56fd2abb4c4a19161fd10bcb8ae79395a8dded49dae2b19f958041d7de5d895f",
+      "candidates": [
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 14.357255771624402,
+          "p95": 19.62358317057292,
+          "below12": 0.18162393162393162
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 69.83343837637753,
+          "p95": 188.76666666666665,
+          "below12": 0.24358974358974358
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 96.62265298336116,
+          "p95": 180.27460607330005,
+          "below12": 0.03205128205128205
+        }
+      ],
+      "evidence": {
+        "sample_count": 468,
+        "visible_count": 468,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "AliceFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 3,
+      "name": "睫眉",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1992,
+      "face_count": 696,
+      "role": "brows_lashes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceFaceADiffuse.dds",
+          "sha256": "7888024e61e89821b8b0c6dee9ded9a7102fc049d35c7a8a4757ea51be8b132b"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "56fd2abb4c4a19161fd10bcb8ae79395a8dded49dae2b19f958041d7de5d895f",
+      "candidates": [
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.16089160985550816,
+          "p95": 0.5330461490949164,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 44.637823654173125,
+          "p95": 70.55412356226324,
+          "below12": 0.045019157088122604
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 94.47912486245613,
+          "p95": 193.33200830300652,
+          "below12": 0.014367816091954023
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 104.98434081143155,
+          "p95": 196.0,
+          "below12": 0.0009578544061302681
+        }
+      ],
+      "evidence": {
+        "sample_count": 2088,
+        "visible_count": 2088,
+        "texture_rgb_std": 31.029859451714618,
+        "names": [
+          "AliceFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.16089160985550816,
+        "p95": 0.5330461490949164,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 4,
+      "name": "口舌",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2688,
+      "face_count": 502,
+      "role": "mouth",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceFaceADiffuse.dds",
+          "sha256": "7888024e61e89821b8b0c6dee9ded9a7102fc049d35c7a8a4757ea51be8b132b"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "56fd2abb4c4a19161fd10bcb8ae79395a8dded49dae2b19f958041d7de5d895f",
+      "candidates": [
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 49.25205480987375,
+          "p95": 79.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 67.9536303868933,
+          "p95": 95.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 70.94560528252093,
+          "p95": 120.0,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 1506,
+        "visible_count": 1506,
+        "texture_rgb_std": 12.331261571000704,
+        "names": [
+          "AliceFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 5,
+      "name": "齿",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3190,
+      "face_count": 168,
+      "role": "mouth",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceFaceADiffuse.dds",
+          "sha256": "7888024e61e89821b8b0c6dee9ded9a7102fc049d35c7a8a4757ea51be8b132b"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "56fd2abb4c4a19161fd10bcb8ae79395a8dded49dae2b19f958041d7de5d895f",
+      "candidates": [
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 48.665583664020765,
+          "p95": 224.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 59.37690211694469,
+          "p95": 223.70258789062473,
+          "below12": 0.42857142857142855
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 86.0213960416295,
+          "p95": 145.88698699158942,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 504,
+        "visible_count": 504,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "AliceFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 6,
+      "name": "目",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3358,
+      "face_count": 312,
+      "role": "eyes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceFaceADiffuse.dds",
+          "sha256": "7888024e61e89821b8b0c6dee9ded9a7102fc049d35c7a8a4757ea51be8b132b"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "56fd2abb4c4a19161fd10bcb8ae79395a8dded49dae2b19f958041d7de5d895f",
+      "candidates": [
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 4.653255240108681,
+          "p95": 36.47645820486923,
+          "below12": 0.8814102564102564
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 76.17560886654844,
+          "p95": 161.82143193155682,
+          "below12": 0.005341880341880342
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 82.57494088043111,
+          "p95": 169.6528049061696,
+          "below12": 0.008547008547008548
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 84.47009660276976,
+          "p95": 174.2069509931736,
+          "below12": 0.02564102564102564
+        }
+      ],
+      "evidence": {
+        "sample_count": 936,
+        "visible_count": 936,
+        "texture_rgb_std": 70.66331134750187,
+        "names": [
+          "AliceFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 4.653255240108681,
+        "p95": 36.47645820486923,
+        "below12": 0.8814102564102564
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 7,
+      "name": "目光",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.30000001192092896
+      ],
+      "face_start": 3670,
+      "face_count": 56,
+      "role": "eye_highlight",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceFaceADiffuse.dds",
+          "sha256": "7888024e61e89821b8b0c6dee9ded9a7102fc049d35c7a8a4757ea51be8b132b"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "56fd2abb4c4a19161fd10bcb8ae79395a8dded49dae2b19f958041d7de5d895f",
+      "candidates": [
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.08225070489984368,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 61.0422355470786,
+          "p95": 72.93214850134952,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 79.84153747541802,
+          "p95": 200.33333333333334,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 85.6098207815688,
+          "p95": 165.52574624452419,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 168,
+        "visible_count": 128,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "AliceFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.08225070489984368,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 8,
+      "name": "目影",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 7,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.30000001192092896
+      ],
+      "face_start": 3726,
+      "face_count": 48,
+      "role": "eye_shadow",
+      "source_texture": "tex\\颜.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "56fd2abb4c4a19161fd10bcb8ae79395a8dded49dae2b19f958041d7de5d895f",
+      "candidates": [
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 17.28769687180442,
+          "p95": 33.333333333333336,
+          "below12": 0.4305555555555556
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 48.065089043911016,
+          "p95": 104.18816116924086,
+          "below12": 0.125
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 51.43802243084159,
+          "p95": 54.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 56.53966498962549,
+          "p95": 93.33268976246637,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 144,
+        "visible_count": 144,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "AliceFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 17.28769687180442,
+        "p95": 33.333333333333336,
+        "below12": 0.4305555555555556
+      }
+    },
+    {
+      "index": 9,
+      "name": "体",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3774,
+      "face_count": 14040,
+      "role": "cloth",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceBodyADiffuse.dds",
+          "sha256": "b53dd28e82a5f67ddc87488c0ec2a3b5229beaa2a5d99ac886e3c10738c553cd"
+        },
+        "NormalMap": {
+          "file": "AliceBodyANormalMap.dds",
+          "sha256": "608895a09ce66335d4aa2d38a2d678b37f330fd38e4c7485da7a769591ba257f"
+        },
+        "LightMap": {
+          "file": "AliceBodyALightMap.dds",
+          "sha256": "8a1242be31a131b8e022c641b697f036d381ff0f3d2b846dfa0cfa23c9d53ad6"
+        },
+        "MaterialMap": {
+          "file": "AliceBodyAMaterialMap.dds",
+          "sha256": "9b3f0092795aeae56cb63c30f320a6bcf1e20610445945b83380cbbdde156b1c"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "3d2b1a6c2fa61a222d2a2c29afef0df2273666bb69721a6a243645a4e8becbfe",
+      "candidates": [
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.15403276035084143,
+          "p95": 0.6115230008860542,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 76.25301339971722,
+          "p95": 169.15355769108095,
+          "below12": 0.09333333333333334
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 78.94588753911347,
+          "p95": 187.1856068643831,
+          "below12": 0.05523809523809524
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 85.8236967641859,
+          "p95": 180.8516650438011,
+          "below12": 0.06547619047619048
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 72.15072560026579,
+        "names": [
+          "AliceBodyADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.15403276035084143,
+        "p95": 0.6115230008860542,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 10,
+      "name": "体2",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 17814,
+      "face_count": 926,
+      "role": "cloth",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceHairADiffuse.dds",
+          "sha256": "d85cb864d3ab4c0202b6f17f8e34a71084115d6a5c8908e18d1016c31c015bb0"
+        },
+        "NormalMap": {
+          "file": "AliceHairANormalMap.dds",
+          "sha256": "6d0d145ee10d98f98f8c74d5ae3477e25e8101359a80d6c023f73fbd2398ef3e"
+        },
+        "LightMap": {
+          "file": "AliceHairALightMap.dds",
+          "sha256": "0597e6dec1a48918bbded222f5c527e8266dde9d1538356a7bc2c2645d73dfdf"
+        },
+        "MaterialMap": {
+          "file": "AliceHairAMaterialMap.dds",
+          "sha256": "9d5f96b9cfbff33c63d64bec9a76948be81949d44df048ba1b643673798ad615"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "eb3d683f9298d4930a27a9b472ad88cace4f34717a8f6f9a0a239dd45281a886",
+      "candidates": [
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.11851182058786655,
+          "p95": 0.5832938375572306,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 63.60198565079199,
+          "p95": 180.091962890625,
+          "below12": 0.1929445644348452
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 78.00776788614549,
+          "p95": 195.66571529702344,
+          "below12": 0.2847372210223182
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 82.9110634147222,
+          "p95": 196.29343105139293,
+          "below12": 0.15514758819294455
+        }
+      ],
+      "evidence": {
+        "sample_count": 2778,
+        "visible_count": 2778,
+        "texture_rgb_std": 69.32118094242007,
+        "names": [
+          "AliceHairADiffuse.dds",
+          "AliceHairBDiffuse.dds",
+          "AliceLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.11851182058786655,
+        "p95": 0.5832938375572306,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 11,
+      "name": "足",
+      "texture": "tex\\髮.png",
+      "sphere": "spa\\stk.png",
+      "sphere_mode": 1,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 18740,
+      "face_count": 1232,
+      "role": "cloth",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceHairADiffuse.dds",
+          "sha256": "d85cb864d3ab4c0202b6f17f8e34a71084115d6a5c8908e18d1016c31c015bb0"
+        },
+        "NormalMap": {
+          "file": "AliceHairANormalMap.dds",
+          "sha256": "6d0d145ee10d98f98f8c74d5ae3477e25e8101359a80d6c023f73fbd2398ef3e"
+        },
+        "LightMap": {
+          "file": "AliceHairALightMap.dds",
+          "sha256": "0597e6dec1a48918bbded222f5c527e8266dde9d1538356a7bc2c2645d73dfdf"
+        },
+        "MaterialMap": {
+          "file": "AliceHairAMaterialMap.dds",
+          "sha256": "9d5f96b9cfbff33c63d64bec9a76948be81949d44df048ba1b643673798ad615"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "eb3d683f9298d4930a27a9b472ad88cace4f34717a8f6f9a0a239dd45281a886",
+      "candidates": [
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.11069805847033501,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 32.15851330792428,
+          "p95": 148.86820181945845,
+          "below12": 0.47186147186147187
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 65.78645536192946,
+          "p95": 187.78070996314293,
+          "below12": 0.17397186147186147
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 66.7623176895815,
+          "p95": 185.54528012832012,
+          "below12": 0.12581168831168832
+        }
+      ],
+      "evidence": {
+        "sample_count": 3696,
+        "visible_count": 3696,
+        "texture_rgb_std": 13.068633107980355,
+        "names": [
+          "AliceHairADiffuse.dds",
+          "AliceHairBDiffuse.dds",
+          "AliceLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.11069805847033501,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 12,
+      "name": "头饰",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 19972,
+      "face_count": 480,
+      "role": "cloth",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceHairADiffuse.dds",
+          "sha256": "d85cb864d3ab4c0202b6f17f8e34a71084115d6a5c8908e18d1016c31c015bb0"
+        },
+        "NormalMap": {
+          "file": "AliceHairANormalMap.dds",
+          "sha256": "6d0d145ee10d98f98f8c74d5ae3477e25e8101359a80d6c023f73fbd2398ef3e"
+        },
+        "LightMap": {
+          "file": "AliceHairALightMap.dds",
+          "sha256": "0597e6dec1a48918bbded222f5c527e8266dde9d1538356a7bc2c2645d73dfdf"
+        },
+        "MaterialMap": {
+          "file": "AliceHairAMaterialMap.dds",
+          "sha256": "9d5f96b9cfbff33c63d64bec9a76948be81949d44df048ba1b643673798ad615"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "eb3d683f9298d4930a27a9b472ad88cace4f34717a8f6f9a0a239dd45281a886",
+      "candidates": [
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.07628880427348889,
+          "p95": 0.4004946754112398,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 55.4457982988292,
+          "p95": 106.57063081650627,
+          "below12": 0.03333333333333333
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 72.03201183865511,
+          "p95": 140.66666666666666,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 74.5752480501169,
+          "p95": 143.33810553084464,
+          "below12": 0.015277777777777777
+        }
+      ],
+      "evidence": {
+        "sample_count": 1440,
+        "visible_count": 1440,
+        "texture_rgb_std": 12.104999574378793,
+        "names": [
+          "AliceHairADiffuse.dds",
+          "AliceHairBDiffuse.dds",
+          "AliceLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.07628880427348889,
+        "p95": 0.4004946754112398,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 13,
+      "name": "带",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 20452,
+      "face_count": 670,
+      "role": "cloth",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceHairADiffuse.dds",
+          "sha256": "d85cb864d3ab4c0202b6f17f8e34a71084115d6a5c8908e18d1016c31c015bb0"
+        },
+        "NormalMap": {
+          "file": "AliceHairANormalMap.dds",
+          "sha256": "6d0d145ee10d98f98f8c74d5ae3477e25e8101359a80d6c023f73fbd2398ef3e"
+        },
+        "LightMap": {
+          "file": "AliceHairALightMap.dds",
+          "sha256": "0597e6dec1a48918bbded222f5c527e8266dde9d1538356a7bc2c2645d73dfdf"
+        },
+        "MaterialMap": {
+          "file": "AliceHairAMaterialMap.dds",
+          "sha256": "9d5f96b9cfbff33c63d64bec9a76948be81949d44df048ba1b643673798ad615"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "eb3d683f9298d4930a27a9b472ad88cace4f34717a8f6f9a0a239dd45281a886",
+      "candidates": [
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.17540864237370996,
+          "p95": 0.7877583391270511,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 54.89788549756719,
+          "p95": 135.3876441280944,
+          "below12": 0.14626865671641792
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 60.204331512521925,
+          "p95": 113.4877227273752,
+          "below12": 0.10646766169154229
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 63.20928144880971,
+          "p95": 141.13517109210315,
+          "below12": 0.08407960199004975
+        }
+      ],
+      "evidence": {
+        "sample_count": 2010,
+        "visible_count": 2010,
+        "texture_rgb_std": 34.61189275951484,
+        "names": [
+          "AliceHairADiffuse.dds",
+          "AliceHairBDiffuse.dds",
+          "AliceLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.17540864237370996,
+        "p95": 0.7877583391270511,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 14,
+      "name": "肌",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 21122,
+      "face_count": 2134,
+      "role": "skin",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceBodyADiffuse.dds",
+          "sha256": "b53dd28e82a5f67ddc87488c0ec2a3b5229beaa2a5d99ac886e3c10738c553cd"
+        },
+        "NormalMap": {
+          "file": "AliceBodyANormalMap.dds",
+          "sha256": "608895a09ce66335d4aa2d38a2d678b37f330fd38e4c7485da7a769591ba257f"
+        },
+        "LightMap": {
+          "file": "AliceBodyALightMap.dds",
+          "sha256": "8a1242be31a131b8e022c641b697f036d381ff0f3d2b846dfa0cfa23c9d53ad6"
+        },
+        "MaterialMap": {
+          "file": "AliceBodyAMaterialMap.dds",
+          "sha256": "9b3f0092795aeae56cb63c30f320a6bcf1e20610445945b83380cbbdde156b1c"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "3d2b1a6c2fa61a222d2a2c29afef0df2273666bb69721a6a243645a4e8becbfe",
+      "candidates": [
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.30607279004181653,
+          "p95": 0.4582419438362159,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 37.421954767255116,
+          "p95": 212.80637084960946,
+          "below12": 0.43857142857142856
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 38.23331835950492,
+          "p95": 211.0,
+          "below12": 0.4554761904761905
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 68.08092586862941,
+          "p95": 196.6295410284609,
+          "below12": 0.043095238095238096
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 6.178688078558163,
+        "names": [
+          "AliceBodyADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.30607279004181653,
+        "p95": 0.4582419438362159,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA",
+      "matching_peer_slot": 9
+    },
+    {
+      "index": 15,
+      "name": "屏幕",
+      "texture": "tex\\屏幕.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 23256,
+      "face_count": 14,
+      "role": "emissive",
+      "source_texture": "tex\\屏幕.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "8c2129f8e3bfa670a0aeda0ee473c8556ff391002d55b64fd5f1fd37d0e038f6",
+      "candidates": [
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 65.52594738725399,
+          "p95": 70.66666666666667,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 66.1909533051484,
+          "p95": 70.66666666666667,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 72.94513072439663,
+          "p95": 147.33333333333334,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 76.87455228311913,
+          "p95": 147.33333333333334,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 42,
+        "visible_count": 42,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "AliceFaceADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 65.52594738725399,
+        "p95": 70.66666666666667,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 16,
+      "name": "髮",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 23270,
+      "face_count": 6618,
+      "role": "hair",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceHairADiffuse.dds",
+          "sha256": "d85cb864d3ab4c0202b6f17f8e34a71084115d6a5c8908e18d1016c31c015bb0"
+        },
+        "NormalMap": {
+          "file": "AliceHairANormalMap.dds",
+          "sha256": "6d0d145ee10d98f98f8c74d5ae3477e25e8101359a80d6c023f73fbd2398ef3e"
+        },
+        "LightMap": {
+          "file": "AliceHairALightMap.dds",
+          "sha256": "0597e6dec1a48918bbded222f5c527e8266dde9d1538356a7bc2c2645d73dfdf"
+        },
+        "MaterialMap": {
+          "file": "AliceHairAMaterialMap.dds",
+          "sha256": "9d5f96b9cfbff33c63d64bec9a76948be81949d44df048ba1b643673798ad615"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "eb3d683f9298d4930a27a9b472ad88cace4f34717a8f6f9a0a239dd45281a886",
+      "candidates": [
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.10716038214040235,
+          "p95": 0.42240923142507,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 50.33752534501551,
+          "p95": 175.98886577306996,
+          "below12": 0.22738095238095238
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 50.9293434088552,
+          "p95": 177.66666666666666,
+          "below12": 0.25952380952380955
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 55.20231633822833,
+          "p95": 197.1447008861692,
+          "below12": 0.23238095238095238
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 27.710046068265868,
+        "names": [
+          "AliceHairADiffuse.dds",
+          "AliceHairBDiffuse.dds",
+          "AliceLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.10716038214040235,
+        "p95": 0.42240923142507,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 17,
+      "name": "前髪",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 29888,
+      "face_count": 769,
+      "role": "hair",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceHairADiffuse.dds",
+          "sha256": "d85cb864d3ab4c0202b6f17f8e34a71084115d6a5c8908e18d1016c31c015bb0"
+        },
+        "NormalMap": {
+          "file": "AliceHairANormalMap.dds",
+          "sha256": "6d0d145ee10d98f98f8c74d5ae3477e25e8101359a80d6c023f73fbd2398ef3e"
+        },
+        "LightMap": {
+          "file": "AliceHairALightMap.dds",
+          "sha256": "0597e6dec1a48918bbded222f5c527e8266dde9d1538356a7bc2c2645d73dfdf"
+        },
+        "MaterialMap": {
+          "file": "AliceHairAMaterialMap.dds",
+          "sha256": "9d5f96b9cfbff33c63d64bec9a76948be81949d44df048ba1b643673798ad615"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "eb3d683f9298d4930a27a9b472ad88cace4f34717a8f6f9a0a239dd45281a886",
+      "candidates": [
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.1037202211365905,
+          "p95": 0.42507578139037977,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 42.285508803147735,
+          "p95": 184.66666666666666,
+          "below12": 0.153012570437798
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 47.62122298155465,
+          "p95": 185.70472211094778,
+          "below12": 0.02904204594711747
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.92827431912249,
+          "p95": 204.80044339708428,
+          "below12": 0.3602080624187256
+        }
+      ],
+      "evidence": {
+        "sample_count": 2307,
+        "visible_count": 2307,
+        "texture_rgb_std": 13.905920098955145,
+        "names": [
+          "AliceHairADiffuse.dds",
+          "AliceHairBDiffuse.dds",
+          "AliceLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.1037202211365905,
+        "p95": 0.42507578139037977,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 18,
+      "name": "武器",
+      "texture": "tex\\武器.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 30657,
+      "face_count": 3604,
+      "role": "weapon",
+      "source_texture": "tex\\武器.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AliceBackpackADiffuse.dds",
+          "sha256": "03468a420490fa6ff369ebdc3bdde98900ba3f63cf4a5101a4502c1dd995bac3"
+        },
+        "NormalMap": {
+          "file": "AliceBackpackANormalMap.dds",
+          "sha256": "6f8dfe682962a1a7527ee600978090208f3cbb7ab16c5e8da2a63d89a1fe2a88"
+        },
+        "LightMap": {
+          "file": "AliceBackpackALightMap.dds",
+          "sha256": "d12783595ed625601684cd6cd5459c38652cc2b0654e469c91a6b1d302579bcf"
+        },
+        "MaterialMap": {
+          "file": "AliceBackpackAMaterialMap.dds",
+          "sha256": "156ad0a338e61500fae7be6d0420fbec55c81f6fc9069092a9b1e0d34300c709"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "8cb7720d7973c02ce95f0996d3d7d597298beede416d4445578ddb61a965c7a5",
+      "candidates": [
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.07058574951010195,
+          "p95": 0.4515731869771481,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 69.94921949033586,
+          "p95": 155.29257278071955,
+          "below12": 0.04261904761904762
+        },
+        {
+          "names": [
+            "AliceFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 70.16578838692548,
+          "p95": 151.8879700229418,
+          "below12": 0.06357142857142857
+        },
+        {
+          "names": [
+            "AliceHairADiffuse.dds",
+            "AliceHairBDiffuse.dds",
+            "AliceLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 74.36226178836505,
+          "p95": 200.33333333333334,
+          "below12": 0.05619047619047619
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 54.636511609560245,
+        "names": [
+          "AliceBackpackADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.07058574951010195,
+        "p95": 0.4515731869771481,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BackpackA"
+    },
+    {
+      "index": 19,
+      "name": "髮+",
+      "texture": "tex\\sp.png",
+      "sphere": "spa\\hair_s.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 34261,
+      "face_count": 7387,
+      "role": "hair_overlay",
+      "source_texture": "tex\\sp.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "1f83378587b2002435ac551f80652bab1b5911d54c6b507a47559e416162eb83",
+      "candidates": [
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 113.37043182283166,
+          "p95": 222.33333333333334,
+          "below12": 0.03214285714285714
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 114.904600202064,
+          "p95": 222.02414067458233,
+          "below12": 0.11238095238095239
+        },
+        {
+          "names": [
+            "AliceBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 116.11376349855655,
+          "p95": 222.820380714933,
+          "below12": 0.04523809523809524
+        },
+        {
+          "names": [
+            "AliceBackpackADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 120.5420653019213,
+          "p95": 222.66666666666666,
+          "below12": 0.12333333333333334
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 22.634003779912202,
+        "names": [
+          "AliceBodyADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 113.37043182283166,
+        "p95": 222.33333333333334,
+        "below12": 0.03214285714285714
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 8,
+      "name": "目影",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 15,
+      "name": "屏幕",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 19,
+      "name": "髮+",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": true,
+    "eyes": true
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

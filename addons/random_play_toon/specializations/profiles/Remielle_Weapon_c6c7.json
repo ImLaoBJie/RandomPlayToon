@@ -1,0 +1,453 @@
+{
+  "schema": 1,
+  "id": "Remielle_Weapon_c6c7",
+  "character": "Remielle",
+  "variant": "default",
+  "kind": "weapon",
+  "pmx_sha256": "54228054a8fb1d2c05194e8e8c7c00181a8e477714de24ddd97a7658f0b077c0",
+  "pmx": "characters/Remielle/models/武器翅膀2__c6c7967fcc/武器翅膀2.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Remielle",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "MAT_Remielle_Weapon_01",
+      "texture": "tex\\Remielle_Weapon_01_D.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 13894,
+      "role": "weapon",
+      "source_texture": "tex\\Remielle_Weapon_01_D.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "6bbac1ba199cccc6e664ae6c65029d513daa4b45f1bd7f3ad7caee1265497ac7",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 40.543714820308594,
+          "p95": 101.23811396859568,
+          "below12": 0.13952380952380952
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 42.81594732949235,
+          "p95": 101.53693819287074,
+          "below12": 0.12476190476190477
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 44.09503720953229,
+          "p95": 107.6530500925432,
+          "below12": 0.1473809523809524
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 44.23201574188068,
+          "p95": 79.20199460387227,
+          "below12": 0.023333333333333334
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 34.79957819433138,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 40.543714820308594,
+        "p95": 101.23811396859568,
+        "below12": 0.13952380952380952
+      }
+    },
+    {
+      "index": 1,
+      "name": "MAT_Remielle_Sticker",
+      "texture": "tex\\Remielle_Sticker_D.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 13894,
+      "face_count": 296,
+      "role": "weapon",
+      "source_texture": "tex\\Remielle_Sticker_D.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "65e2b193f468378ef5d41ad6145aaa6652e3801846a9fce7ee3009e5705b920c",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 57.589107859618046,
+          "p95": 124.66666666666667,
+          "below12": 0.09803921568627451
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 68.18115645869926,
+          "p95": 138.43524461984634,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 69.86463399160205,
+          "p95": 180.5161218444506,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 71.67299793201437,
+          "p95": 178.47473144531665,
+          "below12": 0.0392156862745098
+        }
+      ],
+      "evidence": {
+        "sample_count": 888,
+        "visible_count": 51,
+        "texture_rgb_std": 59.1652137068074,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 57.589107859618046,
+        "p95": 124.66666666666667,
+        "below12": 0.09803921568627451
+      }
+    },
+    {
+      "index": 2,
+      "name": "MAT_Remielle_Weapon_02",
+      "texture": "tex\\Remielle_Weapon_02_D.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 14190,
+      "face_count": 698,
+      "role": "weapon",
+      "source_texture": "tex\\Remielle_Weapon_02_D.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "34c967ec8a052e40f780e764c3f4c3fca1173193daa6495c5de0e0c387f9390c",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 36.625164892132524,
+          "p95": 88.20069355972656,
+          "below12": 0.16666666666666666
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 37.58643460977747,
+          "p95": 91.91502549913191,
+          "below12": 0.13658070678127984
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 37.812604566250705,
+          "p95": 94.34920969881671,
+          "below12": 0.18003820439350526
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 40.3234354979744,
+          "p95": 94.43462216048522,
+          "below12": 0.1356255969436485
+        }
+      ],
+      "evidence": {
+        "sample_count": 2094,
+        "visible_count": 2094,
+        "texture_rgb_std": 28.722199941073843,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 36.625164892132524,
+        "p95": 88.20069355972656,
+        "below12": 0.16666666666666666
+      }
+    },
+    {
+      "index": 3,
+      "name": "MAT_Remielle_Weapon_01+",
+      "texture": "tex\\Remielle_Weapon_01_D+.png",
+      "sphere": "spa\\金属+.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 10,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 14888,
+      "face_count": 13894,
+      "role": "weapon",
+      "source_texture": "tex\\Remielle_Weapon_01_D+.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "cbf4fe5b3756ee71030144041d0872e75e1404f39fa265ea6d5c61c7a5353b66",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 32.57727145092133,
+          "p95": 89.26046618660348,
+          "below12": 0.20588235294117646
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.55908584372525,
+          "p95": 111.37765819165587,
+          "below12": 0.23529411764705882
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 46.641631668907245,
+          "p95": 119.72641078392526,
+          "below12": 0.08823529411764706
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 47.02391591417462,
+          "p95": 116.16441843263254,
+          "below12": 0.11764705882352941
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 68,
+        "texture_rgb_std": 12.884292154313512,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 32.57727145092133,
+        "p95": 89.26046618660348,
+        "below12": 0.20588235294117646
+      }
+    },
+    {
+      "index": 4,
+      "name": "MAT_Remielle_Sticker+",
+      "texture": "tex\\Remielle_Sticker_D+.png",
+      "sphere": "spa\\金属+.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 10,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 28782,
+      "face_count": 296,
+      "role": "weapon",
+      "source_texture": "tex\\Remielle_Sticker_D+.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha"
+    },
+    {
+      "index": 5,
+      "name": "MAT_Remielle_Weapon_02+",
+      "texture": "tex\\Remielle_Weapon_02_D+.png",
+      "sphere": "spa\\金属+.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 10,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 29078,
+      "face_count": 698,
+      "role": "weapon",
+      "source_texture": "tex\\Remielle_Weapon_02_D+.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "36d63684d4c8f024be089a901acf533da1169efc5c3c1c7a1cb93d62ce894ce4",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 39.14216809600608,
+          "p95": 94.96693045505805,
+          "below12": 0.12580645161290321
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 39.5523651562934,
+          "p95": 96.19905226786946,
+          "below12": 0.17419354838709677
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 42.31791447034833,
+          "p95": 110.49993169442806,
+          "below12": 0.17096774193548386
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 43.94049485631454,
+          "p95": 105.42845692420931,
+          "below12": 0.12580645161290321
+        }
+      ],
+      "evidence": {
+        "sample_count": 2094,
+        "visible_count": 310,
+        "texture_rgb_std": 27.312100853989364,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 39.14216809600608,
+        "p95": 94.96693045505805,
+        "below12": 0.12580645161290321
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 0,
+      "name": "MAT_Remielle_Weapon_01",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 1,
+      "name": "MAT_Remielle_Sticker",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 2,
+      "name": "MAT_Remielle_Weapon_02",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 3,
+      "name": "MAT_Remielle_Weapon_01+",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 4,
+      "name": "MAT_Remielle_Sticker+",
+      "reason": "missing_source_texture",
+      "action": "pmx_diffuse_color"
+    },
+    {
+      "material": 5,
+      "name": "MAT_Remielle_Weapon_02+",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

@@ -1,0 +1,1698 @@
+{
+  "schema": 1,
+  "id": "Yuzuha",
+  "character": "Yuzuha",
+  "variant": "default",
+  "kind": "character_primary",
+  "pmx_sha256": "89432deb6c72a309e952181842ba15b2b74e33f32b2ce51976076a3a7799d03c",
+  "pmx": "characters/Yuzuha/models/柚叶__1ea01dbc12/柚叶.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Yuzuha",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "颜",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 1720,
+      "role": "face",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaFaceADiffuse.dds",
+          "sha256": "eeaaca9fe2a20b538d8f09b043bc857bbc8ee4986137209dcbc54baaabf999f3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "846c10d48de534c67072b6b8048a7f489872121ec8e56edebb301c6f57e2eac3",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 2.7860680594467615,
+          "p95": 4.666666666666667,
+          "below12": 0.9995238095238095
+        },
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 16.921844234247832,
+          "p95": 112.33333333333333,
+          "below12": 0.7823809523809524
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 88.75818955274072,
+          "p95": 171.66666666666666,
+          "below12": 0.08904761904761904
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 92.76582453116143,
+          "p95": 167.0,
+          "below12": 0.06666666666666667
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 11.068650087915927,
+        "names": [
+          "YuzuhaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 2.7860680594467615,
+        "p95": 4.666666666666667,
+        "below12": 0.9995238095238095
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 1,
+      "name": "口舌",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1720,
+      "face_count": 538,
+      "role": "mouth",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaFaceADiffuse.dds",
+          "sha256": "eeaaca9fe2a20b538d8f09b043bc857bbc8ee4986137209dcbc54baaabf999f3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "846c10d48de534c67072b6b8048a7f489872121ec8e56edebb301c6f57e2eac3",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0043977918145720555,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 41.06153227338252,
+          "p95": 51.666666666666664,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 54.15664742421247,
+          "p95": 81.07424316406248,
+          "below12": 0.06815365551425032
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 76.99470692283715,
+          "p95": 104.50583618164057,
+          "below12": 0.029120198265179677
+        }
+      ],
+      "evidence": {
+        "sample_count": 1614,
+        "visible_count": 1614,
+        "texture_rgb_std": 28.49135038280004,
+        "names": [
+          "YuzuhaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0043977918145720555,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 2,
+      "name": "齿",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2258,
+      "face_count": 144,
+      "role": "mouth",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaFaceADiffuse.dds",
+          "sha256": "eeaaca9fe2a20b538d8f09b043bc857bbc8ee4986137209dcbc54baaabf999f3"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "846c10d48de534c67072b6b8048a7f489872121ec8e56edebb301c6f57e2eac3",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.008554067211518893,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 19.089364465208888,
+          "p95": 30.46672788716374,
+          "below12": 0.027777777777777776
+        },
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 27.3671714554178,
+          "p95": 28.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 122.63384029905222,
+          "p95": 143.98991427951387,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 432,
+        "visible_count": 432,
+        "texture_rgb_std": 0.8965397689620064,
+        "names": [
+          "YuzuhaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.008554067211518893,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 3,
+      "name": "眉",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2402,
+      "face_count": 52,
+      "role": "brows_lashes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaFaceADiffuse.dds",
+          "sha256": "eeaaca9fe2a20b538d8f09b043bc857bbc8ee4986137209dcbc54baaabf999f3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "846c10d48de534c67072b6b8048a7f489872121ec8e56edebb301c6f57e2eac3",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.027526233347370904,
+          "p95": 0.30992757822695916,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 41.867881795272766,
+          "p95": 114.16666666666667,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.13810757838222,
+          "p95": 75.40364201032867,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 48.46382965379851,
+          "p95": 94.27144193643088,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 156,
+        "visible_count": 156,
+        "texture_rgb_std": 15.303006407349322,
+        "names": [
+          "YuzuhaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.027526233347370904,
+        "p95": 0.30992757822695916,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 4,
+      "name": "睫",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2454,
+      "face_count": 642,
+      "role": "brows_lashes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaFaceADiffuse.dds",
+          "sha256": "eeaaca9fe2a20b538d8f09b043bc857bbc8ee4986137209dcbc54baaabf999f3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "846c10d48de534c67072b6b8048a7f489872121ec8e56edebb301c6f57e2eac3",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.03644642316689641,
+          "p95": 0.2816263834635417,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 57.51527931984707,
+          "p95": 173.31798146565754,
+          "below12": 0.003115264797507788
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 73.16268621081535,
+          "p95": 127.66666666666667,
+          "below12": 0.011941848390446522
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 109.221477580773,
+          "p95": 222.33333333333334,
+          "below12": 0.004153686396677051
+        }
+      ],
+      "evidence": {
+        "sample_count": 1926,
+        "visible_count": 1926,
+        "texture_rgb_std": 37.82109031299357,
+        "names": [
+          "YuzuhaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.03644642316689641,
+        "p95": 0.2816263834635417,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 5,
+      "name": "白目",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3096,
+      "face_count": 104,
+      "role": "eye_white",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaFaceADiffuse.dds",
+          "sha256": "eeaaca9fe2a20b538d8f09b043bc857bbc8ee4986137209dcbc54baaabf999f3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "846c10d48de534c67072b6b8048a7f489872121ec8e56edebb301c6f57e2eac3",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.030530253724295624,
+          "p95": 0.2588400736451196,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 31.798682360882495,
+          "p95": 41.333333333333336,
+          "below12": 0.08333333333333333
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 98.64348754927745,
+          "p95": 208.72789294596626,
+          "below12": 0.038461538461538464
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 138.72438454024456,
+          "p95": 170.0,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 312,
+        "visible_count": 312,
+        "texture_rgb_std": 7.617164756113266,
+        "names": [
+          "YuzuhaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.030530253724295624,
+        "p95": 0.2588400736451196,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 6,
+      "name": "目",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3200,
+      "face_count": 280,
+      "role": "eyes",
+      "source_texture": "tex\\颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaFaceADiffuse.dds",
+          "sha256": "eeaaca9fe2a20b538d8f09b043bc857bbc8ee4986137209dcbc54baaabf999f3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "846c10d48de534c67072b6b8048a7f489872121ec8e56edebb301c6f57e2eac3",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.10732283375876216,
+          "p95": 0.605181654691639,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 65.96513964463134,
+          "p95": 138.4252306024234,
+          "below12": 0.0024390243902439024
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 87.72640660298102,
+          "p95": 191.6304768880209,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 88.89484517552995,
+          "p95": 167.66666666666666,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 840,
+        "visible_count": 820,
+        "texture_rgb_std": 65.95580185772883,
+        "names": [
+          "YuzuhaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.10732283375876216,
+        "p95": 0.605181654691639,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 7,
+      "name": "目影",
+      "texture": "tex\\颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3480,
+      "face_count": 44,
+      "role": "eye_shadow",
+      "source_texture": "tex\\颜.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "846c10d48de534c67072b6b8048a7f489872121ec8e56edebb301c6f57e2eac3",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 25.676711102622725,
+          "p95": 35.333333333333336,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 25.774396406128012,
+          "p95": 53.38682454427097,
+          "below12": 0.25
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 72.62154499928693,
+          "p95": 86.66666666666667,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 107.26542180647844,
+          "p95": 180.66666666666666,
+          "below12": 0.07575757575757576
+        }
+      ],
+      "evidence": {
+        "sample_count": 132,
+        "visible_count": 132,
+        "texture_rgb_std": 17.940464772222366,
+        "names": [
+          "YuzuhaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 25.676711102622725,
+        "p95": 35.333333333333336,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 8,
+      "name": "前髮",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3524,
+      "face_count": 1297,
+      "role": "hair",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaHairADiffuse.dds",
+          "sha256": "23e49159b01373a1a8826e11ae26be994572ba2bddc2e2537158ae5707eeb0dc"
+        },
+        "NormalMap": {
+          "file": "YuzuhaHairANormalMap.dds",
+          "sha256": "f38738a6e49d6b80f41920200463c0be8424789fb3498b81890d826dd729e92e"
+        },
+        "LightMap": {
+          "file": "YuzuhaHairALightMap.dds",
+          "sha256": "0dda28bb22b5eecd875cdb9f11840b93dfd5df3036826f408d5f18c8f7d8dd71"
+        },
+        "MaterialMap": {
+          "file": "YuzuhaHairAMaterialMap.dds",
+          "sha256": "2515bfd0e57cf1ee998d972929385aed795593ac93e6195d854b3d7e53a5a2c3"
+        }
+      },
+      "matching": "game_vertex_uv_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "423ca0d483a088e9746a1a0994a79b68e61c45638104003d93420792a2272012",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 16.68378687920479,
+          "p95": 32.28295496916009,
+          "below12": 0.39707016191210487
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 54.36445038319964,
+          "p95": 98.25030376096569,
+          "below12": 0.015163197121562581
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 76.98247275423684,
+          "p95": 135.66863664005092,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 78.20454412237737,
+          "p95": 136.98514811197919,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 3891,
+        "visible_count": 3891,
+        "texture_rgb_std": 24.391445077810925,
+        "names": [
+          "YuzuhaHairADiffuse.dds",
+          "YuzuhaHairBDiffuse.dds",
+          "YuzuhaLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 16.68378687920479,
+        "p95": 32.28295496916009,
+        "below12": 0.39707016191210487
+      },
+      "atlas": "HairA",
+      "dds_flip_v": true,
+      "uv_evidence": {
+        "vertices": 1175,
+        "fraction_under_0_001": 1.0,
+        "max_distance": 0.0002524434317608402,
+        "v_flipped": true,
+        "HairA_HairB_companions_identical": true,
+        "source": "YuzuhaHairA-vb0=051f9657.txt",
+        "pmx_color_preserved": true
+      }
+    },
+    {
+      "index": 9,
+      "name": "髮",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 4821,
+      "face_count": 6025,
+      "role": "hair",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaHairADiffuse.dds",
+          "sha256": "23e49159b01373a1a8826e11ae26be994572ba2bddc2e2537158ae5707eeb0dc"
+        },
+        "NormalMap": {
+          "file": "YuzuhaHairANormalMap.dds",
+          "sha256": "f38738a6e49d6b80f41920200463c0be8424789fb3498b81890d826dd729e92e"
+        },
+        "LightMap": {
+          "file": "YuzuhaHairALightMap.dds",
+          "sha256": "0dda28bb22b5eecd875cdb9f11840b93dfd5df3036826f408d5f18c8f7d8dd71"
+        },
+        "MaterialMap": {
+          "file": "YuzuhaHairAMaterialMap.dds",
+          "sha256": "2515bfd0e57cf1ee998d972929385aed795593ac93e6195d854b3d7e53a5a2c3"
+        }
+      },
+      "matching": "game_vertex_uv_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "423ca0d483a088e9746a1a0994a79b68e61c45638104003d93420792a2272012",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 14.84539628656982,
+          "p95": 28.070725521028077,
+          "below12": 0.4011904761904762
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 55.70792361463241,
+          "p95": 98.74573401765274,
+          "below12": 0.002380952380952381
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 76.21157127402016,
+          "p95": 128.34906333342184,
+          "below12": 0.0002380952380952381
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 78.34339626563062,
+          "p95": 129.72162272135415,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 19.328148370124165,
+        "names": [
+          "YuzuhaHairADiffuse.dds",
+          "YuzuhaHairBDiffuse.dds",
+          "YuzuhaLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 14.84539628656982,
+        "p95": 28.070725521028077,
+        "below12": 0.4011904761904762
+      },
+      "atlas": "HairA",
+      "dds_flip_v": true,
+      "uv_evidence": {
+        "vertices": 4959,
+        "fraction_under_0_001": 1.0,
+        "max_distance": 0.0002646989863206881,
+        "v_flipped": true,
+        "HairA_HairB_companions_identical": true,
+        "source": "YuzuhaHairA-vb0=051f9657.txt",
+        "pmx_color_preserved": true
+      }
+    },
+    {
+      "index": 10,
+      "name": "发饰",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 10846,
+      "face_count": 956,
+      "role": "cloth",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaHairADiffuse.dds",
+          "sha256": "23e49159b01373a1a8826e11ae26be994572ba2bddc2e2537158ae5707eeb0dc"
+        },
+        "NormalMap": {
+          "file": "YuzuhaHairANormalMap.dds",
+          "sha256": "f38738a6e49d6b80f41920200463c0be8424789fb3498b81890d826dd729e92e"
+        },
+        "LightMap": {
+          "file": "YuzuhaHairALightMap.dds",
+          "sha256": "0dda28bb22b5eecd875cdb9f11840b93dfd5df3036826f408d5f18c8f7d8dd71"
+        },
+        "MaterialMap": {
+          "file": "YuzuhaHairAMaterialMap.dds",
+          "sha256": "2515bfd0e57cf1ee998d972929385aed795593ac93e6195d854b3d7e53a5a2c3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "423ca0d483a088e9746a1a0994a79b68e61c45638104003d93420792a2272012",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.1539299209064901,
+          "p95": 0.6268939293262409,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 57.11369382130367,
+          "p95": 170.22782194628817,
+          "below12": 0.14609483960948397
+        },
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 64.29140057280256,
+          "p95": 174.66666666666666,
+          "below12": 0.011157601115760111
+        },
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 80.14986051694022,
+          "p95": 191.0,
+          "below12": 0.03905160390516039
+        }
+      ],
+      "evidence": {
+        "sample_count": 2868,
+        "visible_count": 2868,
+        "texture_rgb_std": 70.69166843900315,
+        "names": [
+          "YuzuhaHairADiffuse.dds",
+          "YuzuhaHairBDiffuse.dds",
+          "YuzuhaLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.1539299209064901,
+        "p95": 0.6268939293262409,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 11,
+      "name": "体",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 11802,
+      "face_count": 5322,
+      "role": "cloth",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaBodyADiffuse.dds",
+          "sha256": "2cbbf9c6730c2f8808fa19a08e531b722379a4b8ffebfc250b01db44bbbae667"
+        },
+        "NormalMap": {
+          "file": "YuzuhaBodyANormalMap.dds",
+          "sha256": "5878eafa75ff72c62856b9847bf92c375964c9965220e74198a4956062f78fca"
+        },
+        "LightMap": {
+          "file": "YuzuhaBodyALightMap.dds",
+          "sha256": "56eadc96986ee5f12dc633e17784f20522b0fc3900ef79771a51267a8e2ac7d5"
+        },
+        "MaterialMap": {
+          "file": "YuzuhaBodyAMaterialMap.dds",
+          "sha256": "d820488f2b56edb52882b11f5628069f689d7e7f57f40ccef8256c367645dee5"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "633d98bd31274938d281a9150479ac8523bf311720b9c6ae88346e7034f6ff29",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.17423269341764513,
+          "p95": 0.6335762965083451,
+          "below12": 0.9997619047619047
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 76.8582764875477,
+          "p95": 169.33333333333334,
+          "below12": 0.11833333333333333
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 78.14679021800272,
+          "p95": 166.04422073231828,
+          "below12": 0.12238095238095238
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 81.25782864876335,
+          "p95": 149.8508600674472,
+          "below12": 0.05238095238095238
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 73.18291420643969,
+        "names": [
+          "YuzuhaBodyADiffuse.dds",
+          "YuzuhaBodyBDiffuse.dds",
+          "YuzuhaKamaADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.17423269341764513,
+        "p95": 0.6335762965083451,
+        "below12": 0.9997619047619047
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 12,
+      "name": "裤",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 17124,
+      "face_count": 466,
+      "role": "cloth",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaBodyADiffuse.dds",
+          "sha256": "2cbbf9c6730c2f8808fa19a08e531b722379a4b8ffebfc250b01db44bbbae667"
+        },
+        "NormalMap": {
+          "file": "YuzuhaBodyANormalMap.dds",
+          "sha256": "5878eafa75ff72c62856b9847bf92c375964c9965220e74198a4956062f78fca"
+        },
+        "LightMap": {
+          "file": "YuzuhaBodyALightMap.dds",
+          "sha256": "56eadc96986ee5f12dc633e17784f20522b0fc3900ef79771a51267a8e2ac7d5"
+        },
+        "MaterialMap": {
+          "file": "YuzuhaBodyAMaterialMap.dds",
+          "sha256": "d820488f2b56edb52882b11f5628069f689d7e7f57f40ccef8256c367645dee5"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "633d98bd31274938d281a9150479ac8523bf311720b9c6ae88346e7034f6ff29",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.033247394179098964,
+          "p95": 0.2893717447917273,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 42.00914920717862,
+          "p95": 142.42031428649008,
+          "below12": 0.2947067238912732
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 62.18199149618895,
+          "p95": 157.83972299098966,
+          "below12": 0.2532188841201717
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 73.90165841187721,
+          "p95": 163.3336333105763,
+          "below12": 0.032904148783977114
+        }
+      ],
+      "evidence": {
+        "sample_count": 1398,
+        "visible_count": 1398,
+        "texture_rgb_std": 6.443450712696546,
+        "names": [
+          "YuzuhaBodyADiffuse.dds",
+          "YuzuhaBodyBDiffuse.dds",
+          "YuzuhaKamaADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.033247394179098964,
+        "p95": 0.2893717447917273,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA",
+      "matching_peer_slot": 11
+    },
+    {
+      "index": 13,
+      "name": "体2",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 17590,
+      "face_count": 3310,
+      "role": "cloth",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaHairADiffuse.dds",
+          "sha256": "23e49159b01373a1a8826e11ae26be994572ba2bddc2e2537158ae5707eeb0dc"
+        },
+        "NormalMap": {
+          "file": "YuzuhaHairANormalMap.dds",
+          "sha256": "f38738a6e49d6b80f41920200463c0be8424789fb3498b81890d826dd729e92e"
+        },
+        "LightMap": {
+          "file": "YuzuhaHairALightMap.dds",
+          "sha256": "0dda28bb22b5eecd875cdb9f11840b93dfd5df3036826f408d5f18c8f7d8dd71"
+        },
+        "MaterialMap": {
+          "file": "YuzuhaHairAMaterialMap.dds",
+          "sha256": "2515bfd0e57cf1ee998d972929385aed795593ac93e6195d854b3d7e53a5a2c3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "423ca0d483a088e9746a1a0994a79b68e61c45638104003d93420792a2272012",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.14539324918569035,
+          "p95": 0.5582497393662685,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 64.8302035532838,
+          "p95": 124.21716886299355,
+          "below12": 0.05380952380952381
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 72.68754420174069,
+          "p95": 165.9174945377707,
+          "below12": 0.17214285714285715
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 73.65372744744006,
+          "p95": 173.945429971483,
+          "below12": 0.19595238095238096
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 66.86088367289919,
+        "names": [
+          "YuzuhaHairADiffuse.dds",
+          "YuzuhaHairBDiffuse.dds",
+          "YuzuhaLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.14539324918569035,
+        "p95": 0.5582497393662685,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 14,
+      "name": "肌",
+      "texture": "tex\\髮.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 20900,
+      "face_count": 4403,
+      "role": "skin",
+      "source_texture": "tex\\髮.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaHairADiffuse.dds",
+          "sha256": "23e49159b01373a1a8826e11ae26be994572ba2bddc2e2537158ae5707eeb0dc"
+        },
+        "NormalMap": {
+          "file": "YuzuhaHairANormalMap.dds",
+          "sha256": "f38738a6e49d6b80f41920200463c0be8424789fb3498b81890d826dd729e92e"
+        },
+        "LightMap": {
+          "file": "YuzuhaHairALightMap.dds",
+          "sha256": "0dda28bb22b5eecd875cdb9f11840b93dfd5df3036826f408d5f18c8f7d8dd71"
+        },
+        "MaterialMap": {
+          "file": "YuzuhaHairAMaterialMap.dds",
+          "sha256": "2515bfd0e57cf1ee998d972929385aed795593ac93e6195d854b3d7e53a5a2c3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "423ca0d483a088e9746a1a0994a79b68e61c45638104003d93420792a2272012",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.10199123891128617,
+          "p95": 0.36468162412444655,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 14.247408588351567,
+          "p95": 23.333333333333332,
+          "below12": 0.3411904761904762
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 42.428106713820675,
+          "p95": 166.2968457984527,
+          "below12": 0.508095238095238
+        },
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 80.13775614280996,
+          "p95": 220.87341265090802,
+          "below12": 0.09404761904761905
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 7.582442944705613,
+        "names": [
+          "YuzuhaHairADiffuse.dds",
+          "YuzuhaHairBDiffuse.dds",
+          "YuzuhaLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.10199123891128617,
+        "p95": 0.36468162412444655,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 15,
+      "name": "裙",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 25303,
+      "face_count": 982,
+      "role": "cloth",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaBodyADiffuse.dds",
+          "sha256": "2cbbf9c6730c2f8808fa19a08e531b722379a4b8ffebfc250b01db44bbbae667"
+        },
+        "NormalMap": {
+          "file": "YuzuhaBodyANormalMap.dds",
+          "sha256": "5878eafa75ff72c62856b9847bf92c375964c9965220e74198a4956062f78fca"
+        },
+        "LightMap": {
+          "file": "YuzuhaBodyALightMap.dds",
+          "sha256": "56eadc96986ee5f12dc633e17784f20522b0fc3900ef79771a51267a8e2ac7d5"
+        },
+        "MaterialMap": {
+          "file": "YuzuhaBodyAMaterialMap.dds",
+          "sha256": "d820488f2b56edb52882b11f5628069f689d7e7f57f40ccef8256c367645dee5"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "633d98bd31274938d281a9150479ac8523bf311720b9c6ae88346e7034f6ff29",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.11770759149652761,
+          "p95": 0.33333333333348963,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 30.55704555842545,
+          "p95": 67.0,
+          "below12": 0.09809911744738628
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 84.54243058597851,
+          "p95": 160.90097849346978,
+          "below12": 0.0006788866259334691
+        },
+        {
+          "names": [
+            "YuzuhaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 88.45445884064394,
+          "p95": 158.58333333333331,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 2946,
+        "visible_count": 2946,
+        "texture_rgb_std": 18.282722931550733,
+        "names": [
+          "YuzuhaBodyADiffuse.dds",
+          "YuzuhaBodyBDiffuse.dds",
+          "YuzuhaKamaADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.11770759149652761,
+        "p95": 0.33333333333348963,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 16,
+      "name": "狸猫",
+      "texture": "tex\\体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 26285,
+      "face_count": 6050,
+      "role": "cloth",
+      "source_texture": "tex\\体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "YuzuhaBodyADiffuse.dds",
+          "sha256": "2cbbf9c6730c2f8808fa19a08e531b722379a4b8ffebfc250b01db44bbbae667"
+        },
+        "NormalMap": {
+          "file": "YuzuhaBodyANormalMap.dds",
+          "sha256": "5878eafa75ff72c62856b9847bf92c375964c9965220e74198a4956062f78fca"
+        },
+        "LightMap": {
+          "file": "YuzuhaBodyALightMap.dds",
+          "sha256": "56eadc96986ee5f12dc633e17784f20522b0fc3900ef79771a51267a8e2ac7d5"
+        },
+        "MaterialMap": {
+          "file": "YuzuhaBodyAMaterialMap.dds",
+          "sha256": "d820488f2b56edb52882b11f5628069f689d7e7f57f40ccef8256c367645dee5"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "633d98bd31274938d281a9150479ac8523bf311720b9c6ae88346e7034f6ff29",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.2797537463355005,
+          "p95": 0.5763161660699614,
+          "below12": 0.9916666666666667
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 65.16680813354387,
+          "p95": 138.09734863281244,
+          "below12": 0.03785714285714286
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 74.1885478564385,
+          "p95": 166.7865137121853,
+          "below12": 0.13833333333333334
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 77.68087005835628,
+          "p95": 169.88624579250808,
+          "below12": 0.11857142857142858
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 53.57494939979133,
+        "names": [
+          "YuzuhaBodyADiffuse.dds",
+          "YuzuhaBodyBDiffuse.dds",
+          "YuzuhaKamaADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.2797537463355005,
+        "p95": 0.5763161660699614,
+        "below12": 0.9916666666666667
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 17,
+      "name": "髮+",
+      "texture": "tex\\sp.png",
+      "sphere": "spa\\hair_s.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 32335,
+      "face_count": 7322,
+      "role": "hair_overlay",
+      "source_texture": "tex\\sp.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "6d24fb100036eeaacad95463d8637a6daab917aff813edec165cde08632e042f",
+      "candidates": [
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 77.02533795679048,
+          "p95": 193.66669719201326,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 106.14907970736557,
+          "p95": 130.33333333333334,
+          "below12": 0.0038095238095238095
+        },
+        {
+          "names": [
+            "YuzuhaHairADiffuse.dds",
+            "YuzuhaHairBDiffuse.dds",
+            "YuzuhaLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 127.53072452688653,
+          "p95": 222.66666666666666,
+          "below12": 0.004285714285714286
+        },
+        {
+          "names": [
+            "YuzuhaBodyADiffuse.dds",
+            "YuzuhaBodyBDiffuse.dds",
+            "YuzuhaKamaADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 131.2166483520947,
+          "p95": 213.01778628168694,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 9.690249488382578,
+        "names": [
+          "YuzuhaBodyADiffuse.dds",
+          "YuzuhaBodyBDiffuse.dds",
+          "YuzuhaKamaADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 77.02533795679048,
+        "p95": 193.66669719201326,
+        "below12": 0.0
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 7,
+      "name": "目影",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 17,
+      "name": "髮+",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": true,
+    "eyes": true
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

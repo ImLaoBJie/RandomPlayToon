@@ -1,0 +1,1159 @@
+{
+  "schema": 1,
+  "id": "Yidhari",
+  "character": "Yidhari",
+  "variant": "default",
+  "kind": "character_primary",
+  "pmx_sha256": "b9cd095d7e018c6a209f91bdc00b5877e9d65c11a0a0f0f26a377df55e94db81",
+  "pmx": "characters/Yidhari/models/伊德海莉__d85713818a/伊德海莉.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Yidhari",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "体1",
+      "texture": "textures/体1.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 30,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 15145,
+      "role": "cloth",
+      "source_texture": "textures/体1.tga",
+      "maps": {
+        "Diffuse": {
+          "file": "YidhariBodyADiffuse.dds",
+          "sha256": "c78734a17c8d42e0e733e2c4ae9729099d5afbfae11efa5b60727e821c36239a"
+        },
+        "NormalMap": {
+          "file": "YidhariBodyANormalMap.dds",
+          "sha256": "da3f2a61dc7cdfe938617f7c3c17244f497879b39e91ffc669292ab348a1efa6"
+        },
+        "LightMap": {
+          "file": "YidhariBodyALightMap.dds",
+          "sha256": "671495dd4ad0b0b3b1bb78760425890363290141a8b022b948d913cb4d777b6a"
+        },
+        "MaterialMap": {
+          "file": "YidhariBodyAMaterialMap.dds",
+          "sha256": "55890ec213c4eca1a592f13b9f4d74f7591632e1a9668ba8f971f121162946ca"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "27db3f2f9ca4d8d8e31664ed12df9fbd9f0aae730b08762aedd7231493a31ee3",
+      "candidates": [
+        {
+          "names": [
+            "YidhariBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.5682952829835592,
+          "p95": 0.7297229906308754,
+          "below12": 0.9930952380952381
+        },
+        {
+          "names": [
+            "YidhariBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 61.24217553107644,
+          "p95": 156.67018912926315,
+          "below12": 0.11357142857142857
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 61.848331983031926,
+          "p95": 112.87658685065712,
+          "below12": 0.041428571428571426
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 64.86058325679602,
+          "p95": 129.28031507560763,
+          "below12": 0.060238095238095236
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 64.87682873499158,
+        "names": [
+          "YidhariBodyADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.5682952829835592,
+        "p95": 0.7297229906308754,
+        "below12": 0.9930952380952381
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 1,
+      "name": "体",
+      "texture": "textures/体1.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 30,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 15145,
+      "face_count": 5522,
+      "role": "cloth",
+      "source_texture": "textures/体1.tga",
+      "maps": {
+        "Diffuse": {
+          "file": "YidhariBodyADiffuse.dds",
+          "sha256": "c78734a17c8d42e0e733e2c4ae9729099d5afbfae11efa5b60727e821c36239a"
+        },
+        "NormalMap": {
+          "file": "YidhariBodyANormalMap.dds",
+          "sha256": "da3f2a61dc7cdfe938617f7c3c17244f497879b39e91ffc669292ab348a1efa6"
+        },
+        "LightMap": {
+          "file": "YidhariBodyALightMap.dds",
+          "sha256": "671495dd4ad0b0b3b1bb78760425890363290141a8b022b948d913cb4d777b6a"
+        },
+        "MaterialMap": {
+          "file": "YidhariBodyAMaterialMap.dds",
+          "sha256": "55890ec213c4eca1a592f13b9f4d74f7591632e1a9668ba8f971f121162946ca"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "27db3f2f9ca4d8d8e31664ed12df9fbd9f0aae730b08762aedd7231493a31ee3",
+      "candidates": [
+        {
+          "names": [
+            "YidhariBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.07974770753077151,
+          "p95": 0.3333333333333523,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 14.738508223563993,
+          "p95": 84.67630567134518,
+          "below12": 0.824047619047619
+        },
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 14.791521676403027,
+          "p95": 72.50173973576221,
+          "below12": 0.7778571428571428
+        },
+        {
+          "names": [
+            "YidhariHairADiffuse.dds",
+            "YidhariHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 30.076312721708042,
+          "p95": 134.8140414542852,
+          "below12": 0.27690476190476193
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 24.311486935171484,
+        "names": [
+          "YidhariBodyADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.07974770753077151,
+        "p95": 0.3333333333333523,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 2,
+      "name": "尾",
+      "texture": "textures/尾.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 30,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 20667,
+      "face_count": 3130,
+      "role": "cloth",
+      "source_texture": "textures/尾.tga",
+      "maps": {
+        "Diffuse": {
+          "file": "YidhariTentaclesADiffuse.dds",
+          "sha256": "786d6ff6cc280b6147222957708f39e6a7ddf0123a5f4d5925892a25cb4dab05"
+        },
+        "NormalMap": {
+          "file": "YidhariTentaclesANormalMap.dds",
+          "sha256": "55c3ed33c2334abc198ef136184edeee2c1a45c9a94d198e65d2d80932d2c223"
+        },
+        "LightMap": {
+          "file": "YidhariTentaclesALightMap.dds",
+          "sha256": "0958e4534a912cbc52704a208b2ce8f5d97b73ef609b803963f632c4145ffaa0"
+        },
+        "MaterialMap": {
+          "file": "YidhariTentaclesAMaterialMap.dds",
+          "sha256": "bcce3586d80e262a3dee60eb30593b4c5c20be2b3ad48be91a91dcb0862e2c2a"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "88fb62341f00709122f500aa0b07246b6042a67fa801b5b485127a1bd85e8153",
+      "candidates": [
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.22644990052742692,
+          "p95": 0.7409393378704242,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 27.49735770830579,
+          "p95": 73.0,
+          "below12": 0.32476190476190475
+        },
+        {
+          "names": [
+            "YidhariHairADiffuse.dds",
+            "YidhariHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 48.73064628974892,
+          "p95": 119.95435229442339,
+          "below12": 0.004761904761904762
+        },
+        {
+          "names": [
+            "YidhariHairADiffuse.dds",
+            "YidhariHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 55.07598421758797,
+          "p95": 130.5007944298049,
+          "below12": 0.005952380952380952
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 25.510606179044984,
+        "names": [
+          "YidhariTentaclesADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.22644990052742692,
+        "p95": 0.7409393378704242,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "TentaclesA"
+    },
+    {
+      "index": 3,
+      "name": "颜",
+      "texture": "textures/颜.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 30,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 23797,
+      "face_count": 1628,
+      "role": "face",
+      "source_texture": "textures/颜.tga",
+      "maps": {
+        "Diffuse": {
+          "file": "YidhariBrowsADiffuse.dds",
+          "sha256": "ffe68eb1aa0a5c4995ea4b5a18251399f440a6bf2cde60a2a51d352ed16b9d38"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9dc9c5ebcefb6242525c40ec0a3e02eae67ae295ec850db564e8b8be42b5586c",
+      "candidates": [
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 3.9209070093350054,
+          "p95": 5.60334275202617,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 12.300667420867406,
+          "p95": 44.66996724967871,
+          "below12": 0.77
+        },
+        {
+          "names": [
+            "YidhariHairADiffuse.dds",
+            "YidhariHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 29.526211658067677,
+          "p95": 88.61062040370369,
+          "below12": 0.15595238095238095
+        },
+        {
+          "names": [
+            "YidhariHairADiffuse.dds",
+            "YidhariHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 31.352559405526534,
+          "p95": 119.3645724826387,
+          "below12": 0.21452380952380953
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 17.329500830806953,
+        "names": [
+          "YidhariBrowsADiffuse.dds",
+          "YidhariFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 3.9209070093350054,
+        "p95": 5.60334275202617,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BrowsA"
+    },
+    {
+      "index": 4,
+      "name": "睫",
+      "texture": "textures/颜.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 25425,
+      "face_count": 746,
+      "role": "brows_lashes",
+      "source_texture": "textures/颜.tga",
+      "maps": {
+        "Diffuse": {
+          "file": "YidhariBrowsADiffuse.dds",
+          "sha256": "ffe68eb1aa0a5c4995ea4b5a18251399f440a6bf2cde60a2a51d352ed16b9d38"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9dc9c5ebcefb6242525c40ec0a3e02eae67ae295ec850db564e8b8be42b5586c",
+      "candidates": [
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.09282609801017265,
+          "p95": 0.4119322026769415,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YidhariBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 72.77028375338794,
+          "p95": 183.66666666666666,
+          "below12": 0.2225201072386059
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 91.1423580219057,
+          "p95": 141.90188802083333,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 98.40892925349534,
+          "p95": 190.81222474479839,
+          "below12": 0.04825737265415549
+        }
+      ],
+      "evidence": {
+        "sample_count": 2238,
+        "visible_count": 2238,
+        "texture_rgb_std": 31.6921659602766,
+        "names": [
+          "YidhariBrowsADiffuse.dds",
+          "YidhariFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.09282609801017265,
+        "p95": 0.4119322026769415,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BrowsA"
+    },
+    {
+      "index": 5,
+      "name": "目",
+      "texture": "textures/颜.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 26171,
+      "face_count": 222,
+      "role": "eyes",
+      "source_texture": "textures/颜.tga",
+      "maps": {
+        "Diffuse": {
+          "file": "YidhariBrowsADiffuse.dds",
+          "sha256": "ffe68eb1aa0a5c4995ea4b5a18251399f440a6bf2cde60a2a51d352ed16b9d38"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9dc9c5ebcefb6242525c40ec0a3e02eae67ae295ec850db564e8b8be42b5586c",
+      "candidates": [
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.2839407143796861,
+          "p95": 0.7689308472475828,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YidhariBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 63.83120984974635,
+          "p95": 133.79445495208094,
+          "below12": 0.01951951951951952
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 70.49329326991723,
+          "p95": 153.5414333587824,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 71.13253455494154,
+          "p95": 169.15541653950933,
+          "below12": 0.024024024024024024
+        }
+      ],
+      "evidence": {
+        "sample_count": 666,
+        "visible_count": 666,
+        "texture_rgb_std": 67.5183118021681,
+        "names": [
+          "YidhariBrowsADiffuse.dds",
+          "YidhariFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.2839407143796861,
+        "p95": 0.7689308472475828,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BrowsA"
+    },
+    {
+      "index": 6,
+      "name": "白目",
+      "texture": "textures/颜.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 26393,
+      "face_count": 146,
+      "role": "eye_white",
+      "source_texture": "textures/颜.tga",
+      "maps": {
+        "Diffuse": {
+          "file": "YidhariBrowsADiffuse.dds",
+          "sha256": "ffe68eb1aa0a5c4995ea4b5a18251399f440a6bf2cde60a2a51d352ed16b9d38"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9dc9c5ebcefb6242525c40ec0a3e02eae67ae295ec850db564e8b8be42b5586c",
+      "candidates": [
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.014802105720880511,
+          "p95": 0.04226954793930417,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 17.947953032487977,
+          "p95": 23.333333333333332,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariHairADiffuse.dds",
+            "YidhariHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 44.91032511610698,
+          "p95": 96.03389053236097,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 46.02631079583024,
+          "p95": 176.38171049811444,
+          "below12": 0.14383561643835616
+        }
+      ],
+      "evidence": {
+        "sample_count": 438,
+        "visible_count": 438,
+        "texture_rgb_std": 0.1853361284350535,
+        "names": [
+          "YidhariBrowsADiffuse.dds",
+          "YidhariFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.014802105720880511,
+        "p95": 0.04226954793930417,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BrowsA",
+      "matching_peer_slot": 3
+    },
+    {
+      "index": 7,
+      "name": "目光",
+      "texture": "textures/颜.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 26539,
+      "face_count": 68,
+      "role": "eye_highlight",
+      "source_texture": "textures/颜.tga",
+      "maps": {
+        "Diffuse": {
+          "file": "YidhariBrowsADiffuse.dds",
+          "sha256": "ffe68eb1aa0a5c4995ea4b5a18251399f440a6bf2cde60a2a51d352ed16b9d38"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9dc9c5ebcefb6242525c40ec0a3e02eae67ae295ec850db564e8b8be42b5586c",
+      "candidates": [
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.13156680413142405,
+          "p95": 0.9659553911238654,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 106.78522728722336,
+          "p95": 204.66666666666666,
+          "below12": 0.004901960784313725
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 111.07032603512197,
+          "p95": 156.63687342135546,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariHairADiffuse.dds",
+            "YidhariHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 111.94096748734185,
+          "p95": 206.56666666666666,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 204,
+        "visible_count": 204,
+        "texture_rgb_std": 111.96077674115458,
+        "names": [
+          "YidhariBrowsADiffuse.dds",
+          "YidhariFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.13156680413142405,
+        "p95": 0.9659553911238654,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BrowsA"
+    },
+    {
+      "index": 8,
+      "name": "口舌",
+      "texture": "textures/颜.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 26607,
+      "face_count": 670,
+      "role": "mouth",
+      "source_texture": "textures/颜.tga",
+      "maps": {
+        "Diffuse": {
+          "file": "YidhariBrowsADiffuse.dds",
+          "sha256": "ffe68eb1aa0a5c4995ea4b5a18251399f440a6bf2cde60a2a51d352ed16b9d38"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9dc9c5ebcefb6242525c40ec0a3e02eae67ae295ec850db564e8b8be42b5586c",
+      "candidates": [
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 33.46840866152617,
+          "p95": 62.30240010579426,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.985420638414816,
+          "p95": 105.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariHairADiffuse.dds",
+            "YidhariHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 56.16907896222388,
+          "p95": 91.4350828437925,
+          "below12": 0.011442786069651741
+        }
+      ],
+      "evidence": {
+        "sample_count": 2010,
+        "visible_count": 2010,
+        "texture_rgb_std": 42.13871880533116,
+        "names": [
+          "YidhariBrowsADiffuse.dds",
+          "YidhariFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BrowsA"
+    },
+    {
+      "index": 9,
+      "name": "眉",
+      "texture": "textures/颜.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 27277,
+      "face_count": 102,
+      "role": "brows_lashes",
+      "source_texture": "textures/颜.tga",
+      "maps": {
+        "Diffuse": {
+          "file": "YidhariBrowsADiffuse.dds",
+          "sha256": "ffe68eb1aa0a5c4995ea4b5a18251399f440a6bf2cde60a2a51d352ed16b9d38"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9dc9c5ebcefb6242525c40ec0a3e02eae67ae295ec850db564e8b8be42b5586c",
+      "candidates": [
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.16421158029760172,
+          "p95": 0.523111214240456,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 36.106647260677754,
+          "p95": 44.44326296607651,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 39.24602655588723,
+          "p95": 66.26217143555488,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 40.80866552485501,
+          "p95": 105.09394135037762,
+          "below12": 0.03594771241830065
+        }
+      ],
+      "evidence": {
+        "sample_count": 306,
+        "visible_count": 306,
+        "texture_rgb_std": 17.05416608487481,
+        "names": [
+          "YidhariBrowsADiffuse.dds",
+          "YidhariFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.16421158029760172,
+        "p95": 0.523111214240456,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BrowsA"
+    },
+    {
+      "index": 10,
+      "name": "髮",
+      "texture": "textures/体2.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 30,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 27379,
+      "face_count": 6176,
+      "role": "hair",
+      "source_texture": "textures/体2.tga",
+      "maps": {
+        "Diffuse": {
+          "file": "YidhariHairADiffuse.dds",
+          "sha256": "50708c26bcd8904ee7ec5753cba51f87c8bf3e6135ecd0ae16459a4b7d362cff"
+        },
+        "NormalMap": {
+          "file": "YidhariHairANormalMap.dds",
+          "sha256": "5e6505fcf7bd59f18d602a746daed14a886e0b02455ca45c4508a3912686cd8d"
+        },
+        "LightMap": {
+          "file": "YidhariHairALightMap.dds",
+          "sha256": "84b697a40f0dbc6d45b965a5cd5f4515d05b99f811a3a605f28a4105c6b5dfb7"
+        },
+        "MaterialMap": {
+          "file": "YidhariHairAMaterialMap.dds",
+          "sha256": "c914747aabe46ef551b0712e2b750c30f3ef44ecfc2577ee87f2b1fd96ff7ac6"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "1b7e6eb6caee7d570f51a931c47e642c70c27c56d94eba5654177ece74aa1e5e",
+      "candidates": [
+        {
+          "names": [
+            "YidhariHairADiffuse.dds",
+            "YidhariHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.10760200881544543,
+          "p95": 0.4296348280956142,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 50.92610614814395,
+          "p95": 179.93443891588174,
+          "below12": 0.24595238095238095
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 52.19459464838009,
+          "p95": 113.15994390496274,
+          "below12": 0.005
+        },
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 55.448001159533426,
+          "p95": 179.4185430290525,
+          "below12": 0.15119047619047618
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 51.864114467209326,
+        "names": [
+          "YidhariHairADiffuse.dds",
+          "YidhariHairBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.10760200881544543,
+        "p95": 0.4296348280956142,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 11,
+      "name": "目光T",
+      "texture": "textures/颜.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.4000000059604645
+      ],
+      "face_start": 33555,
+      "face_count": 44,
+      "role": "eye_highlight",
+      "source_texture": "textures/颜.tga",
+      "maps": {
+        "Diffuse": {
+          "file": "YidhariBrowsADiffuse.dds",
+          "sha256": "ffe68eb1aa0a5c4995ea4b5a18251399f440a6bf2cde60a2a51d352ed16b9d38"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9dc9c5ebcefb6242525c40ec0a3e02eae67ae295ec850db564e8b8be42b5586c",
+      "candidates": [
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 43.79675510563309,
+          "p95": 50.80258183167374,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 45.939053342129924,
+          "p95": 53.89159134859844,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariHairADiffuse.dds",
+            "YidhariHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 47.32732140825065,
+          "p95": 49.0,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 132,
+        "visible_count": 95,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "YidhariBrowsADiffuse.dds",
+          "YidhariFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BrowsA",
+      "matching_peer_slot": 3
+    },
+    {
+      "index": 12,
+      "name": "目影",
+      "texture": "textures/目影.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        0.0,
+        0.0,
+        0.0,
+        0.5
+      ],
+      "face_start": 33599,
+      "face_count": 44,
+      "role": "eye_shadow",
+      "source_texture": "textures/目影.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9164d5638671c04804cfdc377a5b16ba980d62601db2746bbe30b7abf8b70b88",
+      "candidates": [
+        {
+          "names": [
+            "YidhariBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 24.438594766607185,
+          "p95": 93.36319232647602,
+          "below12": 0.1590909090909091
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 36.58350626000576,
+          "p95": 37.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariBrowsADiffuse.dds",
+            "YidhariFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 38.66666666666666,
+          "p95": 38.666666666666664,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "YidhariHairADiffuse.dds",
+            "YidhariHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 44.067149974038166,
+          "p95": 164.2657460246583,
+          "below12": 0.1590909090909091
+        }
+      ],
+      "evidence": {
+        "sample_count": 132,
+        "visible_count": 132,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "YidhariBodyADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 24.438594766607185,
+        "p95": 93.36319232647602,
+        "below12": 0.1590909090909091
+      }
+    },
+    {
+      "index": 13,
+      "name": "FX",
+      "texture": null,
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 30,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 33643,
+      "face_count": 258,
+      "role": "emissive",
+      "source_texture": null,
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha"
+    }
+  ],
+  "warnings": [
+    {
+      "material": 12,
+      "name": "目影",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 13,
+      "name": "FX",
+      "reason": "missing_source_texture",
+      "action": "pmx_diffuse_color"
+    }
+  ],
+  "capabilities": {
+    "face": true,
+    "eyes": true
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

@@ -1,0 +1,106 @@
+{
+  "YeShunguang": {
+    "hair_boundary_walls": false
+  },
+  "YeShunguang_White": {
+    "hair_boundary_walls": false
+  },
+  "Norma": {
+    "metal_parts": [
+      24
+    ],
+    "no_outline": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "bangs_without_map_attenuation": true
+  },
+  "NangongYuRapsody": {
+    "no_outline": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "emission_tints": {
+      "13": [
+        0.12,
+        0.8,
+        0.025,
+        1
+      ]
+    },
+    "hair": {
+      "highlight_strength": 0.35
+    }
+  },
+  "Remielle": {
+    "inverted_source_shells": [
+      3
+    ],
+    "skin_parts": [
+      2
+    ],
+    "eye_shadow_parts": [
+      40
+    ],
+    "eye_shadow_color": [
+      0.07,
+      0.07,
+      0.09,
+      1
+    ],
+    "eye_overlay_opacity": {
+      "10": 0.35
+    },
+    "stocking_parts": [
+      23
+    ],
+    "hair": {
+      "highlight_strength": 0.35
+    }
+  },
+  "AriaDiscordant": {
+    "soft_specular_parts": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20
+    ],
+    "hair": {
+      "highlight_strength": 0.35
+    }
+  },
+  "Alice": {
+    "hair": {
+      "gain": 0.93,
+      "peak_limit": 0.84,
+      "highlight_strength": 0.16,
+      "ambient": 0.1,
+      "highlight_white_mix": 0.12
+    }
+  },
+  "SunnaMaid": {
+    "hair": {
+      "highlight_strength": 0.22
+    }
+  },
+  "Yidhari": {
+    "hair": {
+      "highlight_strength": 0.35
+    }
+  },
+  "Yuzuha": {
+    "hair": {
+      "highlight_strength": 0.35
+    }
+  }
+}

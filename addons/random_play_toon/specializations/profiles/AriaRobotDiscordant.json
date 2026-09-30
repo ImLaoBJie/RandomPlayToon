@@ -1,0 +1,1678 @@
+{
+  "schema": 1,
+  "id": "AriaRobotDiscordant",
+  "character": "AriaRobotDiscordant",
+  "variant": "default",
+  "kind": "character_primary",
+  "pmx_sha256": "4e26bbba6b6811239bff9d89c395da1137b76677b1b2764db73c4b3a22ce997c",
+  "pmx": "characters/AriaRobotDiscordant/models/爱芮_机器人__86e4190893/爱芮_机器人.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/AriaRobotDiscordant",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "颜",
+      "texture": "tex\\颜_R.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 2041,
+      "role": "face",
+      "source_texture": "tex\\颜_R.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AriaRobotDiscordantFaceADiffuse.dds",
+          "sha256": "b6218e4c04ead9c070448986f1cb824e53a49896afc7786facc8005eabad4689"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "e6e4fa022c606b10fc258a7b7967a2fd90e58f94acabad8f14da40b1aa7b4d6f",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.06971035222315612,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 32.77133498963623,
+          "p95": 145.8547822284002,
+          "below12": 0.48119047619047617
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 64.00101711867576,
+          "p95": 176.9728239052826,
+          "below12": 0.14976190476190476
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 74.83774659133577,
+          "p95": 182.33475453211864,
+          "below12": 0.10928571428571429
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 23.18650759811224,
+        "names": [
+          "AriaRobotDiscordantFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.06971035222315612,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 1,
+      "name": "颜2",
+      "texture": "tex\\颜_R.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2041,
+      "face_count": 60,
+      "role": "face",
+      "source_texture": "tex\\颜_R.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AriaRobotDiscordantFaceADiffuse.dds",
+          "sha256": "b6218e4c04ead9c070448986f1cb824e53a49896afc7786facc8005eabad4689"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "e6e4fa022c606b10fc258a7b7967a2fd90e58f94acabad8f14da40b1aa7b4d6f",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.34873277925323576,
+          "p95": 1.0871355772929288,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 3.701458291910013,
+          "p95": 10.35241582023837,
+          "below12": 0.9611111111111111
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 87.99797372281894,
+          "p95": 166.36495529091354,
+          "below12": 0.016666666666666666
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 104.24550529798407,
+          "p95": 167.13463066872563,
+          "below12": 0.03333333333333333
+        }
+      ],
+      "evidence": {
+        "sample_count": 180,
+        "visible_count": 180,
+        "texture_rgb_std": 4.53250561752724,
+        "names": [
+          "AriaRobotDiscordantFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.34873277925323576,
+        "p95": 1.0871355772929288,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 2,
+      "name": "口线",
+      "texture": "tex\\颜_R.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2101,
+      "face_count": 60,
+      "role": "mouth_line",
+      "source_texture": "tex\\颜_R.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AriaRobotDiscordantFaceADiffuse.dds",
+          "sha256": "b6218e4c04ead9c070448986f1cb824e53a49896afc7786facc8005eabad4689"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "e6e4fa022c606b10fc258a7b7967a2fd90e58f94acabad8f14da40b1aa7b4d6f",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.17787213416397094,
+          "p95": 0.8947441048095496,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantEyesADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 4.6116827081342375,
+          "p95": 28.136855764749846,
+          "below12": 0.9055555555555556
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantEyesADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 4.6116827081342375,
+          "p95": 28.136855764749846,
+          "below12": 0.9055555555555556
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 35.88275455500577,
+          "p95": 53.71103643174963,
+          "below12": 0.1388888888888889
+        }
+      ],
+      "evidence": {
+        "sample_count": 180,
+        "visible_count": 180,
+        "texture_rgb_std": 9.06113026217767,
+        "names": [
+          "AriaRobotDiscordantFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.17787213416397094,
+        "p95": 0.8947441048095496,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 3,
+      "name": "黑目",
+      "texture": "tex\\颜_R.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2161,
+      "face_count": 200,
+      "role": "eye_white",
+      "source_texture": "tex\\颜_R.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AriaRobotDiscordantFaceADiffuse.dds",
+          "sha256": "b6218e4c04ead9c070448986f1cb824e53a49896afc7786facc8005eabad4689"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "e6e4fa022c606b10fc258a7b7967a2fd90e58f94acabad8f14da40b1aa7b4d6f",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.017121745782593966,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantBodyADiffuse.dds",
+            "AriaRobotDiscordantSkullsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 26.147601041567317,
+          "p95": 65.19999999999982,
+          "below12": 0.21166666666666667
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantBodyADiffuse.dds",
+            "AriaRobotDiscordantSkullsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 31.703171760853518,
+          "p95": 123.65499999999581,
+          "below12": 0.305
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 71.07607072810316,
+          "p95": 118.86455335399063,
+          "below12": 0.043333333333333335
+        }
+      ],
+      "evidence": {
+        "sample_count": 600,
+        "visible_count": 600,
+        "texture_rgb_std": 0.9124404921163626,
+        "names": [
+          "AriaRobotDiscordantFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.017121745782593966,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 4,
+      "name": "口舌",
+      "texture": "tex\\颜_R.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2361,
+      "face_count": 372,
+      "role": "mouth",
+      "source_texture": "tex\\颜_R.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AriaRobotDiscordantFaceADiffuse.dds",
+          "sha256": "b6218e4c04ead9c070448986f1cb824e53a49896afc7786facc8005eabad4689"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "e6e4fa022c606b10fc258a7b7967a2fd90e58f94acabad8f14da40b1aa7b4d6f",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.01399005275849169,
+          "p95": 0.10743909315930011,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantBodyADiffuse.dds",
+            "AriaRobotDiscordantSkullsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 60.27229964334729,
+          "p95": 93.29467096143341,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 67.06398600942629,
+          "p95": 116.66666666666667,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 70.90963271781702,
+          "p95": 113.66666666666667,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 1116,
+        "visible_count": 1116,
+        "texture_rgb_std": 8.603329174894201,
+        "names": [
+          "AriaRobotDiscordantFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.01399005275849169,
+        "p95": 0.10743909315930011,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "FaceA"
+    },
+    {
+      "index": 5,
+      "name": "目",
+      "texture": "tex\\目2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2733,
+      "face_count": 110,
+      "role": "eyes",
+      "source_texture": "tex\\目2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "666ffe6fde26d8fffd5feceb7d71ea6378ca9b78e674e9d19d19c13b72144d74",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 51.27339285997874,
+          "p95": 89.33934448242196,
+          "below12": 0.037383177570093455
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 52.12567749484956,
+          "p95": 105.91080011959232,
+          "below12": 0.009345794392523364
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 70.37395951036437,
+          "p95": 143.47875551011884,
+          "below12": 0.009345794392523364
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 73.55588212947045,
+          "p95": 156.44694311278639,
+          "below12": 0.018691588785046728
+        }
+      ],
+      "evidence": {
+        "sample_count": 330,
+        "visible_count": 107,
+        "texture_rgb_std": 47.82854947572793,
+        "names": [
+          "AriaRobotDiscordantFaceADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 51.27339285997874,
+        "p95": 89.33934448242196,
+        "below12": 0.037383177570093455
+      }
+    },
+    {
+      "index": 6,
+      "name": "体",
+      "texture": "tex\\体_R.png",
+      "sphere": "spa\\s1.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2843,
+      "face_count": 9715,
+      "role": "cloth",
+      "source_texture": "tex\\体_R.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AriaRobotDiscordantBodyADiffuse.dds",
+          "sha256": "5c5ac9899ad3766414c655109e2c13a3e0034f5b415aa62092c8fc3d04a736b1"
+        },
+        "NormalMap": {
+          "file": "AriaRobotDiscordantBodyANormalMap.dds",
+          "sha256": "226300af9f60cfec1513840a5bfddf4327972481e3b812c26a5f3b811b117f51"
+        },
+        "LightMap": {
+          "file": "AriaRobotDiscordantBodyALightMap.dds",
+          "sha256": "de7f9fd656dcc814e5e7fe10d00241a3e2c926ca3674bebd4226c40346ac845c"
+        },
+        "MaterialMap": {
+          "file": "AriaRobotDiscordantBodyAMaterialMap.dds",
+          "sha256": "ba12f6a2507bcb101d20b9cdaedb0270ac53f562b45235352a882df636bd45b3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "86ca871df18e3cf2b02b0023b9ede358963dae25209527d43d6a48d759deda62",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantBodyADiffuse.dds",
+            "AriaRobotDiscordantSkullsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.09911703821724246,
+          "p95": 0.5174464279810395,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantBodyADiffuse.dds",
+            "AriaRobotDiscordantSkullsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 69.62125756692231,
+          "p95": 185.00754730224605,
+          "below12": 0.19833333333333333
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 71.99984563330159,
+          "p95": 161.4886970449287,
+          "below12": 0.08452380952380953
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 77.07735704542041,
+          "p95": 174.66666666666666,
+          "below12": 0.075
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 73.30359958003702,
+        "names": [
+          "AriaRobotDiscordantBodyADiffuse.dds",
+          "AriaRobotDiscordantSkullsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.09911703821724246,
+        "p95": 0.5174464279810395,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 7,
+      "name": "体2",
+      "texture": "tex\\体_R.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 12558,
+      "face_count": 4356,
+      "role": "cloth",
+      "source_texture": "tex\\体_R.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AriaRobotDiscordantBodyADiffuse.dds",
+          "sha256": "5c5ac9899ad3766414c655109e2c13a3e0034f5b415aa62092c8fc3d04a736b1"
+        },
+        "NormalMap": {
+          "file": "AriaRobotDiscordantBodyANormalMap.dds",
+          "sha256": "226300af9f60cfec1513840a5bfddf4327972481e3b812c26a5f3b811b117f51"
+        },
+        "LightMap": {
+          "file": "AriaRobotDiscordantBodyALightMap.dds",
+          "sha256": "de7f9fd656dcc814e5e7fe10d00241a3e2c926ca3674bebd4226c40346ac845c"
+        },
+        "MaterialMap": {
+          "file": "AriaRobotDiscordantBodyAMaterialMap.dds",
+          "sha256": "ba12f6a2507bcb101d20b9cdaedb0270ac53f562b45235352a882df636bd45b3"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "86ca871df18e3cf2b02b0023b9ede358963dae25209527d43d6a48d759deda62",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantBodyADiffuse.dds",
+            "AriaRobotDiscordantSkullsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.048802348324953754,
+          "p95": 0.32572368748932445,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantBodyADiffuse.dds",
+            "AriaRobotDiscordantSkullsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 66.5162313803864,
+          "p95": 171.67812147587532,
+          "below12": 0.15333333333333332
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 74.49340517560991,
+          "p95": 165.37513499837715,
+          "below12": 0.11928571428571429
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 75.7020826241533,
+          "p95": 163.76702732027402,
+          "below12": 0.12785714285714286
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 62.12567951393482,
+        "names": [
+          "AriaRobotDiscordantBodyADiffuse.dds",
+          "AriaRobotDiscordantSkullsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.048802348324953754,
+        "p95": 0.32572368748932445,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 8,
+      "name": "饰",
+      "texture": "tex\\髮_R.png",
+      "sphere": "spa\\s1.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 16914,
+      "face_count": 7632,
+      "role": "cloth",
+      "source_texture": "tex\\髮_R.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AriaRobotDiscordantHairADiffuse.dds",
+          "sha256": "7fbd219e0ff8a70d0fb11126051a5d69b8ecbaa0a70bf866348a00ba5b3ab7ad"
+        },
+        "NormalMap": {
+          "file": "AriaRobotDiscordantHairANormalMap.dds",
+          "sha256": "ecbef23a0c8e4189620aad18a24c61061c99a987a6d55a2b34452c2aa16746d6"
+        },
+        "LightMap": {
+          "file": "AriaRobotDiscordantHairALightMap.dds",
+          "sha256": "8ad2a344309aea496db72bc7d35b5318a299ed2491595a8104ea16afa9e6c6aa"
+        },
+        "MaterialMap": {
+          "file": "AriaRobotDiscordantHairAMaterialMap.dds",
+          "sha256": "8cb39281508e3755f54842b271dd12f0b61004172b75103e649b1a4c795ec0bd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "023189c5306e7907de1ab40b2a5dc175a2545bfc65a2a17ce41215f5e9b027f7",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.11422511496252417,
+          "p95": 0.6213525387446269,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantBodyADiffuse.dds",
+            "AriaRobotDiscordantSkullsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 52.30679810008206,
+          "p95": 165.01666666666657,
+          "below12": 0.20476190476190476
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantBodyADiffuse.dds",
+            "AriaRobotDiscordantSkullsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 53.703820357480566,
+          "p95": 163.0,
+          "below12": 0.20952380952380953
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 59.43446894003616,
+          "p95": 142.00185160984594,
+          "below12": 0.5219047619047619
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 40.99287182116043,
+        "names": [
+          "AriaRobotDiscordantHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.11422511496252417,
+        "p95": 0.6213525387446269,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 9,
+      "name": "饰_粉",
+      "texture": "tex\\髮_R.png",
+      "sphere": "spa\\s1.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 24546,
+      "face_count": 1530,
+      "role": "cloth",
+      "source_texture": "tex\\髮_R.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AriaRobotDiscordantHairADiffuse.dds",
+          "sha256": "7fbd219e0ff8a70d0fb11126051a5d69b8ecbaa0a70bf866348a00ba5b3ab7ad"
+        },
+        "NormalMap": {
+          "file": "AriaRobotDiscordantHairANormalMap.dds",
+          "sha256": "ecbef23a0c8e4189620aad18a24c61061c99a987a6d55a2b34452c2aa16746d6"
+        },
+        "LightMap": {
+          "file": "AriaRobotDiscordantHairALightMap.dds",
+          "sha256": "8ad2a344309aea496db72bc7d35b5318a299ed2491595a8104ea16afa9e6c6aa"
+        },
+        "MaterialMap": {
+          "file": "AriaRobotDiscordantHairAMaterialMap.dds",
+          "sha256": "8cb39281508e3755f54842b271dd12f0b61004172b75103e649b1a4c795ec0bd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "023189c5306e7907de1ab40b2a5dc175a2545bfc65a2a17ce41215f5e9b027f7",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.053242803909601254,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 17.13969306005154,
+          "p95": 27.333776161660747,
+          "below12": 0.2892857142857143
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 53.98005485293736,
+          "p95": 138.548360456909,
+          "below12": 0.06452380952380952
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.489296465947255,
+          "p95": 104.0,
+          "below12": 0.0035714285714285713
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 20.00992193020002,
+        "names": [
+          "AriaRobotDiscordantHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.053242803909601254,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 10,
+      "name": "蝴蝶结",
+      "texture": "tex\\髮_R.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 26076,
+      "face_count": 1154,
+      "role": "cloth",
+      "source_texture": "tex\\髮_R.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AriaRobotDiscordantHairADiffuse.dds",
+          "sha256": "7fbd219e0ff8a70d0fb11126051a5d69b8ecbaa0a70bf866348a00ba5b3ab7ad"
+        },
+        "NormalMap": {
+          "file": "AriaRobotDiscordantHairANormalMap.dds",
+          "sha256": "ecbef23a0c8e4189620aad18a24c61061c99a987a6d55a2b34452c2aa16746d6"
+        },
+        "LightMap": {
+          "file": "AriaRobotDiscordantHairALightMap.dds",
+          "sha256": "8ad2a344309aea496db72bc7d35b5318a299ed2491595a8104ea16afa9e6c6aa"
+        },
+        "MaterialMap": {
+          "file": "AriaRobotDiscordantHairAMaterialMap.dds",
+          "sha256": "8cb39281508e3755f54842b271dd12f0b61004172b75103e649b1a4c795ec0bd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "023189c5306e7907de1ab40b2a5dc175a2545bfc65a2a17ce41215f5e9b027f7",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0509142289297989,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 57.34055036604855,
+          "p95": 123.66666666666667,
+          "below12": 0.0005777007510109763
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 68.50826947321059,
+          "p95": 95.92446881703533,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 68.68293555620671,
+          "p95": 147.0,
+          "below12": 0.12276140958983246
+        }
+      ],
+      "evidence": {
+        "sample_count": 3462,
+        "visible_count": 3462,
+        "texture_rgb_std": 13.421133281397664,
+        "names": [
+          "AriaRobotDiscordantHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0509142289297989,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 11,
+      "name": "饰_alpha",
+      "texture": "tex\\髮_R.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 27230,
+      "face_count": 212,
+      "role": "cutout",
+      "source_texture": "tex\\髮_R.png",
+      "maps": {
+        "Diffuse": {
+          "file": "AriaRobotDiscordantHairADiffuse.dds",
+          "sha256": "7fbd219e0ff8a70d0fb11126051a5d69b8ecbaa0a70bf866348a00ba5b3ab7ad"
+        },
+        "NormalMap": {
+          "file": "AriaRobotDiscordantHairANormalMap.dds",
+          "sha256": "ecbef23a0c8e4189620aad18a24c61061c99a987a6d55a2b34452c2aa16746d6"
+        },
+        "LightMap": {
+          "file": "AriaRobotDiscordantHairALightMap.dds",
+          "sha256": "8ad2a344309aea496db72bc7d35b5318a299ed2491595a8104ea16afa9e6c6aa"
+        },
+        "MaterialMap": {
+          "file": "AriaRobotDiscordantHairAMaterialMap.dds",
+          "sha256": "8cb39281508e3755f54842b271dd12f0b61004172b75103e649b1a4c795ec0bd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "023189c5306e7907de1ab40b2a5dc175a2545bfc65a2a17ce41215f5e9b027f7",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.6312081762858576,
+          "p95": 1.3088521919648788,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.6713271720986439,
+          "p95": 1.4842546753088754,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantBodyADiffuse.dds",
+            "AriaRobotDiscordantSkullsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 32.976867613830024,
+          "p95": 73.28127759993083,
+          "below12": 0.11594202898550725
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 36.20414562900958,
+          "p95": 79.35607721329335,
+          "below12": 0.19806763285024154
+        }
+      ],
+      "evidence": {
+        "sample_count": 636,
+        "visible_count": 414,
+        "texture_rgb_std": 11.859707829083057,
+        "names": [
+          "AriaRobotDiscordantHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.6312081762858576,
+        "p95": 1.3088521919648788,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 12,
+      "name": "目1",
+      "texture": "tex\\Angry.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "face_start": 27442,
+      "face_count": 110,
+      "role": "eyes",
+      "source_texture": "tex\\Angry.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "a798f88c694335d57794e967d0ffbf626c8aad52ff14476625edd177b09c7b33",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 62.76770858849885,
+          "p95": 84.26799765456884,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 64.30527345058317,
+          "p95": 97.7181768955456,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 69.62135525740088,
+          "p95": 104.54626685620991,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 74.48231455527946,
+          "p95": 104.54626685620991,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 330,
+        "visible_count": 16,
+        "texture_rgb_std": 20.142170302592934,
+        "names": [
+          "AriaRobotDiscordantFaceADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 62.76770858849885,
+        "p95": 84.26799765456884,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 13,
+      "name": "目2",
+      "texture": "tex\\Angry2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "face_start": 27552,
+      "face_count": 110,
+      "role": "eyes",
+      "source_texture": "tex\\Angry2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bcf31f78936597f184a302c0670d6b88b715be68983ed261f38b045394754516",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 60.748965166720474,
+          "p95": 97.77658589574386,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 61.44738800772094,
+          "p95": 104.90574805205735,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 62.23339400667217,
+          "p95": 115.03377288671236,
+          "below12": 0.020833333333333332
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 65.77691249300733,
+          "p95": 98.63645932285517,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 330,
+        "visible_count": 48,
+        "texture_rgb_std": 21.826593179936808,
+        "names": [
+          "AriaRobotDiscordantFaceADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 60.748965166720474,
+        "p95": 97.77658589574386,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 14,
+      "name": "目3",
+      "texture": "tex\\Happy.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "face_start": 27662,
+      "face_count": 110,
+      "role": "eyes",
+      "source_texture": "tex\\Happy.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "0719f29d3ac8fd3e307344e5ec40c06d81ce268c77278c10c566a454f33df458",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 62.19968409035763,
+          "p95": 90.25602059204519,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 62.88147534272723,
+          "p95": 89.09709200704933,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 69.04489895340986,
+          "p95": 133.94667597331414,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 69.4142250433948,
+          "p95": 121.71461854255504,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 330,
+        "visible_count": 26,
+        "texture_rgb_std": 19.72531665130994,
+        "names": [
+          "AriaRobotDiscordantFaceADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 62.19968409035763,
+        "p95": 90.25602059204519,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 15,
+      "name": "目4",
+      "texture": "tex\\Happy2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "face_start": 27772,
+      "face_count": 110,
+      "role": "eyes",
+      "source_texture": "tex\\Happy2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "529c971abcabf4dce599cfafa9b50143fea514b67e0d470d46e7a423715da9a5",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.59146203103834,
+          "p95": 96.61284128945238,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.85889810815305,
+          "p95": 89.62876635278512,
+          "below12": 0.041666666666666664
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 59.3705801112911,
+          "p95": 107.4765875278427,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 64.00060989759231,
+          "p95": 101.2923636074422,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 330,
+        "visible_count": 24,
+        "texture_rgb_std": 13.28938643848313,
+        "names": [
+          "AriaRobotDiscordantFaceADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 58.59146203103834,
+        "p95": 96.61284128945238,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 16,
+      "name": "目5",
+      "texture": "tex\\Sad.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "face_start": 27882,
+      "face_count": 110,
+      "role": "eyes",
+      "source_texture": "tex\\Sad.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bb39213b1d030887fcbe764fee6a9d8b591bda78bc85fde994e80918dced4875",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 54.15595222559954,
+          "p95": 89.79335168882275,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 60.21696416713232,
+          "p95": 105.4033492873661,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 62.474811630877525,
+          "p95": 114.73858899043131,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantBodyADiffuse.dds",
+            "AriaRobotDiscordantSkullsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 67.01234249218714,
+          "p95": 106.73242788370223,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 330,
+        "visible_count": 11,
+        "texture_rgb_std": 23.94617919666581,
+        "names": [
+          "AriaRobotDiscordantHairBDiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 54.15595222559954,
+        "p95": 89.79335168882275,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 17,
+      "name": "目6",
+      "texture": "tex\\Shy.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "face_start": 27992,
+      "face_count": 110,
+      "role": "eyes",
+      "source_texture": "tex\\Shy.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "3381a6bfbb06c24c3da5cade138e34433c3a8b88bc71892e2e3cee3e85b9f743",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 63.43006757571567,
+          "p95": 118.17301529413598,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 67.12758343901095,
+          "p95": 103.87343553106238,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 67.68999383997058,
+          "p95": 98.09713794972747,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 67.7540838152773,
+          "p95": 100.71308186848955,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 330,
+        "visible_count": 49,
+        "texture_rgb_std": 21.695521938496835,
+        "names": [
+          "AriaRobotDiscordantHairBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 63.43006757571567,
+        "p95": 118.17301529413598,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 18,
+      "name": "目7",
+      "texture": "tex\\Surprise.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "face_start": 28102,
+      "face_count": 110,
+      "role": "eyes",
+      "source_texture": "tex\\Surprise.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "e607ce2b97850f990a35ce07039a42f4db91328fafde4b9c9ad6364daabadf9d",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 52.41669783175394,
+          "p95": 91.89641667715587,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 57.03184210043515,
+          "p95": 94.11992865668392,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 62.00859793427914,
+          "p95": 114.74788985352988,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 64.774449438322,
+          "p95": 112.79233133421104,
+          "below12": 0.029411764705882353
+        }
+      ],
+      "evidence": {
+        "sample_count": 330,
+        "visible_count": 34,
+        "texture_rgb_std": 15.97282476027292,
+        "names": [
+          "AriaRobotDiscordantFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 52.41669783175394,
+        "p95": 91.89641667715587,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 19,
+      "name": "目8",
+      "texture": "tex\\Think.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 3,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "face_start": 28212,
+      "face_count": 110,
+      "role": "eyes",
+      "source_texture": "tex\\Think.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "d8052e365be34f2b11265c26d4d60eab053452648e6187693193180c400412f8",
+      "candidates": [
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 57.33513970250381,
+          "p95": 84.10980855147042,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 63.75757302128873,
+          "p95": 98.51623680546038,
+          "below12": 0.02702702702702703
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 70.66093369788481,
+          "p95": 98.8264684454003,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "AriaRobotDiscordantHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 70.89241848397106,
+          "p95": 101.16057361172889,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 330,
+        "visible_count": 37,
+        "texture_rgb_std": 24.5833046161617,
+        "names": [
+          "AriaRobotDiscordantHairBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 57.33513970250381,
+        "p95": 84.10980855147042,
+        "below12": 0.0
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 5,
+      "name": "目",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 12,
+      "name": "目1",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 13,
+      "name": "目2",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 14,
+      "name": "目3",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 15,
+      "name": "目4",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 16,
+      "name": "目5",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 17,
+      "name": "目6",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 18,
+      "name": "目7",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 19,
+      "name": "目8",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": true,
+    "eyes": true
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

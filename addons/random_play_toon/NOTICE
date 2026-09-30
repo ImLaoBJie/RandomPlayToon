@@ -1,0 +1,14 @@
+RandomPlayToon
+Shared EEVEE art-direction code and reconstruction tools: this rendering experiment.
+Packed channel decoding adapted from HoyoToon ZZZ shader, commit d9e5ca2f312bf16fba89dee67d32c08b482dcda4.
+https://github.com/Hoyotoon/HoyoToon
+GPL-3.0-or-later; see LICENSE.
+PMX import code includes an import-only subset of MMD Tools 4.5.14.
+https://github.com/MMD-Blender/blender_mmd_tools
+Copyright 2012-2025 MMD Tools authors and MMD & Blender Team.
+GPL-3.0-or-later; original copyright headers and LICENSE are retained.
+The private runtime registers only MMD data properties in reconstruction workers.
+No external MMD Tools installation is required. Upstream source hashes and local
+changes are recorded in _vendor/mmd_tools/UPSTREAM.json.
+Character PMX and original textures are user inputs; not bundled.
+Vivian calibration/library from this workspace is retained solely for the exact validated profile.

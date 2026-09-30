@@ -1,0 +1,409 @@
+[
+  {
+    "id": "Vivian",
+    "character": "Vivian",
+    "variant": "default",
+    "kind": "character_primary",
+    "pmx_sha256": "c6b0f02794a1cc89a1aeef1e3cc1f5a20891e3c2f25370981dffe1f6b827cc6f",
+    "pmx": "characters/Vivian/models/薇薇安__1daa30c86d/薇薇安.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Vivian",
+    "capabilities": {
+      "face": true,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Alice_Weapon_d3c2",
+    "character": "Alice",
+    "variant": "default",
+    "kind": "weapon",
+    "pmx_sha256": "3e7f079701efcf2aea0fe0722d129f7a45a923c9bf1012fd743a41f95d7af661",
+    "pmx": "characters/Alice/models/武器__d3c276bacc/武器.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Alice",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Alice",
+    "character": "Alice",
+    "variant": "default",
+    "kind": "character_primary",
+    "pmx_sha256": "4a016ba663ea9be46679a074119585135ab7840dd306dfab9b84567bb4cb53af",
+    "pmx": "characters/Alice/models/爱丽丝__79acd52f2b/爱丽丝.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Alice",
+    "capabilities": {
+      "face": true,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [
+      18
+    ],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "SunnaMaid",
+    "character": "SunnaMaid",
+    "variant": "default",
+    "kind": "character_primary",
+    "pmx_sha256": "545a9ba0d601cfc5209dc9029a805a38f752d5ab8e3b4a819dca9c79d9ff394e",
+    "pmx": "characters/SunnaMaid/models/千夏皮肤__2a80c06363/千夏皮肤.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/SunnaMaid",
+    "capabilities": {
+      "face": true,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "SunnaMaid_Accessory_ed38",
+    "character": "SunnaMaid",
+    "variant": "default",
+    "kind": "accessory",
+    "pmx_sha256": "364b48d87ef1fa647f776f20e6d85cffe0867f4a9b35d43edd7e15f02b10c6cf",
+    "pmx": "characters/SunnaMaid/models/喇叭__ed38dfa396/喇叭.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/SunnaMaid",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "SunnaMaid_Accessory_da49",
+    "character": "SunnaMaid",
+    "variant": "default",
+    "kind": "accessory",
+    "pmx_sha256": "6b278bd8f01b395c281cfb272279752708a1cda27d4d26ab490e19dd89a7922f",
+    "pmx": "characters/SunnaMaid/models/手机__da49bbdf3a/手机.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/SunnaMaid",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "SunnaMaid_Weapon_8fd2",
+    "character": "SunnaMaid",
+    "variant": "default",
+    "kind": "weapon",
+    "pmx_sha256": "7d57ead0cf48f5a8b9fd1212e009fc73f8370c94116ec92539694078dcecf01e",
+    "pmx": "characters/SunnaMaid/models/武器__8fd2fb7562/武器.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/SunnaMaid",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "SunnaMaid_Effect_dece",
+    "character": "SunnaMaid",
+    "variant": "default",
+    "kind": "effect",
+    "pmx_sha256": "634b33718ccb5df28028c0fdcaa1d7cb31a55538df86e7563683fcb1c4742bee",
+    "pmx": "characters/SunnaMaid/models/泡泡__dece96a425/泡泡.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/SunnaMaid",
+    "capabilities": {
+      "face": false,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Yuzuha",
+    "character": "Yuzuha",
+    "variant": "default",
+    "kind": "character_primary",
+    "pmx_sha256": "89432deb6c72a309e952181842ba15b2b74e33f32b2ce51976076a3a7799d03c",
+    "pmx": "characters/Yuzuha/models/柚叶__1ea01dbc12/柚叶.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Yuzuha",
+    "capabilities": {
+      "face": true,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Yuzuha_Weapon_961d",
+    "character": "Yuzuha",
+    "variant": "default",
+    "kind": "weapon",
+    "pmx_sha256": "d7d0c5b215f7301a292ad6e6daf51c6a78177fb15b000324aa702d7df80b66bd",
+    "pmx": "characters/Yuzuha/models/武器__961d0908cf/武器.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Yuzuha",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Pyrois",
+    "character": "Pyrois",
+    "variant": "default",
+    "kind": "character_primary",
+    "pmx_sha256": "a6220b3dc950add7304b333328c15f4694f43e49ebffada8f1332ceb30b39b63",
+    "pmx": "characters/Pyrois/models/佩洛伊斯1__8257a9eddf/佩洛伊斯1.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Pyrois",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Pyrois_Weapon_ef02",
+    "character": "Pyrois",
+    "variant": "default",
+    "kind": "weapon",
+    "pmx_sha256": "5e0f500976aa5c0a48910afe0798a79bd6fb0f41e0367426834797bd4e40ed5f",
+    "pmx": "characters/Pyrois/models/武器__ef02c368f1/武器.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Pyrois",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "AriaDiscordant_Weapon_d386",
+    "character": "AriaDiscordant",
+    "variant": "default",
+    "kind": "weapon",
+    "pmx_sha256": "df8c92d6ae107d7a8d374a5c5b24807870e02fe98e1503a081128ca9ce9e30e9",
+    "pmx": "characters/AriaDiscordant/models/武器__d3866f6c2e/武器.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/AriaDiscordant",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "AriaDiscordant",
+    "character": "AriaDiscordant",
+    "variant": "default",
+    "kind": "character_primary",
+    "pmx_sha256": "a86c44dbdfa717ea20e83fe6840dac7a56400191de41d1513e517f95321117d6",
+    "pmx": "characters/AriaDiscordant/models/爱芮__dbf3fb0333/爱芮.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/AriaDiscordant",
+    "capabilities": {
+      "face": true,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "AriaRobotDiscordant",
+    "character": "AriaRobotDiscordant",
+    "variant": "default",
+    "kind": "character_primary",
+    "pmx_sha256": "4e26bbba6b6811239bff9d89c395da1137b76677b1b2764db73c4b3a22ce997c",
+    "pmx": "characters/AriaRobotDiscordant/models/爱芮_机器人__86e4190893/爱芮_机器人.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/AriaRobotDiscordant",
+    "capabilities": {
+      "face": true,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "NangongYuRapsody",
+    "character": "NangongYuRapsody",
+    "variant": "default",
+    "kind": "character_primary",
+    "pmx_sha256": "07fdd2d2edbc7cd3482d229baaf1386b1425268a17857ade352e9bff96fcbdee",
+    "pmx": "characters/NangongYuRapsody/models/南宫羽__0d3f30519e/南宫羽.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/NangongYuRapsody",
+    "capabilities": {
+      "face": true,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "NangongYuRapsody_Weapon_631c",
+    "character": "NangongYuRapsody",
+    "variant": "default",
+    "kind": "weapon",
+    "pmx_sha256": "6cb57ea33791f2ba108f767d5b6dda9681322a3e6ad821f19ed282a25efac987",
+    "pmx": "characters/NangongYuRapsody/models/武器__631c970f88/武器.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/NangongYuRapsody",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Yidhari",
+    "character": "Yidhari",
+    "variant": "default",
+    "kind": "character_primary",
+    "pmx_sha256": "b9cd095d7e018c6a209f91bdc00b5877e9d65c11a0a0f0f26a377df55e94db81",
+    "pmx": "characters/Yidhari/models/伊德海莉__d85713818a/伊德海莉.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Yidhari",
+    "capabilities": {
+      "face": true,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Yidhari_Weapon_0256",
+    "character": "Yidhari",
+    "variant": "default",
+    "kind": "weapon",
+    "pmx_sha256": "3e71d112d470d38876f5dd6fd5f4445a0910aea901cc4972e7aa000771fc7da9",
+    "pmx": "characters/Yidhari/models/武器__02563e5812/武器.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Yidhari",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "YeShunguang",
+    "character": "YeShunguang",
+    "variant": "default",
+    "kind": "character_primary",
+    "pmx_sha256": "208e7484db2e495010a1dbe103bd2f76a903356a43f1a1b6b9b3bf42b06738f3",
+    "pmx": "characters/YeShunguang/models/叶瞬光__b90a2fae87/叶瞬光.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/YeShunguang",
+    "capabilities": {
+      "face": true,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "YeShunguang_White",
+    "character": "YeShunguang",
+    "variant": "white",
+    "kind": "character_alternative",
+    "pmx_sha256": "08d5536ed7e54756334768ed8703947006bfaab13fb95c24825faae911511bc0",
+    "pmx": "characters/YeShunguang/models/叶瞬光_白__a372664772/叶瞬光_白.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/YeShunguang",
+    "capabilities": {
+      "face": true,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "YeShunguang_Weapon_2e36",
+    "character": "YeShunguang",
+    "variant": "default",
+    "kind": "weapon",
+    "pmx_sha256": "ff35923a6be793f5a7029c99f8511e9a9f198627e11e3c00a2956086a9721069",
+    "pmx": "characters/YeShunguang/models/武器__2e36201514/武器.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/YeShunguang",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Norma_Weapon_fb4c",
+    "character": "Norma",
+    "variant": "default",
+    "kind": "weapon",
+    "pmx_sha256": "4eef0edf85283bbd41ebfc7a0ba63d629d50de4ccdd7561a5fd6d33857a6af37",
+    "pmx": "characters/Norma/models/武器__fb4cb39891/武器.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Norma",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Norma",
+    "character": "Norma",
+    "variant": "default",
+    "kind": "character_primary",
+    "pmx_sha256": "4efa88513fe67b9d2c87b4a0b674d2b8264784ce4c9aba31058ab4695ba2f15a",
+    "pmx": "characters/Norma/models/诺姆1__a886d6e7ad/诺姆1.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Norma",
+    "capabilities": {
+      "face": true,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Remielle",
+    "character": "Remielle",
+    "variant": "default",
+    "kind": "character_primary",
+    "pmx_sha256": "f1f503ed7a0a4922fc16e6f28bff6b4130b02202ece1cbedae663c6cbca6679a",
+    "pmx": "characters/Remielle/models/蕾米埃尔-白__6658d0cd6d/蕾米埃尔-白.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Remielle",
+    "capabilities": {
+      "face": true,
+      "eyes": true
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Remielle_Weapon_cda4",
+    "character": "Remielle",
+    "variant": "default",
+    "kind": "weapon",
+    "pmx_sha256": "ab9ebf0431cf4084d720dfa58aab275705631f436de077229a327ca013caa004",
+    "pmx": "characters/Remielle/models/武器__cda4eb774f/武器.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Remielle",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  },
+  {
+    "id": "Remielle_Weapon_c6c7",
+    "character": "Remielle",
+    "variant": "default",
+    "kind": "weapon",
+    "pmx_sha256": "54228054a8fb1d2c05194e8e8c7c00181a8e477714de24ddd97a7658f0b077c0",
+    "pmx": "characters/Remielle/models/武器翅膀2__c6c7967fcc/武器翅膀2.pmx",
+    "asset_directory": "render_library/PlayerCharacterData/Remielle",
+    "capabilities": {
+      "face": false,
+      "eyes": false
+    },
+    "embedded_weapon_slots": [],
+    "geometry_policy": "preserve_single_pmx"
+  }
+]

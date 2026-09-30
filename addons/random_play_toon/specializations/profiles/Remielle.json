@@ -1,0 +1,3523 @@
+{
+  "schema": 1,
+  "id": "Remielle",
+  "character": "Remielle",
+  "variant": "default",
+  "kind": "character_primary",
+  "pmx_sha256": "f1f503ed7a0a4922fc16e6f28bff6b4130b02202ece1cbedae663c6cbca6679a",
+  "pmx": "characters/Remielle/models/蕾米埃尔-白__6658d0cd6d/蕾米埃尔-白.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Remielle",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "颜",
+      "texture": "tex/颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 1678,
+      "role": "face",
+      "source_texture": "tex/颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleEyebrowsADiffuse.dds",
+          "sha256": "ffc633cc581dc1b2121675ea7feff871dc6e99760389bc8dd2036a11916b9893"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "89a411308fe65db840512e3f69ea2c54a7d80a09fbf27a82b8786e293a3158cc",
+      "candidates": [
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 2.9058828666749257,
+          "p95": 6.778939590156393,
+          "below12": 0.9757142857142858
+        },
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 13.106488413844373,
+          "p95": 31.333333333333332,
+          "below12": 0.7888095238095238
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 30.917478721226843,
+          "p95": 94.34413827429216,
+          "below12": 0.10047619047619048
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 34.00608481044034,
+          "p95": 97.5423381157034,
+          "below12": 0.10833333333333334
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 8.62844928383842,
+        "names": [
+          "RemielleEyebrowsADiffuse.dds",
+          "RemielleFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 2.9058828666749257,
+        "p95": 6.778939590156393,
+        "below12": 0.9757142857142858
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 1,
+      "name": "肌",
+      "texture": "tex/体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1678,
+      "face_count": 2358,
+      "role": "skin",
+      "source_texture": "tex/体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleBodyADiffuse.dds",
+          "sha256": "5d2fc4a7d47dd247a55a915cbd32e332c753e58861af2ec0bfc7bf9b253fe9b6"
+        },
+        "NormalMap": {
+          "file": "RemielleBodyANormalMap.dds",
+          "sha256": "348512cea6cd6bd70b896680fffe42313979923a2fa411bab9e922b105b07b87"
+        },
+        "LightMap": {
+          "file": "RemielleBodyALightMap.dds",
+          "sha256": "7a13f121c0c9aaab287bdea41069f61faa4d7c93a1044396b3385abf5bf512be"
+        },
+        "MaterialMap": {
+          "file": "RemielleBodyAMaterialMap.dds",
+          "sha256": "6b007864f4739382b0e0da2d3bd6dbeaa0d9a4fc5f3ad7c760f1e339edf3a510"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ad758e87636df67d50d04a2d623ee5edd3a8394b916faf93cc40a7090c57d979",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 4.08144653604035,
+          "p95": 10.723083357410426,
+          "below12": 0.9619047619047619
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 39.403563350342864,
+          "p95": 78.00420111084311,
+          "below12": 0.10047619047619048
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 43.53224905664858,
+          "p95": 72.88128438723582,
+          "below12": 0.04738095238095238
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.59526510769182,
+          "p95": 94.3845350477431,
+          "below12": 0.030952380952380953
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 9.614518668501889,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 4.08144653604035,
+        "p95": 10.723083357410426,
+        "below12": 0.9619047619047619
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 2,
+      "name": "手",
+      "texture": "tex/体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 4036,
+      "face_count": 2672,
+      "role": "cloth",
+      "source_texture": "tex/体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleBodyADiffuse.dds",
+          "sha256": "5d2fc4a7d47dd247a55a915cbd32e332c753e58861af2ec0bfc7bf9b253fe9b6"
+        },
+        "NormalMap": {
+          "file": "RemielleBodyANormalMap.dds",
+          "sha256": "348512cea6cd6bd70b896680fffe42313979923a2fa411bab9e922b105b07b87"
+        },
+        "LightMap": {
+          "file": "RemielleBodyALightMap.dds",
+          "sha256": "7a13f121c0c9aaab287bdea41069f61faa4d7c93a1044396b3385abf5bf512be"
+        },
+        "MaterialMap": {
+          "file": "RemielleBodyAMaterialMap.dds",
+          "sha256": "6b007864f4739382b0e0da2d3bd6dbeaa0d9a4fc5f3ad7c760f1e339edf3a510"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ad758e87636df67d50d04a2d623ee5edd3a8394b916faf93cc40a7090c57d979",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 2.2030166189683404,
+          "p95": 2.819676277359284,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 9.029228956460534,
+          "p95": 24.51956976996523,
+          "below12": 0.79
+        },
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 19.61351937245378,
+          "p95": 97.51477728949654,
+          "below12": 0.5345238095238095
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 25.488957478861128,
+          "p95": 82.36783589442577,
+          "below12": 0.18761904761904763
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 9.550531377076766,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 2.2030166189683404,
+        "p95": 2.819676277359284,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 3,
+      "name": "手2",
+      "texture": "tex/肌+.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 6708,
+      "face_count": 2764,
+      "role": "cloth",
+      "source_texture": "tex/肌+.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "27102b0b9c3e8b59bfb0e3840ac88856953c197ea948d5cb3b5c15a060353819",
+      "candidates": [
+        {
+          "names": [
+            "RemielleWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 151.4757258385523,
+          "p95": 223.33333333333334,
+          "below12": 0.25976190476190475
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 155.6753990238236,
+          "p95": 203.96797688802084,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 175.9534555413088,
+          "p95": 223.66666666666666,
+          "below12": 0.1719047619047619
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 177.91307979971265,
+          "p95": 231.33333333333334,
+          "below12": 0.051666666666666666
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "RemielleWingsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 151.4757258385523,
+        "p95": 223.33333333333334,
+        "below12": 0.25976190476190475
+      }
+    },
+    {
+      "index": 4,
+      "name": "体下",
+      "texture": "tex/体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 9472,
+      "face_count": 1464,
+      "role": "cloth",
+      "source_texture": "tex/体2.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleLegsADiffuse.dds",
+          "sha256": "eacf6fabc72c7640b9e659910f24552adeecdf031a08e6b4a5588713399653b0"
+        },
+        "NormalMap": {
+          "file": "RemielleLegsANormalMap.dds",
+          "sha256": "4d29a03b2f62f4b94a9b8485629cf73f4688949b280d1d3797b98828a5496576"
+        },
+        "LightMap": {
+          "file": "RemielleLegsALightMap.dds",
+          "sha256": "da012a4dbd1503039282b921fd17ca0cd2f5df88fa5cae8919f714c11f98769c"
+        },
+        "MaterialMap": {
+          "file": "RemielleLegsAMaterialMap.dds",
+          "sha256": "b22eb834f3ddf8d779f0cd5d86e7fa5e782797725a56c2f41e4f98fc32b4a0fa"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "37927bb601a0d7875a42fabb1e7bc041b1aa1f728d4cfe5e95ed92bb588b10a2",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 7.128695091170746,
+          "p95": 17.655524345459725,
+          "below12": 0.8566666666666667
+        },
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 22.056768535534992,
+          "p95": 57.90256347656251,
+          "below12": 0.3711904761904762
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 31.53257712602884,
+          "p95": 84.3090447270307,
+          "below12": 0.20642857142857143
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 35.92207520332029,
+          "p95": 69.7564133246736,
+          "below12": 0.04261904761904762
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 18.165691209071138,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 7.128695091170746,
+        "p95": 17.655524345459725,
+        "below12": 0.8566666666666667
+      },
+      "dds_flip_v": true,
+      "atlas": "LegsA"
+    },
+    {
+      "index": 5,
+      "name": "眉",
+      "texture": "tex/颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 10936,
+      "face_count": 40,
+      "role": "brows_lashes",
+      "source_texture": "tex/颜.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "89a411308fe65db840512e3f69ea2c54a7d80a09fbf27a82b8786e293a3158cc",
+      "candidates": [
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 16.432967894060425,
+          "p95": 28.333333333333332,
+          "below12": 0.48333333333333334
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 26.71184304580327,
+          "p95": 45.03633700907495,
+          "below12": 0.03333333333333333
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 38.507767281033146,
+          "p95": 83.65403682683909,
+          "below12": 0.2
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 44.21073764187223,
+          "p95": 77.0,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 120,
+        "visible_count": 120,
+        "texture_rgb_std": 26.61174666079519,
+        "names": [
+          "RemielleEyebrowsADiffuse.dds",
+          "RemielleFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 16.432967894060425,
+        "p95": 28.333333333333332,
+        "below12": 0.48333333333333334
+      }
+    },
+    {
+      "index": 6,
+      "name": "二重",
+      "texture": "tex/颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 10976,
+      "face_count": 68,
+      "role": "brows_lashes",
+      "source_texture": "tex/颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleEyebrowsADiffuse.dds",
+          "sha256": "ffc633cc581dc1b2121675ea7feff871dc6e99760389bc8dd2036a11916b9893"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "89a411308fe65db840512e3f69ea2c54a7d80a09fbf27a82b8786e293a3158cc",
+      "candidates": [
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.15540351598751892,
+          "p95": 0.613562023788629,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 52.67558223601356,
+          "p95": 120.45974392361101,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 54.86360302742438,
+          "p95": 124.16441682000958,
+          "below12": 0.06372549019607843
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 61.88165424497416,
+          "p95": 147.75047278632715,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 204,
+        "visible_count": 204,
+        "texture_rgb_std": 52.555805578024625,
+        "names": [
+          "RemielleEyebrowsADiffuse.dds",
+          "RemielleFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.15540351598751892,
+        "p95": 0.613562023788629,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 7,
+      "name": "睫",
+      "texture": "tex/颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 11044,
+      "face_count": 544,
+      "role": "brows_lashes",
+      "source_texture": "tex/颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleEyebrowsADiffuse.dds",
+          "sha256": "ffc633cc581dc1b2121675ea7feff871dc6e99760389bc8dd2036a11916b9893"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "89a411308fe65db840512e3f69ea2c54a7d80a09fbf27a82b8786e293a3158cc",
+      "candidates": [
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.14130746535408956,
+          "p95": 0.5049208013547922,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 102.84730090387916,
+          "p95": 223.31818237304688,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 110.13304003082642,
+          "p95": 188.4445779577228,
+          "below12": 0.022058823529411766
+        },
+        {
+          "names": [
+            "RemielleWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 119.11938241880326,
+          "p95": 190.88462975913282,
+          "below12": 0.0012254901960784314
+        }
+      ],
+      "evidence": {
+        "sample_count": 1632,
+        "visible_count": 1632,
+        "texture_rgb_std": 35.34240152563805,
+        "names": [
+          "RemielleEyebrowsADiffuse.dds",
+          "RemielleFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.14130746535408956,
+        "p95": 0.5049208013547922,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 8,
+      "name": "目白",
+      "texture": "tex/颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 11588,
+      "face_count": 150,
+      "role": "eye_white",
+      "source_texture": "tex/颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleEyebrowsADiffuse.dds",
+          "sha256": "ffc633cc581dc1b2121675ea7feff871dc6e99760389bc8dd2036a11916b9893"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "89a411308fe65db840512e3f69ea2c54a7d80a09fbf27a82b8786e293a3158cc",
+      "candidates": [
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 1.3403006304090401,
+          "p95": 1.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 22.942176785789595,
+          "p95": 29.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 35.55265071065763,
+          "p95": 85.45821766463185,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 52.741858179931754,
+          "p95": 151.41184082031262,
+          "below12": 0.07333333333333333
+        }
+      ],
+      "evidence": {
+        "sample_count": 450,
+        "visible_count": 450,
+        "texture_rgb_std": 0.014252863158221697,
+        "names": [
+          "RemielleEyebrowsADiffuse.dds",
+          "RemielleFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 1.3403006304090401,
+        "p95": 1.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 9,
+      "name": "目",
+      "texture": "tex/颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 11738,
+      "face_count": 246,
+      "role": "eyes",
+      "source_texture": "tex/颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleEyebrowsADiffuse.dds",
+          "sha256": "ffc633cc581dc1b2121675ea7feff871dc6e99760389bc8dd2036a11916b9893"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "89a411308fe65db840512e3f69ea2c54a7d80a09fbf27a82b8786e293a3158cc",
+      "candidates": [
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.27239504296088335,
+          "p95": 0.8680514427822014,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 70.3371574316165,
+          "p95": 139.26725155234354,
+          "below12": 0.03387533875338753
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 72.14623531306081,
+          "p95": 145.19794291360535,
+          "below12": 0.0013550135501355014
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 74.251452733556,
+          "p95": 146.35624118469033,
+          "below12": 0.0040650406504065045
+        }
+      ],
+      "evidence": {
+        "sample_count": 738,
+        "visible_count": 738,
+        "texture_rgb_std": 71.09440377575125,
+        "names": [
+          "RemielleEyebrowsADiffuse.dds",
+          "RemielleFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.27239504296088335,
+        "p95": 0.8680514427822014,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 10,
+      "name": "目光",
+      "texture": "tex/颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 11984,
+      "face_count": 62,
+      "role": "eye_highlight",
+      "source_texture": "tex/颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleEyebrowsADiffuse.dds",
+          "sha256": "ffc633cc581dc1b2121675ea7feff871dc6e99760389bc8dd2036a11916b9893"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "89a411308fe65db840512e3f69ea2c54a7d80a09fbf27a82b8786e293a3158cc",
+      "candidates": [
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.19458718842859118,
+          "p95": 0.5831504602786381,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 26.47617097050022,
+          "p95": 36.75082322160403,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 41.46517568414627,
+          "p95": 49.21619762708747,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 41.948326853128435,
+          "p95": 232.38698382536577,
+          "below12": 0.3010752688172043
+        }
+      ],
+      "evidence": {
+        "sample_count": 186,
+        "visible_count": 186,
+        "texture_rgb_std": 5.770910763835693,
+        "names": [
+          "RemielleEyebrowsADiffuse.dds",
+          "RemielleFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.19458718842859118,
+        "p95": 0.5831504602786381,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 11,
+      "name": "目光2",
+      "texture": "tex/颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 12046,
+      "face_count": 28,
+      "role": "eye_highlight",
+      "source_texture": "tex/颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleEyebrowsADiffuse.dds",
+          "sha256": "ffc633cc581dc1b2121675ea7feff871dc6e99760389bc8dd2036a11916b9893"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "89a411308fe65db840512e3f69ea2c54a7d80a09fbf27a82b8786e293a3158cc",
+      "candidates": [
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.26457317239396116,
+          "p95": 1.5284473101296783,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 67.30557995572501,
+          "p95": 223.3328542311987,
+          "below12": 0.07142857142857142
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 70.70199091913581,
+          "p95": 218.66666666666666,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 72.22252947546927,
+          "p95": 212.66666666666666,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 84,
+        "visible_count": 84,
+        "texture_rgb_std": 94.42809256045757,
+        "names": [
+          "RemielleEyebrowsADiffuse.dds",
+          "RemielleFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.26457317239396116,
+        "p95": 1.5284473101296783,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 12,
+      "name": "目光3",
+      "texture": "tex/颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 12074,
+      "face_count": 42,
+      "role": "eye_highlight",
+      "source_texture": "tex/颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleEyebrowsADiffuse.dds",
+          "sha256": "ffc633cc581dc1b2121675ea7feff871dc6e99760389bc8dd2036a11916b9893"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "89a411308fe65db840512e3f69ea2c54a7d80a09fbf27a82b8786e293a3158cc",
+      "candidates": [
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.33306050345344373,
+          "p95": 0.9674801297485528,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 63.12932111747211,
+          "p95": 88.46838243802394,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 64.1764144653129,
+          "p95": 98.13965164596831,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 65.3886240517419,
+          "p95": 81.57029619548027,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 126,
+        "visible_count": 126,
+        "texture_rgb_std": 65.68404973787018,
+        "names": [
+          "RemielleEyebrowsADiffuse.dds",
+          "RemielleFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.33306050345344373,
+        "p95": 0.9674801297485528,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 13,
+      "name": "齿",
+      "texture": "tex/颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 12116,
+      "face_count": 152,
+      "role": "mouth",
+      "source_texture": "tex/颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleEyebrowsADiffuse.dds",
+          "sha256": "ffc633cc581dc1b2121675ea7feff871dc6e99760389bc8dd2036a11916b9893"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "89a411308fe65db840512e3f69ea2c54a7d80a09fbf27a82b8786e293a3158cc",
+      "candidates": [
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 34.372409071179085,
+          "p95": 31.333333333333332,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 60.9001318188321,
+          "p95": 86.83663923766875,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 72.8624487971123,
+          "p95": 130.09735380106497,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 456,
+        "visible_count": 456,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "RemielleEyebrowsADiffuse.dds",
+          "RemielleFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 14,
+      "name": "口舌",
+      "texture": "tex/颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 12268,
+      "face_count": 482,
+      "role": "mouth",
+      "source_texture": "tex/颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleEyebrowsADiffuse.dds",
+          "sha256": "ffc633cc581dc1b2121675ea7feff871dc6e99760389bc8dd2036a11916b9893"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "89a411308fe65db840512e3f69ea2c54a7d80a09fbf27a82b8786e293a3158cc",
+      "candidates": [
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.35684647302904565,
+          "p95": 1.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 35.32857511908136,
+          "p95": 65.66666666666667,
+          "below12": 0.002074688796680498
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 60.95706871940936,
+          "p95": 85.0,
+          "below12": 0.002074688796680498
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 70.29479687793608,
+          "p95": 101.33333333333333,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 1446,
+        "visible_count": 1446,
+        "texture_rgb_std": 6.706965429483904,
+        "names": [
+          "RemielleEyebrowsADiffuse.dds",
+          "RemielleFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.35684647302904565,
+        "p95": 1.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 15,
+      "name": "口线",
+      "texture": "tex/颜.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 12750,
+      "face_count": 60,
+      "role": "mouth_line",
+      "source_texture": "tex/颜.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleEyebrowsADiffuse.dds",
+          "sha256": "ffc633cc581dc1b2121675ea7feff871dc6e99760389bc8dd2036a11916b9893"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "89a411308fe65db840512e3f69ea2c54a7d80a09fbf27a82b8786e293a3158cc",
+      "candidates": [
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 60.22652469282087,
+          "p95": 76.19543362087691,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 62.83337997536391,
+          "p95": 88.64961261038961,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 76.54458341934385,
+          "p95": 109.00262491861979,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 180,
+        "visible_count": 180,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "RemielleEyebrowsADiffuse.dds",
+          "RemielleFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 16,
+      "name": "衣",
+      "texture": "tex/体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 12810,
+      "face_count": 114,
+      "role": "cloth",
+      "source_texture": "tex/体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleBodyADiffuse.dds",
+          "sha256": "5d2fc4a7d47dd247a55a915cbd32e332c753e58861af2ec0bfc7bf9b253fe9b6"
+        },
+        "NormalMap": {
+          "file": "RemielleBodyANormalMap.dds",
+          "sha256": "348512cea6cd6bd70b896680fffe42313979923a2fa411bab9e922b105b07b87"
+        },
+        "LightMap": {
+          "file": "RemielleBodyALightMap.dds",
+          "sha256": "7a13f121c0c9aaab287bdea41069f61faa4d7c93a1044396b3385abf5bf512be"
+        },
+        "MaterialMap": {
+          "file": "RemielleBodyAMaterialMap.dds",
+          "sha256": "6b007864f4739382b0e0da2d3bd6dbeaa0d9a4fc5f3ad7c760f1e339edf3a510"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ad758e87636df67d50d04a2d623ee5edd3a8394b916faf93cc40a7090c57d979",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 20.470619827267523,
+          "p95": 26.601094699336432,
+          "below12": 0.008771929824561403
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 38.918776667728295,
+          "p95": 46.177745331741136,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 56.275892740602856,
+          "p95": 78.66540852864584,
+          "below12": 0.06140350877192982
+        }
+      ],
+      "evidence": {
+        "sample_count": 342,
+        "visible_count": 342,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA",
+      "matching_peer_slot": 1
+    },
+    {
+      "index": 17,
+      "name": "衣2",
+      "texture": "tex/体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 12924,
+      "face_count": 240,
+      "role": "cloth",
+      "source_texture": "tex/体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleBodyADiffuse.dds",
+          "sha256": "5d2fc4a7d47dd247a55a915cbd32e332c753e58861af2ec0bfc7bf9b253fe9b6"
+        },
+        "NormalMap": {
+          "file": "RemielleBodyANormalMap.dds",
+          "sha256": "348512cea6cd6bd70b896680fffe42313979923a2fa411bab9e922b105b07b87"
+        },
+        "LightMap": {
+          "file": "RemielleBodyALightMap.dds",
+          "sha256": "7a13f121c0c9aaab287bdea41069f61faa4d7c93a1044396b3385abf5bf512be"
+        },
+        "MaterialMap": {
+          "file": "RemielleBodyAMaterialMap.dds",
+          "sha256": "6b007864f4739382b0e0da2d3bd6dbeaa0d9a4fc5f3ad7c760f1e339edf3a510"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ad758e87636df67d50d04a2d623ee5edd3a8394b916faf93cc40a7090c57d979",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.06308410915229923,
+          "p95": 0.3272705078125,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 31.193472885967275,
+          "p95": 91.84524155457814,
+          "below12": 0.21388888888888888
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 38.39168391995595,
+          "p95": 73.04173605481789,
+          "below12": 0.11527777777777778
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 40.101288824285426,
+          "p95": 59.877983283665436,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 720,
+        "visible_count": 720,
+        "texture_rgb_std": 15.041499820360153,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.06308410915229923,
+        "p95": 0.3272705078125,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 18,
+      "name": "衣3",
+      "texture": "tex/体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 13164,
+      "face_count": 8068,
+      "role": "cloth",
+      "source_texture": "tex/体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleBodyADiffuse.dds",
+          "sha256": "5d2fc4a7d47dd247a55a915cbd32e332c753e58861af2ec0bfc7bf9b253fe9b6"
+        },
+        "NormalMap": {
+          "file": "RemielleBodyANormalMap.dds",
+          "sha256": "348512cea6cd6bd70b896680fffe42313979923a2fa411bab9e922b105b07b87"
+        },
+        "LightMap": {
+          "file": "RemielleBodyALightMap.dds",
+          "sha256": "7a13f121c0c9aaab287bdea41069f61faa4d7c93a1044396b3385abf5bf512be"
+        },
+        "MaterialMap": {
+          "file": "RemielleBodyAMaterialMap.dds",
+          "sha256": "6b007864f4739382b0e0da2d3bd6dbeaa0d9a4fc5f3ad7c760f1e339edf3a510"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ad758e87636df67d50d04a2d623ee5edd3a8394b916faf93cc40a7090c57d979",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 3.6667883621873716,
+          "p95": 26.8436035387912,
+          "below12": 0.8888095238095238
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 35.60912001255271,
+          "p95": 85.32361394691245,
+          "below12": 0.18976190476190477
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 43.31032892066494,
+          "p95": 103.19453971587619,
+          "below12": 0.15738095238095237
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 44.6879330075255,
+          "p95": 110.33390619126959,
+          "below12": 0.1838095238095238
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 30.016612354846554,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 3.6667883621873716,
+        "p95": 26.8436035387912,
+        "below12": 0.8888095238095238
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 19,
+      "name": "衣4",
+      "texture": "tex/体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 21232,
+      "face_count": 1558,
+      "role": "cloth",
+      "source_texture": "tex/体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleBodyADiffuse.dds",
+          "sha256": "5d2fc4a7d47dd247a55a915cbd32e332c753e58861af2ec0bfc7bf9b253fe9b6"
+        },
+        "NormalMap": {
+          "file": "RemielleBodyANormalMap.dds",
+          "sha256": "348512cea6cd6bd70b896680fffe42313979923a2fa411bab9e922b105b07b87"
+        },
+        "LightMap": {
+          "file": "RemielleBodyALightMap.dds",
+          "sha256": "7a13f121c0c9aaab287bdea41069f61faa4d7c93a1044396b3385abf5bf512be"
+        },
+        "MaterialMap": {
+          "file": "RemielleBodyAMaterialMap.dds",
+          "sha256": "6b007864f4739382b0e0da2d3bd6dbeaa0d9a4fc5f3ad7c760f1e339edf3a510"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ad758e87636df67d50d04a2d623ee5edd3a8394b916faf93cc40a7090c57d979",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 4.2164284192990555,
+          "p95": 26.05146484374988,
+          "below12": 0.8514285714285714
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 27.232019058299436,
+          "p95": 65.41886393229159,
+          "below12": 0.22476190476190477
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 39.42160571957632,
+          "p95": 59.13484420398819,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 39.74412152455143,
+          "p95": 88.05256316264604,
+          "below12": 0.1676190476190476
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 26.3054172963067,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 4.2164284192990555,
+        "p95": 26.05146484374988,
+        "below12": 0.8514285714285714
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 20,
+      "name": "袖子",
+      "texture": "tex/体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 22790,
+      "face_count": 5014,
+      "role": "cloth",
+      "source_texture": "tex/体2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "37927bb601a0d7875a42fabb1e7bc041b1aa1f728d4cfe5e95ed92bb588b10a2",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 6.204312786305681,
+          "p95": 21.24194857660934,
+          "below12": 0.7178571428571429
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 32.679094652825825,
+          "p95": 90.62630725163,
+          "below12": 0.28
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 35.11256699019084,
+          "p95": 92.32939843802096,
+          "below12": 0.2835714285714286
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 41.77120850780754,
+          "p95": 111.89163269072124,
+          "below12": 0.2219047619047619
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 24.317313814051513,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 6.204312786305681,
+        "p95": 21.24194857660934,
+        "below12": 0.7178571428571429
+      }
+    },
+    {
+      "index": 21,
+      "name": "发",
+      "texture": "tex/发.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 27804,
+      "face_count": 9227,
+      "role": "hair",
+      "source_texture": "tex/发.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleHairADiffuse.dds",
+          "sha256": "8c999cf9223d8431854126fe48ff1e60a3068a41638b7fbcd3ae50e7ca121e07"
+        },
+        "NormalMap": {
+          "file": "RemielleHairANormalMap.dds",
+          "sha256": "18bb189aef5c99d67127025787a063f289acb0da5225ef8b21988d5a91fa596a"
+        },
+        "LightMap": {
+          "file": "RemielleHairALightMap.dds",
+          "sha256": "c42676284472b6f697b141463fdbddc43f9c7a0f77c1dd69d20a9f8cb18f5bb2"
+        },
+        "MaterialMap": {
+          "file": "RemielleHairAMaterialMap.dds",
+          "sha256": "5cc2d7f56722e2cf71cd5f7154d10aa1ea01294bba7306086a71661d56ce54ef"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "458e5837d4e49986b64795d01e5421db895f4b0e53f3930eb36e59cd16e5769e",
+      "candidates": [
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 2.825998179884922,
+          "p95": 11.13798521149161,
+          "below12": 0.9530952380952381
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 30.337204592993444,
+          "p95": 70.46818574851618,
+          "below12": 0.23238095238095238
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 47.839867413837645,
+          "p95": 83.82061688780784,
+          "below12": 0.009285714285714286
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 49.0479028626653,
+          "p95": 85.08751347734693,
+          "below12": 0.008809523809523809
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 24.4619278474118,
+        "names": [
+          "RemielleHairADiffuse.dds",
+          "RemielleHairBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 2.825998179884922,
+        "p95": 11.13798521149161,
+        "below12": 0.9530952380952381
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 22,
+      "name": "发+",
+      "texture": "tex/发+.png",
+      "sphere": "spa/发+.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 37031,
+      "face_count": 9227,
+      "role": "hair_overlay",
+      "source_texture": "tex/发+.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "810e95325587a83392a482ebe95fa3fc5deab88d1a1bac58d57ceb3e22fdbb93",
+      "candidates": [
+        {
+          "names": [
+            "RemielleWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 149.39550064164035,
+          "p95": 226.99257871863875,
+          "below12": 0.28714285714285714
+        },
+        {
+          "names": [
+            "RemielleWingsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 155.33984865012843,
+          "p95": 228.3193880693118,
+          "below12": 0.26404761904761903
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 170.9292252708885,
+          "p95": 216.01022473679478,
+          "below12": 0.006190476190476191
+        },
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 171.93918409534194,
+          "p95": 223.8032059474676,
+          "below12": 0.1523809523809524
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 17.23706625674925,
+        "names": [
+          "RemielleWingsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 149.39550064164035,
+        "p95": 226.99257871863875,
+        "below12": 0.28714285714285714
+      }
+    },
+    {
+      "index": 23,
+      "name": "袜",
+      "texture": "tex/体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 46258,
+      "face_count": 2906,
+      "role": "stocking",
+      "source_texture": "tex/体2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "37927bb601a0d7875a42fabb1e7bc041b1aa1f728d4cfe5e95ed92bb588b10a2",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 11.735536864537293,
+          "p95": 37.95821430285827,
+          "below12": 0.6847619047619048
+        },
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 19.96843828740779,
+          "p95": 32.62828233506942,
+          "below12": 0.36095238095238097
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 31.250409621709835,
+          "p95": 81.5721186530391,
+          "below12": 0.31595238095238093
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 32.57574942718507,
+          "p95": 94.91628923877076,
+          "below12": 0.23
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 9.354555176708624,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 11.735536864537293,
+        "p95": 37.95821430285827,
+        "below12": 0.6847619047619048
+      }
+    },
+    {
+      "index": 24,
+      "name": "鞋",
+      "texture": "tex/体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 49164,
+      "face_count": 1842,
+      "role": "cloth",
+      "source_texture": "tex/体2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "37927bb601a0d7875a42fabb1e7bc041b1aa1f728d4cfe5e95ed92bb588b10a2",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 30.594110454742538,
+          "p95": 71.45123209635416,
+          "below12": 0.07238095238095238
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 42.72578689093099,
+          "p95": 95.14056418736777,
+          "below12": 0.1626190476190476
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.82320555765105,
+          "p95": 93.54012132794826,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 48.922593306143575,
+          "p95": 101.30342542200624,
+          "below12": 0.10976190476190475
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 35.60062560132939,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 30.594110454742538,
+        "p95": 71.45123209635416,
+        "below12": 0.07238095238095238
+      }
+    },
+    {
+      "index": 25,
+      "name": "指甲",
+      "texture": "tex/体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 51006,
+      "face_count": 452,
+      "role": "cloth",
+      "source_texture": "tex/体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleBodyADiffuse.dds",
+          "sha256": "5d2fc4a7d47dd247a55a915cbd32e332c753e58861af2ec0bfc7bf9b253fe9b6"
+        },
+        "NormalMap": {
+          "file": "RemielleBodyANormalMap.dds",
+          "sha256": "348512cea6cd6bd70b896680fffe42313979923a2fa411bab9e922b105b07b87"
+        },
+        "LightMap": {
+          "file": "RemielleBodyALightMap.dds",
+          "sha256": "7a13f121c0c9aaab287bdea41069f61faa4d7c93a1044396b3385abf5bf512be"
+        },
+        "MaterialMap": {
+          "file": "RemielleBodyAMaterialMap.dds",
+          "sha256": "6b007864f4739382b0e0da2d3bd6dbeaa0d9a4fc5f3ad7c760f1e339edf3a510"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ad758e87636df67d50d04a2d623ee5edd3a8394b916faf93cc40a7090c57d979",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.4446696231618356,
+          "p95": 2.425584790309604,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 33.0563811557773,
+          "p95": 84.24633623355378,
+          "below12": 0.18952802359882007
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 51.507878802771465,
+          "p95": 128.6373039245607,
+          "below12": 0.1873156342182891
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 52.28286542732733,
+          "p95": 73.1834568740643,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 1356,
+        "visible_count": 1356,
+        "texture_rgb_std": 34.289979603691286,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.4446696231618356,
+        "p95": 2.425584790309604,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 26,
+      "name": "发饰后",
+      "texture": "tex/体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 51458,
+      "face_count": 1658,
+      "role": "cloth",
+      "source_texture": "tex/体2.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleLegsADiffuse.dds",
+          "sha256": "eacf6fabc72c7640b9e659910f24552adeecdf031a08e6b4a5588713399653b0"
+        },
+        "NormalMap": {
+          "file": "RemielleLegsANormalMap.dds",
+          "sha256": "4d29a03b2f62f4b94a9b8485629cf73f4688949b280d1d3797b98828a5496576"
+        },
+        "LightMap": {
+          "file": "RemielleLegsALightMap.dds",
+          "sha256": "da012a4dbd1503039282b921fd17ca0cd2f5df88fa5cae8919f714c11f98769c"
+        },
+        "MaterialMap": {
+          "file": "RemielleLegsAMaterialMap.dds",
+          "sha256": "b22eb834f3ddf8d779f0cd5d86e7fa5e782797725a56c2f41e4f98fc32b4a0fa"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "37927bb601a0d7875a42fabb1e7bc041b1aa1f728d4cfe5e95ed92bb588b10a2",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 3.334640784726893,
+          "p95": 15.526033257962103,
+          "below12": 0.9145238095238095
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 37.588317777042114,
+          "p95": 103.12166596833151,
+          "below12": 0.18261904761904763
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 37.59974271603595,
+          "p95": 86.6515219019254,
+          "below12": 0.09642857142857143
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 47.618380577238604,
+          "p95": 70.5260910916065,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 33.5324010459877,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 3.334640784726893,
+        "p95": 15.526033257962103,
+        "below12": 0.9145238095238095
+      },
+      "dds_flip_v": true,
+      "atlas": "LegsA"
+    },
+    {
+      "index": 27,
+      "name": "衣后饰",
+      "texture": "tex/体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 53116,
+      "face_count": 1358,
+      "role": "cloth",
+      "source_texture": "tex/体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleBodyADiffuse.dds",
+          "sha256": "5d2fc4a7d47dd247a55a915cbd32e332c753e58861af2ec0bfc7bf9b253fe9b6"
+        },
+        "NormalMap": {
+          "file": "RemielleBodyANormalMap.dds",
+          "sha256": "348512cea6cd6bd70b896680fffe42313979923a2fa411bab9e922b105b07b87"
+        },
+        "LightMap": {
+          "file": "RemielleBodyALightMap.dds",
+          "sha256": "7a13f121c0c9aaab287bdea41069f61faa4d7c93a1044396b3385abf5bf512be"
+        },
+        "MaterialMap": {
+          "file": "RemielleBodyAMaterialMap.dds",
+          "sha256": "6b007864f4739382b0e0da2d3bd6dbeaa0d9a4fc5f3ad7c760f1e339edf3a510"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ad758e87636df67d50d04a2d623ee5edd3a8394b916faf93cc40a7090c57d979",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 2.1980122205742867,
+          "p95": 2.786997069517762,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 36.09694961559562,
+          "p95": 58.83494457629324,
+          "below12": 0.0019636720667648502
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 37.01390384288812,
+          "p95": 75.70858854486517,
+          "below12": 0.2034855179185076
+        },
+        {
+          "names": [
+            "RemielleEyebrowsADiffuse.dds",
+            "RemielleFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 39.78927132678102,
+          "p95": 66.31674022493436,
+          "below12": 0.0014727540500736377
+        }
+      ],
+      "evidence": {
+        "sample_count": 4074,
+        "visible_count": 4074,
+        "texture_rgb_std": 28.832216205563668,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 2.1980122205742867,
+        "p95": 2.786997069517762,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 28,
+      "name": "翅膀",
+      "texture": "tex/翅膀.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 54474,
+      "face_count": 6824,
+      "role": "wing",
+      "source_texture": "tex/翅膀.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleWingsADiffuse.dds",
+          "sha256": "43e46f09807facb1569705183c9675d42979a60b86dfea0932049b6aa3effff9"
+        },
+        "NormalMap": {
+          "file": "RemielleWingsANormalMap.dds",
+          "sha256": "229b60567036e11254f4a4ed67383d067024a64d3632328c8dfa0f690eced48f"
+        },
+        "LightMap": {
+          "file": "RemielleWingsALightMap.dds",
+          "sha256": "f4fb43f78067d2326d5b09efe8ecc26c715f5822fdb0382bf6310536cdf93b0f"
+        },
+        "MaterialMap": {
+          "file": "RemielleWingsAMaterialMap.dds",
+          "sha256": "fcb12d4537be0b1036cd881156f533e894e65f228a70aea69d6b356f7e3f487f"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "124a29c0afadcde3ac77466d3a97c51ec8e4f51f9910146ec0bb697efb1a1e5b",
+      "candidates": [
+        {
+          "names": [
+            "RemielleWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 6.17678278360556,
+          "p95": 18.229698215424964,
+          "below12": 0.8595238095238096
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 36.09429943370591,
+          "p95": 99.35313377365496,
+          "below12": 0.22023809523809523
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 37.45108025283033,
+          "p95": 108.8710440520837,
+          "below12": 0.23166666666666666
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 38.253049409328135,
+          "p95": 100.54308739290438,
+          "below12": 0.15666666666666668
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 13.383608563130815,
+        "names": [
+          "RemielleWingsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 6.17678278360556,
+        "p95": 18.229698215424964,
+        "below12": 0.8595238095238096
+      },
+      "dds_flip_v": true,
+      "atlas": "WingsA"
+    },
+    {
+      "index": 29,
+      "name": "戒指",
+      "texture": "tex/体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 61298,
+      "face_count": 376,
+      "role": "cloth",
+      "source_texture": "tex/体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleBodyADiffuse.dds",
+          "sha256": "5d2fc4a7d47dd247a55a915cbd32e332c753e58861af2ec0bfc7bf9b253fe9b6"
+        },
+        "NormalMap": {
+          "file": "RemielleBodyANormalMap.dds",
+          "sha256": "348512cea6cd6bd70b896680fffe42313979923a2fa411bab9e922b105b07b87"
+        },
+        "LightMap": {
+          "file": "RemielleBodyALightMap.dds",
+          "sha256": "7a13f121c0c9aaab287bdea41069f61faa4d7c93a1044396b3385abf5bf512be"
+        },
+        "MaterialMap": {
+          "file": "RemielleBodyAMaterialMap.dds",
+          "sha256": "6b007864f4739382b0e0da2d3bd6dbeaa0d9a4fc5f3ad7c760f1e339edf3a510"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ad758e87636df67d50d04a2d623ee5edd3a8394b916faf93cc40a7090c57d979",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.16038100615784015,
+          "p95": 0.5616525526159001,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 32.42440597228472,
+          "p95": 43.48975797388856,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 34.678976191974584,
+          "p95": 93.96905000121507,
+          "below12": 0.35815602836879434
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 43.33578107961219,
+          "p95": 96.35619694796202,
+          "below12": 0.03546099290780142
+        }
+      ],
+      "evidence": {
+        "sample_count": 1128,
+        "visible_count": 1128,
+        "texture_rgb_std": 8.784182876650924,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.16038100615784015,
+        "p95": 0.5616525526159001,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 30,
+      "name": "发饰",
+      "texture": "tex/体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 61674,
+      "face_count": 308,
+      "role": "cloth",
+      "source_texture": "tex/体2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "37927bb601a0d7875a42fabb1e7bc041b1aa1f728d4cfe5e95ed92bb588b10a2",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 13.640995621312161,
+          "p95": 31.64671620162359,
+          "below12": 0.4772727272727273
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 32.97674882523829,
+          "p95": 82.60597656249885,
+          "below12": 0.2067099567099567
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 40.51089017848877,
+          "p95": 73.31165852864582,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 42.348278019969996,
+          "p95": 72.12343140983585,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 924,
+        "visible_count": 924,
+        "texture_rgb_std": 31.847715517531594,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 13.640995621312161,
+        "p95": 31.64671620162359,
+        "below12": 0.4772727272727273
+      }
+    },
+    {
+      "index": 31,
+      "name": "衣金属",
+      "texture": "tex/体.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 61982,
+      "face_count": 2346,
+      "role": "metal",
+      "source_texture": "tex/体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleBodyADiffuse.dds",
+          "sha256": "5d2fc4a7d47dd247a55a915cbd32e332c753e58861af2ec0bfc7bf9b253fe9b6"
+        },
+        "NormalMap": {
+          "file": "RemielleBodyANormalMap.dds",
+          "sha256": "348512cea6cd6bd70b896680fffe42313979923a2fa411bab9e922b105b07b87"
+        },
+        "LightMap": {
+          "file": "RemielleBodyALightMap.dds",
+          "sha256": "7a13f121c0c9aaab287bdea41069f61faa4d7c93a1044396b3385abf5bf512be"
+        },
+        "MaterialMap": {
+          "file": "RemielleBodyAMaterialMap.dds",
+          "sha256": "6b007864f4739382b0e0da2d3bd6dbeaa0d9a4fc5f3ad7c760f1e339edf3a510"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ad758e87636df67d50d04a2d623ee5edd3a8394b916faf93cc40a7090c57d979",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.17073375952654202,
+          "p95": 0.6147353859742315,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 41.14642841788143,
+          "p95": 79.92682326999302,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 41.74910403876323,
+          "p95": 92.29332278847683,
+          "below12": 0.1469047619047619
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 43.42291994499786,
+          "p95": 91.14211954752601,
+          "below12": 0.15761904761904763
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 18.001986416193347,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.17073375952654202,
+        "p95": 0.6147353859742315,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 32,
+      "name": "发饰后金属",
+      "texture": "tex/体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 64328,
+      "face_count": 1904,
+      "role": "metal",
+      "source_texture": "tex/体2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "37927bb601a0d7875a42fabb1e7bc041b1aa1f728d4cfe5e95ed92bb588b10a2",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 9.990306366912419,
+          "p95": 27.337189389070016,
+          "below12": 0.6211904761904762
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 39.091594783203675,
+          "p95": 64.80607533454895,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 40.12271440598303,
+          "p95": 79.68571971038986,
+          "below12": 0.12928571428571428
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 41.12012988213113,
+          "p95": 69.67532488950096,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 22.56567451366824,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 9.990306366912419,
+        "p95": 27.337189389070016,
+        "below12": 0.6211904761904762
+      }
+    },
+    {
+      "index": 33,
+      "name": "袖子金属",
+      "texture": "tex/体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 66232,
+      "face_count": 2468,
+      "role": "metal",
+      "source_texture": "tex/体2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "37927bb601a0d7875a42fabb1e7bc041b1aa1f728d4cfe5e95ed92bb588b10a2",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 7.506421617564329,
+          "p95": 26.603754908906147,
+          "below12": 0.715
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 26.77737405756284,
+          "p95": 59.48087120776406,
+          "below12": 0.12023809523809524
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 33.585826550192266,
+          "p95": 50.513134765624955,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 33.807425097618584,
+          "p95": 63.4559407552083,
+          "below12": 0.06761904761904762
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 17.590937891634823,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 7.506421617564329,
+        "p95": 26.603754908906147,
+        "below12": 0.715
+      }
+    },
+    {
+      "index": 34,
+      "name": "戒指+",
+      "texture": "tex/体.png",
+      "sphere": "spa/金属+.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 10,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 68700,
+      "face_count": 376,
+      "role": "cloth",
+      "source_texture": "tex/体.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleBodyADiffuse.dds",
+          "sha256": "5d2fc4a7d47dd247a55a915cbd32e332c753e58861af2ec0bfc7bf9b253fe9b6"
+        },
+        "NormalMap": {
+          "file": "RemielleBodyANormalMap.dds",
+          "sha256": "348512cea6cd6bd70b896680fffe42313979923a2fa411bab9e922b105b07b87"
+        },
+        "LightMap": {
+          "file": "RemielleBodyALightMap.dds",
+          "sha256": "7a13f121c0c9aaab287bdea41069f61faa4d7c93a1044396b3385abf5bf512be"
+        },
+        "MaterialMap": {
+          "file": "RemielleBodyAMaterialMap.dds",
+          "sha256": "6b007864f4739382b0e0da2d3bd6dbeaa0d9a4fc5f3ad7c760f1e339edf3a510"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ad758e87636df67d50d04a2d623ee5edd3a8394b916faf93cc40a7090c57d979",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.16038100615784015,
+          "p95": 0.5616525526159001,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 32.42440597228472,
+          "p95": 43.48975797388856,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 34.678976191974584,
+          "p95": 93.96905000121507,
+          "below12": 0.35815602836879434
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 43.33578107961219,
+          "p95": 96.35619694796202,
+          "below12": 0.03546099290780142
+        }
+      ],
+      "evidence": {
+        "sample_count": 1128,
+        "visible_count": 1128,
+        "texture_rgb_std": 8.784182876650924,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.16038100615784015,
+        "p95": 0.5616525526159001,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 35,
+      "name": "发饰+",
+      "texture": "tex/体2金属+.png",
+      "sphere": "spa/金属+.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 10,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 69076,
+      "face_count": 308,
+      "role": "cloth",
+      "source_texture": "tex/体2金属+.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "07ca9ed3fd7e2137417815468e30a424c88c247723286cb4ffb5c0d5578c060a",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 13.858965635547884,
+          "p95": 31.90763634582364,
+          "below12": 0.4623287671232877
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 33.99631498683287,
+          "p95": 82.71169981956746,
+          "below12": 0.1780821917808219
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 40.24210897476188,
+          "p95": 73.67644119262695,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 42.799880417084864,
+          "p95": 72.66587941328694,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 924,
+        "visible_count": 876,
+        "texture_rgb_std": 30.08816304933684,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 13.858965635547884,
+        "p95": 31.90763634582364,
+        "below12": 0.4623287671232877
+      }
+    },
+    {
+      "index": 36,
+      "name": "衣金属+",
+      "texture": "tex/体+.png",
+      "sphere": "spa/金属+.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 10,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 69384,
+      "face_count": 2346,
+      "role": "metal",
+      "source_texture": "tex/体+.png",
+      "maps": {
+        "Diffuse": {
+          "file": "RemielleBodyADiffuse.dds",
+          "sha256": "5d2fc4a7d47dd247a55a915cbd32e332c753e58861af2ec0bfc7bf9b253fe9b6"
+        },
+        "NormalMap": {
+          "file": "RemielleBodyANormalMap.dds",
+          "sha256": "348512cea6cd6bd70b896680fffe42313979923a2fa411bab9e922b105b07b87"
+        },
+        "LightMap": {
+          "file": "RemielleBodyALightMap.dds",
+          "sha256": "7a13f121c0c9aaab287bdea41069f61faa4d7c93a1044396b3385abf5bf512be"
+        },
+        "MaterialMap": {
+          "file": "RemielleBodyAMaterialMap.dds",
+          "sha256": "6b007864f4739382b0e0da2d3bd6dbeaa0d9a4fc5f3ad7c760f1e339edf3a510"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "a82913335c1232556bc6983e01315e9b7b407e1c38dc9c20c436f3c8609320f0",
+      "candidates": [
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.17073375952654202,
+          "p95": 0.6147353859742315,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 41.14642841788143,
+          "p95": 79.92682326999302,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 41.74910403876323,
+          "p95": 92.29332278847683,
+          "below12": 0.1469047619047619
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 43.42291994499786,
+          "p95": 91.14211954752601,
+          "below12": 0.15761904761904763
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 18.001986416193347,
+        "names": [
+          "RemielleBodyADiffuse.dds",
+          "RemielleBodyBDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.17073375952654202,
+        "p95": 0.6147353859742315,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 37,
+      "name": "发饰后金属+",
+      "texture": "tex/体2金属+.png",
+      "sphere": "spa/金属+.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 10,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 71730,
+      "face_count": 1904,
+      "role": "metal",
+      "source_texture": "tex/体2金属+.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "07ca9ed3fd7e2137417815468e30a424c88c247723286cb4ffb5c0d5578c060a",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 8.266441264940084,
+          "p95": 27.480726766586297,
+          "below12": 0.7072592592592593
+        },
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 34.875588880555675,
+          "p95": 68.89591253181297,
+          "below12": 0.1274074074074074
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 38.60155961140918,
+          "p95": 73.09328325462344,
+          "below12": 0.11051851851851852
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 38.682494883942994,
+          "p95": 63.666666666666664,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 3375,
+        "texture_rgb_std": 16.654319755320575,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 8.266441264940084,
+        "p95": 27.480726766586297,
+        "below12": 0.7072592592592593
+      }
+    },
+    {
+      "index": 38,
+      "name": "袖子金属+",
+      "texture": "tex/体2金属+.png",
+      "sphere": "spa/金属+.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 10,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 73634,
+      "face_count": 2468,
+      "role": "metal",
+      "source_texture": "tex/体2金属+.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "07ca9ed3fd7e2137417815468e30a424c88c247723286cb4ffb5c0d5578c060a",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 7.576690925968831,
+          "p95": 26.666666666666668,
+          "below12": 0.7103635913925302
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 27.014742606852664,
+          "p95": 59.898738168645515,
+          "below12": 0.11822903784318575
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 33.291720681164286,
+          "p95": 62.776680914084025,
+          "below12": 0.06604006925550333
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 33.43940776653186,
+          "p95": 49.88818411076122,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4043,
+        "texture_rgb_std": 16.59041160035756,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 7.576690925968831,
+        "p95": 26.666666666666668,
+        "below12": 0.7103635913925302
+      }
+    },
+    {
+      "index": 39,
+      "name": "鞋+",
+      "texture": "tex/体2金属+.png",
+      "sphere": "spa/金属+.bmp",
+      "sphere_mode": 2,
+      "draw_flags": 10,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 76102,
+      "face_count": 1842,
+      "role": "cloth",
+      "source_texture": "tex/体2金属+.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "07ca9ed3fd7e2137417815468e30a424c88c247723286cb4ffb5c0d5578c060a",
+      "candidates": [
+        {
+          "names": [
+            "RemielleLegsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 29.836387260771268,
+          "p95": 67.6877743825908,
+          "below12": 0.07658473479948254
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 42.82679241738466,
+          "p95": 95.50605777581536,
+          "below12": 0.16895213454075034
+        },
+        {
+          "names": [
+            "RemielleHairADiffuse.dds",
+            "RemielleHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.628892905743925,
+          "p95": 94.36616532293922,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "RemielleBodyADiffuse.dds",
+            "RemielleBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 47.60730869893,
+          "p95": 96.79955715335728,
+          "below12": 0.11254851228978008
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 3865,
+        "texture_rgb_std": 34.74481180072261,
+        "names": [
+          "RemielleLegsADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 29.836387260771268,
+        "p95": 67.6877743825908,
+        "below12": 0.07658473479948254
+      }
+    },
+    {
+      "index": 40,
+      "name": "目影",
+      "texture": null,
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 10,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.4000000059604645
+      ],
+      "face_start": 77944,
+      "face_count": 42,
+      "role": "eye_shadow",
+      "source_texture": null,
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha"
+    }
+  ],
+  "warnings": [
+    {
+      "material": 3,
+      "name": "手2",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 5,
+      "name": "眉",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 20,
+      "name": "袖子",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 22,
+      "name": "发+",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 23,
+      "name": "袜",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 24,
+      "name": "鞋",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 30,
+      "name": "发饰",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 32,
+      "name": "发饰后金属",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 33,
+      "name": "袖子金属",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 35,
+      "name": "发饰+",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 37,
+      "name": "发饰后金属+",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 38,
+      "name": "袖子金属+",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 39,
+      "name": "鞋+",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 40,
+      "name": "目影",
+      "reason": "missing_source_texture",
+      "action": "pmx_diffuse_color"
+    }
+  ],
+  "capabilities": {
+    "face": true,
+    "eyes": true
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

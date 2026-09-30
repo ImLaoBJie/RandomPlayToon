@@ -1,0 +1,210 @@
+{
+  "schema": 1,
+  "id": "YeShunguang_Weapon_2e36",
+  "character": "YeShunguang",
+  "variant": "default",
+  "kind": "weapon",
+  "pmx_sha256": "ff35923a6be793f5a7029c99f8511e9a9f198627e11e3c00a2956086a9721069",
+  "pmx": "characters/YeShunguang/models/武器__2e36201514/武器.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/YeShunguang",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "MAT_Zhenzhen_Weapon_3",
+      "texture": "tex\\武器2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 2786,
+      "role": "weapon",
+      "source_texture": "tex\\武器2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "ffb44c9f6dfab9909163ca30f632eec84a6d45775a75758ba21325437adb5241",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 34.85014489527867,
+          "p95": 98.01566896378532,
+          "below12": 0.10452380952380952
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 36.020038521302816,
+          "p95": 97.04541263895209,
+          "below12": 0.10880952380952381
+        },
+        {
+          "names": [
+            "YeShunguangBackHairBraidsADiffuse.dds",
+            "YeShunguangHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 56.97715050526536,
+          "p95": 103.66666666666667,
+          "below12": 0.03619047619047619
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 57.10584970275044,
+          "p95": 117.34041081194107,
+          "below12": 0.045
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 36.87241326636989,
+        "names": [
+          "YeShunguangBraidsBowsADiffuse.dds",
+          "YeShunguangFrontHairADiffuse.dds",
+          "YeShunguangFrontHairBDiffuse.dds",
+          "YeShunguangHairADiffuse.dds",
+          "YeShunguangHairBDiffuse.dds",
+          "YeShunguangTopHairRibbonADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 34.85014489527867,
+        "p95": 98.01566896378532,
+        "below12": 0.10452380952380952
+      }
+    },
+    {
+      "index": 1,
+      "name": "MAT_Zhenzhen_Weapon_2",
+      "texture": "tex\\武器.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2786,
+      "face_count": 1410,
+      "role": "weapon",
+      "source_texture": "tex\\武器.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "aab2e9709df77f1266788e525280e6ce665a21dfa60fc18bda2c6b4b0eced4fb",
+      "candidates": [
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 44.530628015238385,
+          "p95": 101.0,
+          "below12": 0.07238095238095238
+        },
+        {
+          "names": [
+            "YeShunguangBraidsBowsADiffuse.dds",
+            "YeShunguangFrontHairADiffuse.dds",
+            "YeShunguangFrontHairBDiffuse.dds",
+            "YeShunguangHairADiffuse.dds",
+            "YeShunguangHairBDiffuse.dds",
+            "YeShunguangTopHairRibbonADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 46.26251436900015,
+          "p95": 98.35737123843616,
+          "below12": 0.06285714285714286
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 63.99663300743892,
+          "p95": 129.5901699290524,
+          "below12": 0.07523809523809524
+        },
+        {
+          "names": [
+            "YeShunguangLegsADiffuse.dds",
+            "YeShunguangTailADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 65.37814932873795,
+          "p95": 138.33981048017728,
+          "below12": 0.0569047619047619
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 45.7254342977028,
+        "names": [
+          "YeShunguangBraidsBowsADiffuse.dds",
+          "YeShunguangFrontHairADiffuse.dds",
+          "YeShunguangFrontHairBDiffuse.dds",
+          "YeShunguangHairADiffuse.dds",
+          "YeShunguangHairBDiffuse.dds",
+          "YeShunguangTopHairRibbonADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 44.530628015238385,
+        "p95": 101.0,
+        "below12": 0.07238095238095238
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 0,
+      "name": "MAT_Zhenzhen_Weapon_3",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 1,
+      "name": "MAT_Zhenzhen_Weapon_2",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

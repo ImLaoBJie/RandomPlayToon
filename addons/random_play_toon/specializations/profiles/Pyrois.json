@@ -1,0 +1,1786 @@
+{
+  "schema": 1,
+  "id": "Pyrois",
+  "character": "Pyrois",
+  "variant": "default",
+  "kind": "character_primary",
+  "pmx_sha256": "a6220b3dc950add7304b333328c15f4694f43e49ebffada8f1332ceb30b39b63",
+  "pmx": "characters/Pyrois/models/佩洛伊斯1__8257a9eddf/佩洛伊斯1.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Pyrois",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "身体肌肉_黑金",
+      "texture": "Texture\\体M1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 3206,
+      "role": "metal",
+      "source_texture": "Texture\\体M1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "PyroisBodyADiffuse.dds",
+          "sha256": "39ff95173162e5f6ba554b088e02896d794eddb1eb18508ef83c125551e28000"
+        },
+        "NormalMap": {
+          "file": "PyroisBodyANormalMap.dds",
+          "sha256": "4b09a56a72762f962ebe50f2d664a58c904934b6a82bb0a607806311403eafcb"
+        },
+        "LightMap": {
+          "file": "PyroisBodyALightMap.dds",
+          "sha256": "df5f1400aa1031211b4653c78d3f8aa6bdc10af403e22325b65fad4771911f91"
+        },
+        "MaterialMap": {
+          "file": "PyroisBodyAMaterialMap.dds",
+          "sha256": "9cda8a5809d99edf64f6a93e886a9f45bb233a6eaefe12da1b561686103435af"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bbf696dac3692a5f1d3c554c23ffae7d222d98d5c976a35d1cb4d79efe8d379c",
+      "candidates": [
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.1293246196362953,
+          "p95": 0.6389205035766792,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 27.66906471527616,
+          "p95": 98.92343784636932,
+          "below12": 0.34809523809523807
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 35.255437345389055,
+          "p95": 121.03804637531425,
+          "below12": 0.2997619047619048
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 60.6304316066678,
+          "p95": 136.5237717822401,
+          "below12": 0.14904761904761904
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 20.08558945287551,
+        "names": [
+          "PyroisBodyADiffuse.dds",
+          "PyroisLeftArmADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.1293246196362953,
+        "p95": 0.6389205035766792,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 1,
+      "name": "右臂肌肉_黑金",
+      "texture": "Texture\\体M2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3206,
+      "face_count": 1756,
+      "role": "metal",
+      "source_texture": "Texture\\体M2.png",
+      "maps": {
+        "Diffuse": {
+          "file": "PyroisHairADiffuse.dds",
+          "sha256": "418aba068977c06245b31d8973b8896a4c44077ec3621ec0285bab13b03d7851"
+        },
+        "NormalMap": {
+          "file": "PyroisHairANormalMap.dds",
+          "sha256": "4cb32e7f6b7feb4538eb6c8e86b9bbd043339ce969ee9217c40306f9b93303b9"
+        },
+        "LightMap": {
+          "file": "PyroisHairALightMap.dds",
+          "sha256": "54aa1219bb08f67242b76d3fec180a4a8cb7bb940cafa6eec261fd827fd1f88a"
+        },
+        "MaterialMap": {
+          "file": "PyroisHairAMaterialMap.dds",
+          "sha256": "c17564581dddd4f24fd264242c7d4638361553e8aca1b075abfe620b19843866"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "7ce1a2bfc906bc1bacce64a0cc4f7eb3dac24255f6143c893942bca3b0bf093b",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 2.760852271820475,
+          "p95": 9.156686496868236,
+          "below12": 0.9680952380952381
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 23.90771995906064,
+          "p95": 87.92525457841003,
+          "below12": 0.45261904761904764
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 53.530483714806124,
+          "p95": 122.85285799283744,
+          "below12": 0.12214285714285714
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 68.63918018687134,
+          "p95": 113.22933115632271,
+          "below12": 0.032857142857142856
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 13.169580431829251,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 2.760852271820475,
+        "p95": 9.156686496868236,
+        "below12": 0.9680952380952381
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 2,
+      "name": "右臂肌肉_蓝",
+      "texture": "Texture\\体M1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 4962,
+      "face_count": 1644,
+      "role": "metal",
+      "source_texture": "Texture\\体M1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "PyroisBodyADiffuse.dds",
+          "sha256": "39ff95173162e5f6ba554b088e02896d794eddb1eb18508ef83c125551e28000"
+        },
+        "NormalMap": {
+          "file": "PyroisBodyANormalMap.dds",
+          "sha256": "4b09a56a72762f962ebe50f2d664a58c904934b6a82bb0a607806311403eafcb"
+        },
+        "LightMap": {
+          "file": "PyroisBodyALightMap.dds",
+          "sha256": "df5f1400aa1031211b4653c78d3f8aa6bdc10af403e22325b65fad4771911f91"
+        },
+        "MaterialMap": {
+          "file": "PyroisBodyAMaterialMap.dds",
+          "sha256": "9cda8a5809d99edf64f6a93e886a9f45bb233a6eaefe12da1b561686103435af"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bbf696dac3692a5f1d3c554c23ffae7d222d98d5c976a35d1cb4d79efe8d379c",
+      "candidates": [
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.1786111354127227,
+          "p95": 0.809310218112205,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 67.45735170916214,
+          "p95": 123.32769232554092,
+          "below12": 0.0014285714285714286
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 69.3816683317982,
+          "p95": 90.94076070619542,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 78.05209081426972,
+          "p95": 138.41022102142927,
+          "below12": 0.025952380952380952
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 26.643985959980654,
+        "names": [
+          "PyroisBodyADiffuse.dds",
+          "PyroisLeftArmADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.1786111354127227,
+        "p95": 0.809310218112205,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 3,
+      "name": "能量核心",
+      "texture": "Texture\\体M1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 6606,
+      "face_count": 86,
+      "role": "emissive",
+      "source_texture": "Texture\\体M1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "PyroisBodyADiffuse.dds",
+          "sha256": "39ff95173162e5f6ba554b088e02896d794eddb1eb18508ef83c125551e28000"
+        },
+        "NormalMap": {
+          "file": "PyroisBodyANormalMap.dds",
+          "sha256": "4b09a56a72762f962ebe50f2d664a58c904934b6a82bb0a607806311403eafcb"
+        },
+        "LightMap": {
+          "file": "PyroisBodyALightMap.dds",
+          "sha256": "df5f1400aa1031211b4653c78d3f8aa6bdc10af403e22325b65fad4771911f91"
+        },
+        "MaterialMap": {
+          "file": "PyroisBodyAMaterialMap.dds",
+          "sha256": "9cda8a5809d99edf64f6a93e886a9f45bb233a6eaefe12da1b561686103435af"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bbf696dac3692a5f1d3c554c23ffae7d222d98d5c976a35d1cb4d79efe8d379c",
+      "candidates": [
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.027399960893034852,
+          "p95": 0.22196451822916666,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 36.02117061494955,
+          "p95": 46.51835937499997,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 40.52204829486813,
+          "p95": 41.607208251953125,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 87.81502885685069,
+          "p95": 105.21330888887248,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 258,
+        "visible_count": 258,
+        "texture_rgb_std": 1.524299362974532,
+        "names": [
+          "PyroisBodyADiffuse.dds",
+          "PyroisLeftArmADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.027399960893034852,
+        "p95": 0.22196451822916666,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 4,
+      "name": "头甲",
+      "texture": "Texture\\体M1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 6692,
+      "face_count": 1580,
+      "role": "metal",
+      "source_texture": "Texture\\体M1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "PyroisBodyADiffuse.dds",
+          "sha256": "39ff95173162e5f6ba554b088e02896d794eddb1eb18508ef83c125551e28000"
+        },
+        "NormalMap": {
+          "file": "PyroisBodyANormalMap.dds",
+          "sha256": "4b09a56a72762f962ebe50f2d664a58c904934b6a82bb0a607806311403eafcb"
+        },
+        "LightMap": {
+          "file": "PyroisBodyALightMap.dds",
+          "sha256": "df5f1400aa1031211b4653c78d3f8aa6bdc10af403e22325b65fad4771911f91"
+        },
+        "MaterialMap": {
+          "file": "PyroisBodyAMaterialMap.dds",
+          "sha256": "9cda8a5809d99edf64f6a93e886a9f45bb233a6eaefe12da1b561686103435af"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bbf696dac3692a5f1d3c554c23ffae7d222d98d5c976a35d1cb4d79efe8d379c",
+      "candidates": [
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.23247149825466018,
+          "p95": 0.6504141798726124,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 58.29539734527452,
+          "p95": 128.9268254299827,
+          "below12": 0.09904761904761905
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.983078934570514,
+          "p95": 127.7093506329589,
+          "below12": 0.09047619047619047
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 59.77533902609352,
+          "p95": 130.20454874303627,
+          "below12": 0.11642857142857142
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 37.12348481129751,
+        "names": [
+          "PyroisBodyADiffuse.dds",
+          "PyroisLeftArmADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.23247149825466018,
+        "p95": 0.6504141798726124,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 5,
+      "name": "体甲",
+      "texture": "Texture\\体M1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 8272,
+      "face_count": 4994,
+      "role": "metal",
+      "source_texture": "Texture\\体M1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "PyroisBodyADiffuse.dds",
+          "sha256": "39ff95173162e5f6ba554b088e02896d794eddb1eb18508ef83c125551e28000"
+        },
+        "NormalMap": {
+          "file": "PyroisBodyANormalMap.dds",
+          "sha256": "4b09a56a72762f962ebe50f2d664a58c904934b6a82bb0a607806311403eafcb"
+        },
+        "LightMap": {
+          "file": "PyroisBodyALightMap.dds",
+          "sha256": "df5f1400aa1031211b4653c78d3f8aa6bdc10af403e22325b65fad4771911f91"
+        },
+        "MaterialMap": {
+          "file": "PyroisBodyAMaterialMap.dds",
+          "sha256": "9cda8a5809d99edf64f6a93e886a9f45bb233a6eaefe12da1b561686103435af"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bbf696dac3692a5f1d3c554c23ffae7d222d98d5c976a35d1cb4d79efe8d379c",
+      "candidates": [
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.23060413154478054,
+          "p95": 0.6599169921875443,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 46.06362400573151,
+          "p95": 109.65685729702352,
+          "below12": 0.18333333333333332
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 66.39695139818936,
+          "p95": 127.82084448803563,
+          "below12": 0.07761904761904762
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 67.21413102088852,
+          "p95": 127.57547505199928,
+          "below12": 0.0630952380952381
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 32.19993148240936,
+        "names": [
+          "PyroisBodyADiffuse.dds",
+          "PyroisLeftArmADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.23060413154478054,
+        "p95": 0.6599169921875443,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 6,
+      "name": "肩甲",
+      "texture": "Texture\\体M2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 13266,
+      "face_count": 2388,
+      "role": "metal",
+      "source_texture": "Texture\\体M2.png",
+      "maps": {
+        "Diffuse": {
+          "file": "PyroisHairADiffuse.dds",
+          "sha256": "418aba068977c06245b31d8973b8896a4c44077ec3621ec0285bab13b03d7851"
+        },
+        "NormalMap": {
+          "file": "PyroisHairANormalMap.dds",
+          "sha256": "4cb32e7f6b7feb4538eb6c8e86b9bbd043339ce969ee9217c40306f9b93303b9"
+        },
+        "LightMap": {
+          "file": "PyroisHairALightMap.dds",
+          "sha256": "54aa1219bb08f67242b76d3fec180a4a8cb7bb940cafa6eec261fd827fd1f88a"
+        },
+        "MaterialMap": {
+          "file": "PyroisHairAMaterialMap.dds",
+          "sha256": "c17564581dddd4f24fd264242c7d4638361553e8aca1b075abfe620b19843866"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "7ce1a2bfc906bc1bacce64a0cc4f7eb3dac24255f6143c893942bca3b0bf093b",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 7.344972623597124,
+          "p95": 25.00060716629027,
+          "below12": 0.8730952380952381
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.57249041300856,
+          "p95": 140.05612871233615,
+          "below12": 0.1380952380952381
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 66.21841146859735,
+          "p95": 139.32918442241373,
+          "below12": 0.09547619047619048
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 70.70298880445624,
+          "p95": 147.7181475547353,
+          "below12": 0.12476190476190477
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 37.58862776458579,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 7.344972623597124,
+        "p95": 25.00060716629027,
+        "below12": 0.8730952380952381
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 7,
+      "name": "臂甲",
+      "texture": "Texture\\体M2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 15654,
+      "face_count": 1294,
+      "role": "metal",
+      "source_texture": "Texture\\体M2.png",
+      "maps": {
+        "Diffuse": {
+          "file": "PyroisHairADiffuse.dds",
+          "sha256": "418aba068977c06245b31d8973b8896a4c44077ec3621ec0285bab13b03d7851"
+        },
+        "NormalMap": {
+          "file": "PyroisHairANormalMap.dds",
+          "sha256": "4cb32e7f6b7feb4538eb6c8e86b9bbd043339ce969ee9217c40306f9b93303b9"
+        },
+        "LightMap": {
+          "file": "PyroisHairALightMap.dds",
+          "sha256": "54aa1219bb08f67242b76d3fec180a4a8cb7bb940cafa6eec261fd827fd1f88a"
+        },
+        "MaterialMap": {
+          "file": "PyroisHairAMaterialMap.dds",
+          "sha256": "c17564581dddd4f24fd264242c7d4638361553e8aca1b075abfe620b19843866"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "7ce1a2bfc906bc1bacce64a0cc4f7eb3dac24255f6143c893942bca3b0bf093b",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 8.823467165927191,
+          "p95": 27.341790863673,
+          "below12": 0.8732612055641422
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 58.26709759448118,
+          "p95": 136.18520929021088,
+          "below12": 0.1275115919629057
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 63.30542549547755,
+          "p95": 147.48737786328005,
+          "below12": 0.12545079855744462
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 74.8196727516239,
+          "p95": 147.4134383193155,
+          "below12": 0.0695517774343122
+        }
+      ],
+      "evidence": {
+        "sample_count": 3882,
+        "visible_count": 3882,
+        "texture_rgb_std": 35.62436118420638,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 8.823467165927191,
+        "p95": 27.341790863673,
+        "below12": 0.8732612055641422
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 8,
+      "name": "左手爪",
+      "texture": "Texture\\体M1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 16948,
+      "face_count": 303,
+      "role": "metal",
+      "source_texture": "Texture\\体M1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "PyroisBodyADiffuse.dds",
+          "sha256": "39ff95173162e5f6ba554b088e02896d794eddb1eb18508ef83c125551e28000"
+        },
+        "NormalMap": {
+          "file": "PyroisBodyANormalMap.dds",
+          "sha256": "4b09a56a72762f962ebe50f2d664a58c904934b6a82bb0a607806311403eafcb"
+        },
+        "LightMap": {
+          "file": "PyroisBodyALightMap.dds",
+          "sha256": "df5f1400aa1031211b4653c78d3f8aa6bdc10af403e22325b65fad4771911f91"
+        },
+        "MaterialMap": {
+          "file": "PyroisBodyAMaterialMap.dds",
+          "sha256": "9cda8a5809d99edf64f6a93e886a9f45bb233a6eaefe12da1b561686103435af"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bbf696dac3692a5f1d3c554c23ffae7d222d98d5c976a35d1cb4d79efe8d379c",
+      "candidates": [
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.39698814041742503,
+          "p95": 1.0035806846613962,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 11.244586500180546,
+          "p95": 25.64073893229526,
+          "below12": 0.6006600660066007
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 46.72954204906581,
+          "p95": 104.43309120670989,
+          "below12": 0.09130913091309131
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 51.0273163480366,
+          "p95": 108.73741612699244,
+          "below12": 0.09130913091309131
+        }
+      ],
+      "evidence": {
+        "sample_count": 909,
+        "visible_count": 909,
+        "texture_rgb_std": 31.49395332275911,
+        "names": [
+          "PyroisBodyADiffuse.dds",
+          "PyroisLeftArmADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.39698814041742503,
+        "p95": 1.0035806846613962,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 9,
+      "name": "右手爪",
+      "texture": "Texture\\体M2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 17251,
+      "face_count": 303,
+      "role": "metal",
+      "source_texture": "Texture\\体M2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "7ce1a2bfc906bc1bacce64a0cc4f7eb3dac24255f6143c893942bca3b0bf093b",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 14.8012185910465,
+          "p95": 40.87717836062095,
+          "below12": 0.44774477447744776
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 17.48360916871572,
+          "p95": 35.32416014257957,
+          "below12": 0.36743674367436746
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 53.31382098902801,
+          "p95": 127.657683463017,
+          "below12": 0.10451045104510451
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 54.320368568003246,
+          "p95": 123.5320409814512,
+          "below12": 0.1111111111111111
+        }
+      ],
+      "evidence": {
+        "sample_count": 909,
+        "visible_count": 909,
+        "texture_rgb_std": 33.981945185662774,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 14.8012185910465,
+        "p95": 40.87717836062095,
+        "below12": 0.44774477447744776
+      }
+    },
+    {
+      "index": 10,
+      "name": "后发",
+      "texture": "Texture\\体M2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 17554,
+      "face_count": 1954,
+      "role": "hair",
+      "source_texture": "Texture\\体M2.png",
+      "maps": {
+        "Diffuse": {
+          "file": "PyroisHairADiffuse.dds",
+          "sha256": "418aba068977c06245b31d8973b8896a4c44077ec3621ec0285bab13b03d7851"
+        },
+        "NormalMap": {
+          "file": "PyroisHairANormalMap.dds",
+          "sha256": "4cb32e7f6b7feb4538eb6c8e86b9bbd043339ce969ee9217c40306f9b93303b9"
+        },
+        "LightMap": {
+          "file": "PyroisHairALightMap.dds",
+          "sha256": "54aa1219bb08f67242b76d3fec180a4a8cb7bb940cafa6eec261fd827fd1f88a"
+        },
+        "MaterialMap": {
+          "file": "PyroisHairAMaterialMap.dds",
+          "sha256": "c17564581dddd4f24fd264242c7d4638361553e8aca1b075abfe620b19843866"
+        }
+      },
+      "matching": "game_vertex_uv_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "7ce1a2bfc906bc1bacce64a0cc4f7eb3dac24255f6143c893942bca3b0bf093b",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 13.942398582873144,
+          "p95": 16.333333333333332,
+          "below12": 0.10452380952380952
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 23.72405335765885,
+          "p95": 80.90997255881616,
+          "below12": 0.3964285714285714
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 46.396665398229835,
+          "p95": 131.68333333333322,
+          "below12": 0.2935714285714286
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 52.86825448996026,
+          "p95": 126.16163002572127,
+          "below12": 0.18880952380952382
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 7.815445641380997,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 13.942398582873144,
+        "p95": 16.333333333333332,
+        "below12": 0.10452380952380952
+      },
+      "atlas": "HairA",
+      "dds_flip_v": true,
+      "uv_control_evidence": {
+        "method": "game_vertex_uv",
+        "vertices": 1554,
+        "prefix": "PyroisHairA",
+        "fraction_under_0_001": 1.0,
+        "p95": 0.00024183812274713998,
+        "max": 0.0003375404339749366
+      }
+    },
+    {
+      "index": 11,
+      "name": "侧发",
+      "texture": "Texture\\体M2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 19508,
+      "face_count": 326,
+      "role": "hair",
+      "source_texture": "Texture\\体M2.png",
+      "maps": {
+        "Diffuse": {
+          "file": "PyroisHairADiffuse.dds",
+          "sha256": "418aba068977c06245b31d8973b8896a4c44077ec3621ec0285bab13b03d7851"
+        },
+        "NormalMap": {
+          "file": "PyroisHairANormalMap.dds",
+          "sha256": "4cb32e7f6b7feb4538eb6c8e86b9bbd043339ce969ee9217c40306f9b93303b9"
+        },
+        "LightMap": {
+          "file": "PyroisHairALightMap.dds",
+          "sha256": "54aa1219bb08f67242b76d3fec180a4a8cb7bb940cafa6eec261fd827fd1f88a"
+        },
+        "MaterialMap": {
+          "file": "PyroisHairAMaterialMap.dds",
+          "sha256": "c17564581dddd4f24fd264242c7d4638361553e8aca1b075abfe620b19843866"
+        }
+      },
+      "matching": "game_vertex_uv_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "7ce1a2bfc906bc1bacce64a0cc4f7eb3dac24255f6143c893942bca3b0bf093b",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 13.092643088111817,
+          "p95": 15.666666666666666,
+          "below12": 0.2249488752556237
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 16.744709406684013,
+          "p95": 38.668612395365706,
+          "below12": 0.35991820040899797
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 48.28756144081983,
+          "p95": 107.91020385567347,
+          "below12": 0.05112474437627812
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 54.696337498195646,
+          "p95": 110.61618570486735,
+          "below12": 0.044989775051124746
+        }
+      ],
+      "evidence": {
+        "sample_count": 978,
+        "visible_count": 978,
+        "texture_rgb_std": 9.537713761569622,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 13.092643088111817,
+        "p95": 15.666666666666666,
+        "below12": 0.2249488752556237
+      },
+      "atlas": "HairA",
+      "dds_flip_v": true,
+      "uv_control_evidence": {
+        "method": "game_vertex_uv",
+        "vertices": 292,
+        "prefix": "PyroisHairA",
+        "fraction_under_0_001": 1.0,
+        "p95": 0.00024092147941701114,
+        "max": 0.0002995840914081782
+      }
+    },
+    {
+      "index": 12,
+      "name": "披风内A",
+      "texture": "Texture\\uv2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 19834,
+      "face_count": 256,
+      "role": "cloth",
+      "source_texture": "Texture\\uv2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9bc76900863cb20ef87274ddcbe97b1611ca0fe7f29334daa8f8c7981dbfc853",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 23.10138078219907,
+          "p95": 81.97945224112931,
+          "below12": 0.4576271186440678
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 25.397364183744607,
+          "p95": 78.49105803072452,
+          "below12": 0.3389830508474576
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 31.528079070522182,
+          "p95": 104.9589688867827,
+          "below12": 0.3728813559322034
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 42.77327246507092,
+          "p95": 114.39999999999998,
+          "below12": 0.1864406779661017
+        }
+      ],
+      "evidence": {
+        "sample_count": 768,
+        "visible_count": 177,
+        "texture_rgb_std": 5.997440281905976,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 23.10138078219907,
+        "p95": 81.97945224112931,
+        "below12": 0.4576271186440678
+      }
+    },
+    {
+      "index": 13,
+      "name": "披风内B",
+      "texture": "Texture\\uv2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 20090,
+      "face_count": 280,
+      "role": "cloth",
+      "source_texture": "Texture\\uv2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9bc76900863cb20ef87274ddcbe97b1611ca0fe7f29334daa8f8c7981dbfc853",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 20.251971999659084,
+          "p95": 53.768415232830456,
+          "below12": 0.33879781420765026
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 23.637185492312195,
+          "p95": 76.30284437537208,
+          "below12": 0.24043715846994534
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 56.155650868619055,
+          "p95": 118.49387686758226,
+          "below12": 0.07650273224043716
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 61.213333108293654,
+          "p95": 120.51891055266123,
+          "below12": 0.04918032786885246
+        }
+      ],
+      "evidence": {
+        "sample_count": 840,
+        "visible_count": 183,
+        "texture_rgb_std": 6.708790598311826,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 20.251971999659084,
+        "p95": 53.768415232830456,
+        "below12": 0.33879781420765026
+      }
+    },
+    {
+      "index": 14,
+      "name": "披风内C",
+      "texture": "Texture\\uv2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 20370,
+      "face_count": 304,
+      "role": "cloth",
+      "source_texture": "Texture\\uv2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9bc76900863cb20ef87274ddcbe97b1611ca0fe7f29334daa8f8c7981dbfc853",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 40.306537965471655,
+          "p95": 122.93965667088821,
+          "below12": 0.3542600896860987
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 43.55078380452976,
+          "p95": 131.943575310548,
+          "below12": 0.31390134529147984
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 55.69764416358009,
+          "p95": 127.20976843357084,
+          "below12": 0.08520179372197309
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 57.29087901610725,
+          "p95": 127.53333333333323,
+          "below12": 0.1031390134529148
+        }
+      ],
+      "evidence": {
+        "sample_count": 912,
+        "visible_count": 223,
+        "texture_rgb_std": 9.176108991420838,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 40.306537965471655,
+        "p95": 122.93965667088821,
+        "below12": 0.3542600896860987
+      }
+    },
+    {
+      "index": 15,
+      "name": "披风内D",
+      "texture": "Texture\\uv2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 20674,
+      "face_count": 232,
+      "role": "cloth",
+      "source_texture": "Texture\\uv2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9bc76900863cb20ef87274ddcbe97b1611ca0fe7f29334daa8f8c7981dbfc853",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 21.346197007552846,
+          "p95": 75.93259158138443,
+          "below12": 0.5194805194805194
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 22.681689079611523,
+          "p95": 66.43200557780288,
+          "below12": 0.4935064935064935
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 36.96502896651359,
+          "p95": 113.79495627284028,
+          "below12": 0.35064935064935066
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 41.079096873828526,
+          "p95": 104.67123152687091,
+          "below12": 0.2597402597402597
+        }
+      ],
+      "evidence": {
+        "sample_count": 696,
+        "visible_count": 154,
+        "texture_rgb_std": 9.675653652615146,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 21.346197007552846,
+        "p95": 75.93259158138443,
+        "below12": 0.5194805194805194
+      }
+    },
+    {
+      "index": 16,
+      "name": "披风外D",
+      "texture": "Texture\\uv1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 20906,
+      "face_count": 144,
+      "role": "cloth",
+      "source_texture": "Texture\\uv1.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "089c23a2bf202952e3c836afb08e69bbe6653d6d752b179aefc95e72bdcd2f38",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 25.330724027106804,
+          "p95": 75.93259158138443,
+          "below12": 0.42857142857142855
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 26.248436797909747,
+          "p95": 67.67745818328872,
+          "below12": 0.44155844155844154
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 38.662915082804986,
+          "p95": 109.81479259506841,
+          "below12": 0.2922077922077922
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 44.1617059316772,
+          "p95": 118.74312665504365,
+          "below12": 0.22077922077922077
+        }
+      ],
+      "evidence": {
+        "sample_count": 432,
+        "visible_count": 154,
+        "texture_rgb_std": 18.738673600024033,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 25.330724027106804,
+        "p95": 75.93259158138443,
+        "below12": 0.42857142857142855
+      }
+    },
+    {
+      "index": 17,
+      "name": "披风外C",
+      "texture": "Texture\\uv1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 21050,
+      "face_count": 192,
+      "role": "cloth",
+      "source_texture": "Texture\\uv1.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "089c23a2bf202952e3c836afb08e69bbe6653d6d752b179aefc95e72bdcd2f38",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 42.849250201843795,
+          "p95": 122.93965667088821,
+          "below12": 0.3004484304932735
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 44.54247386164151,
+          "p95": 131.943575310548,
+          "below12": 0.273542600896861
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 54.98846983404184,
+          "p95": 125.79921115716296,
+          "below12": 0.07623318385650224
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 58.30385767794642,
+          "p95": 123.84588358153887,
+          "below12": 0.1031390134529148
+        }
+      ],
+      "evidence": {
+        "sample_count": 576,
+        "visible_count": 223,
+        "texture_rgb_std": 15.678193561761892,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 42.849250201843795,
+        "p95": 122.93965667088821,
+        "below12": 0.3004484304932735
+      }
+    },
+    {
+      "index": 18,
+      "name": "披风外B",
+      "texture": "Texture\\uv1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 21242,
+      "face_count": 176,
+      "role": "cloth",
+      "source_texture": "Texture\\uv1.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "089c23a2bf202952e3c836afb08e69bbe6653d6d752b179aefc95e72bdcd2f38",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 21.8003014863331,
+          "p95": 60.78598624983376,
+          "below12": 0.3333333333333333
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 25.55859098472083,
+          "p95": 79.1482900667189,
+          "below12": 0.24043715846994534
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 55.72433267755101,
+          "p95": 118.49387686758226,
+          "below12": 0.07650273224043716
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 60.408900212735006,
+          "p95": 120.51891055266123,
+          "below12": 0.04918032786885246
+        }
+      ],
+      "evidence": {
+        "sample_count": 528,
+        "visible_count": 183,
+        "texture_rgb_std": 13.283406772336818,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 21.8003014863331,
+        "p95": 60.78598624983376,
+        "below12": 0.3333333333333333
+      }
+    },
+    {
+      "index": 19,
+      "name": "披风外A",
+      "texture": "Texture\\uv1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 14,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 21418,
+      "face_count": 160,
+      "role": "cloth",
+      "source_texture": "Texture\\uv1.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "089c23a2bf202952e3c836afb08e69bbe6653d6d752b179aefc95e72bdcd2f38",
+      "candidates": [
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 23.10138078219907,
+          "p95": 81.97945224112931,
+          "below12": 0.4576271186440678
+        },
+        {
+          "names": [
+            "PyroisHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 25.397364183744607,
+          "p95": 78.49105803072452,
+          "below12": 0.3389830508474576
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 31.528079070522182,
+          "p95": 104.9589688867827,
+          "below12": 0.3728813559322034
+        },
+        {
+          "names": [
+            "PyroisBodyADiffuse.dds",
+            "PyroisLeftArmADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 42.77327246507092,
+          "p95": 114.39999999999998,
+          "below12": 0.1864406779661017
+        }
+      ],
+      "evidence": {
+        "sample_count": 480,
+        "visible_count": 177,
+        "texture_rgb_std": 5.997440281905976,
+        "names": [
+          "PyroisHairADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 23.10138078219907,
+        "p95": 81.97945224112931,
+        "below12": 0.4576271186440678
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 9,
+      "name": "右手爪",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 12,
+      "name": "披风内A",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 13,
+      "name": "披风内B",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 14,
+      "name": "披风内C",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 15,
+      "name": "披风内D",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 16,
+      "name": "披风外D",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 17,
+      "name": "披风外C",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 18,
+      "name": "披风外B",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 19,
+      "name": "披风外A",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

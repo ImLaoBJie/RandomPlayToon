@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "SunnaMaid_Weapon_8fd2",
+  "character": "SunnaMaid",
+  "variant": "default",
+  "kind": "weapon",
+  "pmx_sha256": "7d57ead0cf48f5a8b9fd1212e009fc73f8370c94116ec92539694078dcecf01e",
+  "pmx": "characters/SunnaMaid/models/武器__8fd2fb7562/武器.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/SunnaMaid",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "锤",
+      "texture": "tex\\武器2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 4196,
+      "role": "weapon",
+      "source_texture": "tex\\武器2.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "d4e1424a2801c19f1264ce316cf58a3dd08f1e2da3f7509340095352f00e888f",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 48.74280035267578,
+          "p95": 151.32190303126967,
+          "below12": 0.055952380952380955
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 53.264435144446836,
+          "p95": 143.51574439767185,
+          "below12": 0.0880952380952381
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 56.461881002807765,
+          "p95": 141.64291700414762,
+          "below12": 0.10071428571428571
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 60.61857937398938,
+          "p95": 152.57976888020832,
+          "below12": 0.056428571428571425
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 56.83554057302833,
+        "names": [
+          "SunnaMaidEyebrowsADiffuse.dds",
+          "SunnaMaidFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 48.74280035267578,
+        "p95": 151.32190303126967,
+        "below12": 0.055952380952380955
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 0,
+      "name": "锤",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

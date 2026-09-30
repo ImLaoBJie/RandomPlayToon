@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "Yidhari_Weapon_0256",
+  "character": "Yidhari",
+  "variant": "default",
+  "kind": "weapon",
+  "pmx_sha256": "3e71d112d470d38876f5dd6fd5f4445a0910aea901cc4972e7aa000771fc7da9",
+  "pmx": "characters/Yidhari/models/武器__02563e5812/武器.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Yidhari",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "武器",
+      "texture": "textures/武器.tga",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 30,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 4892,
+      "role": "weapon",
+      "source_texture": "textures/武器.tga",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "d3da56e177434350fe9cd424a5be3042478279bd65bea1ded26f6c0f1aa807d6",
+      "candidates": [
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 66.87364081698247,
+          "p95": 136.15184052704512,
+          "below12": 0.10238095238095238
+        },
+        {
+          "names": [
+            "YidhariTentaclesADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 68.37138503427326,
+          "p95": 144.3518773602899,
+          "below12": 0.08071428571428571
+        },
+        {
+          "names": [
+            "YidhariBodyADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 72.76368144984092,
+          "p95": 148.0052583376566,
+          "below12": 0.08619047619047619
+        },
+        {
+          "names": [
+            "YidhariBodyADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 77.59314285126088,
+          "p95": 159.17041241109368,
+          "below12": 0.08119047619047619
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 40.36347098368921,
+        "names": [
+          "YidhariTentaclesADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 66.87364081698247,
+        "p95": 136.15184052704512,
+        "below12": 0.10238095238095238
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 0,
+      "name": "武器",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

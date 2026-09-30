@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "SunnaMaid_Accessory_ed38",
+  "character": "SunnaMaid",
+  "variant": "default",
+  "kind": "accessory",
+  "pmx_sha256": "364b48d87ef1fa647f776f20e6d85cffe0867f4a9b35d43edd7e15f02b10c6cf",
+  "pmx": "characters/SunnaMaid/models/喇叭__ed38dfa396/喇叭.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/SunnaMaid",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "喇叭",
+      "texture": "tex\\武器.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 2808,
+      "role": "cloth",
+      "source_texture": "tex\\武器.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "7077a973a42de2f47b5657f8800ec23e2103d2fa63ccd59cdada286c66256250",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidHammerADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 26.042062529025433,
+          "p95": 61.0,
+          "below12": 0.5504761904761905
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 65.6277188266176,
+          "p95": 134.00238357931374,
+          "below12": 0.02880952380952381
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 66.47792807108719,
+          "p95": 138.32012303682168,
+          "below12": 0.023095238095238096
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 69.87005285289807,
+          "p95": 139.4001547513788,
+          "below12": 0.019285714285714285
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 61.56096106897186,
+        "names": [
+          "SunnaMaidHammerADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 26.042062529025433,
+        "p95": 61.0,
+        "below12": 0.5504761904761905
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 0,
+      "name": "喇叭",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

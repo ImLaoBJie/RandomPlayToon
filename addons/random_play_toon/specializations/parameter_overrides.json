@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "models": {
+    "Yuzuha": {
+      "reason": "用户反馈刘海透眼后的眉毛描边偏粗；仅减细独立眉毛材质，保留原纹理、睫毛与虹膜。",
+      "materials": {
+        "3": {"部位描边倍率": 0.35, "部位描边颜色": [0.07, 0.012, 0.018, 1.0]}
+      }
+    },
+    "AriaRobotDiscordant": {
+      "reason": "该形态有 8 套完全重合、初始不透明度为零的眼睛表情面。EEVEE 中按当前不透明度排除未启用层，避免与默认虹膜发生深度冲突；不移动或删除源网格。",
+      "zero_alpha_filter": true
+    },
+    "Remielle_Weapon_c6c7": {
+      "reason": "保留原始 PMX 骨架与缺图事实；没有为静态着色擅自删除其骨骼约束。",
+      "warnings": [{"reason": "MMD Tools 导入此翅膀武器后报告两处原骨架 IK 依赖循环；静态渲染可运行，动画尚未验收。", "action": "后续单独进行骨架适配；tex/Remielle_Sticker_D+.png 在原准备目录缺失，当前使用材质底色。"}]
+    }
+  }
+}

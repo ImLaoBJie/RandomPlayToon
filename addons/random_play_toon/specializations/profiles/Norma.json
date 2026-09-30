@@ -1,0 +1,2836 @@
+{
+  "schema": 1,
+  "id": "Norma",
+  "character": "Norma",
+  "variant": "default",
+  "kind": "character_primary",
+  "pmx_sha256": "4efa88513fe67b9d2c87b4a0b674d2b8264784ce4c9aba31058ab4695ba2f15a",
+  "pmx": "characters/Norma/models/诺姆1__a886d6e7ad/诺姆1.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/Norma",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "脸",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 1774,
+      "role": "face",
+      "source_texture": "Texture\\脸.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaEyebrowsADiffuse.dds",
+          "sha256": "e9493eeefc8da6912d0bbf4054835b87920326c4c32a37f2665191264530d019"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.06731629856134862,
+          "p95": 0.331388701240215,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 9.780559406286951,
+          "p95": 22.44369677923114,
+          "below12": 0.7364285714285714
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 24.922317835820664,
+          "p95": 45.33330061616519,
+          "below12": 0.025952380952380952
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 26.13070458126608,
+          "p95": 57.92558064778645,
+          "below12": 0.02857142857142857
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 8.136460817255674,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.06731629856134862,
+        "p95": 0.331388701240215,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 1,
+      "name": "唇",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1774,
+      "face_count": 52,
+      "role": "mouth_line",
+      "source_texture": "Texture\\脸.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaEyebrowsADiffuse.dds",
+          "sha256": "e9493eeefc8da6912d0bbf4054835b87920326c4c32a37f2665191264530d019"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 46.9570335076545,
+          "p95": 62.30544250677055,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 56.446160734701756,
+          "p95": 73.56964003334441,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 93.9864870049269,
+          "p95": 106.0,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 156,
+        "visible_count": 156,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 2,
+      "name": "扣",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 1826,
+      "face_count": 226,
+      "role": "cloth",
+      "source_texture": "Texture\\脸.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaEyebrowsADiffuse.dds",
+          "sha256": "e9493eeefc8da6912d0bbf4054835b87920326c4c32a37f2665191264530d019"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 61.15425922135329,
+          "p95": 87.33333333333333,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 63.36967137189228,
+          "p95": 84.27128366322978,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 65.66284944935241,
+          "p95": 81.33333333333333,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 678,
+        "visible_count": 678,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 3,
+      "name": "舌",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2052,
+      "face_count": 178,
+      "role": "mouth",
+      "source_texture": "Texture\\脸.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaEyebrowsADiffuse.dds",
+          "sha256": "e9493eeefc8da6912d0bbf4054835b87920326c4c32a37f2665191264530d019"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 45.38940507404789,
+          "p95": 62.333333333333336,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 56.22456995875964,
+          "p95": 67.33333333333333,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 59.026294270749695,
+          "p95": 71.93776206721861,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 534,
+        "visible_count": 534,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 4,
+      "name": "齿",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2230,
+      "face_count": 144,
+      "role": "mouth",
+      "source_texture": "Texture\\脸.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaEyebrowsADiffuse.dds",
+          "sha256": "e9493eeefc8da6912d0bbf4054835b87920326c4c32a37f2665191264530d019"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 11.290948077422332,
+          "p95": 35.14937118689192,
+          "below12": 0.7361111111111112
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 34.97758690310788,
+          "p95": 49.70223056674004,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 52.47192055874055,
+          "p95": 224.0,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 432,
+        "visible_count": 432,
+        "texture_rgb_std": 0.0,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 5,
+      "name": "眼白",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2374,
+      "face_count": 158,
+      "role": "eye_white",
+      "source_texture": "Texture\\脸.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaEyebrowsADiffuse.dds",
+          "sha256": "e9493eeefc8da6912d0bbf4054835b87920326c4c32a37f2665191264530d019"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.02543999277631463,
+          "p95": 0.13022721423728886,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 14.022532248133933,
+          "p95": 19.66915539409276,
+          "below12": 0.26582278481012656
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 29.432454777351413,
+          "p95": 70.83469267974269,
+          "below12": 0.06118143459915612
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 34.749278933672485,
+          "p95": 64.56396146178294,
+          "below12": 0.05485232067510549
+        }
+      ],
+      "evidence": {
+        "sample_count": 474,
+        "visible_count": 474,
+        "texture_rgb_std": 4.010001360685274,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.02543999277631463,
+        "p95": 0.13022721423728886,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA",
+      "matching_peer_slot": 0
+    },
+    {
+      "index": 6,
+      "name": "眼睛",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2532,
+      "face_count": 180,
+      "role": "eyes",
+      "source_texture": "Texture\\脸.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaEyebrowsADiffuse.dds",
+          "sha256": "e9493eeefc8da6912d0bbf4054835b87920326c4c32a37f2665191264530d019"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.18862798683110502,
+          "p95": 0.6175747136274671,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.81946464937149,
+          "p95": 155.79374043036395,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 89.90773059941813,
+          "p95": 180.50416419307376,
+          "below12": 0.022222222222222223
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 92.40342174321992,
+          "p95": 159.33333333333334,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 540,
+        "visible_count": 540,
+        "texture_rgb_std": 49.46061581926657,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.18862798683110502,
+        "p95": 0.6175747136274671,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 7,
+      "name": "目光",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2712,
+      "face_count": 148,
+      "role": "eye_highlight",
+      "source_texture": "Texture\\脸.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaEyebrowsADiffuse.dds",
+          "sha256": "e9493eeefc8da6912d0bbf4054835b87920326c4c32a37f2665191264530d019"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0050787473906272,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 62.56640451769582,
+          "p95": 78.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 66.8714605241011,
+          "p95": 210.66666666666666,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 73.99369998884215,
+          "p95": 139.33333333333334,
+          "below12": 0.0045045045045045045
+        }
+      ],
+      "evidence": {
+        "sample_count": 444,
+        "visible_count": 444,
+        "texture_rgb_std": 27.357793698061073,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0050787473906272,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 8,
+      "name": "目影",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        0.30000001192092896
+      ],
+      "face_start": 2860,
+      "face_count": 46,
+      "role": "eye_shadow",
+      "source_texture": "Texture\\脸.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaEyebrowsADiffuse.dds",
+          "sha256": "e9493eeefc8da6912d0bbf4054835b87920326c4c32a37f2665191264530d019"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.07196633432542994,
+          "p95": 0.281786553313394,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 47.44286454202144,
+          "p95": 91.33333333333333,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 71.13090736470357,
+          "p95": 119.14500596787987,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 72.09039146469078,
+          "p95": 102.69411377112122,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 138,
+        "visible_count": 138,
+        "texture_rgb_std": 13.020269315633323,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.07196633432542994,
+        "p95": 0.281786553313394,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 9,
+      "name": "眼睫毛",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 2906,
+      "face_count": 450,
+      "role": "brows_lashes",
+      "source_texture": "Texture\\脸.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaEyebrowsADiffuse.dds",
+          "sha256": "e9493eeefc8da6912d0bbf4054835b87920326c4c32a37f2665191264530d019"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.1174541453097659,
+          "p95": 0.3943119202157143,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 86.85315470289335,
+          "p95": 170.48683998398477,
+          "below12": 0.011851851851851851
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 94.06252824639078,
+          "p95": 172.3294104576111,
+          "below12": 0.0044444444444444444
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 132.70081964459726,
+          "p95": 161.93067012454065,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 1350,
+        "visible_count": 1350,
+        "texture_rgb_std": 21.987821199225277,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.1174541453097659,
+        "p95": 0.3943119202157143,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 10,
+      "name": "目线",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3356,
+      "face_count": 118,
+      "role": "brows_lashes",
+      "source_texture": "Texture\\脸.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaEyebrowsADiffuse.dds",
+          "sha256": "e9493eeefc8da6912d0bbf4054835b87920326c4c32a37f2665191264530d019"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.0,
+          "p95": 0.0,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 73.09137824193965,
+          "p95": 132.0,
+          "below12": 0.01694915254237288
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 73.39806968507824,
+          "p95": 121.0,
+          "below12": 0.1016949152542373
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 75.11359387330734,
+          "p95": 134.90566630567108,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 354,
+        "visible_count": 354,
+        "texture_rgb_std": 49.77418123956951,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.0,
+        "p95": 0.0,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 11,
+      "name": "眉毛",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3474,
+      "face_count": 58,
+      "role": "brows_lashes",
+      "source_texture": "Texture\\脸.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaEyebrowsADiffuse.dds",
+          "sha256": "e9493eeefc8da6912d0bbf4054835b87920326c4c32a37f2665191264530d019"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.24541374272491356,
+          "p95": 0.696801757812409,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 23.08429494161289,
+          "p95": 41.88498189516874,
+          "below12": 0.028735632183908046
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 26.51407954331732,
+          "p95": 47.802255809307546,
+          "below12": 0.034482758620689655
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 42.775169903394456,
+          "p95": 57.46953662402112,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 174,
+        "visible_count": 174,
+        "texture_rgb_std": 11.107404465243107,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.24541374272491356,
+        "p95": 0.696801757812409,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "EyebrowsA"
+    },
+    {
+      "index": 12,
+      "name": "表情_>w<",
+      "texture": "Texture\\脸.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3532,
+      "face_count": 296,
+      "role": "cloth",
+      "source_texture": "Texture\\脸.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "2123f4ecae33721b38b07c337640c0343e9429704ec30ec8f682553a79530fa2",
+      "candidates": [
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 18.910615363329892,
+          "p95": 24.333333333333332,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 47.995205640017055,
+          "p95": 109.68069051930473,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 74.69882823541249,
+          "p95": 113.56311743905823,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 86.15154749179898,
+          "p95": 109.66666666666667,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 888,
+        "visible_count": 888,
+        "texture_rgb_std": 12.742445404588324,
+        "names": [
+          "NormaEyebrowsADiffuse.dds",
+          "NormaFaceADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 18.910615363329892,
+        "p95": 24.333333333333332,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 13,
+      "name": "皮肤_首",
+      "texture": "Texture\\体1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 3828,
+      "face_count": 500,
+      "role": "skin",
+      "source_texture": "Texture\\体1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaBodyADiffuse.dds",
+          "sha256": "69edcf214de75267eaef2f189b1e87fb5b004d383d8d3a01976b23a97317455b"
+        },
+        "NormalMap": {
+          "file": "NormaBodyANormalMap.dds",
+          "sha256": "4bda4a67814e63bf7f0a019af2ff33edbcb5575b0e54fc8f3b31fcb1b742b3ed"
+        },
+        "LightMap": {
+          "file": "NormaBodyALightMap.dds",
+          "sha256": "765125f95b4cdaa519e60f2e41954dbf2d6a75bacb95bfbbe1f822a426bcca6d"
+        },
+        "MaterialMap": {
+          "file": "NormaBodyAMaterialMap.dds",
+          "sha256": "9a2d0f8574691726d169d203d230853e19f8adea1d64fc2bd7128fbf9b9d5dbd"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bab3bb117254333c986f815575b3a668bd64b269fbb578c08f70393f7e82b7ea",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 2.096109174637936,
+          "p95": 8.662937454839541,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 15.012930315170154,
+          "p95": 22.82059258341245,
+          "below12": 0.756
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 17.911865547481092,
+          "p95": 29.688944761673547,
+          "below12": 0.06133333333333333
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 33.41665645126016,
+          "p95": 141.40502569357548,
+          "below12": 0.068
+        }
+      ],
+      "evidence": {
+        "sample_count": 1500,
+        "visible_count": 1500,
+        "texture_rgb_std": 6.225183321794393,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 2.096109174637936,
+        "p95": 8.662937454839541,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA",
+      "matching_peer_slot": 15
+    },
+    {
+      "index": 14,
+      "name": "皮肤_上半身",
+      "texture": "Texture\\体1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 4328,
+      "face_count": 750,
+      "role": "skin",
+      "source_texture": "Texture\\体1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaBodyADiffuse.dds",
+          "sha256": "69edcf214de75267eaef2f189b1e87fb5b004d383d8d3a01976b23a97317455b"
+        },
+        "NormalMap": {
+          "file": "NormaBodyANormalMap.dds",
+          "sha256": "4bda4a67814e63bf7f0a019af2ff33edbcb5575b0e54fc8f3b31fcb1b742b3ed"
+        },
+        "LightMap": {
+          "file": "NormaBodyALightMap.dds",
+          "sha256": "765125f95b4cdaa519e60f2e41954dbf2d6a75bacb95bfbbe1f822a426bcca6d"
+        },
+        "MaterialMap": {
+          "file": "NormaBodyAMaterialMap.dds",
+          "sha256": "9a2d0f8574691726d169d203d230853e19f8adea1d64fc2bd7128fbf9b9d5dbd"
+        }
+      },
+      "matching": "shared_source_image_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bab3bb117254333c986f815575b3a668bd64b269fbb578c08f70393f7e82b7ea",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.05009989203165253,
+          "p95": 0.2958393667472157,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 27.093428481039112,
+          "p95": 71.32460582739112,
+          "below12": 0.023555555555555555
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 27.417065697604016,
+          "p95": 112.09831057834623,
+          "below12": 0.7622222222222222
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 29.847938074410976,
+          "p95": 145.6304528101727,
+          "below12": 0.31155555555555553
+        }
+      ],
+      "evidence": {
+        "sample_count": 2250,
+        "visible_count": 2250,
+        "texture_rgb_std": 3.9271460289181035,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.05009989203165253,
+        "p95": 0.2958393667472157,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA",
+      "matching_peer_slot": 15
+    },
+    {
+      "index": 15,
+      "name": "贴身衣物",
+      "texture": "Texture\\体1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 5078,
+      "face_count": 2256,
+      "role": "cloth",
+      "source_texture": "Texture\\体1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaBodyADiffuse.dds",
+          "sha256": "69edcf214de75267eaef2f189b1e87fb5b004d383d8d3a01976b23a97317455b"
+        },
+        "NormalMap": {
+          "file": "NormaBodyANormalMap.dds",
+          "sha256": "4bda4a67814e63bf7f0a019af2ff33edbcb5575b0e54fc8f3b31fcb1b742b3ed"
+        },
+        "LightMap": {
+          "file": "NormaBodyALightMap.dds",
+          "sha256": "765125f95b4cdaa519e60f2e41954dbf2d6a75bacb95bfbbe1f822a426bcca6d"
+        },
+        "MaterialMap": {
+          "file": "NormaBodyAMaterialMap.dds",
+          "sha256": "9a2d0f8574691726d169d203d230853e19f8adea1d64fc2bd7128fbf9b9d5dbd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bab3bb117254333c986f815575b3a668bd64b269fbb578c08f70393f7e82b7ea",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 1.2072469370966388,
+          "p95": 7.666666666666667,
+          "below12": 0.9842857142857143
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 22.085660316368877,
+          "p95": 103.55348742458217,
+          "below12": 0.4080952380952381
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 34.1100625678394,
+          "p95": 75.7774453628782,
+          "below12": 0.02666666666666667
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 34.38457177501097,
+          "p95": 190.47970848927835,
+          "below12": 0.37642857142857145
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 14.222634085673464,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 1.2072469370966388,
+        "p95": 7.666666666666667,
+        "below12": 0.9842857142857143
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 16,
+      "name": "皮肤__贴身衣物",
+      "texture": "Texture\\皮肤.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 7334,
+      "face_count": 2256,
+      "role": "skin",
+      "source_texture": "Texture\\皮肤.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaBodyADiffuse.dds",
+          "sha256": "69edcf214de75267eaef2f189b1e87fb5b004d383d8d3a01976b23a97317455b"
+        },
+        "NormalMap": {
+          "file": "NormaBodyANormalMap.dds",
+          "sha256": "4bda4a67814e63bf7f0a019af2ff33edbcb5575b0e54fc8f3b31fcb1b742b3ed"
+        },
+        "LightMap": {
+          "file": "NormaBodyALightMap.dds",
+          "sha256": "765125f95b4cdaa519e60f2e41954dbf2d6a75bacb95bfbbe1f822a426bcca6d"
+        },
+        "MaterialMap": {
+          "file": "NormaBodyAMaterialMap.dds",
+          "sha256": "9a2d0f8574691726d169d203d230853e19f8adea1d64fc2bd7128fbf9b9d5dbd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "9c7c89b16c26d9de283383331c2ea6c3fa009306b8f4074a25d59077e58b5487",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 1.1461816198605885,
+          "p95": 8.106749131944483,
+          "below12": 0.9825701624815362
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 22.400156913335948,
+          "p95": 114.65390582316458,
+          "below12": 0.4791728212703102
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 30.902935890715288,
+          "p95": 66.33333333333333,
+          "below12": 0.008862629246676515
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 34.6985958309956,
+          "p95": 190.32365752447538,
+          "below12": 0.46144756277695714
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 3385,
+        "texture_rgb_std": 12.748353247188513,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 1.1461816198605885,
+        "p95": 8.106749131944483,
+        "below12": 0.9825701624815362
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 17,
+      "name": "衣服",
+      "texture": "Texture\\体1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 9590,
+      "face_count": 2672,
+      "role": "cloth",
+      "source_texture": "Texture\\体1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaBodyADiffuse.dds",
+          "sha256": "69edcf214de75267eaef2f189b1e87fb5b004d383d8d3a01976b23a97317455b"
+        },
+        "NormalMap": {
+          "file": "NormaBodyANormalMap.dds",
+          "sha256": "4bda4a67814e63bf7f0a019af2ff33edbcb5575b0e54fc8f3b31fcb1b742b3ed"
+        },
+        "LightMap": {
+          "file": "NormaBodyALightMap.dds",
+          "sha256": "765125f95b4cdaa519e60f2e41954dbf2d6a75bacb95bfbbe1f822a426bcca6d"
+        },
+        "MaterialMap": {
+          "file": "NormaBodyAMaterialMap.dds",
+          "sha256": "9a2d0f8574691726d169d203d230853e19f8adea1d64fc2bd7128fbf9b9d5dbd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bab3bb117254333c986f815575b3a668bd64b269fbb578c08f70393f7e82b7ea",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 2.2153319715945545,
+          "p95": 8.333333333333334,
+          "below12": 0.9930952380952381
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 47.324637179626016,
+          "p95": 135.7702165467342,
+          "below12": 0.14857142857142858
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 47.60011239524119,
+          "p95": 100.34666764537492,
+          "below12": 0.0014285714285714286
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 52.80042775473975,
+          "p95": 125.32356583992934,
+          "below12": 0.016428571428571428
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 39.639772928789476,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 2.2153319715945545,
+        "p95": 8.333333333333334,
+        "below12": 0.9930952380952381
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 18,
+      "name": "外衣",
+      "texture": "Texture\\体1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 12262,
+      "face_count": 3922,
+      "role": "cloth",
+      "source_texture": "Texture\\体1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaBodyADiffuse.dds",
+          "sha256": "69edcf214de75267eaef2f189b1e87fb5b004d383d8d3a01976b23a97317455b"
+        },
+        "NormalMap": {
+          "file": "NormaBodyANormalMap.dds",
+          "sha256": "4bda4a67814e63bf7f0a019af2ff33edbcb5575b0e54fc8f3b31fcb1b742b3ed"
+        },
+        "LightMap": {
+          "file": "NormaBodyALightMap.dds",
+          "sha256": "765125f95b4cdaa519e60f2e41954dbf2d6a75bacb95bfbbe1f822a426bcca6d"
+        },
+        "MaterialMap": {
+          "file": "NormaBodyAMaterialMap.dds",
+          "sha256": "9a2d0f8574691726d169d203d230853e19f8adea1d64fc2bd7128fbf9b9d5dbd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bab3bb117254333c986f815575b3a668bd64b269fbb578c08f70393f7e82b7ea",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 1.6262715812837525,
+          "p95": 5.734915092382411,
+          "below12": 0.9938095238095238
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 47.31357926642531,
+          "p95": 114.3672855315606,
+          "below12": 0.125
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 75.98383317582795,
+          "p95": 144.9205799440543,
+          "below12": 0.020476190476190478
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 76.11410763622087,
+          "p95": 150.33492759358884,
+          "below12": 0.0011904761904761906
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 45.121967879501675,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 1.6262715812837525,
+        "p95": 5.734915092382411,
+        "below12": 0.9938095238095238
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 19,
+      "name": "外衣_前带",
+      "texture": "Texture\\体1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 16184,
+      "face_count": 1176,
+      "role": "cloth",
+      "source_texture": "Texture\\体1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaBodyADiffuse.dds",
+          "sha256": "69edcf214de75267eaef2f189b1e87fb5b004d383d8d3a01976b23a97317455b"
+        },
+        "NormalMap": {
+          "file": "NormaBodyANormalMap.dds",
+          "sha256": "4bda4a67814e63bf7f0a019af2ff33edbcb5575b0e54fc8f3b31fcb1b742b3ed"
+        },
+        "LightMap": {
+          "file": "NormaBodyALightMap.dds",
+          "sha256": "765125f95b4cdaa519e60f2e41954dbf2d6a75bacb95bfbbe1f822a426bcca6d"
+        },
+        "MaterialMap": {
+          "file": "NormaBodyAMaterialMap.dds",
+          "sha256": "9a2d0f8574691726d169d203d230853e19f8adea1d64fc2bd7128fbf9b9d5dbd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bab3bb117254333c986f815575b3a668bd64b269fbb578c08f70393f7e82b7ea",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 1.7715942689769382,
+          "p95": 6.333333333333333,
+          "below12": 0.9784580498866213
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 40.82184767820416,
+          "p95": 74.23432920893025,
+          "below12": 0.021541950113378686
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 50.71337484583708,
+          "p95": 119.36276555061336,
+          "below12": 0.04195011337868481
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 57.20516301429117,
+          "p95": 124.66485176694314,
+          "below12": 0.0963718820861678
+        }
+      ],
+      "evidence": {
+        "sample_count": 3528,
+        "visible_count": 3528,
+        "texture_rgb_std": 30.088801316359778,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 1.7715942689769382,
+        "p95": 6.333333333333333,
+        "below12": 0.9784580498866213
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 20,
+      "name": "袖子",
+      "texture": "Texture\\体1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 17360,
+      "face_count": 952,
+      "role": "cloth",
+      "source_texture": "Texture\\体1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaBodyADiffuse.dds",
+          "sha256": "69edcf214de75267eaef2f189b1e87fb5b004d383d8d3a01976b23a97317455b"
+        },
+        "NormalMap": {
+          "file": "NormaBodyANormalMap.dds",
+          "sha256": "4bda4a67814e63bf7f0a019af2ff33edbcb5575b0e54fc8f3b31fcb1b742b3ed"
+        },
+        "LightMap": {
+          "file": "NormaBodyALightMap.dds",
+          "sha256": "765125f95b4cdaa519e60f2e41954dbf2d6a75bacb95bfbbe1f822a426bcca6d"
+        },
+        "MaterialMap": {
+          "file": "NormaBodyAMaterialMap.dds",
+          "sha256": "9a2d0f8574691726d169d203d230853e19f8adea1d64fc2bd7128fbf9b9d5dbd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bab3bb117254333c986f815575b3a668bd64b269fbb578c08f70393f7e82b7ea",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 3.4030017699500292,
+          "p95": 8.363217870891086,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 71.85522053354175,
+          "p95": 123.0,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 77.22238383853615,
+          "p95": 148.60950724283853,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 86.33942680138469,
+          "p95": 131.75924804409343,
+          "below12": 0.0665266106442577
+        }
+      ],
+      "evidence": {
+        "sample_count": 2856,
+        "visible_count": 2856,
+        "texture_rgb_std": 28.77098645579002,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 3.4030017699500292,
+        "p95": 8.363217870891086,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 21,
+      "name": "手",
+      "texture": "Texture\\体1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 18312,
+      "face_count": 2840,
+      "role": "cloth",
+      "source_texture": "Texture\\体1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaBodyADiffuse.dds",
+          "sha256": "69edcf214de75267eaef2f189b1e87fb5b004d383d8d3a01976b23a97317455b"
+        },
+        "NormalMap": {
+          "file": "NormaBodyANormalMap.dds",
+          "sha256": "4bda4a67814e63bf7f0a019af2ff33edbcb5575b0e54fc8f3b31fcb1b742b3ed"
+        },
+        "LightMap": {
+          "file": "NormaBodyALightMap.dds",
+          "sha256": "765125f95b4cdaa519e60f2e41954dbf2d6a75bacb95bfbbe1f822a426bcca6d"
+        },
+        "MaterialMap": {
+          "file": "NormaBodyAMaterialMap.dds",
+          "sha256": "9a2d0f8574691726d169d203d230853e19f8adea1d64fc2bd7128fbf9b9d5dbd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bab3bb117254333c986f815575b3a668bd64b269fbb578c08f70393f7e82b7ea",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.2841258402813942,
+          "p95": 0.666830188592292,
+          "below12": 0.9961904761904762
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 27.48494581024932,
+          "p95": 208.7098341795382,
+          "below12": 0.3657142857142857
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 28.602326637860955,
+          "p95": 88.54567641773819,
+          "below12": 0.39357142857142857
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 29.66003392704729,
+          "p95": 38.469030501618185,
+          "below12": 0.03142857142857143
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 11.541156759789168,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.2841258402813942,
+        "p95": 0.666830188592292,
+        "below12": 0.9961904761904762
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 22,
+      "name": "袖子筒",
+      "texture": "Texture\\体1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 21152,
+      "face_count": 2416,
+      "role": "cloth",
+      "source_texture": "Texture\\体1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaBodyADiffuse.dds",
+          "sha256": "69edcf214de75267eaef2f189b1e87fb5b004d383d8d3a01976b23a97317455b"
+        },
+        "NormalMap": {
+          "file": "NormaBodyANormalMap.dds",
+          "sha256": "4bda4a67814e63bf7f0a019af2ff33edbcb5575b0e54fc8f3b31fcb1b742b3ed"
+        },
+        "LightMap": {
+          "file": "NormaBodyALightMap.dds",
+          "sha256": "765125f95b4cdaa519e60f2e41954dbf2d6a75bacb95bfbbe1f822a426bcca6d"
+        },
+        "MaterialMap": {
+          "file": "NormaBodyAMaterialMap.dds",
+          "sha256": "9a2d0f8574691726d169d203d230853e19f8adea1d64fc2bd7128fbf9b9d5dbd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bab3bb117254333c986f815575b3a668bd64b269fbb578c08f70393f7e82b7ea",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.23136898098638872,
+          "p95": 0.5558965859239257,
+          "below12": 0.9954761904761905
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 42.792109458535,
+          "p95": 73.48191731770832,
+          "below12": 0.018095238095238095
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 43.204398403263475,
+          "p95": 73.04751813354568,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 45.69827935582351,
+          "p95": 86.3867846679688,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 29.595437169795,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.23136898098638872,
+        "p95": 0.5558965859239257,
+        "below12": 0.9954761904761905
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 23,
+      "name": "鞋",
+      "texture": "Texture\\体1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 23568,
+      "face_count": 2170,
+      "role": "cloth",
+      "source_texture": "Texture\\体1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaBodyADiffuse.dds",
+          "sha256": "69edcf214de75267eaef2f189b1e87fb5b004d383d8d3a01976b23a97317455b"
+        },
+        "NormalMap": {
+          "file": "NormaBodyANormalMap.dds",
+          "sha256": "4bda4a67814e63bf7f0a019af2ff33edbcb5575b0e54fc8f3b31fcb1b742b3ed"
+        },
+        "LightMap": {
+          "file": "NormaBodyALightMap.dds",
+          "sha256": "765125f95b4cdaa519e60f2e41954dbf2d6a75bacb95bfbbe1f822a426bcca6d"
+        },
+        "MaterialMap": {
+          "file": "NormaBodyAMaterialMap.dds",
+          "sha256": "9a2d0f8574691726d169d203d230853e19f8adea1d64fc2bd7128fbf9b9d5dbd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bab3bb117254333c986f815575b3a668bd64b269fbb578c08f70393f7e82b7ea",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.8578682884062123,
+          "p95": 5.0,
+          "below12": 0.9866666666666667
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 35.15854322561681,
+          "p95": 51.82207192492533,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 41.213962774114904,
+          "p95": 130.15309516059023,
+          "below12": 0.08047619047619048
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 45.97810134192258,
+          "p95": 111.84418184747759,
+          "below12": 0.12309523809523809
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 25.826601454647648,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.8578682884062123,
+        "p95": 5.0,
+        "below12": 0.9866666666666667
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    },
+    {
+      "index": 24,
+      "name": "帽子",
+      "texture": "Texture\\体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 25738,
+      "face_count": 4560,
+      "role": "cloth",
+      "source_texture": "Texture\\体2.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaHairADiffuse.dds",
+          "sha256": "64ed0aa740cc796e25a5af09d055aea5fcbc09883616eced2b47699ff1bab720"
+        },
+        "NormalMap": {
+          "file": "NormaHairANormalMap.dds",
+          "sha256": "40f2c316f35ce5881ca57a1ebcb5394a749fc1ef85ed201f157a62e4552862a3"
+        },
+        "LightMap": {
+          "file": "NormaHairALightMap.dds",
+          "sha256": "c03f7ab0bf4fc427c810414097e6f6f891a0d91b09c74f6ca0f74f97c5412b1a"
+        },
+        "MaterialMap": {
+          "file": "NormaHairAMaterialMap.dds",
+          "sha256": "d1e266575635ff6e25af9c4a9223460ff8eac4745d86026d73b984995e5681de"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "aebcc3b5e9d024a26805d9691e208fa7dbad1642d73e0a1f2b9806193fb972af",
+      "candidates": [
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.1384282245002167,
+          "p95": 0.4750913168787959,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 80.8711567130881,
+          "p95": 151.69142144266795,
+          "below12": 0.041428571428571426
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 81.7115912129567,
+          "p95": 157.76856791736463,
+          "below12": 0.09261904761904761
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 84.05232679100072,
+          "p95": 153.00082092285055,
+          "below12": 0.05238095238095238
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 61.3167550632881,
+        "names": [
+          "NormaHairADiffuse.dds",
+          "NormaHairBDiffuse.dds",
+          "NormaHatADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.1384282245002167,
+        "p95": 0.4750913168787959,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 25,
+      "name": "发饰",
+      "texture": "Texture\\体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 30298,
+      "face_count": 322,
+      "role": "cloth",
+      "source_texture": "Texture\\体2.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaHairADiffuse.dds",
+          "sha256": "64ed0aa740cc796e25a5af09d055aea5fcbc09883616eced2b47699ff1bab720"
+        },
+        "NormalMap": {
+          "file": "NormaHairANormalMap.dds",
+          "sha256": "40f2c316f35ce5881ca57a1ebcb5394a749fc1ef85ed201f157a62e4552862a3"
+        },
+        "LightMap": {
+          "file": "NormaHairALightMap.dds",
+          "sha256": "c03f7ab0bf4fc427c810414097e6f6f891a0d91b09c74f6ca0f74f97c5412b1a"
+        },
+        "MaterialMap": {
+          "file": "NormaHairAMaterialMap.dds",
+          "sha256": "d1e266575635ff6e25af9c4a9223460ff8eac4745d86026d73b984995e5681de"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "aebcc3b5e9d024a26805d9691e208fa7dbad1642d73e0a1f2b9806193fb972af",
+      "candidates": [
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.19986807702062923,
+          "p95": 0.6666666666666666,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 35.831058761287004,
+          "p95": 45.5174548168046,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 36.0424559461981,
+          "p95": 78.57193456067486,
+          "below12": 0.17701863354037267
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 48.24112851463573,
+          "p95": 174.51173171382786,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 966,
+        "visible_count": 966,
+        "texture_rgb_std": 15.174365400203735,
+        "names": [
+          "NormaHairADiffuse.dds",
+          "NormaHairBDiffuse.dds",
+          "NormaHatADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.19986807702062923,
+        "p95": 0.6666666666666666,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 26,
+      "name": "头发",
+      "texture": "Texture\\体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 30620,
+      "face_count": 6751,
+      "role": "hair",
+      "source_texture": "Texture\\体2.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaHairADiffuse.dds",
+          "sha256": "64ed0aa740cc796e25a5af09d055aea5fcbc09883616eced2b47699ff1bab720"
+        },
+        "NormalMap": {
+          "file": "NormaHairANormalMap.dds",
+          "sha256": "40f2c316f35ce5881ca57a1ebcb5394a749fc1ef85ed201f157a62e4552862a3"
+        },
+        "LightMap": {
+          "file": "NormaHairALightMap.dds",
+          "sha256": "c03f7ab0bf4fc427c810414097e6f6f891a0d91b09c74f6ca0f74f97c5412b1a"
+        },
+        "MaterialMap": {
+          "file": "NormaHairAMaterialMap.dds",
+          "sha256": "d1e266575635ff6e25af9c4a9223460ff8eac4745d86026d73b984995e5681de"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "aebcc3b5e9d024a26805d9691e208fa7dbad1642d73e0a1f2b9806193fb972af",
+      "candidates": [
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.054894622642896074,
+          "p95": 0.3333333333333333,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 35.438518787954266,
+          "p95": 113.09987200575824,
+          "below12": 0.25142857142857145
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 38.623646855187474,
+          "p95": 121.33333333333333,
+          "below12": 0.06619047619047619
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 49.54374787909939,
+          "p95": 165.66666666666666,
+          "below12": 0.04023809523809524
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 12.937534028902306,
+        "names": [
+          "NormaHairADiffuse.dds",
+          "NormaHairBDiffuse.dds",
+          "NormaHatADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.054894622642896074,
+        "p95": 0.3333333333333333,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 27,
+      "name": "前发",
+      "texture": "Texture\\体2.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 37371,
+      "face_count": 520,
+      "role": "hair",
+      "source_texture": "Texture\\体2.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaHairADiffuse.dds",
+          "sha256": "64ed0aa740cc796e25a5af09d055aea5fcbc09883616eced2b47699ff1bab720"
+        },
+        "NormalMap": {
+          "file": "NormaHairANormalMap.dds",
+          "sha256": "40f2c316f35ce5881ca57a1ebcb5394a749fc1ef85ed201f157a62e4552862a3"
+        },
+        "LightMap": {
+          "file": "NormaHairALightMap.dds",
+          "sha256": "c03f7ab0bf4fc427c810414097e6f6f891a0d91b09c74f6ca0f74f97c5412b1a"
+        },
+        "MaterialMap": {
+          "file": "NormaHairAMaterialMap.dds",
+          "sha256": "d1e266575635ff6e25af9c4a9223460ff8eac4745d86026d73b984995e5681de"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "aebcc3b5e9d024a26805d9691e208fa7dbad1642d73e0a1f2b9806193fb972af",
+      "candidates": [
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.11831722224048222,
+          "p95": 0.3333699176712457,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 15.44865939397915,
+          "p95": 30.0,
+          "below12": 0.367948717948718
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 39.121214190577504,
+          "p95": 70.66666666666667,
+          "below12": 0.02564102564102564
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 41.535256208747306,
+          "p95": 94.33333333333333,
+          "below12": 0.009615384615384616
+        }
+      ],
+      "evidence": {
+        "sample_count": 1560,
+        "visible_count": 1560,
+        "texture_rgb_std": 10.918325379623482,
+        "names": [
+          "NormaHairADiffuse.dds",
+          "NormaHairBDiffuse.dds",
+          "NormaHatADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.11831722224048222,
+        "p95": 0.3333699176712457,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "HairA"
+    },
+    {
+      "index": 28,
+      "name": "头发高光",
+      "texture": "Texture\\发光.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 37891,
+      "face_count": 7271,
+      "role": "hair_overlay",
+      "source_texture": "Texture\\发光.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "22d1414172bf6100602bfe4595cf60cd6afc300054f1cbeed382ca7db40c8118",
+      "candidates": [
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 24.59572601695855,
+          "p95": 26.59949647959072,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 35.66109922867046,
+          "p95": 55.243068470584795,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaEyebrowsADiffuse.dds",
+            "NormaFaceADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 54.490086029436846,
+          "p95": 141.80031705429812,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 61.28137270618851,
+          "p95": 91.10738444010414,
+          "below12": 0.0
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 8,
+        "texture_rgb_std": 2.3652048474931227,
+        "names": [
+          "NormaHairADiffuse.dds",
+          "NormaHairBDiffuse.dds",
+          "NormaHatADiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 24.59572601695855,
+        "p95": 26.59949647959072,
+        "below12": 0.0
+      }
+    },
+    {
+      "index": 29,
+      "name": "内裙_带子",
+      "texture": "Texture\\体1.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 45162,
+      "face_count": 656,
+      "role": "cloth",
+      "source_texture": "Texture\\体1.png",
+      "maps": {
+        "Diffuse": {
+          "file": "NormaBodyADiffuse.dds",
+          "sha256": "69edcf214de75267eaef2f189b1e87fb5b004d383d8d3a01976b23a97317455b"
+        },
+        "NormalMap": {
+          "file": "NormaBodyANormalMap.dds",
+          "sha256": "4bda4a67814e63bf7f0a019af2ff33edbcb5575b0e54fc8f3b31fcb1b742b3ed"
+        },
+        "LightMap": {
+          "file": "NormaBodyALightMap.dds",
+          "sha256": "765125f95b4cdaa519e60f2e41954dbf2d6a75bacb95bfbbe1f822a426bcca6d"
+        },
+        "MaterialMap": {
+          "file": "NormaBodyAMaterialMap.dds",
+          "sha256": "9a2d0f8574691726d169d203d230853e19f8adea1d64fc2bd7128fbf9b9d5dbd"
+        }
+      },
+      "matching": "surface_verified",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "bab3bb117254333c986f815575b3a668bd64b269fbb578c08f70393f7e82b7ea",
+      "candidates": [
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 0.25475420949492833,
+          "p95": 0.7027692303063541,
+          "below12": 1.0
+        },
+        {
+          "names": [
+            "NormaBodyADiffuse.dds",
+            "NormaBodyBDiffuse.dds",
+            "NormaBodyCDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 42.29083969687376,
+          "p95": 114.33333333333333,
+          "below12": 0.2032520325203252
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 45.52624269178588,
+          "p95": 74.068603515625,
+          "below12": 0.0
+        },
+        {
+          "names": [
+            "NormaHairADiffuse.dds",
+            "NormaHairBDiffuse.dds",
+            "NormaHatADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 56.97090210231202,
+          "p95": 88.93766276041667,
+          "below12": 0.014227642276422764
+        }
+      ],
+      "evidence": {
+        "sample_count": 1968,
+        "visible_count": 1968,
+        "texture_rgb_std": 28.602317886651832,
+        "names": [
+          "NormaBodyADiffuse.dds",
+          "NormaBodyBDiffuse.dds",
+          "NormaBodyCDiffuse.dds"
+        ],
+        "flip_v": true,
+        "mean": 0.25475420949492833,
+        "p95": 0.7027692303063541,
+        "below12": 1.0
+      },
+      "dds_flip_v": true,
+      "atlas": "BodyA"
+    }
+  ],
+  "warnings": [
+    {
+      "material": 12,
+      "name": "表情_>w<",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 28,
+      "name": "头发高光",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": true,
+    "eyes": true
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

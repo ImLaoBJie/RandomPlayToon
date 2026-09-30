@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "NangongYuRapsody_Weapon_631c",
+  "character": "NangongYuRapsody",
+  "variant": "default",
+  "kind": "weapon",
+  "pmx_sha256": "6cb57ea33791f2ba108f767d5b6dda9681322a3e6ad821f19ed282a25efac987",
+  "pmx": "characters/NangongYuRapsody/models/武器__631c970f88/武器.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/NangongYuRapsody",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "武器",
+      "texture": "tex\\武器.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 6336,
+      "role": "weapon",
+      "source_texture": "tex\\武器.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "228c449ebfaa5c77b4285a5886d4faee7b88f1beaf9bf051238b0b0508bd6bc5",
+      "candidates": [
+        {
+          "names": [
+            "NangongYuRapsodyHairADiffuse.dds",
+            "NangongYuRapsodyHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 39.00410052515056,
+          "p95": 148.33333333333334,
+          "below12": 0.37214285714285716
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyADiffuse.dds",
+            "NangongYuRapsodyHaloADiffuse.dds",
+            "NangongYuRapsodyWingsADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 61.60259055378606,
+          "p95": 151.0,
+          "below12": 0.07833333333333334
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 70.55068523117818,
+          "p95": 168.0,
+          "below12": 0.023095238095238096
+        },
+        {
+          "names": [
+            "NangongYuRapsodyBodyBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 70.96438937374943,
+          "p95": 150.9793701171875,
+          "below12": 0.019523809523809523
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 56.14083158805542,
+        "names": [
+          "NangongYuRapsodyHairADiffuse.dds",
+          "NangongYuRapsodyHairBDiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 39.00410052515056,
+        "p95": 148.33333333333334,
+        "below12": 0.37214285714285716
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "material": 0,
+      "name": "武器",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}

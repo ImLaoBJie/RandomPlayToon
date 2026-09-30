@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "id": "SunnaMaid_Accessory_da49",
+  "character": "SunnaMaid",
+  "variant": "default",
+  "kind": "accessory",
+  "pmx_sha256": "6b278bd8f01b395c281cfb272279752708a1cda27d4d26ab490e19dd89a7922f",
+  "pmx": "characters/SunnaMaid/models/手机__da49bbdf3a/手机.pmx",
+  "asset_directory": "render_library/PlayerCharacterData/SunnaMaid",
+  "import_scale": 0.08,
+  "materials": [
+    {
+      "index": 0,
+      "name": "手机",
+      "texture": "tex\\手机.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 31,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "face_start": 0,
+      "face_count": 2036,
+      "role": "cloth",
+      "source_texture": "tex\\手机.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha",
+      "source_sha256": "f3572be8c3bb85ce2b71f623312908193bd6363ab7e62f2c0cf8536229ff6135",
+      "candidates": [
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 53.654558883068304,
+          "p95": 159.36599078720758,
+          "below12": 0.010476190476190476
+        },
+        {
+          "names": [
+            "SunnaMaidHairBDiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 55.499191435649294,
+          "p95": 159.66666666666666,
+          "below12": 0.010952380952380953
+        },
+        {
+          "names": [
+            "SunnaMaidHairADiffuse.dds"
+          ],
+          "flip_v": true,
+          "mean": 55.5425636148553,
+          "p95": 149.0,
+          "below12": 0.007380952380952381
+        },
+        {
+          "names": [
+            "SunnaMaidEyebrowsADiffuse.dds",
+            "SunnaMaidFaceADiffuse.dds"
+          ],
+          "flip_v": false,
+          "mean": 58.26480128853578,
+          "p95": 177.49352864583332,
+          "below12": 0.06333333333333334
+        }
+      ],
+      "evidence": {
+        "sample_count": 4200,
+        "visible_count": 4200,
+        "texture_rgb_std": 61.838884503271856,
+        "names": [
+          "SunnaMaidHairADiffuse.dds"
+        ],
+        "flip_v": false,
+        "mean": 53.654558883068304,
+        "p95": 159.36599078720758,
+        "below12": 0.010476190476190476
+      }
+    },
+    {
+      "index": 1,
+      "name": "手机2",
+      "texture": "tex\\.png",
+      "sphere": null,
+      "sphere_mode": 0,
+      "draw_flags": 15,
+      "diffuse": [
+        0.003921568859368563,
+        1.0,
+        0.4745098054409027,
+        1.0
+      ],
+      "face_start": 2036,
+      "face_count": 10,
+      "role": "cloth",
+      "source_texture": "tex\\.png",
+      "maps": {},
+      "matching": "pmx_only",
+      "alpha_mode": "source_pmx_alpha"
+    }
+  ],
+  "warnings": [
+    {
+      "material": 0,
+      "name": "手机",
+      "reason": "pmx_only",
+      "action": "retain_pmx_color_no_unverified_control_maps"
+    },
+    {
+      "material": 1,
+      "name": "手机2",
+      "reason": "missing_source_texture",
+      "action": "pmx_diffuse_color"
+    }
+  ],
+  "capabilities": {
+    "face": false,
+    "eyes": false
+  },
+  "acceptance": "mapping_audited_render_pending"
+}
