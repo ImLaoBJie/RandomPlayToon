@@ -104,7 +104,7 @@ def build(pmx,texture_root,asset_root,output,preset='CURRENT',personal_preset=No
     if not all(preserved.values()):raise RuntimeError('源模型数据意外改变：'+str(preserved))
     for im in bpy.data.images:
         if im.source=='FILE' and Path(bpy.path.abspath(im.filepath)).is_file():im.pack()
-    report={'status':'success','output':str(dest),'plugin':'RandomPlayToon','version':'0.9.0','profile':profile['id'],'character':profile['character'],'kind':profile['kind'],'source_preserved':preserved,'materials':[{k:m.get(k) for k in ['index','name','role','matching','atlas','maps']} for m in profile['materials']],'effects':effects,'eye_reveal':eye_enabled,'warnings':inputs['warnings'],'validation':'rebuilt; visual acceptance recorded separately','elapsed_seconds':round(time.time()-start,2)}
+    report={'status':'success','output':str(dest),'plugin':'RandomPlayToon','version':'0.9.3','profile':profile['id'],'character':profile['character'],'kind':profile['kind'],'source_preserved':preserved,'materials':[{k:m.get(k) for k in ['index','name','role','matching','atlas','maps']} for m in profile['materials']],'effects':effects,'eye_reveal':eye_enabled,'warnings':inputs['warnings'],'validation':'rebuilt; visual acceptance recorded separately','elapsed_seconds':round(time.time()-start,2)}
     report['parameter_overrides']=profile.get('parameter_overrides',{});report['override_reason']=profile.get('override_reason','')
     report['detail_repairs']=json.loads(scene['rpt_detail_audit']);report['resolution']=[scene.render.resolution_x,scene.render.resolution_y]
     if character_refinement:report['character_refinement']=character_refinement

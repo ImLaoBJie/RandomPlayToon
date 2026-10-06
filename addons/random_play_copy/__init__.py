@@ -1,6 +1,6 @@
 """Independent Alembic render-look transfer. Independent namespaced 0.7.9-compatible style UI."""
 bl_info = {'name': 'RandomPlayCopy · ABC渲染套用', 'author': 'Rendering experiment',
-           'version': (0, 8, 4), 'blender': (5, 2, 0), 'category': 'Import-Export'}
+           'version': (0, 8, 7), 'blender': (5, 2, 0), 'category': 'Import-Export'}
 import json
 import subprocess
 import tempfile
@@ -155,7 +155,7 @@ class RPC_OT_open(bpy.types.Operator):
 
 
 class RPC_PT_main(bpy.types.Panel):
-    bl_label = 'ABC 渲染套用 · 0.8.4'
+    bl_label = 'ABC 渲染套用 · 0.8.7'
     bl_idname = 'RPC_PT_main'
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'

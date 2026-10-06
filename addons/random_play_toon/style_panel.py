@@ -3,7 +3,7 @@
 All sliders edit the actual node inputs. No duplicate parameter storage or frame
 handlers. Rendering and saved parameters work even when this UI is not installed.
 """
-bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,9,0),'blender':(5,2,0),'location':'3D View / Shader Editor > N > Character','category':'Material'}
+bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,9,3),'blender':(5,2,0),'location':'3D View / Shader Editor > N > Character','category':'Material'}
 import bpy, json, copy, math, textwrap
 from bpy.props import EnumProperty, StringProperty
 from bpy_extras.io_utils import ExportHelper, ImportHelper
@@ -102,23 +102,30 @@ def apply_values(scene,values):
         s.default_value=v
     refresh(scene)
 
+def display_values(scene,enabled=True):
+    """Lighting mode changes must preserve every authored style parameter."""
+    values=capture(scene);r=registry(scene)
+    values[r['global']['material']]['独立展示光照']=bool(enabled)
+    return values
+
 def generic_preset_values(scene,name):
+    if name in {'DISPLAY','BASELINE'}:return display_values(scene,name=='DISPLAY')
     # Keep the portable text self-contained: no installed package is required.
-    values=json.loads(scene['zzz_stage6_defaults']);r=registry(scene);glob=values[r['global']['material']]
+    values=json.loads(scene['zzz_stage6_defaults']) if name=='RESET' else capture(scene);r=registry(scene);glob=values[r['global']['material']]
     if name=='SOFT':glob.update({'身体过渡宽度':.17,'基础高光强度':.2,'边缘光强度':.025})
     if name=='CONTRAST':glob.update({'身体过渡宽度':.035,'基础高光强度':.48})
     if name=='NIGHT':
         glob.update({'角色受光亮度':.32,'辉光强度':.45})
         for e in r['materials']:
             if e['role'] in ['emissive','eyes']:values[e['material']]['自发光强度']=1.2
-    if name=='DISPLAY':glob['独立展示光照']=True
     return values
 
 def make_preset(scene,name):
-    values=json.loads(scene['zzz_stage6_defaults']);r=registry(scene)
+    if name in {'DISPLAY','BASELINE'}:return display_values(scene,name=='DISPLAY')
+    values=json.loads(scene['zzz_stage6_defaults']) if name=='RESET' else capture(scene);r=registry(scene)
     if r.get('generic'):
         return generic_preset_values(scene,name)
-    if name=='BASELINE':return values
+    if name=='RESET':return values
     def setkey(e,key,v):
         item=next((x for x in e['entries'] if x['key']==key),None)
         if item:values[e['material']][item['label']]=v
@@ -132,9 +139,8 @@ def make_preset(scene,name):
             if e['slot'] in [3,4]:setkey(e,'Glow Strength',1.5 if e['slot']==3 else .5)
             if e['slot'] in [10,12,13]:setkey(e,'Glow Strength',.7)
             if e['slot']==16:
-                setkey(e,'Glow Strength',1.4);setkey(e,'Back Glow Strength',1.0);setkey(e,'Glow Tint',[.08,.16,.9,1.])
+                setkey(e,'Glow Strength',1.4);setkey(e,'Back Glow Strength',1.0)
     glob=r['global']
-    if name=='SOFT' and not r.get('default_tuning'):setkey(glob,'Warmth',.12)
     if name=='SOFT':
         for k,v in [('Body Softness',.18),('Global Specular',.7),('Rim Strength',.028)]:setkey(glob,k,v)
     if name=='CONTRAST':
@@ -142,33 +148,30 @@ def make_preset(scene,name):
     if name=='CONTRAST':setkey(glob,'Outline Width',.0008)
     if name=='NIGHT':
         for k,v in [('Key Gain',.28),('Bloom Strength',.35),('Bloom Threshold',.45)]:setkey(glob,k,v)
-    if r.get('revision',0)>=2:
-        # Original four presets retain their previous scene/emission behavior.
-        # The user may independently override the lighting choice afterwards.
-        if name=='DISPLAY':
-            setkey(glob,'Studio Mode',True);setkey(glob,'Black Background',True)
-            setkey(glob,'Studio Emission',1.6)
-            if r.get('polish'):
-                for k,v in [('Body Softness',.045),('Bloom Strength',.16),('Bloom Threshold',1.05)]:setkey(glob,k,v)
-                for e in r['materials']:
-                    setkey(e,'Body Softness',.045);setkey(e,'Face Softness',.075)
-                    if e['slot']==16 and r.get('polish')==1:setkey(e,'Glow Tint',[.055,.48,.85,1.])
-            if r.get('live_preview'):
-                setkey(glob,'Bloom Strength',.55);setkey(glob,'Bloom Size',.3)
-            if r.get('lightweight'):
-                # Reset the entire gem parameter set to BASELINE, with its studio
-                # boost opt-in disabled. Other parts keep studio emission.
-                gem=next(e for e in r['materials'] if e['slot']==16)
-                values[gem['material']]=json.loads(scene['zzz_stage6_defaults'])[gem['material']]
-            if r.get('bloom_fix'):setkey(glob,'Bloom Threshold',.8)
     return values
 
 class RPT_OT_preset(bpy.types.Operator):
     bl_idname='rpt.style_preset';bl_label='应用风格预设';bl_options={'REGISTER','UNDO'}
-    bl_description='替换本工具管理的风格数值；不更改灯光、模型或贴图。可撤销，建议先导出个人预设'
-    preset:EnumProperty(items=[('BASELINE','默认风格','恢复第六步入口默认值，包括场景光照方式'),('SOFT','柔和','柔和明暗与较弱高光'),('CONTRAST','清晰','更清晰的明暗与描边'),('NIGHT','暗场','角色受光变暗并启用局部发光，不改场景灯光'),('DISPLAY','独立虚拟光源控制','使用虚拟光向与黑底展示预设，隔离实际场景照明')])
+    bl_description='默认模式／独立光源仅切换光照；柔和、清晰、暗场只调整相关明暗参数；仅重置按钮恢复全部参数。可撤销'
+    preset:EnumProperty(items=[('BASELINE','默认模式','仅切换到场景光照，保留所有当前参数'),('RESET','重置全部风格参数','明确恢复初始风格数值，包括光照方式'),('SOFT','柔和','柔和明暗与较弱高光'),('CONTRAST','清晰','更清晰的明暗与描边'),('NIGHT','暗场','角色受光变暗并启用局部发光，不改场景灯光'),('DISPLAY','独立虚拟光源控制','仅切换到独立虚拟光照，保留所有颜色、效果参数和光向')])
     def execute(self,context):
-        try:apply_values(context.scene,make_preset(context.scene,self.preset))
+        try:
+            if self.preset in {'DISPLAY','BASELINE'}:lighting_set(context.scene,int(self.preset=='DISPLAY'))
+            elif self.preset=='RESET':apply_values(context.scene,make_preset(context.scene,self.preset))
+            else:
+                values=make_preset(context.scene,self.preset);changes=[]
+                for e in all_entries(context.scene):
+                    n=node(e)
+                    for socket in n.inputs:
+                        if socket.name in values[e['material']]:
+                            v=values[e['material']][socket.name]
+                            current=socket.default_value if isinstance(socket.default_value,(float,int,bool,str)) else list(socket.default_value)
+                            if current!=v:
+                                if socket.is_linked:raise ValueError('目标参数已有自定义连接：'+socket.name)
+                                if n.id_data.animation_data and n.id_data.animation_data.action:raise ValueError('目标材质参数已有动画，请在静态副本应用风格')
+                                changes.append((socket,v))
+                for socket,v in changes:socket.default_value=v
+                refresh(context.scene)
         except Exception as e:self.report({'ERROR'},str(e));return {'CANCELLED'}
         return {'FINISHED'}
 
@@ -335,7 +338,7 @@ class PanelBase:
         s=context.scene;r=registry(s);layout=self.layout
         if r.get('revision',0)>=2:
             layout.operator('rpt.style_preset',text='独立虚拟光源控制').preset='DISPLAY'
-        layout.operator('rpt.style_preset',text='默认风格').preset='BASELINE'
+        layout.operator('rpt.style_preset',text='默认模式（场景光照）').preset='BASELINE'
         row=layout.row(align=True)
         for name,label in [('SOFT','柔和'),('CONTRAST','清晰'),('NIGHT','暗场')]:row.operator('rpt.style_preset',text=label).preset=name
         if r.get('revision',0)>=2:layout.prop(s,'rpt_lighting_mode',text='光照方式')
@@ -346,6 +349,7 @@ class PanelBase:
             layout.label(text='调整方向后按 F12 查看完整效果',icon='INFO')
         elif r.get('polish',0)>=2:layout.label(text='F12结果不会随材质修改自动重渲染',icon='INFO')
         row=layout.row(align=True);row.operator('rpt.export_style',text='导出预设');row.operator('rpt.import_style',text='载入预设')
+        layout.operator('rpt.style_preset',text='重置全部风格参数',icon='LOOP_BACK').preset='RESET'
         layout.separator();layout.prop(s,'rpt_style_slot',text='部位')
         layout.prop(s,'rpt_style_help',text='显示参数作用说明')
         if s.rpt_style_slot=='GLOBAL':

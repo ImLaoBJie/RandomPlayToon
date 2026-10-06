@@ -12,7 +12,7 @@ import bpy
 import numpy as np
 from mathutils import Matrix, Vector
 
-VERSION = '0.8.4'
+VERSION = '0.8.7'
 PROFILES = {
     'Vivian': 'c6b0f02794a1cc89a1aeef1e3cc1f5a20891e3c2f25370981dffe1f6b827cc6f',
     'SunnaMaid': '545a9ba0d601cfc5209dc9029a805a38f752d5ab8e3b4a819dca9c79d9ff394e',

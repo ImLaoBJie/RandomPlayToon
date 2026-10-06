@@ -287,7 +287,27 @@ def projected_outline(scene,r):
     return report
 
 
+def repair_bangs_pass(scene):
+    """Keep Vivian bang coverage in a dedicated colour AOV on Blender 5.2."""
+    t=scene.compositing_node_group
+    if not t or 'Hair AND visible eyes' not in t.nodes:return
+    mats=[m for m in bpy.data.materials if m.node_tree and 'ZZZ_EyeReveal ZZZ_BangsPotential' in m.node_tree.nodes]
+    if not mats:return
+    name='RPT Bangs Coverage'
+    for layer in scene.view_layers:
+        a=layer.aovs.get(name) or layer.aovs.add();a.name=name;a.type='COLOR'
+    for mat in mats:
+        q=Graph(mat.node_tree);old=mat.node_tree.nodes['ZZZ_EyeReveal ZZZ_BangsPotential']
+        n=mat.node_tree.nodes.get('RPT Stable bangs coverage') or q.node('ShaderNodeOutputAOV','RPT Stable bangs coverage')
+        n.aov_name=name;q.put(source(old.inputs['Value']),n.inputs['Color'])
+    for n in t.nodes:
+        if n.type=='R_LAYERS':n.layer=n.layer
+    bpy.context.view_layer.update()
+    t.links.new(t.nodes['Beauty - unchanged surfaces'].outputs[name],t.nodes['Hair AND visible eyes'].inputs[0])
+
+
 def apply(scene):
+    repair_bangs_pass(scene)
     if scene.get('rpt_feature_extension')==REVISION:return json.loads(scene['rpt_feature_audit'])
     r=ui.registry(scene)
     if not r.get('global'):raise ValueError('缺少已校准的角色参数注册表')

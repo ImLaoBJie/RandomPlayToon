@@ -1,5 +1,5 @@
 """Vivian reconstruction plugin; build work never changes the active scene."""
-bl_info={'name':'RandomPlayToon','author':'Vivian rendering experiment','version':(0,9,0),'blender':(5,2,0),'category':'Import-Export'}
+bl_info={'name':'RandomPlayToon','author':'Vivian rendering experiment','version':(0,9,3),'blender':(5,2,0),'category':'Import-Export'}
 import bpy,json,subprocess,time,uuid,hashlib
 from pathlib import Path
 from bpy.props import StringProperty,EnumProperty,BoolProperty,PointerProperty
