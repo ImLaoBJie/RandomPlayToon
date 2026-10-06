@@ -1,4 +1,4 @@
-"""Freeze the approved 0.7.9 UI into the independently installable ABC add-on."""
+"""Freeze the approved 0.9.0 UI into the independently installable ABC add-on."""
 from pathlib import Path
 import hashlib
 
@@ -28,10 +28,10 @@ adapter = '''def make_preset(scene,name):
 
 '''
 s = s[:pos] + adapter + s[pos:]
-source_header="bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,7,9)"
-copy_header="bl_info={'name':'RandomPlayCopy · 参数面板','author':'Vivian rendering experiment','version':(0,8,3)"
+source_header="bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,9,0)"
+copy_header="bl_info={'name':'RandomPlayCopy · 参数面板','author':'Vivian rendering experiment','version':(0,8,4)"
 assert source_header in s
 s=s.replace(source_header,copy_header,1)
-header = '# Frozen from RandomPlayToon 0.7.9; regenerate with sync_copy_style_panel.py.\n# Source SHA256: ' + hashlib.sha256(source.read_bytes()).hexdigest() + '\n'
+header = '# Frozen from RandomPlayToon 0.9.0; regenerate with sync_copy_style_panel.py.\n# Source SHA256: ' + hashlib.sha256(source.read_bytes()).hexdigest() + '\n'
 (ROOT/'addons/random_play_copy/style_panel.py').write_text(header+s, encoding='utf8')
 print('Independent style panel synchronized')

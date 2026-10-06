@@ -34,6 +34,14 @@
 !/docs/images/copy-panel.png
 !/docs/images/style-global.png
 !/docs/images/style-hair.png
+!/docs/images/vivian-cool-glow.png
+!/docs/images/vivian-crisp-cel.png
+!/presets/
+/presets/*
+!/presets/vivian/
+/presets/vivian/*
+!/presets/vivian/cool-glow.json
+!/presets/vivian/crisp-cel.json
 
 __pycache__/
 *.py[cod]

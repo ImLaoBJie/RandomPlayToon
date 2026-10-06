@@ -139,13 +139,15 @@ def build(pmx,texture_root,asset_root,output,preset='CURRENT',personal_preset=No
     ui.register()
     from ...materials.light_color import apply as add_light_color
     add_light_color(scene)
+    from ...materials.feature_extension import apply as add_feature_extension
+    add_feature_extension(scene)
     if preset!='CURRENT':ui.apply_values(scene,ui.make_preset(scene,preset))
     if personal_preset is not None:ui.apply_values(scene,personal_preset)
     ui.lightweight_viewports();ui.refresh(scene)
     scene['zzz_stage7_library']=False;scene['zzz_stage7_profile']=profile['profile']
     scene['zzz_stage7_inputs']=json.dumps({k:v for k,v in inputs.items() if k!='images'},ensure_ascii=False)
-    scene['zzz_stage7_version']='0.8.0';scene['zzz_stage7_baseline']='0.6.9'
-    report={'status':'success','profile':profile['profile'],'baseline_version':'0.6.9','plugin':'RandomPlayToon','plugin_version':'0.8.0',
+    scene['zzz_stage7_version']='0.9.0';scene['zzz_stage7_baseline']='0.6.9'
+    report={'status':'success','profile':profile['profile'],'baseline_version':'0.6.9','plugin':'RandomPlayToon','plugin_version':'0.9.0',
       'blender':bpy.app.version_string,'inputs':inputs,'preset':preset,'checks':{},'output':str(output)}
     checks=report['checks'];actual=mesh_snapshot(old)
     for key in ['positions','loops','parts','shapes','groups','weights']:checks['fresh_pmx_'+key]=actual[key]==expected[key]
@@ -153,7 +155,7 @@ def build(pmx,texture_root,asset_root,output,preset='CURRENT',personal_preset=No
     checks['shared_eye_mesh']=bpy.data.objects['ZZZ_EyeReveal_Body'].data==old.data
     checks['source_rig']=old.find_armature()==rig
     checks['eevee']=scene.render.engine=='BLENDER_EEVEE'
-    checks['panel_current']=ui.bl_info['version']==(0,8,0)
+    checks['panel_current']=ui.bl_info['version']==(0,9,0)
     checks['eye_layers']=all(n in scene.view_layers for n in ['ZZZ_Beauty','ZZZ_EyeVisibility'])
     progress('6/7 检查数据、打包资源')
     if not all(checks.values()):raise RuntimeError('构建后检查失败：'+str(checks))

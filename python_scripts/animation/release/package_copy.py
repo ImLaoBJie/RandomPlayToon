@@ -2,7 +2,7 @@
 import hashlib,json,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[3]
-source=ROOT/'addons/random_play_copy';dest=ROOT/'dist/random_play_copy_0.8.3.zip'
+source=ROOT/'addons/random_play_copy';dest=ROOT/'dist/random_play_copy_0.8.4.zip'
 dest.parent.mkdir(parents=True, exist_ok=True)
 with zipfile.ZipFile(dest,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
  for p in sorted(source.rglob('*')):

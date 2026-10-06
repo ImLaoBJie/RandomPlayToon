@@ -13,6 +13,8 @@ python python_scripts/animation/release/package_copy.py
 
 使用可用的 Python 3。ZIP 输出到本地 `dist/`。在 Blender“首选项 → 插件 → 从磁盘安装”选择对应 ZIP 并启用。安装包中的源码与必要节点资源由本仓库生成，角色资产需自行下载。
 
+安装新版不会自动更新已有 `.blend` 的材质节点。要使用完整的亮块、描边、高光和眼部发光控制，请用新版 Toon 重新构建，再载入个人预设；已有动画也需要使用更新后的模板重新套用。
+
 ## Toon 输入目录
 
 从 [模之屋](https://www.aplaybox.com/) 获取官方发布的角色模型包，解压后保留原文件结构。不要只取出 PMX 而丢弃纹理目录。

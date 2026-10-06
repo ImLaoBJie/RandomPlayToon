@@ -1,11 +1,11 @@
-# Frozen from RandomPlayToon 0.7.9; regenerate with sync_copy_style_panel.py.
-# Source SHA256: 12e07322cd0d87c657ab8fd6ac969d020964c528073f465e62f83059a0ee1a2f
+# Frozen from RandomPlayToon 0.9.0; regenerate with sync_copy_style_panel.py.
+# Source SHA256: 7171205875d7fdcc009da91097d049b49fec1d80387cff099075d7de4c33ed5e
 """Install as a Blender add-on, or run this text once to show the character panel.
 
 All sliders edit the actual node inputs. No duplicate parameter storage or frame
 handlers. Rendering and saved parameters work even when this UI is not installed.
 """
-bl_info={'name':'RandomPlayCopy · 参数面板','author':'Vivian rendering experiment','version':(0,8,3),'blender':(5,2,0),'location':'3D View / Shader Editor > N > Character','category':'Material'}
+bl_info={'name':'RandomPlayCopy · 参数面板','author':'Vivian rendering experiment','version':(0,8,4),'blender':(5,2,0),'location':'3D View / Shader Editor > N > Character','category':'Material'}
 import bpy, json, copy, math, textwrap
 from bpy.props import EnumProperty, StringProperty
 from bpy_extras.io_utils import ExportHelper, ImportHelper
@@ -324,6 +324,7 @@ def draw_grouped(layout,entry,prefixes=None,exclude=None):
         header,body=layout.panel('rpc_style_'+entry['material']+'_'+cat,default_closed=cat.startswith(('04','05','06')));header.label(text=cat[3:])
         if body:
             for item in items:
+                if item.get('disabled_reason'):continue
                 if item['key']=='Studio Mode':continue  # The mode selector is always visible above the part list.
                 s=n.inputs[item['label']];row=body.row()
                 switch=item.get('source_socket','使用全局控制')
