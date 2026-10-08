@@ -35,7 +35,7 @@
 | **角色模型包** | 从 [模之屋 / Aplaybox](https://www.aplaybox.com/) 的官方发布页下载。解压后保留 `.pmx` 和模型自带的纹理文件夹，核对发布者和使用条件 |
 | **对应角色的渲染素材** | 从 [ZZ-Model-Importer-Assets](https://github.com/leotorrez/ZZ-Model-Importer-Assets/tree/main) 获取。保留角色文件夹中的 `.dds`、`hash.json` 等文件，角色、服装和形态要与模型一致 |
 | **Blender** | 从 [Blender 官网](https://www.blender.org/download/) 获取，当前使用 Blender 5.2 |
-| **ABC 动作文件及配套检查文件** | 使用 Copy 时才需要。由动画导出流程生成，包含 `.abc`、`metadata.json`、`verification.npz`、`material_animation.npz` |
+| **ABC 动作文件及配套检查文件** | 使用 Copy 时才需要。由动画导出流程生成，包含 `.abc`|
 | **相机 VMD，可选** | 如果动作作者提供了相机文件，可以在 Copy 中单独导入 |
 
 PMX 是角色的模型文件；模型原纹理提供基本颜色；DDS 渲染素材还包含阴影、高光、法线等控制信息。插件会根据已适配的角色设置，把这些文件接到对应材质上。
