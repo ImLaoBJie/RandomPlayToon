@@ -7,6 +7,8 @@
 
 使用 **Blender 5.2 的 EEVEE**。PMX 导入功能已包含在 Toon 安装包中，**不需要另外安装 MMD Tools**。
 
+Toon 0.9.8 的场景响应已接入真实灯光的颜色、亮度与明暗分布。旧工程可在 RandomPlayToon 面板点击“更新当前工程的场景光照响应”，保留参数和独立光源风格。详见 [场景光照响应](docs/CONTROLS.md#场景光照响应toon-098)。
+
 ## 能做出什么效果
 
 ![七个角色的 EEVEE 渲染效果](docs/images/toon-characters.jpg)

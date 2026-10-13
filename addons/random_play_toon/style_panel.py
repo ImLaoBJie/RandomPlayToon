@@ -3,7 +3,7 @@
 All sliders edit the actual node inputs. No duplicate parameter storage or frame
 handlers. Rendering and saved parameters work even when this UI is not installed.
 """
-bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,9,7),'blender':(5,2,0),'location':'3D View / Shader Editor > N > Character','category':'Material'}
+bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,9,8),'blender':(5,2,0),'location':'3D View / Shader Editor > N > Character','category':'Material'}
 import bpy, json, copy, math, textwrap
 from bpy.props import EnumProperty, StringProperty
 from bpy_extras.io_utils import ExportHelper, ImportHelper
@@ -469,7 +469,7 @@ def register():
     for c in CLASSES:bpy.utils.register_class(c)
     bpy.types.Scene.rpt_style_slot=EnumProperty(name='部位',items=material_items)
     bpy.types.Scene.rpt_style_help=bpy.props.BoolProperty(name='显示参数作用说明',default=False,description='在每个参数下显示中文含义；节点输入本身也有悬停说明')
-    bpy.types.Scene.rpt_lighting_mode=EnumProperty(name='光照方式',items=[('SCENE','场景响应','保留原KeySun和场景响应'),('STUDIO','独立展示','只使用虚拟光向和虚拟反光，隔离实际场景照明')],get=lighting_get,set=lighting_set)
+    bpy.types.Scene.rpt_lighting_mode=EnumProperty(name='光照方式',items=[('SCENE','场景响应','新版材质由 EEVEE 场景灯光控制明暗、亮度和受光颜色'),('STUDIO','独立展示','保留虚拟光向、虚拟反光及原有独立展示风格')],get=lighting_get,set=lighting_set)
     bpy.types.Scene.rpt_studio_azimuth=bpy.props.FloatProperty(name='虚拟光水平角（度）',min=-180,max=180,get=azimuth_get,set=azimuth_set)
     bpy.types.Scene.rpt_studio_elevation=bpy.props.FloatProperty(name='虚拟光俯仰角（度）',min=-90,max=90,get=elevation_get,set=elevation_set)
     for key,(default,lo,hi) in NOSE_UI_FIELDS.items():

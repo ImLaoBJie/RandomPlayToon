@@ -1,5 +1,5 @@
 """Vivian reconstruction plugin; build work never changes the active scene."""
-bl_info={'name':'RandomPlayToon','author':'Vivian rendering experiment','version':(0,9,7),'blender':(5,2,0),'category':'Import-Export'}
+bl_info={'name':'RandomPlayToon','author':'Vivian rendering experiment','version':(0,9,8),'blender':(5,2,0),'category':'Import-Export'}
 import bpy,json,subprocess,time,uuid,hashlib
 from pathlib import Path
 from bpy.props import StringProperty,EnumProperty,BoolProperty,PointerProperty
@@ -175,6 +175,24 @@ class RPT_OT_add_nose(bpy.types.Operator):
         except (ValueError,KeyError) as exc:
             self.report({'ERROR'},str(exc));return {'CANCELLED'}
 
+class RPT_OT_scene_response(bpy.types.Operator):
+    bl_idname='rpt.upgrade_scene_response';bl_label='更新当前工程的场景光照响应'
+    bl_description='接入真实灯光颜色与明暗，保留所有参数、独立光源和特效；不自动保存文件'
+    bl_options={'REGISTER','UNDO'}
+    @classmethod
+    def poll(cls,context):
+        return bool(context.scene.get('zzz_stage6_registry')) and not context.scene.get('rpt_scene_response_revision') and _job is None
+    def execute(self,context):
+        try:
+            from .materials.scene_response import apply
+            apply(context.scene)
+            from .portable import embed_panel
+            embed_panel();redraw()
+            self.report({'INFO'},'已更新。切换场景响应后，真实灯光控制明暗和受光颜色。')
+            return {'FINISHED'}
+        except (ValueError,KeyError) as exc:
+            self.report({'ERROR'},str(exc));return {'CANCELLED'}
+
 class RPT_PT_build(bpy.types.Panel):
     bl_label='RandomPlayToon · 一键重建';bl_idname='RPT_PT_build';bl_space_type='VIEW_3D';bl_region_type='UI';bl_category='RandomPlayToon';bl_order=-10
     def draw(self,context):
@@ -192,8 +210,10 @@ class RPT_PT_build(bpy.types.Panel):
         if context.scene.get('rpt_report') or context.scene.get('zzz_stage7_report') or (p.report and Path(p.report).is_file()):l.operator('rpt.show_report',icon='TEXT')
         if context.scene.get('zzz_stage6_registry') and not context.scene.get('rpt_nose_revision'):
             l.separator();l.operator('rpt.add_nose_shadow',icon='SHADING_RENDERED')
+        if context.scene.get('zzz_stage6_registry') and not context.scene.get('rpt_scene_response_revision'):
+            l.separator();l.operator('rpt.upgrade_scene_response',icon='LIGHT')
 
-CLASSES=[RPT_Settings,RPT_OT_choose,RPT_OT_build,RPT_OT_open,RPT_OT_report,RPT_OT_add_nose,RPT_PT_build]
+CLASSES=[RPT_Settings,RPT_OT_choose,RPT_OT_build,RPT_OT_open,RPT_OT_report,RPT_OT_add_nose,RPT_OT_scene_response,RPT_PT_build]
 def register():
     from . import style_panel
     # Blender removes a failed package import but can keep its submodules.
