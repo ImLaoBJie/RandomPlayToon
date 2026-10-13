@@ -31,6 +31,7 @@
 !/python_scripts/generalization/tests/test_scene_response_structure.py
 !/python_scripts/generalization/tests/test_scene_response_effects.py
 !/python_scripts/generalization/tests/test_scene_chroma_migration.py
+!/python_scripts/generalization/tests/test_scene_response_interactions.py
 !/docs/
 /docs/*
 !/docs/*.md

@@ -91,9 +91,9 @@ for name in ['Vivian', 'SunnaMaid']:
     folder = OUT/'FreshBuild'/uuid.uuid4().hex;folder.mkdir(parents=True)
     target = folder/(name+'.blend')
     build(str(pmx), str(pmx.parent), str(ROOT/'assets_preprocessed'/profile['asset_directory']), str(target))
-    assert bpy.context.scene['rpt_scene_response_revision'] == 2
+    assert bpy.context.scene['rpt_scene_response_revision'] == 3
     bpy.ops.wm.open_mainfile(filepath=str(target), use_scripts=False)
-    assert bpy.context.scene['rpt_scene_response_revision'] == 2
+    assert bpy.context.scene['rpt_scene_response_revision'] == 3
     reports.append({'fresh_pmx': name, 'reopened': True})
     print('SCENE_FRESH_BUILD_PASS', name, flush=True)
 (OUT/'structure_validation.json').write_text(json.dumps(reports, ensure_ascii=False, indent=2), encoding='utf8')

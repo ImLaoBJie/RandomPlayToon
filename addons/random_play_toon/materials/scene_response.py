@@ -9,7 +9,7 @@ import bpy
 from .. import style_panel as ui
 from .style_upgrade import Graph, source, output
 
-REVISION = 2
+REVISION = 3
 PREFIXES = ('ZZZ_ToonSurface_v1', 'ZZZ_FaceDirection_v1')
 
 
@@ -22,16 +22,17 @@ def probe(q, normal):
     return rgb.outputs['Color']
 
 
-def chroma(q, rgb):
+def chroma(q, rgb, peak=None):
     """Colour only; never multiply raw shadow energy into the cel result again.
 
     Regularization makes black samples neutral and avoids amplifying tiny RGB
     differences in shadow. White illumination remains exactly white at any power.
     Brightness and occlusion belong exclusively to the existing toon band.
     """
-    sep = q.node('ShaderNodeSeparateColor', 'RPT scene chroma channels')
-    q.put(rgb, sep.inputs[0])
-    peak = q.math('MAXIMUM', q.math('MAXIMUM', sep.outputs[0], sep.outputs[1]), sep.outputs[2])
+    if peak is None:
+        sep = q.node('ShaderNodeSeparateColor', 'RPT scene chroma channels')
+        q.put(rgb, sep.inputs[0])
+        peak = q.math('MAXIMUM', q.math('MAXIMUM', sep.outputs[0], sep.outputs[1]), sep.outputs[2])
     return q.vec('SCALE', q.vec('ADD', rgb, (.03, .03, .03)),
                  q.math('DIVIDE', 1., q.math('ADD', peak, .03)), 'RPT scene colour only')
 
@@ -41,7 +42,101 @@ def response(q, rgb):
     q.put(rgb, sep.inputs[0])
     peak = q.math('MAXIMUM', q.math('MAXIMUM', sep.outputs[0], sep.outputs[1]), sep.outputs[2])
     strength = q.math('MULTIPLY', peak, 3., 'RPT scene irradiance exposure')
-    return strength, chroma(q, rgb)
+    return strength, chroma(q, rgb, peak)
+
+
+def lighting_band(q, g, strength, body):
+    i = g.nodes['Inputs'].outputs
+    threshold = q.math('ADD', .22, q.math('MULTIPLY', i['Threshold'], .25))
+    softness = q.math('MAXIMUM', i['Softness'], .001)
+    band_value = strength
+    if body:
+        bias = q.math('MULTIPLY', q.math('SUBTRACT', i['Shadow Bias'], .5), i['Bias Strength'])
+        band_value = q.math('ADD', strength, bias, 'RPT scene authored shadow bias')
+    else:
+        masks = g.nodes.get('R nose / G chin / B valid UV')
+        if masks:
+            correction = q.math('ADD', q.math('MULTIPLY', masks.outputs[0], i['Nose Strength']),
+                                q.math('MULTIPLY', masks.outputs[1], i['Chin Strength']))
+            band_value = q.math('SUBTRACT', strength, q.math('MULTIPLY', correction, .25),
+                                'RPT scene face feature correction')
+    return q.smooth(band_value, q.math('SUBTRACT', threshold, softness),
+                    q.math('ADD', threshold, softness), 'RPT scene toon band')
+
+
+def update_experimental_band(g):
+    selector = g.nodes.get('Scene / studio band')
+    if selector is None or 'RPT scene toon band' in g.nodes:
+        return
+    q = Graph(g)
+    # The experiment switched only the visible albedo mix, leaving Lit Factor
+    # and the original nose/chin/LightMap controls on a different lighting path.
+    lit = lighting_band(q, g, g.nodes['Scene irradiance exposure'].outputs[0], g.name.startswith(PREFIXES[0]))
+    q.put(lit, selector.inputs[1])
+    studio = source(selector.inputs[2])
+    for link in list(studio.links):
+        if link.to_node != selector:
+            q.put(selector.outputs[0], link.to_socket)
+
+
+def contains_toon_colour(socket, seen=None):
+    """Find an already tinted colour, not a scalar Lit Factor dependency."""
+    seen = set() if seen is None else seen
+    for link in socket.links:
+        node = link.from_node
+        if node.as_pointer() in seen:
+            continue
+        if node.type == 'GROUP':
+            if node.node_tree and node.node_tree.name.startswith(PREFIXES) and link.from_socket.name == 'Color':
+                return True
+            continue
+        seen.add(node.as_pointer())
+        if any(contains_toon_colour(i, seen) for i in node.inputs):
+            return True
+    return False
+
+
+def single_scene_tint(tree, glob):
+    # Some pre-existing hair gain/peak-limit branches wrap the whole surface.
+    # Its shared toon base already receives scene chroma. Preserve the exact
+    # old studio factor, but do not multiply scene chroma over the surface again.
+    q = Graph(tree)
+    for node in list(tree.nodes):
+        if (node.name.startswith(('RPT tint supplementary reflected light', 'RPT authored highlight light colour'))
+                and contains_toon_colour(node.inputs[0])):
+            factor = source(node.inputs[1])
+            if isinstance(factor, bpy.types.NodeSocket) and factor.node.name.startswith('RPT prevent repeated scene tint'):
+                continue
+            q.put(q.mix((1, 1, 1, 1), factor, output(q, glob, 'Studio Mode'),
+                        'RPT prevent repeated scene tint'), node.inputs[1])
+
+
+def prune_scene_orphans(tree):
+    """Remove only disconnected scene-response arithmetic/probes, never controls."""
+    live = set()
+    def visit(node):
+        if node.as_pointer() in live:
+            return
+        live.add(node.as_pointer())
+        for socket in node.inputs:
+            for link in socket.links:
+                visit(link.from_node)
+    for node in tree.nodes:
+        if node.type in {'GROUP_OUTPUT', 'OUTPUT_MATERIAL', 'OUTPUT_AOV'}:
+            visit(node)
+    allowed = {'MATH', 'VECT_MATH', 'SEPARATE_COLOR', 'BSDF_DIFFUSE', 'SHADER_TO_RGB'}
+    pending = [n for n in tree.nodes if n.name.startswith('RPT scene ') or n.name in {'Scene exposure shoulder', 'Scene toon lighting band'}]
+    remove = set()
+    while pending:
+        node = pending.pop()
+        if node in remove or node.as_pointer() in live or node.type not in allowed:
+            continue
+        remove.add(node)
+        pending.extend(l.from_node for s in node.inputs for l in s.links)
+        pending.extend(l.to_node for s in node.outputs for l in s.links)
+    for node in remove:
+        tree.nodes.remove(node)
+    return len(remove)
 
 
 def migrate_colour(tree):
@@ -105,11 +200,7 @@ def group_plan(g):
 
 def apply(scene):
     if scene.get('rpt_scene_response_revision') == REVISION:
-        audit = json.loads(scene['rpt_scene_response_audit'])
-        audit['adopted_experimental_groups'] = sorted(name for name in audit['groups']
-            if name in bpy.data.node_groups and 'Scene colour / neutral studio' in bpy.data.node_groups[name].nodes)
-        scene['rpt_scene_response_audit'] = json.dumps(audit, ensure_ascii=False)
-        return audit
+        return json.loads(scene['rpt_scene_response_audit'])
     r = ui.registry(scene)
     if not r.get('global') or scene.get('rpt_light_color_revision') != 1:
         raise ValueError('请先使用带角色受光颜色控制的新版角色材质')
@@ -119,7 +210,7 @@ def apply(scene):
               if n.type == 'GROUP' and n.node_tree and n.node_tree.name.startswith(PREFIXES)}
     if not groups:
         raise ValueError('缺少可更新的角色卡通着色组')
-    upgrading = scene.get('rpt_scene_response_revision') == 1
+    upgrading = scene.get('rpt_scene_response_revision') in {1, 2}
     plans = {} if upgrading else {g: group_plan(g) for g in groups}
     before = ui.capture(scene)
     for g, plan in plans.items():
@@ -130,29 +221,10 @@ def apply(scene):
             continue
         shade, target, sampled, body = plan
         q = Graph(g)
-        i = g.nodes['Inputs'].outputs
         rgb = sampled if body else probe(q, sampled)
         strength, tint = response(q, rgb)
         mode = output(q, glob, 'Studio Mode')
-        threshold = q.math('ADD', .22, q.math('MULTIPLY', i['Threshold'], .25))
-        softness = q.math('MAXIMUM', i['Softness'], .08)
-        band_value = strength
-        if body:
-            # Keep the authored LightMap bias in the scene band as well. The
-            # .25 scale matches the scene threshold's conversion of toon units.
-            bias = q.math('MULTIPLY', q.math('SUBTRACT', i['Shadow Bias'], .5), i['Bias Strength'])
-            band_value = q.math('ADD', strength, bias, 'RPT scene authored shadow bias')
-        else:
-            # Retain the existing masked nose/chin correction, without importing
-            # the virtual-light cosine that the actual irradiance replaces.
-            masks = g.nodes.get('R nose / G chin / B valid UV')
-            if masks:
-                correction = q.math('ADD', q.math('MULTIPLY', masks.outputs[0], i['Nose Strength']),
-                                    q.math('MULTIPLY', masks.outputs[1], i['Chin Strength']))
-                band_value = q.math('SUBTRACT', strength, q.math('MULTIPLY', correction, .25),
-                                    'RPT scene face feature correction')
-        lit = q.smooth(band_value, q.math('SUBTRACT', threshold, softness),
-                       q.math('ADD', threshold, softness), 'RPT scene toon band')
+        lit = lighting_band(q, g, strength, body)
         # Include specular gating / Lit Factor consumers, retaining the complete
         # previous branch as the studio input. Capture consumers before linking.
         old = source(shade.inputs[0])
@@ -174,19 +246,35 @@ def apply(scene):
         if upgrading:
             continue
         t = mat.node_tree
-        selectors = [n for n in t.nodes if n.name.startswith('RPT virtual light colour')]
+        selectors = [n for n in t.nodes if n.name.startswith('RPT virtual light colour') and n.outputs[0].is_linked]
         if not selectors:
             continue
         q = Graph(t)
         surface = next((n for n in t.nodes if n.type == 'GROUP' and n.node_tree
                         and n.node_tree.name.startswith(PREFIXES[0])), None)
         normal = source(surface.inputs['Normal']) if surface else q.node('ShaderNodeNewGeometry', 'RPT detail normal').outputs['Normal']
-        _, tint = response(q, probe(q, normal))
+        tint = chroma(q, probe(q, normal))
         for selector in selectors:
             q.put(tint, selector.inputs[1])
     if upgrading:
         for tree in list(groups) + [mat.node_tree for mat in materials]:
             migrate_colour(tree)
+    for g in groups:
+        update_experimental_band(g)
+        for node in g.nodes:
+            if (node.type == 'MATH' and node.operation == 'MAXIMUM'
+                    and node.inputs[0].is_linked and source(node.inputs[0]) == g.nodes['Inputs'].outputs['Softness']
+                    and not node.inputs[1].is_linked and abs(node.inputs[1].default_value - .08) < 1e-6):
+                node.inputs[1].default_value = .001
+    for mat in materials:
+        tree = mat.node_tree
+        single_scene_tint(tree, glob)
+        for node in tree.nodes:
+            if node.name.startswith('RPT virtual light colour') and not node.outputs[0].is_linked:
+                for link in list(node.inputs[1].links):
+                    tree.links.remove(link)
+                node.inputs[1].default_value = (1, 1, 1, 1)
+    removed = sum(prune_scene_orphans(t) for t in list(groups) + [m.node_tree for m in materials])
     # Descriptions only: preserve every saved value and factory preset.
     for item in glob['entries']:
         if item['key'] == 'Studio Mode':
@@ -201,6 +289,7 @@ def apply(scene):
              'materials': [m.name for m in materials],
              'sampling': 'all EEVEE lights and available indirect illumination; no designated lamp',
              'colour_response': 'regularized chroma only; raw shadow energy is not multiplied after the toon band',
+             'removed_unused_scene_nodes': removed,
              'preserved': 'studio branch, controls, emission, patches, outlines, eye reveal, nose'}
     scene['rpt_scene_response_revision'] = REVISION
     scene['rpt_scene_response_audit'] = json.dumps(audit, ensure_ascii=False)

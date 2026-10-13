@@ -1,4 +1,4 @@
-"""Render saved revision-1 styles before/after colour-only migration.
+"""Render saved styles before/after the current scene-response migration.
 
 Original files are read-only. Checks idempotence, saved controls, studio pixels,
 and captures the identical face closeup at the original sampling quality.
@@ -12,10 +12,10 @@ from mathutils import Vector
 ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / 'addons'))
 from random_play_toon import style_panel as ui
-from random_play_toon.materials.scene_response import apply
+from random_play_toon.materials.scene_response import apply, REVISION
 
-OUT = ROOT / 'experiments/SceneResponseDelivery/Migration'
-OUT.mkdir(exist_ok=True)
+OUT = ROOT / 'experiments/SceneResponseReview/Migration'
+OUT.mkdir(parents=True, exist_ok=True)
 reports = []
 
 def render(scene, path):
@@ -30,7 +30,7 @@ def render(scene, path):
 for path in sys.argv[sys.argv.index('--')+1:]:
     bpy.ops.wm.open_mainfile(filepath=str(Path(path).resolve()), use_scripts=False)
     s = bpy.context.scene
-    assert s.get('rpt_scene_response_revision') == 1
+    assert s.get('rpt_scene_response_revision', 0) < REVISION
     name = Path(path).stem
     audit = json.loads(s['rpt_nose_audit'])
     mesh = bpy.data.objects[ui.registry(s).get('mesh_object', 'Vivian_Mapping')]
