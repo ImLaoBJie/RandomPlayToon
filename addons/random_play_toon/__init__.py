@@ -1,5 +1,5 @@
 """Vivian reconstruction plugin; build work never changes the active scene."""
-bl_info={'name':'RandomPlayToon','author':'Vivian rendering experiment','version':(0,9,8),'blender':(5,2,0),'category':'Import-Export'}
+bl_info={'name':'RandomPlayToon','author':'Vivian rendering experiment','version':(0,9,9),'blender':(5,2,0),'category':'Import-Export'}
 import bpy,json,subprocess,time,uuid,hashlib
 from pathlib import Path
 from bpy.props import StringProperty,EnumProperty,BoolProperty,PointerProperty
@@ -181,7 +181,7 @@ class RPT_OT_scene_response(bpy.types.Operator):
     bl_options={'REGISTER','UNDO'}
     @classmethod
     def poll(cls,context):
-        return bool(context.scene.get('zzz_stage6_registry')) and not context.scene.get('rpt_scene_response_revision') and _job is None
+        return bool(context.scene.get('zzz_stage6_registry')) and context.scene.get('rpt_scene_response_revision', 0) < 2 and _job is None
     def execute(self,context):
         try:
             from .materials.scene_response import apply
@@ -210,7 +210,7 @@ class RPT_PT_build(bpy.types.Panel):
         if context.scene.get('rpt_report') or context.scene.get('zzz_stage7_report') or (p.report and Path(p.report).is_file()):l.operator('rpt.show_report',icon='TEXT')
         if context.scene.get('zzz_stage6_registry') and not context.scene.get('rpt_nose_revision'):
             l.separator();l.operator('rpt.add_nose_shadow',icon='SHADING_RENDERED')
-        if context.scene.get('zzz_stage6_registry') and not context.scene.get('rpt_scene_response_revision'):
+        if context.scene.get('zzz_stage6_registry') and context.scene.get('rpt_scene_response_revision', 0) < 2:
             l.separator();l.operator('rpt.upgrade_scene_response',icon='LIGHT')
 
 CLASSES=[RPT_Settings,RPT_OT_choose,RPT_OT_build,RPT_OT_open,RPT_OT_report,RPT_OT_add_nose,RPT_OT_scene_response,RPT_PT_build]

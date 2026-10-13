@@ -124,7 +124,7 @@ for path in sys.argv[sys.argv.index('--')+1:]:
     bpy.ops.wm.save_as_mainfile(filepath=str(target), compress=True)
     bpy.ops.wm.open_mainfile(filepath=str(target), use_scripts=False)
     s = bpy.context.scene
-    assert s['rpt_scene_response_revision'] == 1
+    assert s['rpt_scene_response_revision'] == 2
     reopened = render(s, folder, 'reopened')
     assert np.abs(side-reopened).max() < .01
     result = {'source': path, 'studio_max_error': float(difference.max()), 'studio_mean_error': float(difference.mean()),

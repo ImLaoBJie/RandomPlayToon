@@ -9,7 +9,7 @@ import bpy
 from .. import style_panel as ui
 from .style_upgrade import Graph, source, output
 
-REVISION = 1
+REVISION = 2
 PREFIXES = ('ZZZ_ToonSurface_v1', 'ZZZ_FaceDirection_v1')
 
 
@@ -22,15 +22,46 @@ def probe(q, normal):
     return rgb.outputs['Color']
 
 
+def chroma(q, rgb):
+    """Colour only; never multiply raw shadow energy into the cel result again.
+
+    Regularization makes black samples neutral and avoids amplifying tiny RGB
+    differences in shadow. White illumination remains exactly white at any power.
+    Brightness and occlusion belong exclusively to the existing toon band.
+    """
+    sep = q.node('ShaderNodeSeparateColor', 'RPT scene chroma channels')
+    q.put(rgb, sep.inputs[0])
+    peak = q.math('MAXIMUM', q.math('MAXIMUM', sep.outputs[0], sep.outputs[1]), sep.outputs[2])
+    return q.vec('SCALE', q.vec('ADD', rgb, (.03, .03, .03)),
+                 q.math('DIVIDE', 1., q.math('ADD', peak, .03)), 'RPT scene colour only')
+
+
 def response(q, rgb):
     sep = q.node('ShaderNodeSeparateColor', 'RPT scene irradiance channels')
     q.put(rgb, sep.inputs[0])
     peak = q.math('MAXIMUM', q.math('MAXIMUM', sep.outputs[0], sep.outputs[1]), sep.outputs[2])
     strength = q.math('MULTIPLY', peak, 3., 'RPT scene irradiance exposure')
-    brightness = q.math('DIVIDE', strength, q.math('ADD', strength, .6), 'RPT scene exposure shoulder')
-    tint = q.vec('SCALE', rgb, q.math('DIVIDE', brightness, q.math('MAXIMUM', peak, .00001)),
-                 'RPT scene colour and energy')
-    return strength, tint
+    return strength, chroma(q, rgb)
+
+
+def migrate_colour(tree):
+    """Repair revision 1 and adopted experiments without stacking lighting bands."""
+    old = [n for n in tree.nodes if n.name.startswith('RPT scene colour and energy')]
+    legacy = tree.nodes.get('Scene colour / neutral studio')
+    if legacy and legacy.inputs[1].is_linked:
+        node = source(legacy.inputs[1]).node
+        if not node.name.startswith('RPT scene colour only'):
+            old.append(node)
+    for node in old:
+        if node.type != 'VECT_MATH' or node.operation != 'SCALE':
+            raise ValueError('场景颜色旧节点结构不匹配：' + tree.name)
+        rgb = source(node.inputs[0])
+        sinks = [link.to_socket for link in node.outputs[0].links]
+        tint = chroma(Graph(tree), rgb)
+        for sink in sinks:
+            Graph(tree).put(tint, sink)
+        tree.nodes.remove(node)
+    return len(old)
 
 
 def face_normal(g):
@@ -74,7 +105,11 @@ def group_plan(g):
 
 def apply(scene):
     if scene.get('rpt_scene_response_revision') == REVISION:
-        return json.loads(scene['rpt_scene_response_audit'])
+        audit = json.loads(scene['rpt_scene_response_audit'])
+        audit['adopted_experimental_groups'] = sorted(name for name in audit['groups']
+            if name in bpy.data.node_groups and 'Scene colour / neutral studio' in bpy.data.node_groups[name].nodes)
+        scene['rpt_scene_response_audit'] = json.dumps(audit, ensure_ascii=False)
+        return audit
     r = ui.registry(scene)
     if not r.get('global') or scene.get('rpt_light_color_revision') != 1:
         raise ValueError('请先使用带角色受光颜色控制的新版角色材质')
@@ -84,12 +119,14 @@ def apply(scene):
               if n.type == 'GROUP' and n.node_tree and n.node_tree.name.startswith(PREFIXES)}
     if not groups:
         raise ValueError('缺少可更新的角色卡通着色组')
-    plans = {g: group_plan(g) for g in groups}  # Validate before changing graphs.
+    upgrading = scene.get('rpt_scene_response_revision') == 1
+    plans = {} if upgrading else {g: group_plan(g) for g in groups}
     before = ui.capture(scene)
     for g, plan in plans.items():
         if plan is None:
             if g.name.startswith(PREFIXES[1]):
                 Graph(g).put(face_normal(g), g.nodes['Scene authored face irradiance probe'].inputs['Normal'])
+            migrate_colour(g)
             continue
         shade, target, sampled, body = plan
         q = Graph(g)
@@ -134,6 +171,8 @@ def apply(scene):
     # reflections already have a non-emissive tint boundary from light_color.
     # Fill its previously-white scene branch; never tint the final beauty output.
     for mat in materials:
+        if upgrading:
+            continue
         t = mat.node_tree
         selectors = [n for n in t.nodes if n.name.startswith('RPT virtual light colour')]
         if not selectors:
@@ -145,6 +184,9 @@ def apply(scene):
         _, tint = response(q, probe(q, normal))
         for selector in selectors:
             q.put(tint, selector.inputs[1])
+    if upgrading:
+        for tree in list(groups) + [mat.node_tree for mat in materials]:
+            migrate_colour(tree)
     # Descriptions only: preserve every saved value and factory preset.
     for item in glob['entries']:
         if item['key'] == 'Studio Mode':
@@ -154,9 +196,11 @@ def apply(scene):
             socket.description = item['description']
     scene['zzz_stage6_registry'] = json.dumps(r, ensure_ascii=False)
     audit = {'revision': REVISION, 'groups': sorted(g.name for g in groups),
-             'adopted_experimental_groups': sorted(g.name for g, p in plans.items() if p is None),
+             'adopted_experimental_groups': sorted(g.name for g in groups
+                                                   if 'Scene colour / neutral studio' in g.nodes),
              'materials': [m.name for m in materials],
              'sampling': 'all EEVEE lights and available indirect illumination; no designated lamp',
+             'colour_response': 'regularized chroma only; raw shadow energy is not multiplied after the toon band',
              'preserved': 'studio branch, controls, emission, patches, outlines, eye reveal, nose'}
     scene['rpt_scene_response_revision'] = REVISION
     scene['rpt_scene_response_audit'] = json.dumps(audit, ensure_ascii=False)
