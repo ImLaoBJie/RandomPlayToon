@@ -3,7 +3,7 @@
 All sliders edit the actual node inputs. No duplicate parameter storage or frame
 handlers. Rendering and saved parameters work even when this UI is not installed.
 """
-bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,9,3),'blender':(5,2,0),'location':'3D View / Shader Editor > N > Character','category':'Material'}
+bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,9,7),'blender':(5,2,0),'location':'3D View / Shader Editor > N > Character','category':'Material'}
 import bpy, json, copy, math, textwrap
 from bpy.props import EnumProperty, StringProperty
 from bpy_extras.io_utils import ExportHelper, ImportHelper
@@ -14,6 +14,44 @@ def all_entries(scene):
     r=registry(scene);return r.get('materials',[])+([r['global']] if 'global' in r else [])
 def capture(scene):
     return {e['material']:{s.name:s.default_value if isinstance(s.default_value,(float,int,bool,str)) else list(s.default_value) for s in node(e).inputs if hasattr(s,'default_value')} for e in all_entries(scene)}
+
+# UI proxies keep the shader sockets as the only stored values. Blender does
+# not invalidate cross-material socket drivers on a plain socket UI edit.
+# Route nose edits through the same explicit refresh used by lighting controls.
+NOSE_UI_FIELDS={
+ 'Nose Enabled':(False,0,1), 'Nose Opacity':(.65,0,1),
+ 'Nose Tint':((.62,.32,.28,1.),0,1), 'Nose Width':(1.,.2,3.),
+ 'Nose Length':(1.,.2,3.), 'Nose Offset X':(0.,-.06,.06),
+ 'Nose Offset Z':(0.,-.06,.06), 'Nose Softness':(.12,.01,.7),
+ 'Nose Direction':(35.,-80.,80.), 'Nose View Follow':(1.,0.,2.),
+ 'Nose Transition':(8.,1.,30.), 'Nose Profile Fade':(70.,40.,85.),
+}
+
+def nose_property_name(key):return 'rpt_nose_'+key.removeprefix('Nose ').lower().replace(' ','_')
+
+def nose_socket(scene,key):
+    entry=registry(scene).get('global')
+    if entry:
+        spec=next((x for x in entry['entries'] if x['key']==key),None)
+        if spec:return node(entry).inputs.get(spec['label'])
+
+def nose_property(key,default,lo,hi):
+    def get(scene):
+        sock=nose_socket(scene,key)
+        if sock is None:return default
+        value=sock.default_value
+        return tuple(value) if isinstance(default,tuple) else value
+    def set_value(scene,value):
+        sock=nose_socket(scene,key)
+        if sock is not None and not sock.is_linked:
+            sock.default_value=value
+            refresh(scene)
+    # Animation remains on the actual node sockets, not on duplicate Scene
+    # properties. These proxies are purely an editing surface.
+    args=dict(get=get,set=set_value,options=set())
+    if isinstance(default,bool):return bpy.props.BoolProperty(**args)
+    if isinstance(default,tuple):return bpy.props.FloatVectorProperty(size=4,subtype='COLOR',min=lo,max=hi,**args)
+    return bpy.props.FloatProperty(min=lo,max=hi,**args)
 def refresh(scene):
     for e in all_entries(scene):
         bpy.data.materials[e['material']].update_tag();node(e).id_data.update_tag()
@@ -320,12 +358,18 @@ def draw_grouped(layout,entry,prefixes=None,exclude=None):
                 s=n.inputs[item['label']];row=body.row()
                 switch=item.get('source_socket','使用全局控制')
                 if (item.get('global') or item.get('global_control')) and switch and n.inputs[switch].default_value:row.enabled=False
-                if item['key'] in ['Studio Azimuth','Studio Elevation','Studio Emission','Display Light','Display Shadow','Light Color','Hair Scene Tint'] and not bpy.context.scene.rpt_lighting_mode=='STUDIO':row.enabled=False
+                if item['key'] in ['Studio Azimuth','Studio Elevation','Studio Emission','Display Light','Face Display Light','Display Shadow','Light Color','Hair Scene Tint'] and not bpy.context.scene.rpt_lighting_mode=='STUDIO':row.enabled=False
                 if s.is_linked:row.label(text=item['label']+'（节点连线）')
+                elif item['key'] in NOSE_UI_FIELDS:
+                    row.prop(bpy.context.scene,nose_property_name(item['key']),text=item['label'])
                 elif light_object(bpy.context.scene) and item['key'] in ['Studio Azimuth','Studio Elevation']:
                     if light_edit_error(light_object(bpy.context.scene)):row.enabled=False
                     row.prop(bpy.context.scene,'rpt_studio_azimuth' if item['key']=='Studio Azimuth' else 'rpt_studio_elevation',text=item['label'])
-                else:row.prop(s,'default_value',text=item['label'])
+                else:
+                    face_sources={'Face Key Gain':('脸部受光亮度跟随全局','角色受光亮度'),'Face Display Light':('脸部亮面亮度跟随全局','展示亮面亮度')}
+                    pair=face_sources.get(item['key'])
+                    shown=n.inputs[pair[1]] if pair and n.inputs[pair[0]].default_value else s
+                    row.prop(shown,'default_value',text=item['label'])
                 if bpy.context.scene.rpt_style_help:
                     width=max(16,int(bpy.context.region.width/14)-3)
                     for line in textwrap.wrap(item['description'],width=width):body.label(text=line)
@@ -354,7 +398,7 @@ class PanelBase:
         layout.prop(s,'rpt_style_help',text='显示参数作用说明')
         if s.rpt_style_slot=='GLOBAL':
             layout.operator('rpt.focus_controls',text='查看全局参数节点').global_controls=True
-            draw_grouped(layout,r['global'])
+            draw_grouped(layout,r['global'],exclude=['02 脸部独立亮度','12 风格化鼻影'])
             return
         e=next((x for x in r['materials'] if x['slot']==int(s.rpt_style_slot)),r['materials'][0]);n=node(e)
         layout.operator('rpt.focus_controls',text='查看本部位参数节点').global_controls=False
@@ -365,6 +409,10 @@ class PanelBase:
         elif not r.get('generic'):layout.prop(n.inputs['使用全局控制'],'default_value',text='明暗／高光使用全局数值')
         if not r.get('generic') and e['slot'] in [0,1,11]:layout.operator('rpt.copy_skin_tint')
         draw_grouped(layout,e)
+        if not r.get('generic') and e['slot'] in [0,1]:
+            draw_grouped(layout,r['global'],prefixes=['02 脸部独立亮度'])
+        if e.get('role')=='face' or (not r.get('generic') and e['slot'] in [0,1]):
+            draw_grouped(layout,r['global'],prefixes=['12 风格化鼻影'])
 
 class RPT_PT_view(PanelBase,bpy.types.Panel):
     bl_idname='RPT_PT_view';bl_label='角色风格';bl_space_type='VIEW_3D'
@@ -401,7 +449,7 @@ def unregister():
         if handler is sync_character_tab or getattr(handler,'_rpt_character_tab_handler',False):
             if bpy.app.timers.is_registered(handler):bpy.app.timers.unregister(handler)
             bpy.app.handlers.load_post.remove(handler)
-    for name in ['rpt_studio_azimuth','rpt_studio_elevation']:
+    for name in ['rpt_studio_azimuth','rpt_studio_elevation']+[nose_property_name(k) for k in NOSE_UI_FIELDS]:
         if hasattr(bpy.types.Scene,name):delattr(bpy.types.Scene,name)
     if hasattr(bpy.types.Scene,'rpt_style_slot'):del bpy.types.Scene.rpt_style_slot
     if hasattr(bpy.types.Scene,'rpt_style_help'):del bpy.types.Scene.rpt_style_help
@@ -424,6 +472,8 @@ def register():
     bpy.types.Scene.rpt_lighting_mode=EnumProperty(name='光照方式',items=[('SCENE','场景响应','保留原KeySun和场景响应'),('STUDIO','独立展示','只使用虚拟光向和虚拟反光，隔离实际场景照明')],get=lighting_get,set=lighting_set)
     bpy.types.Scene.rpt_studio_azimuth=bpy.props.FloatProperty(name='虚拟光水平角（度）',min=-180,max=180,get=azimuth_get,set=azimuth_set)
     bpy.types.Scene.rpt_studio_elevation=bpy.props.FloatProperty(name='虚拟光俯仰角（度）',min=-90,max=90,get=elevation_get,set=elevation_set)
+    for key,(default,lo,hi) in NOSE_UI_FIELDS.items():
+        setattr(bpy.types.Scene,nose_property_name(key),nose_property(key,default,lo,hi))
     if scene is None:bpy.app.timers.register(sync_character_tab,first_interval=0.)
 if __name__=='__main__':
     register()

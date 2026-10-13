@@ -1,4 +1,4 @@
-"""Freeze the approved 0.9.3 UI into the independently installable ABC add-on."""
+"""Freeze the approved 0.9.7 UI into the independently installable ABC add-on."""
 from pathlib import Path
 import hashlib
 
@@ -7,6 +7,7 @@ source = ROOT / 'addons/random_play_toon/style_panel.py'
 s = source.read_text(encoding='utf8')
 # Namespace UI identifiers only: scene registry/character/node names remain shared.
 s = s.replace('RPT_', 'RPCSTYLE_').replace('rpt.', 'rpcstyle.')
+s = s.replace('rpt_nose_', 'rpc_style_nose_')
 for name in ['style_slot', 'style_help', 'lighting_mode', 'studio_azimuth', 'studio_elevation', 'character_tab_handler']:
     s = s.replace('rpt_' + name, 'rpc_style_' + name)
 s = s.replace("'rpt_'+entry", "'rpc_style_'+entry")
@@ -28,10 +29,10 @@ adapter = '''def make_preset(scene,name):
 
 '''
 s = s[:pos] + adapter + s[pos:]
-source_header="bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,9,3)"
-copy_header="bl_info={'name':'RandomPlayCopy · 参数面板','author':'Vivian rendering experiment','version':(0,8,7)"
+source_header="bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,9,7)"
+copy_header="bl_info={'name':'RandomPlayCopy · 参数面板','author':'Vivian rendering experiment','version':(0,8,11)"
 assert source_header in s
 s=s.replace(source_header,copy_header,1)
-header = '# Frozen from RandomPlayToon 0.9.3; regenerate with sync_copy_style_panel.py.\n# Source SHA256: ' + hashlib.sha256(source.read_bytes()).hexdigest() + '\n'
+header = '# Frozen from RandomPlayToon 0.9.7; regenerate with sync_copy_style_panel.py.\n# Source SHA256: ' + hashlib.sha256(source.read_bytes()).hexdigest() + '\n'
 (ROOT/'addons/random_play_copy/style_panel.py').write_text(header+s, encoding='utf8')
 print('Independent style panel synchronized')

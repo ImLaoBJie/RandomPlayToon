@@ -24,6 +24,9 @@
 !/python_scripts/generalization/release/
 /python_scripts/generalization/release/*
 !/python_scripts/generalization/release/package_release.py
+!/python_scripts/generalization/tests/
+/python_scripts/generalization/tests/*
+!/python_scripts/generalization/tests/test_nose_live_controls.py
 !/docs/
 /docs/*
 !/docs/*.md

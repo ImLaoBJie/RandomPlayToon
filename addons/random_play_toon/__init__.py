@@ -1,5 +1,5 @@
 """Vivian reconstruction plugin; build work never changes the active scene."""
-bl_info={'name':'RandomPlayToon','author':'Vivian rendering experiment','version':(0,9,3),'blender':(5,2,0),'category':'Import-Export'}
+bl_info={'name':'RandomPlayToon','author':'Vivian rendering experiment','version':(0,9,7),'blender':(5,2,0),'category':'Import-Export'}
 import bpy,json,subprocess,time,uuid,hashlib
 from pathlib import Path
 from bpy.props import StringProperty,EnumProperty,BoolProperty,PointerProperty
@@ -155,6 +155,26 @@ class RPT_OT_report(bpy.types.Operator):
         text=bpy.data.texts.get('RandomPlayToon · 构建报告') or bpy.data.texts.new('RandomPlayToon · 构建报告');text.clear();text.write(json.dumps(json.loads(embedded),ensure_ascii=False,indent=2) if embedded else Path(p).read_text(encoding='utf8'))
         context.area.type='TEXT_EDITOR';context.area.spaces.active.text=text;return {'FINISHED'}
 
+class RPT_OT_add_nose(bpy.types.Operator):
+    bl_idname='rpt.add_nose_shadow';bl_label='为当前工程添加鼻影控制'
+    bl_description='仅添加默认关闭的局部鼻影节点和参数；保留当前模型、动作、灯光和其他设置，不自动保存文件'
+    bl_options={'REGISTER','UNDO'}
+    @classmethod
+    def poll(cls,context):
+        return bool(context.scene.get('zzz_stage6_registry')) and not context.scene.get('rpt_nose_revision') and _job is None
+    def execute(self,context):
+        try:
+            from .materials.nose_shadow import apply
+            result=apply(context.scene)
+            if result['status']!='installed':
+                self.report({'WARNING'},result['reason']);return {'CANCELLED'}
+            from .portable import embed_panel
+            embed_panel();redraw()
+            self.report({'INFO'},'已添加。请在颜部位开启风格化鼻影；其他参数保留。')
+            return {'FINISHED'}
+        except (ValueError,KeyError) as exc:
+            self.report({'ERROR'},str(exc));return {'CANCELLED'}
+
 class RPT_PT_build(bpy.types.Panel):
     bl_label='RandomPlayToon · 一键重建';bl_idname='RPT_PT_build';bl_space_type='VIEW_3D';bl_region_type='UI';bl_category='RandomPlayToon';bl_order=-10
     def draw(self,context):
@@ -170,8 +190,10 @@ class RPT_PT_build(bpy.types.Panel):
             for wrapped in textwrap.wrap(line,width):l.label(text=wrapped)
         if p.result:l.operator('rpt.open_result',icon='FILE_BLEND')
         if context.scene.get('rpt_report') or context.scene.get('zzz_stage7_report') or (p.report and Path(p.report).is_file()):l.operator('rpt.show_report',icon='TEXT')
+        if context.scene.get('zzz_stage6_registry') and not context.scene.get('rpt_nose_revision'):
+            l.separator();l.operator('rpt.add_nose_shadow',icon='SHADING_RENDERED')
 
-CLASSES=[RPT_Settings,RPT_OT_choose,RPT_OT_build,RPT_OT_open,RPT_OT_report,RPT_PT_build]
+CLASSES=[RPT_Settings,RPT_OT_choose,RPT_OT_build,RPT_OT_open,RPT_OT_report,RPT_OT_add_nose,RPT_PT_build]
 def register():
     from . import style_panel
     # Blender removes a failed package import but can keep its submodules.
