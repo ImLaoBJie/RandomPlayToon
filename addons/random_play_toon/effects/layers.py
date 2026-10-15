@@ -68,6 +68,7 @@ def outline(scene,obj,registry):
     shell=obj.copy();shell.data=obj.data;shell.name='RPT_OutlineShell';scene.collection.objects.link(shell);shell.hide_select=True
     for index,source in enumerate(obj.data.materials):
         mat=bpy.data.materials.new('RPT_Outline_'+str(index));mat.use_nodes=True;mat.use_backface_culling=True;mat.surface_render_method='DITHERED';t=mat.node_tree;t.nodes.clear();q=Graph(t)
+        mat.use_backface_culling_shadow=True  # Reversed hull backs must not shadow the source surface.
         e=q.node('ShaderNodeEmission','Outline')
         for component in range(4):drive(e.inputs['Color'],registry['materials'][index],'Outline Color',component)
         n=q.node('ShaderNodeValue','Source opacity');drive(n.outputs[0],registry['materials'][index],'Opacity');alpha=n.outputs[0]
