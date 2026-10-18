@@ -1,9 +1,18 @@
-"""Freeze the approved 0.9.7 UI into the independently installable ABC add-on."""
+"""Sync the current Toon UI into the independently installable ABC add-on."""
 from pathlib import Path
-import hashlib
+import ast, hashlib
 
 ROOT = Path(__file__).resolve().parents[3]
 source = ROOT / 'addons/random_play_toon/style_panel.py'
+
+def addon_version(path):
+    tree = ast.parse(path.read_text(encoding='utf-8-sig'))
+    info = next(ast.literal_eval(n.value) for n in tree.body
+                if isinstance(n, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'bl_info' for t in n.targets))
+    return tuple(info['version'])
+
+source_version = addon_version(source)
+copy_version = addon_version(ROOT / 'addons/random_play_copy/__init__.py')
 s = source.read_text(encoding='utf8')
 # Namespace UI identifiers only: scene registry/character/node names remain shared.
 s = s.replace('RPT_', 'RPCSTYLE_').replace('rpt.', 'rpcstyle.')
@@ -29,10 +38,10 @@ adapter = '''def make_preset(scene,name):
 
 '''
 s = s[:pos] + adapter + s[pos:]
-source_header="bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,9,7)"
-copy_header="bl_info={'name':'RandomPlayCopy · 参数面板','author':'Vivian rendering experiment','version':(0,8,11)"
+source_header="bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':"+str(source_version).replace(' ', '')
+copy_header="bl_info={'name':'RandomPlayCopy · 参数面板','author':'Vivian rendering experiment','version':"+str(copy_version).replace(' ', '')
 assert source_header in s
 s=s.replace(source_header,copy_header,1)
-header = '# Frozen from RandomPlayToon 0.9.7; regenerate with sync_copy_style_panel.py.\n# Source SHA256: ' + hashlib.sha256(source.read_bytes()).hexdigest() + '\n'
+header = '# Frozen from RandomPlayToon '+'.'.join(map(str, source_version))+'; regenerate with sync_copy_style_panel.py.\n# Source SHA256 (LF): ' + hashlib.sha256(source.read_text(encoding='utf8').encode('utf8')).hexdigest() + '\n'
 (ROOT/'addons/random_play_copy/style_panel.py').write_text(header+s, encoding='utf8')
 print('Independent style panel synchronized')

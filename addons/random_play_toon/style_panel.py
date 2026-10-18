@@ -342,6 +342,14 @@ def material_items(self,context):
         _ITEMS_CACHE[key]=[('GLOBAL','全局','角色共用明暗、高光、描边、透眼和出图设置')]+[(str(e['slot']),e['material'].split('_')[-1]+' · '+str(e['slot']),'编辑此材质的实际节点输入') for e in registry(context.scene).get('materials',[])]
     return _ITEMS_CACHE[key]
 
+def part_control_groups(r,entry):
+    role=entry.get('role')
+    if not role and not r.get('generic'):
+        role={0:'face',1:'face',14:'hair'}.get(entry['slot'])
+    if role=='face':return ['02 脸部独立亮度','12 风格化鼻影']
+    if role=='hair':return ['08 刘海透眼']
+    return []
+
 def draw_grouped(layout,entry,prefixes=None,exclude=None):
     n=node(entry);grouped={}
     for e in entry['entries']:
@@ -398,7 +406,8 @@ class PanelBase:
         layout.prop(s,'rpt_style_help',text='显示参数作用说明')
         if s.rpt_style_slot=='GLOBAL':
             layout.operator('rpt.focus_controls',text='查看全局参数节点').global_controls=True
-            draw_grouped(layout,r['global'],exclude=['02 脸部独立亮度','12 风格化鼻影'])
+            moved={group for entry in r['materials'] for group in part_control_groups(r,entry)}
+            draw_grouped(layout,r['global'],exclude=moved)
             return
         e=next((x for x in r['materials'] if x['slot']==int(s.rpt_style_slot)),r['materials'][0]);n=node(e)
         layout.operator('rpt.focus_controls',text='查看本部位参数节点').global_controls=False
@@ -409,10 +418,8 @@ class PanelBase:
         elif not r.get('generic'):layout.prop(n.inputs['使用全局控制'],'default_value',text='明暗／高光使用全局数值')
         if not r.get('generic') and e['slot'] in [0,1,11]:layout.operator('rpt.copy_skin_tint')
         draw_grouped(layout,e)
-        if not r.get('generic') and e['slot'] in [0,1]:
-            draw_grouped(layout,r['global'],prefixes=['02 脸部独立亮度'])
-        if e.get('role')=='face' or (not r.get('generic') and e['slot'] in [0,1]):
-            draw_grouped(layout,r['global'],prefixes=['12 风格化鼻影'])
+        groups=part_control_groups(r,e)
+        if groups:draw_grouped(layout,r['global'],prefixes=groups)
 
 class RPT_PT_view(PanelBase,bpy.types.Panel):
     bl_idname='RPT_PT_view';bl_label='角色风格';bl_space_type='VIEW_3D'
