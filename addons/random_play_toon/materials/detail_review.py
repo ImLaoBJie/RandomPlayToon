@@ -16,6 +16,7 @@ def restore_verified_hair_maps(r,identity,assets=None):
 
     Fresh reconstruction already loads these through materials.build.
     """
+    if r.get('uncalibrated'):return
     from .decoder import build_decoder,image_node
     profile=json.loads((Path(__file__).parents[1]/'specializations/profiles'/(identity+'.json')).read_text(encoding='utf8'))
     for e in r['materials']:

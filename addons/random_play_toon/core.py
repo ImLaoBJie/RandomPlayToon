@@ -8,7 +8,9 @@ def identify(pmx):
     if not p.is_file():raise ValueError('所选 PMX 不存在')
     fingerprint=sha(p);catalog=json.loads((PROFILES/'catalog.json').read_text(encoding='utf8'))
     matches=[x for x in catalog if x['pmx_sha256']==fingerprint]
-    if not matches:raise ValueError('所选 PMX 尚无校准配置；不会按相似文件名强行套用其他角色。')
+    if not matches:
+        from .specializations.generic import profile
+        return profile(p,fingerprint)
     profile=json.loads((PROFILES/(matches[0]['id']+'.json')).read_text(encoding='utf8'))
     overrides=json.loads((PROFILES.parent/'parameter_overrides.json').read_text(encoding='utf8'))['models'].get(profile['id'],{})
     profile['parameter_overrides']=overrides.get('materials',{});profile['override_reason']=overrides.get('reason','')
@@ -20,6 +22,8 @@ def preflight(pmx,texture_root,asset_root,preset='CURRENT'):
     import bpy
     if bpy.app.version[:2]!=(5,2):raise ValueError('当前构建已验证 Blender 5.2；请使用相同版本。')
     profile=identify(pmx)
+    if not profile.get('uncalibrated') and not asset_root:
+        raise ValueError('已校准模型需要配套渲染素材目录')
     if profile['id']=='Vivian':
         from .specializations.vivian.core import preflight as exact
         return exact(pmx,texture_root,asset_root,preset)
@@ -71,6 +75,7 @@ def build(pmx,texture_root,asset_root,output,preset='CURRENT',personal_preset=No
     if len(obj.data.materials)!=len(profile['materials']):raise ValueError('材质分区数量不符')
     print('RANDOMPLAY 2/6 生成本模型脸部场、刘海域和重复覆盖层证据',flush=True);effects=layers.authored_attributes(obj,profile)
     registry,directions=controls.initialize(scene,obj,profile)
+    if profile.get('uncalibrated'):registry['uncalibrated']=True
     print('RANDOMPLAY 3/6 配对控制图并构建共享材质',flush=True);materials(obj,profile,inputs,registry,directions)
     if profile.get('zero_alpha_filter'):
         layers.filter_zero_opacity(obj,registry);effects['inactive_surface_filter']='per-material opacity < 0.0001; source mesh preserved'
@@ -108,7 +113,7 @@ def build(pmx,texture_root,asset_root,output,preset='CURRENT',personal_preset=No
     if not all(preserved.values()):raise RuntimeError('源模型数据意外改变：'+str(preserved))
     for im in bpy.data.images:
         if im.source=='FILE' and Path(bpy.path.abspath(im.filepath)).is_file():im.pack()
-    report={'status':'success','output':str(dest),'plugin':'RandomPlayToon','version':'0.9.11','profile':profile['id'],'character':profile['character'],'kind':profile['kind'],'source_preserved':preserved,'materials':[{k:m.get(k) for k in ['index','name','role','matching','atlas','maps']} for m in profile['materials']],'effects':effects,'eye_reveal':eye_enabled,'warnings':inputs['warnings'],'validation':'rebuilt; visual acceptance recorded separately','elapsed_seconds':round(time.time()-start,2)}
+    report={'status':'success','output':str(dest),'plugin':'RandomPlayToon','version':'0.9.12','profile':profile['id'],'character':profile['character'],'kind':profile['kind'],'source_preserved':preserved,'materials':[{k:m.get(k) for k in ['index','name','role','matching','atlas','maps']} for m in profile['materials']],'effects':effects,'eye_reveal':eye_enabled,'warnings':inputs['warnings'],'validation':'rebuilt; visual acceptance recorded separately','elapsed_seconds':round(time.time()-start,2)}
     report['parameter_overrides']=profile.get('parameter_overrides',{});report['override_reason']=profile.get('override_reason','')
     report['detail_repairs']=json.loads(scene['rpt_detail_audit']);report['resolution']=[scene.render.resolution_x,scene.render.resolution_y]
     if character_refinement:report['character_refinement']=character_refinement

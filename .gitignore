@@ -32,6 +32,7 @@
 !/python_scripts/generalization/tests/test_scene_response_effects.py
 !/python_scripts/generalization/tests/test_scene_chroma_migration.py
 !/python_scripts/generalization/tests/test_scene_response_interactions.py
+!/python_scripts/generalization/tests/test_generic_fallback.py
 !/docs/
 /docs/*
 !/docs/*.md

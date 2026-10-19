@@ -1,5 +1,5 @@
 """Vivian reconstruction plugin; build work never changes the active scene."""
-bl_info={'name':'RandomPlayToon','author':'Vivian rendering experiment','version':(0,9,11),'blender':(5,2,0),'category':'Import-Export'}
+bl_info={'name':'RandomPlayToon','author':'Vivian rendering experiment','version':(0,9,12),'blender':(5,2,0),'category':'Import-Export'}
 import bpy,json,subprocess,time,uuid,hashlib
 from pathlib import Path
 from bpy.props import StringProperty,EnumProperty,BoolProperty,PointerProperty
@@ -35,9 +35,9 @@ def scene_guard():
     return (s.as_pointer(),tuple((x.name,x.as_pointer()) for x in bpy.data.scenes),hashlib.sha256(json.dumps(fingerprint,sort_keys=True,default=str).encode()).hexdigest())
 
 class RPT_Settings(bpy.types.PropertyGroup):
-    pmx:StringProperty(name='模型 PMX',subtype='FILE_PATH',description='已校准角色、形态或独立武器 PMX；按内容指纹识别，文件可改名或移动')
+    pmx:StringProperty(name='模型 PMX',subtype='FILE_PATH',description='已校准模型按内容指纹重建；其他 PMX 使用原贴图和通用材质')
     textures:StringProperty(name='配套纹理目录',subtype='DIR_PATH',description='留空时使用 PMX 所在文件夹；指定时应包含 tex、spa 等原始相对目录')
-    assets:StringProperty(name='渲染素材目录',subtype='DIR_PATH',description='选择角色素材目录、PlayerCharacterData 或 ZZ-Model-Importer-Assets 根目录')
+    assets:StringProperty(name='渲染素材目录',subtype='DIR_PATH',description='已校准角色选择对应素材目录；未校准 PMX 可留空，使用模型自带贴图')
     output:StringProperty(name='输出新文件',subtype='FILE_PATH',description='单独的新 .blend 文件；已有文件不会覆盖')
     keep_style:BoolProperty(name='保留当前个人调整',default=False,description='有第六步风格面板的场景可将当前参数带入新重建结果；不迁移动画或手工节点连接')
     auto_open:BoolProperty(name='空白场景完成后自动打开',default=True,description='仅无文件、无物体且构建期间未改变的空场景自动打开；其他情况保留原场景，通过打开结果进入')
@@ -53,7 +53,8 @@ class RPT_OT_choose(bpy.types.Operator,ImportHelper):
         if not p.output:p.output=str(Path(self.filepath).parent/(Path(self.filepath).stem+'_rebuilt.blend'))
         try:
             from .core import identify
-            profile=identify(self.filepath);p.status='已识别：'+profile['id']+'；按该模型的默认参数重建。'
+            profile=identify(self.filepath)
+            p.status=('未校准：'+profile['character']+'；将使用原贴图和通用材质构建。' if profile.get('uncalibrated') else '已识别：'+profile['id']+'；按该模型的默认参数重建。')
         except ValueError as ex:p.status=str(ex)
         return {'FINISHED'}
 
@@ -101,7 +102,7 @@ class RPT_OT_build(bpy.types.Operator):
         p=context.scene.rpt
         try:
             from .core import preflight
-            if not p.pmx or not p.assets or not p.output:raise ValueError('请选择 PMX、渲染素材目录和输出新文件。')
+            if not p.pmx or not p.output:raise ValueError('请选择 PMX 和输出新文件。')
             pmx=bpy.path.abspath(p.pmx);textures=bpy.path.abspath(p.textures) if p.textures else '';assets=bpy.path.abspath(p.assets);output=Path(bpy.path.abspath(p.output)).resolve()
             if output.exists():raise ValueError('输出已存在，请换一个文件名；旧结果会保留。')
             if output.suffix.lower()!='.blend':raise ValueError('输出文件名应以 .blend 结尾。')
