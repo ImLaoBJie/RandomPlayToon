@@ -13,7 +13,7 @@ import bpy
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT/'addons'))
 import random_play_toon as addon
-from random_play_toon.core import identify,preflight,PROFILES
+from random_play_toon.core import identify,preflight,profile_path
 from random_play_toon import style_panel as ui
 from random_play_toon.specializations.generic import material_role
 
@@ -37,7 +37,7 @@ assert all(not maps for maps in inputs['maps'].values())
 
 # Existing exact profiles still take precedence and retain their map bindings.
 for identity in ['Vivian','SunnaMaid']:
-    expected=json.loads((PROFILES/(identity+'.json')).read_text(encoding='utf8'))
+    expected=json.loads((profile_path(identity)).read_text(encoding='utf8'))
     known=ROOT/'assets_preprocessed'/expected['pmx']
     actual=identify(known)
     assert actual['id']==identity and not actual.get('uncalibrated')

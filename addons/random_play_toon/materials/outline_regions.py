@@ -1,7 +1,7 @@
 """Outline-only eye-hole exclusion; source skin, iris and lashes stay intact."""
 import collections
 import json
-from pathlib import Path
+from ..preset_paths import ROOT as PRESETS
 import numpy as np
 from mathutils.kdtree import KDTree
 from .graph import Graph
@@ -116,7 +116,7 @@ def apply_boundary_policy(group, registry, identity):
     Only the generated outline changes; source topology/UVs/weights remain
     intact for animation caches. Safe to apply repeatedly to saved scenes.
     """
-    options=json.loads((Path(__file__).parents[1]/'specializations/detail_profiles.json').read_text(encoding='utf8')).get(identity,{})
+    options=json.loads((PRESETS/'shared/detail_profiles.json').read_text(encoding='utf8')).get(identity,{})
     enabled=options.get('hair_boundary_walls',True)
     switch=group.nodes['Boundary walls only on hair']
     changed=[]
@@ -133,7 +133,7 @@ def apply_boundary_policy(group, registry, identity):
 def apply_default_scope(registry,identity):
     """Vivian's outline-only surface filtering, retaining explicit brow tuning."""
     from .. import style_panel as ui
-    root=Path(__file__).parents[1]/'specializations'
+    root=PRESETS/'shared'
     options=json.loads((root/'detail_profiles.json').read_text(encoding='utf8')).get(identity,{})
     overrides=json.loads((root/'parameter_overrides.json').read_text(encoding='utf8'))['models'].get(identity,{}).get('materials',{})
     primary_face=next((e['slot'] for e in registry['materials'] if e['role']=='face'),None)

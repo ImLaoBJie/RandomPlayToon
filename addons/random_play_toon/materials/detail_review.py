@@ -8,6 +8,7 @@ import numpy as np
 from pathlib import Path
 from mathutils.kdtree import KDTree
 from .. import style_panel as ui
+from ..preset_paths import ROOT as PRESETS
 from .style_upgrade import Graph,add,source,output
 from .vivian_parity import color_value
 
@@ -18,7 +19,7 @@ def restore_verified_hair_maps(r,identity,assets=None):
     """
     if r.get('uncalibrated'):return
     from .decoder import build_decoder,image_node
-    profile=json.loads((Path(__file__).parents[1]/'specializations/profiles'/(identity+'.json')).read_text(encoding='utf8'))
+    profile=json.loads((PRESETS/identity/'model.json').read_text(encoding='utf8'))
     for e in r['materials']:
         if e['role']!='hair':continue
         mat=bpy.data.materials[e['material']];q=Graph(mat.node_tree)
@@ -333,7 +334,7 @@ def apply(scene,identity,verified_assets=None):
     if scene.get('rpt_detail_revision')==1:return
     r=ui.registry(scene)
     if not r.get('generic'):return
-    obj=bpy.data.objects[r['mesh_object']];restore_verified_hair_maps(r,identity,verified_assets);data=surfaces(obj,r);options=json.loads((Path(__file__).parents[1]/'specializations/detail_profiles.json').read_text(encoding='utf8')).get(identity,{})
+    obj=bpy.data.objects[r['mesh_object']];restore_verified_hair_maps(r,identity,verified_assets);data=surfaces(obj,r);options=json.loads((PRESETS/'shared/detail_profiles.json').read_text(encoding='utf8')).get(identity,{})
     for e in [r['global']]+r['materials']:
         e.setdefault('legacy_label_sets',[]).append([s.name for s in ui.node(e).inputs])
     audit={'transparency':transparent_surfaces(obj,r,data,options),'outline_color':outline_color(r,data)}

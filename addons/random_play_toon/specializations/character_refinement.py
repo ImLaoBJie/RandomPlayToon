@@ -4,7 +4,7 @@ Used by both fresh PMX reconstruction and the non-destructive scene migration.
 No source geometry, textures, shared node groups or global defaults are edited.
 """
 import json
-from pathlib import Path
+from ..preset_paths import ROOT as PRESETS
 import bpy
 from .. import style_panel as ui
 from ..materials.style_upgrade import Graph,add,source
@@ -36,7 +36,7 @@ def pearl_metal(entry):
     mat['rpt_pearl_source']='verified source normal + LightMap G; view-dependent calibrated cool palette'
 
 def apply(scene,identity):
-    options=json.loads(Path(__file__).with_suffix('.json').read_text(encoding='utf8')).get(identity)
+    options=json.loads((PRESETS/'shared/character_refinement.json').read_text(encoding='utf8')).get(identity)
     if not options:return None
     if scene.get('rpt_character_refinement_revision')==REVISION:return json.loads(scene['rpt_character_refinement'])
     r=ui.registry(scene);entries={e['slot']:e for e in r['materials']};changes=[]

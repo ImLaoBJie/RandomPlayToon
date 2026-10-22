@@ -1,6 +1,8 @@
 # RandomPlayToon
 
-AliceSummer、LucySummer、VivianSummer、YuzuhaSummer 新建时默认使用 `01_CrispCel` 参数与真实场景灯光。预设按登记的 PMX 版本和材质分区匹配；个人参数优先，打开已有工程不会自动套用。
+完整风格文件的唯一维护位置是仓库根目录 [presets](../../presets/README.md)；该索引也列出全部自动角色配置及其来源。安装包自动携带本目录的副本。
+
+AliceSummer、LucySummer、VivianSummer、YuzuhaSummer 新建时默认使用 `01_CrispCel` 参数（真实场景光照模式）。预设按登记的 PMX 版本和材质分区匹配；个人参数优先，打开已有工程不会自动套用。
 
 四套 `02_CoolGlow` 参数可通过风格面板已有的 **载入个人预设** 按钮导入：使用独立虚拟光照与亮块。**场景响应／独立展示光照切换只改变光照方式，不会载入另一套完整参数。** JSON 导入恢复面板参数，灯光对象、世界和相机保留当前工程设置；要使用既有完整场景，直接打开对应的 `02_CoolGlow` 工程。
 
@@ -51,4 +53,4 @@ PMX 导入功能已包含在安装包中，**不需要另外安装 MMD Tools**�
 
 支持已适配的角色、服装、形态和独立武器，也允许未校准 PMX 使用通用材质。通用构建的部位识别依赖材质名称，不包含专用控制图校准；需要更精细的还原时再做适配。PMX 材质变形制作的动态效果也需额外处理。角色示例和适用范围见 [项目首页](../../README.md)。
 
-源码中，`pmx_import.py` 负责内置 PMX 导入，`core.py` 串起构建流程，`materials/` 制作材质，`effects/` 处理描边、透眼和后期，`specializations/` 保存角色设置和必要校准数据。内置 MMD Tools 导入代码与参考 shader 的来源、许可见 [NOTICE](NOTICE) 和 [LICENSE](LICENSE)。
+源码中，`pmx_import.py` 负责内置 PMX 导入，`core.py` 串起构建流程，`materials/` 制作材质，`effects/` 处理描边、透眼和后期，`specializations/` 保存专属实现和必要底层校准资源，角色配置与默认参数统一在仓库根目录 `presets/`。内置 MMD Tools 导入代码与参考 shader 的来源、许可见 [NOTICE](NOTICE) 和 [LICENSE](LICENSE)。

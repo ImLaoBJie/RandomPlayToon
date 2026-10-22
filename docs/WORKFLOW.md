@@ -100,10 +100,11 @@ animation-input/
 
 | 目录 | Git 保存的内容 |
 | --- | --- |
-| `addons/random_play_toon/` | PMX 着色、材质／效果代码、角色匹配配置、必要节点与校准资源 |
+| `addons/random_play_toon/` | PMX 着色、材质／效果代码、必要节点与底层校准资源；角色配置在 presets/ |
 | `addons/random_play_copy/` | ABC 验证与材质套用、风格面板、相机处理 |
 | `python_scripts/.../release/` | 两个插件的打包脚本 |
 | `python_scripts/animation/build/sync_copy_style_panel.py` | 维护共用风格面板的脚本 |
+| `presets/` | 完整风格参数、全部自动角色配置与共享默认参数；打包时自动复制进插件 |
 | `docs/` | Markdown 操作说明与精选渲染／面板图片 |
 
 原模型包、原始 DDS 与索引素材库、动作缓存、完整演示场景、实验记录、测试输出、日志和 `dist/` 不在 Git 跟踪范围内。资源必须从原发布者获取，仓库不二次分发。

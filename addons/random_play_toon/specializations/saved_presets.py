@@ -7,7 +7,7 @@ import hashlib
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).with_name('presets')
+from ..preset_paths import ROOT
 
 
 def catalog():
@@ -134,46 +134,6 @@ def apply_material_details(scene, profile, inputs):
     return actions
 
 
-def assign(block, values):
-    """Data is shipped with this package and limited to writable RNA properties."""
-    for name, value in values.items():
-        prop = block.bl_rna.properties.get(name)
-        if prop is None or prop.is_readonly:
-            raise ValueError('预设场景属性不可写：' + name)
-        setattr(block, name, value)
-
-
-def apply_scene_setup(scene, data):
-    import bpy
-    from mathutils import Matrix
-    # This function is called only in the isolated fresh-construction worker.
-    for obj in list(scene.objects):
-        if obj.type == 'LIGHT':
-            bpy.data.objects.remove(obj, do_unlink=True)
-    for spec in data['lights']:
-        light = bpy.data.lights.new(spec['name'], spec['type'])
-        assign(light, spec['data'])
-        obj = bpy.data.objects.new(spec['name'], light)
-        scene.collection.objects.link(obj)
-        obj.matrix_world = Matrix(spec['matrix_world'])
-        assign(obj, spec.get('object', {}))
-    world = data['world']
-    scene.world.use_nodes = True
-    assign(scene.world, world.get('properties', {}))
-    background = scene.world.node_tree.nodes.get('Background')
-    background.inputs['Color'].default_value = world['color']
-    background.inputs['Strength'].default_value = world['strength']
-    camera = data['camera']
-    assign(scene.camera.data, camera['data'])
-    assign(scene.camera.data.dof, camera.get('dof', {}))
-    scene.camera.matrix_world = Matrix(camera['matrix_world'])
-    assign(scene.camera, camera.get('object', {}))
-    for key in ['render', 'eevee', 'view_settings', 'display_settings']:
-        assign(getattr(scene, key), data[key])
-    assign(scene.render.image_settings, data['image_settings'])
-    scene.frame_set(data['frame'])
-
-
 def apply_defaults(scene, profile, style='CURRENT'):
     from .. import style_panel as ui
     item = find(profile['pmx_sha256'])
@@ -182,9 +142,7 @@ def apply_defaults(scene, profile, style='CURRENT'):
         raise ValueError('该角色没有此预设：' + name)
     entry = item['styles'][name]
     values = json.loads((ROOT / entry['values']).read_text(encoding='utf8'))['values']
-    setup = json.loads((ROOT / entry['scene_setup']).read_text(encoding='utf8'))
     ui.apply_values(scene, values)
-    apply_scene_setup(scene, setup)
     # Reset returns to the shipped character style, before personal overrides.
     scene['zzz_stage6_defaults'] = json.dumps(values, ensure_ascii=False)
     record = {'character': item['character'], 'style': name, 'pmx_sha256': item['pmx_sha256'],

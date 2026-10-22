@@ -86,7 +86,7 @@ for path in [ROOT/'experiments/VivianReferenceStyles/Vivian_Reference1_CoolGlow.
 
 for name in ['Vivian', 'SunnaMaid']:
     bpy.ops.wm.read_factory_settings(use_empty=True)
-    profile = json.loads((ROOT/f'addons/random_play_toon/specializations/profiles/{name}.json').read_text(encoding='utf8'))
+    profile = json.loads((ROOT/f'presets/{name}/model.json').read_text(encoding='utf8'))
     pmx = ROOT/'assets_preprocessed'/profile['pmx']
     folder = OUT/'FreshBuild'/uuid.uuid4().hex;folder.mkdir(parents=True)
     target = folder/(name+'.blend')

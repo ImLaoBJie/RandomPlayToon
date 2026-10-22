@@ -1,19 +1,20 @@
 """Single-input dispatcher. Known fingerprints use explicit auditable profiles."""
 from pathlib import Path
 import hashlib,json,time,os,uuid
-PROFILES=Path(__file__).parent/'specializations/profiles'
+from .preset_paths import ROOT as PRESETS
+def profile_path(identity):return PRESETS/identity/'model.json'
 def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 def identify(pmx):
     p=Path(pmx).expanduser().resolve()
     if not p.is_file():raise ValueError('所选 PMX 不存在')
-    fingerprint=sha(p);catalog=json.loads((PROFILES/'catalog.json').read_text(encoding='utf8'))
+    fingerprint=sha(p);catalog=json.loads((PRESETS/'catalog.json').read_text(encoding='utf8'))['models']
     matches=[x for x in catalog if x['pmx_sha256']==fingerprint]
     if not matches:
         from .specializations.generic import profile
         from .specializations.saved_presets import identify as saved_style
         return saved_style(profile(p,fingerprint))
-    profile=json.loads((PROFILES/(matches[0]['id']+'.json')).read_text(encoding='utf8'))
-    overrides=json.loads((PROFILES.parent/'parameter_overrides.json').read_text(encoding='utf8'))['models'].get(profile['id'],{})
+    profile=json.loads(profile_path(matches[0]['id']).read_text(encoding='utf8'))
+    overrides=json.loads((PRESETS/'shared/parameter_overrides.json').read_text(encoding='utf8'))['models'].get(profile['id'],{})
     profile['parameter_overrides']=overrides.get('materials',{});profile['override_reason']=overrides.get('reason','')
     profile['warnings'].extend(overrides.get('warnings',[]))
     profile['zero_alpha_filter']=overrides.get('zero_alpha_filter',False)

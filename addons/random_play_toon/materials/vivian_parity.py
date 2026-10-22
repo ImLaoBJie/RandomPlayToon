@@ -1,6 +1,6 @@
 """Complete shared display controls using the frozen Vivian defaults as authority."""
 import bpy,json
-from pathlib import Path
+from ..preset_paths import ROOT as PRESETS
 from .. import style_panel as ui
 from .style_upgrade import add,source,Graph,output,drive
 
@@ -18,7 +18,7 @@ def apply(scene,identity):
     if scene.get('rpt_vivian_parity')==1:return
     r=ui.registry(scene)
     if not r.get('generic'):return
-    spec=json.loads((Path(__file__).with_name('vivian_global_defaults.json')).read_text(encoding='utf8'))
+    spec=json.loads((PRESETS/'shared/vivian_global_defaults.json').read_text(encoding='utf8'))
     glob=r['global'];gn=ui.node(glob);old_spec=gn.inputs['基础高光强度'].default_value;old_width=gn.inputs['基础高光宽度'].default_value
     for e in [glob]+r['materials']:
         e['legacy_label_sets']=[e.get('legacy_labels',[]),[s.name for s in ui.node(e).inputs]]
