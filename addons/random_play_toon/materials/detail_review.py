@@ -3,7 +3,7 @@
 Only attributes/materials/modifiers are added. Rest geometry and UVs stay intact.
 Character choices are separate from these common mechanisms.
 """
-import bpy,json,colorsys
+import bpy,json,colorsys,re
 import numpy as np
 from pathlib import Path
 from mathutils.kdtree import KDTree
@@ -75,12 +75,64 @@ def attribute(obj,name,typ,values):
 def attr_node(q,name):
     n=q.node('ShaderNodeAttribute',name);n.attribute_name=name;return n.outputs
 
-def transparent_surfaces(obj,r,data,options):
+def alpha_area_fractions(alpha,area):
+    """Coverage evidence must not depend on how densely a frame is tessellated."""
+    alpha=np.asarray(alpha,dtype=float);area=np.asarray(area,dtype=float)
+    valid=np.isfinite(alpha)&np.isfinite(area)&(area>0)
+    total=float(area[valid].sum())
+    if total<=0:return 0.,0.
+    return (float(area[valid&(alpha>.025)&(alpha<.975)].sum()/total),
+            float(area[valid&(alpha>.975)].sum()/total))
+
+def is_eyewear_material(name):
+    """Use authored material semantics, never a character or generated name."""
+    if any(word in name for word in ('眼镜','墨镜','镜片','眼鏡','メガネ','めがね','サングラス','レンズ')):return True
+    text=re.sub(r'(?<=[a-z])(?=[A-Z])',' ',name).lower()
+    return bool(re.search(r'(?:^|[^a-z])(?:eye[\s_-]?glass(?:es)?|sun[\s_-]?glass(?:es)?|glasses|lens(?:es)?)(?:$|[^a-z])',text))
+
+def apply_mixed_transparency(r,data,source_names=None):
+    """Repair uncalibrated mixed lens/frame materials without adding controls.
+
+    This can also be called on saved projects: named coverage nodes are reused,
+    and source alpha, user values and unrelated transparency policies stay intact.
+    Old registries may supply source_names from the saved build report by slot.
+    """
+    if not r.get('uncalibrated'):return []
+    excluded={'hair','hair_overlay','eyes','eye_white','eye_highlight','eye_shadow','brows_lashes'}
     audit=[]
+    for e in r['materials']:
+        d=data[e['slot']]
+        if e['role'] in excluded or d.get('texture') is None:continue
+        name=e.get('source_name') or (source_names or {}).get(e['slot'],'')
+        if not is_eyewear_material(name):continue
+        m=bpy.data.materials[e['material']];n=ui.node(e)
+        alpha=d['rgba'][:,3]*n.inputs['表面不透明度'].default_value
+        fractional,opaque=alpha_area_fractions(alpha,d['area'])
+        if fractional<=.025 or opaque<=0:continue
+        # A few large glass faces can share a material with a dense solid frame.
+        # Blend only the front fragment so rear frame triangles cannot cover it.
+        m.surface_render_method='BLENDED';m.use_transparency_overlap=False
+        shell=bpy.data.materials.get('RPT_Outline_'+str(e['slot']))
+        if shell:
+            shell.surface_render_method='DITHERED';t=shell.node_tree;sq=Graph(t)
+            tex=t.nodes.get('Source alpha');opacity=t.nodes.get('Source opacity');mix=t.nodes.get('Preserve source holes')
+            if tex and opacity and mix:
+                product=t.nodes.get('RPT Mixed surface opacity') or sq.node('ShaderNodeMath','RPT Mixed surface opacity')
+                product.operation='MULTIPLY';sq.put(tex.outputs['Alpha'],product.inputs[0]);sq.put(opacity.outputs[0],product.inputs[1])
+                cutoff=t.nodes.get('RPT Opaque outline coverage') or sq.node('ShaderNodeMath','RPT Opaque outline coverage')
+                cutoff.operation='GREATER_THAN';sq.put(product.outputs[0],cutoff.inputs[0]);cutoff.inputs[1].default_value=.975
+                sq.put(cutoff.outputs[0],mix.inputs[0])
+        audit.append({'slot':e['slot'],'policy':'mixed eyewear front-fragment blend; opaque-only depth-tested outline',
+                      'fraction':fractional,'opaque_fraction':opaque,'weighting':'surface area'})
+    return audit
+
+def transparent_surfaces(obj,r,data,options):
+    audit=apply_mixed_transparency(r,data);mixed={item['slot'] for item in audit}
     for e in r['materials']:
         m=bpy.data.materials[e['material']];n=ui.node(e);a=data[e['slot']]['rgba'][:,3];fraction=float(((a>.025)&(a<.975)).mean());role=e['role'];q=Graph(m.node_tree)
         shell=bpy.data.materials.get('RPT_Outline_'+str(e['slot']))
-        if role=='hair' and fraction>.015:
+        if e['slot'] in mixed:pass
+        elif role=='hair' and fraction>.015:
             # PMX's fractional hair tint must not make the whole head translucent.
             # True holes remain; the eye compositor handles selective reveal.
             tex=data[e['slot']]['texture'];mix=m.node_tree.nodes['Independent surface alpha']
@@ -92,7 +144,10 @@ def transparent_surfaces(obj,r,data,options):
             audit.append({'slot':e['slot'],'policy':'opaque hair plus source cutout','fraction':fraction})
         elif role in {'eye_shadow','eye_highlight'} or (role not in {'eyes','eye_white'} and (fraction>.025 or .001<n.inputs['表面不透明度'].default_value<.999)):
             m.surface_render_method='BLENDED'
-            if shell:shell.surface_render_method='BLENDED'
+            # Inverted hulls need depth-tested coverage even when the source
+            # surface is smoothly blended. Otherwise rear outline triangles
+            # paint solid polygons over transparent straps and accessories.
+            if shell:shell.surface_render_method='DITHERED'
             audit.append({'slot':e['slot'],'policy':'smooth blended transparency','fraction':fraction})
         if role in {'eyes','eye_white'}:
             # A single iris material can contain several overlapping mesh layers

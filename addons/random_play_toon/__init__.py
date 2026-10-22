@@ -1,5 +1,5 @@
 """Vivian reconstruction plugin; build work never changes the active scene."""
-bl_info={'name':'RandomPlayToon','author':'Vivian rendering experiment','version':(0,9,12),'blender':(5,2,0),'category':'Import-Export'}
+bl_info={'name':'RandomPlayToon','author':'Vivian rendering experiment','version':(0,9,13),'blender':(5,2,0),'category':'Import-Export'}
 import bpy,json,subprocess,time,uuid,hashlib
 from pathlib import Path
 from bpy.props import StringProperty,EnumProperty,BoolProperty,PointerProperty
@@ -54,7 +54,10 @@ class RPT_OT_choose(bpy.types.Operator,ImportHelper):
         try:
             from .core import identify
             profile=identify(self.filepath)
-            p.status=('未校准：'+profile['character']+'；将使用原贴图和通用材质构建。' if profile.get('uncalibrated') else '已识别：'+profile['id']+'；按该模型的默认参数重建。')
+            if profile.get('automatic_preset'):
+                p.status='已识别：'+profile['character']+'；新建时自动加载 01_CrispCel。配套高光需对应渲染素材目录。'
+            else:
+                p.status=('未校准：'+profile['character']+'；将使用原贴图和通用材质构建。' if profile.get('uncalibrated') else '已识别：'+profile['id']+'；按该模型的默认参数重建。')
         except ValueError as ex:p.status=str(ex)
         return {'FINISHED'}
 

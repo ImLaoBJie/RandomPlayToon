@@ -33,6 +33,10 @@
 !/python_scripts/generalization/tests/test_scene_chroma_migration.py
 !/python_scripts/generalization/tests/test_scene_response_interactions.py
 !/python_scripts/generalization/tests/test_generic_fallback.py
+!/python_scripts/generalization/tests/test_patch_palette.py
+!/python_scripts/generalization/tests/test_hair_boundary_topology.py
+!/python_scripts/generalization/tests/test_surface_alpha_policy.py
+!/python_scripts/generalization/tests/test_source_asset_match.py
 !/docs/
 /docs/*
 !/docs/*.md

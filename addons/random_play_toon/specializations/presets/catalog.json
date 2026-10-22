@@ -1,0 +1,759 @@
+{
+  "schema": 1,
+  "default_style": "01_CrispCel",
+  "values_format": "style_panel schema 1",
+  "assets_bundled": false,
+  "characters": [
+    {
+      "character": "AliceSummer",
+      "identity": "Generic_a58505dd77ef",
+      "pmx_sha256": "a58505dd77ef0ccf5b5d83702492a3c8aa839671403f1be32d640aa295baaebf",
+      "default_style": "01_CrispCel",
+      "materials": [
+        {
+          "slot": 0,
+          "name": "颜",
+          "role": "face"
+        },
+        {
+          "slot": 1,
+          "name": "颜2",
+          "role": "face"
+        },
+        {
+          "slot": 2,
+          "name": "白目",
+          "role": "eye_white"
+        },
+        {
+          "slot": 3,
+          "name": "睫眉",
+          "role": "brows_lashes"
+        },
+        {
+          "slot": 4,
+          "name": "口舌",
+          "role": "mouth"
+        },
+        {
+          "slot": 5,
+          "name": "齿",
+          "role": "mouth"
+        },
+        {
+          "slot": 6,
+          "name": "目",
+          "role": "eyes"
+        },
+        {
+          "slot": 7,
+          "name": "目光",
+          "role": "eye_highlight"
+        },
+        {
+          "slot": 8,
+          "name": "目影",
+          "role": "eye_shadow"
+        },
+        {
+          "slot": 9,
+          "name": "头饰",
+          "role": "cloth"
+        },
+        {
+          "slot": 10,
+          "name": "髮",
+          "role": "hair"
+        },
+        {
+          "slot": 11,
+          "name": "前髪",
+          "role": "hair"
+        },
+        {
+          "slot": 12,
+          "name": "髮+",
+          "role": "hair_overlay"
+        },
+        {
+          "slot": 13,
+          "name": "体",
+          "role": "cloth"
+        },
+        {
+          "slot": 14,
+          "name": "饰",
+          "role": "cloth"
+        },
+        {
+          "slot": 15,
+          "name": "肌",
+          "role": "skin"
+        },
+        {
+          "slot": 16,
+          "name": "屏幕",
+          "role": "cloth"
+        },
+        {
+          "slot": 17,
+          "name": "武器",
+          "role": "weapon"
+        }
+      ],
+      "styles": {
+        "01_CrispCel": {
+          "values": "AliceSummer/01_CrispCel.json",
+          "scene_setup": "AliceSummer/01_CrispCel.scene.json"
+        },
+        "02_CoolGlow": {
+          "values": "AliceSummer/02_CoolGlow.json",
+          "scene_setup": "AliceSummer/02_CoolGlow.scene.json"
+        }
+      },
+      "highlight_bindings": [
+        {
+          "index": 10,
+          "name": "髮",
+          "role": "hair",
+          "source_texture": "tex\\髮.png",
+          "maps": {
+            "LightMap": {
+              "file": "AliceSummerHairALightMap.dds",
+              "sha256": "0597e6dec1a48918bbded222f5c527e8266dde9d1538356a7bc2c2645d73dfdf"
+            }
+          },
+          "matching": "uv_sample_verified",
+          "diffuse": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "draw_flags": 1,
+          "face_start": 4514,
+          "face_count": 6618,
+          "alpha_mode": "source_pmx_alpha",
+          "dds_flip_v": true,
+          "source_asset_evidence": {
+            "flip_v": true,
+            "mean": 0.11751126822693145,
+            "p95": 0.4561271163397821,
+            "below12": 1.0,
+            "slot": 10,
+            "accepted": true,
+            "source_sha256": "eb3d683f9298d4930a27a9b472ad88cace4f34717a8f6f9a0a239dd45281a886",
+            "texture_rgb_std": 27.993481057809518,
+            "sample_count": 2400,
+            "next_error": 50.06466459480417,
+            "ambiguous_companions": false
+          },
+          "source_texture_sha256": "eb3d683f9298d4930a27a9b472ad88cace4f34717a8f6f9a0a239dd45281a886",
+          "channel": "B"
+        },
+        {
+          "index": 11,
+          "name": "前髪",
+          "role": "hair",
+          "source_texture": "tex\\髮.png",
+          "maps": {
+            "LightMap": {
+              "file": "AliceSummerHairALightMap.dds",
+              "sha256": "0597e6dec1a48918bbded222f5c527e8266dde9d1538356a7bc2c2645d73dfdf"
+            }
+          },
+          "matching": "uv_sample_verified",
+          "diffuse": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "draw_flags": 1,
+          "face_start": 11132,
+          "face_count": 769,
+          "alpha_mode": "source_pmx_alpha",
+          "dds_flip_v": true,
+          "source_asset_evidence": {
+            "flip_v": true,
+            "mean": 0.10575082557423544,
+            "p95": 0.425075756053864,
+            "below12": 1.0,
+            "slot": 11,
+            "accepted": true,
+            "source_sha256": "eb3d683f9298d4930a27a9b472ad88cace4f34717a8f6f9a0a239dd45281a886",
+            "texture_rgb_std": 13.689540229964443,
+            "sample_count": 2307,
+            "next_error": 41.98118565584251,
+            "ambiguous_companions": false
+          },
+          "source_texture_sha256": "eb3d683f9298d4930a27a9b472ad88cace4f34717a8f6f9a0a239dd45281a886",
+          "channel": "B"
+        }
+      ],
+      "outline_dithered_slots": [],
+      "outline_blended_slots": [
+        7,
+        8
+      ]
+    },
+    {
+      "character": "LucySummer",
+      "identity": "Generic_3ffa96709d57",
+      "pmx_sha256": "3ffa96709d57d6de7caf80b8b7a60738be074f4b3bb6e52580aa0d54b4769c9e",
+      "default_style": "01_CrispCel",
+      "materials": [
+        {
+          "slot": 0,
+          "name": "颜",
+          "role": "face"
+        },
+        {
+          "slot": 1,
+          "name": "目白",
+          "role": "eye_white"
+        },
+        {
+          "slot": 2,
+          "name": "目",
+          "role": "eyes"
+        },
+        {
+          "slot": 3,
+          "name": "目高光 内",
+          "role": "eye_highlight"
+        },
+        {
+          "slot": 4,
+          "name": "目高光 外",
+          "role": "eye_highlight"
+        },
+        {
+          "slot": 5,
+          "name": "眉",
+          "role": "brows_lashes"
+        },
+        {
+          "slot": 6,
+          "name": "二重",
+          "role": "brows_lashes"
+        },
+        {
+          "slot": 7,
+          "name": "睫",
+          "role": "brows_lashes"
+        },
+        {
+          "slot": 8,
+          "name": "唇",
+          "role": "mouth_line"
+        },
+        {
+          "slot": 9,
+          "name": "口",
+          "role": "mouth"
+        },
+        {
+          "slot": 10,
+          "name": "舌",
+          "role": "mouth"
+        },
+        {
+          "slot": 11,
+          "name": "歯",
+          "role": "mouth"
+        },
+        {
+          "slot": 12,
+          "name": "目影",
+          "role": "eye_shadow"
+        },
+        {
+          "slot": 13,
+          "name": "肌",
+          "role": "skin"
+        },
+        {
+          "slot": 14,
+          "name": "脖子",
+          "role": "skin"
+        },
+        {
+          "slot": 15,
+          "name": "颈环",
+          "role": "cloth"
+        },
+        {
+          "slot": 16,
+          "name": "体1",
+          "role": "cloth"
+        },
+        {
+          "slot": 17,
+          "name": "前发",
+          "role": "hair"
+        },
+        {
+          "slot": 18,
+          "name": "后发",
+          "role": "hair"
+        },
+        {
+          "slot": 19,
+          "name": "发圈",
+          "role": "cloth"
+        },
+        {
+          "slot": 20,
+          "name": "帽子",
+          "role": "cloth"
+        },
+        {
+          "slot": 21,
+          "name": "泳镜",
+          "role": "cloth"
+        },
+        {
+          "slot": 22,
+          "name": "镜片",
+          "role": "cloth"
+        }
+      ],
+      "styles": {
+        "01_CrispCel": {
+          "values": "LucySummer/01_CrispCel.json",
+          "scene_setup": "LucySummer/01_CrispCel.scene.json"
+        },
+        "02_CoolGlow": {
+          "values": "LucySummer/02_CoolGlow.json",
+          "scene_setup": "LucySummer/02_CoolGlow.scene.json"
+        }
+      },
+      "highlight_bindings": [
+        {
+          "index": 17,
+          "name": "前发",
+          "role": "hair",
+          "source_texture": "textures\\Lucy_Body_Map2_D.png",
+          "maps": {
+            "LightMap": {
+              "file": "LucySummerHairALightMap.dds",
+              "sha256": "cd2d4936a885956deb8dee19c0e3440a6ff5f46a66a9e65ab6bde5a4ddb11d80"
+            }
+          },
+          "matching": "uv_sample_verified",
+          "diffuse": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "draw_flags": 1,
+          "face_start": 23386,
+          "face_count": 1802,
+          "alpha_mode": "source_pmx_alpha",
+          "dds_flip_v": true,
+          "source_asset_evidence": {
+            "flip_v": true,
+            "mean": 2.097743275382887e-15,
+            "p95": 0.0,
+            "below12": 1.0,
+            "slot": 17,
+            "accepted": true,
+            "source_sha256": "dba7026430b8aec26667ecba20d127a75ae6c47e6186aad78e347391d5e0656f",
+            "texture_rgb_std": 19.18646755450842,
+            "sample_count": 2400,
+            "next_error": 37.55636521537847,
+            "ambiguous_companions": false
+          },
+          "source_texture_sha256": "dba7026430b8aec26667ecba20d127a75ae6c47e6186aad78e347391d5e0656f",
+          "channel": "B"
+        },
+        {
+          "index": 18,
+          "name": "后发",
+          "role": "hair",
+          "source_texture": "textures\\Lucy_Body_Map2_D.png",
+          "maps": {
+            "LightMap": {
+              "file": "LucySummerHairALightMap.dds",
+              "sha256": "cd2d4936a885956deb8dee19c0e3440a6ff5f46a66a9e65ab6bde5a4ddb11d80"
+            }
+          },
+          "matching": "uv_sample_verified",
+          "diffuse": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "draw_flags": 1,
+          "face_start": 25188,
+          "face_count": 1287,
+          "alpha_mode": "source_pmx_alpha",
+          "dds_flip_v": true,
+          "source_asset_evidence": {
+            "flip_v": true,
+            "mean": 2.109932599007417e-14,
+            "p95": 3.774758283725532e-14,
+            "below12": 1.0,
+            "slot": 18,
+            "accepted": true,
+            "source_sha256": "dba7026430b8aec26667ecba20d127a75ae6c47e6186aad78e347391d5e0656f",
+            "texture_rgb_std": 32.67804712414406,
+            "sample_count": 2400,
+            "next_error": 35.927278062895596,
+            "ambiguous_companions": false
+          },
+          "source_texture_sha256": "dba7026430b8aec26667ecba20d127a75ae6c47e6186aad78e347391d5e0656f",
+          "channel": "B"
+        },
+        {
+          "index": 20,
+          "name": "帽子",
+          "role": "cloth",
+          "source_texture": "textures\\Lucy_Princess_Body_Map1_D.png",
+          "maps": {
+            "LightMap": {
+              "file": "LucySummerBodyALightMap.dds",
+              "sha256": "c6697e625f926fc0365f0fa8f47ff832f1cac20308ea2e3de1c4c88832655342"
+            }
+          },
+          "matching": "uv_sample_verified",
+          "diffuse": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "draw_flags": 1,
+          "face_start": 26791,
+          "face_count": 490,
+          "alpha_mode": "source_pmx_alpha",
+          "dds_flip_v": true,
+          "source_asset_evidence": {
+            "flip_v": true,
+            "mean": 3.4880843969063284,
+            "p95": 21.77710837433155,
+            "below12": 0.9149659863945578,
+            "slot": 20,
+            "accepted": true,
+            "source_sha256": "9ec7a67b10feaa6fcf5eef8bc6049b9b87b461255058f60827b6f7067acff46a",
+            "texture_rgb_std": 46.97534085255668,
+            "sample_count": 1470,
+            "next_error": 47.52388468306127,
+            "ambiguous_companions": false
+          },
+          "source_texture_sha256": "9ec7a67b10feaa6fcf5eef8bc6049b9b87b461255058f60827b6f7067acff46a",
+          "channel": "B"
+        }
+      ],
+      "outline_dithered_slots": [
+        20
+      ],
+      "outline_blended_slots": [
+        3,
+        4,
+        12,
+        22
+      ]
+    },
+    {
+      "character": "VivianSummer",
+      "identity": "Generic_9f9d072c5986",
+      "pmx_sha256": "9f9d072c59866c580943d8cf1511b830ade8e4d984821fc59234fcdd41fa1b80",
+      "default_style": "01_CrispCel",
+      "materials": [
+        {
+          "slot": 0,
+          "name": "颜",
+          "role": "face"
+        },
+        {
+          "slot": 1,
+          "name": "眉",
+          "role": "brows_lashes"
+        },
+        {
+          "slot": 2,
+          "name": "目",
+          "role": "eyes"
+        },
+        {
+          "slot": 3,
+          "name": "白目",
+          "role": "eye_white"
+        },
+        {
+          "slot": 4,
+          "name": "口舌",
+          "role": "mouth"
+        },
+        {
+          "slot": 5,
+          "name": "齿",
+          "role": "mouth"
+        },
+        {
+          "slot": 6,
+          "name": "体1",
+          "role": "cloth"
+        },
+        {
+          "slot": 7,
+          "name": "靴",
+          "role": "cloth"
+        },
+        {
+          "slot": 8,
+          "name": "饰",
+          "role": "cloth"
+        },
+        {
+          "slot": 9,
+          "name": "裙",
+          "role": "cloth"
+        },
+        {
+          "slot": 10,
+          "name": "蝴蝶",
+          "role": "cloth"
+        },
+        {
+          "slot": 11,
+          "name": "饰2",
+          "role": "cloth"
+        },
+        {
+          "slot": 12,
+          "name": "武器",
+          "role": "weapon"
+        },
+        {
+          "slot": 13,
+          "name": "纱",
+          "role": "cloth"
+        },
+        {
+          "slot": 14,
+          "name": "髮",
+          "role": "hair"
+        },
+        {
+          "slot": 15,
+          "name": "目影2",
+          "role": "eye_shadow"
+        },
+        {
+          "slot": 16,
+          "name": "目影",
+          "role": "eye_shadow"
+        }
+      ],
+      "styles": {
+        "01_CrispCel": {
+          "values": "VivianSummer/01_CrispCel.json",
+          "scene_setup": "VivianSummer/01_CrispCel.scene.json"
+        },
+        "02_CoolGlow": {
+          "values": "VivianSummer/02_CoolGlow.json",
+          "scene_setup": "VivianSummer/02_CoolGlow.scene.json"
+        }
+      },
+      "highlight_bindings": [
+        {
+          "index": 14,
+          "name": "髮",
+          "role": "hair",
+          "source_texture": "textures\\体2.tga",
+          "maps": {
+            "LightMap": {
+              "file": "VivianSummerBodyCLightMap.dds",
+              "sha256": "5bd230503a5e3d9a48de1373943417191418dbea6aa2602d27534c68ececce8e"
+            }
+          },
+          "matching": "uv_sample_verified",
+          "diffuse": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "draw_flags": 1,
+          "face_start": 23602,
+          "face_count": 12315,
+          "alpha_mode": "source_pmx_alpha",
+          "dds_flip_v": true,
+          "source_asset_evidence": {
+            "flip_v": true,
+            "mean": 0.18396062894903167,
+            "p95": 0.6352733021303836,
+            "below12": 0.99875,
+            "slot": 14,
+            "accepted": true,
+            "source_sha256": "6cc4c292001bba152c310c4ab795180dd29cfaf1bca6496f50c92e6aac569fcc",
+            "texture_rgb_std": 36.514296916529545,
+            "sample_count": 2400,
+            "next_error": 27.96503105284697,
+            "ambiguous_companions": false
+          },
+          "source_texture_sha256": "6cc4c292001bba152c310c4ab795180dd29cfaf1bca6496f50c92e6aac569fcc",
+          "channel": "B",
+          "mask_attribute": "rpt_swimsuit_authored_hair",
+          "material_class": [
+            [
+              "Red",
+              0.8,
+              1.1
+            ],
+            [
+              "Green",
+              -0.1,
+              0.05
+            ]
+          ]
+        }
+      ],
+      "outline_dithered_slots": [],
+      "material_repair": {
+        "module": "swim_material_repairs",
+        "revision": 2,
+        "lightmap_file": "VivianSummerBodyCLightMap.dds",
+        "lightmap_sha256": "5bd230503a5e3d9a48de1373943417191418dbea6aa2602d27534c68ececce8e",
+        "slots": {
+          "gem": 11,
+          "heart": 6,
+          "metal_and_hair": 14
+        }
+      },
+      "outline_blended_slots": [
+        8,
+        13,
+        15,
+        16
+      ]
+    },
+    {
+      "character": "YuzuhaSummer",
+      "identity": "Generic_8f93f75332ae",
+      "pmx_sha256": "8f93f75332ae1755d55f38744e7e7045588961e81e3e14831c25ed1863edaff4",
+      "default_style": "01_CrispCel",
+      "materials": [
+        {
+          "slot": 0,
+          "name": "颜",
+          "role": "face"
+        },
+        {
+          "slot": 1,
+          "name": "口舌",
+          "role": "mouth"
+        },
+        {
+          "slot": 2,
+          "name": "齿",
+          "role": "mouth"
+        },
+        {
+          "slot": 3,
+          "name": "眉",
+          "role": "brows_lashes"
+        },
+        {
+          "slot": 4,
+          "name": "睫",
+          "role": "brows_lashes"
+        },
+        {
+          "slot": 5,
+          "name": "白目",
+          "role": "eye_white"
+        },
+        {
+          "slot": 6,
+          "name": "目",
+          "role": "eyes"
+        },
+        {
+          "slot": 7,
+          "name": "目影",
+          "role": "eye_shadow"
+        },
+        {
+          "slot": 8,
+          "name": "前髮",
+          "role": "hair"
+        },
+        {
+          "slot": 9,
+          "name": "髮",
+          "role": "hair"
+        },
+        {
+          "slot": 10,
+          "name": "髮+",
+          "role": "hair_overlay"
+        },
+        {
+          "slot": 11,
+          "name": "体",
+          "role": "cloth"
+        },
+        {
+          "slot": 12,
+          "name": "饰",
+          "role": "cloth"
+        },
+        {
+          "slot": 13,
+          "name": "肌",
+          "role": "skin"
+        },
+        {
+          "slot": 14,
+          "name": "鞋",
+          "role": "cloth"
+        },
+        {
+          "slot": 15,
+          "name": "头饰",
+          "role": "cloth"
+        },
+        {
+          "slot": 16,
+          "name": "狸",
+          "role": "cloth"
+        },
+        {
+          "slot": 17,
+          "name": "泳装_Alpha",
+          "role": "cloth"
+        },
+        {
+          "slot": 18,
+          "name": "镜片",
+          "role": "cloth"
+        }
+      ],
+      "styles": {
+        "01_CrispCel": {
+          "values": "YuzuhaSummer/01_CrispCel.json",
+          "scene_setup": "YuzuhaSummer/01_CrispCel.scene.json"
+        },
+        "02_CoolGlow": {
+          "values": "YuzuhaSummer/02_CoolGlow.json",
+          "scene_setup": "YuzuhaSummer/02_CoolGlow.scene.json"
+        }
+      },
+      "highlight_bindings": [],
+      "outline_dithered_slots": [
+        15
+      ],
+      "outline_blended_slots": [
+        7,
+        17,
+        18
+      ]
+    }
+  ]
+}

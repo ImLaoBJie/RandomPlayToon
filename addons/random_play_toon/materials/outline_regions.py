@@ -8,6 +8,107 @@ from .graph import Graph
 from .style_upgrade import source
 
 ATTRIBUTE='RPT_EyeMouthOutlineDistance'
+SEAM_VERTEX='RPT_OutlineSourceVertex'
+SEAM_EDGES='RPT_HairSplitEdgeCodes'
+
+
+def author_hair_split_edges(obj,registry):
+    """Mark proven split-vertex seams without welding source vertices.
+
+    PMX faces are triangles. A side quad inherits its source face's attributes
+    and repeats each original endpoint twice. Its mean source vertex number
+    therefore identifies exactly one edge of that source triangle. Unlike
+    geometric proximity after extrusion, this remains stable under posing.
+    """
+    me=obj.data
+    if len(me.vertices)>=2**22:
+        return {'status':'skipped','reason':'source vertex IDs exceed exact float encoding range'}
+    hair={e['slot'] for e in registry['materials'] if e['role']=='hair'}
+    coords=[tuple(v.co) for v in me.vertices]
+    armature=obj.find_armature()
+    deform_names={b.name for b in armature.data.bones} if armature else None
+    weight_groups={g.index for g in obj.vertex_groups
+                   if (deform_names is None or g.name in deform_names)
+                   and g.name not in {'mmd_vertex_order','mmd_edge_scale'}}
+    weights=[tuple(sorted((g.group,g.weight) for g in v.groups if g.group in weight_groups)) for v in me.vertices]
+    keys=list(me.shape_keys.key_blocks) if me.shape_keys else []
+    normals=[tuple(n.vector) for n in me.corner_normals]
+    excluded=me.attributes.get('rpt_duplicate_overlay')
+    edges=collections.defaultdict(list)
+    for face in me.polygons:
+        if face.material_index not in hair or len(face.vertices)!=3:continue
+        if excluded and excluded.data[face.index].value:continue
+        for loop_index in face.loop_indices:
+            other=face.loop_start+(loop_index-face.loop_start+1)%face.loop_total
+            a,b=me.loops[loop_index].vertex_index,me.loops[other].vertex_index
+            edges[(face.material_index,tuple(sorted((a,b))))].append((face.index,a,b,loop_index,other))
+    grouped=collections.defaultdict(list);boundary=collections.Counter()
+    for (slot,_),items in edges.items():
+        if len(items)!=1:continue
+        face,a,b,la,lb=items[0]
+        if coords[a]==coords[b]:continue
+        boundary[slot]+=1
+        grouped[(slot,tuple(sorted((coords[a],coords[b]))))].append(items[0])
+    codes=np.full((len(me.polygons),3),-1.,dtype=np.float32)
+    marked=collections.Counter();pairs=0
+    def same_vertex(a,b):
+        return weights[a]==weights[b] and all(tuple(k.data[a].co)==tuple(k.data[b].co) for k in keys)
+    for (slot,_),items in grouped.items():
+        if len(items)!=2:continue  # Ambiguous overlapping sheets remain unchanged.
+        f,a,b,la,lb=items[0];g,c,d,lc,ld=items[1]
+        # A real adjoining surface traverses the shared edge in reverse.
+        if coords[a]!=coords[d] or coords[b]!=coords[c]:continue
+        if not same_vertex(a,d) or not same_vertex(b,c):continue
+        if sum(x*y for x,y in zip(normals[la],normals[ld]))<.99:continue
+        if sum(x*y for x,y in zip(normals[lb],normals[lc]))<.99:continue
+        for face,u,v,loop,_ in items:
+            codes[face,loop-me.polygons[face].loop_start]=(u+v+2)*.5
+        marked[slot]+=2;pairs+=1
+    for name,typ,domain,values in [(SEAM_VERTEX,'FLOAT','POINT',np.arange(1,len(me.vertices)+1,dtype=np.float32)),
+                                  (SEAM_EDGES,'FLOAT_VECTOR','FACE',codes.ravel())]:
+        attr=me.attributes.get(name) or me.attributes.new(name,typ,domain)
+        if attr.data_type!=typ or attr.domain!=domain:raise ValueError('Unexpected outline attribute: '+name)
+        attr.data.foreach_set('vector' if typ=='FLOAT_VECTOR' else 'value',values)
+    report={'status':'authored','seam_pairs':pairs,'max_source_vertex_id':len(me.vertices),
+            'slots':[{'slot':slot,'boundary_edges':boundary[slot],'split_edges':marked[slot],
+                      'retained_boundary_edges':boundary[slot]-marked[slot]} for slot in sorted(hair)],
+            'source_topology_changed':False}
+    me['rpt_hair_boundary_topology']=json.dumps(report)
+    return report
+
+
+def wire_hair_split_edges(group):
+    """Remove only marked Side faces; always retain the expanded Top hull."""
+    if group.nodes.get('RPT Exclude split seam side walls'):return
+    ext=group.nodes.get('Connected outline with boundary walls')
+    delete=group.nodes.get('Keep expanded surface and boundary walls')
+    if not ext or not delete:return
+    q=Graph(group);previous=source(delete.inputs['Selection'])
+    vertex=q.node('GeometryNodeInputNamedAttribute','RPT Source vertex for side face');vertex.data_type='FLOAT';vertex.inputs['Name'].default_value=SEAM_VERTEX
+    edges=q.node('GeometryNodeInputNamedAttribute','RPT Proven split edge codes');edges.data_type='FLOAT_VECTOR';edges.inputs['Name'].default_value=SEAM_EDGES
+    sep=q.node('ShaderNodeSeparateXYZ','RPT Source triangle split edges');q.put(edges.outputs['Attribute'],sep.inputs[0])
+    matches=[]
+    for i in range(3):
+        match=q.node('ShaderNodeMath','RPT Side belongs to split edge '+str(i));match.operation='COMPARE'
+        q.put(vertex.outputs['Attribute'],match.inputs[0]);q.put(sep.outputs[i],match.inputs[1]);match.inputs[2].default_value=.1
+        matches.append(match.outputs[0])
+    match=q.math('MAXIMUM',matches[0],q.math('MAXIMUM',matches[1],matches[2]))
+    match=q.math('MULTIPLY',match,q.math('MULTIPLY',vertex.outputs['Exists'],edges.outputs['Exists']))
+    side=q.math('MULTIPLY',ext.outputs['Side'],match,'RPT Only split seam side walls')
+    q.put(q.math('MAXIMUM',previous,side,'RPT Exclude split seam side walls'),delete.inputs['Selection'])
+
+
+def repair_hair_boundary_topology(scene):
+    """Apply only the topology-based outline fix to an existing scene."""
+    import bpy
+    from .. import style_panel as ui
+    registry=ui.registry(scene);obj=bpy.data.objects[registry['mesh_object']]
+    report=author_hair_split_edges(obj,registry)
+    groups={m.node_group for ob in scene.objects for m in ob.modifiers
+            if m.type=='NODES' and m.node_group and m.node_group.nodes.get('Boundary walls only on hair')}
+    for group in groups:wire_hair_split_edges(group)
+    report['groups']=[group.name for group in groups]
+    return report
 
 def apply_boundary_policy(group, registry, identity):
     """Keep the hull, but omit seam walls on calibrated split-vertex hair.
@@ -22,8 +123,12 @@ def apply_boundary_policy(group, registry, identity):
     for i,entry in enumerate(registry['materials']):
         switch.inputs[i+1].default_value=entry['role']=='hair' and enabled
         if entry['role']=='hair' and not enabled:changed.append(entry['slot'])
+    import bpy
+    obj=bpy.data.objects.get(registry.get('mesh_object',''))
+    topology=author_hair_split_edges(obj,registry) if obj else None
+    if topology:wire_hair_split_edges(group)
     return {'identity':identity,'hair_boundary_walls':enabled,'suppressed_slots':changed,
-            'expanded_hull_preserved':True}
+            'expanded_hull_preserved':True,'split_edge_topology':topology}
 
 def apply_default_scope(registry,identity):
     """Vivian's outline-only surface filtering, retaining explicit brow tuning."""

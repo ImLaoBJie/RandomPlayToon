@@ -15,7 +15,7 @@ def build(obj,profile,inputs,registry,directions):
         mat['rpt_role']=role;mat['rpt_slot']=idx;mat['rpt_asset_id']=profile['id'];mat['rpt_matching']=b['matching'];mat['rpt_source_texture']=b['source_texture'] or ''
         mat.use_backface_culling=not bool(b['draw_flags']&1)
         obj.data.materials[idx]=mat;t=mat.node_tree;t.nodes.clear();q=Graph(t)
-        n,entry=controls.make_node(mat,'ZZZ_MaterialControls',controls.LOCAL);entry.update(slot=idx,role=role);registry['materials'].append(entry)
+        n,entry=controls.make_node(mat,'ZZZ_MaterialControls',controls.LOCAL);entry.update(slot=idx,role=role,source_name=b['name']);registry['materials'].append(entry)
         if inputs['textures'].get(str(idx)):n.inputs['原色乘色'].default_value=(*b['diffuse'][:3],1.)
         if role in ['face','skin']:n.inputs['阴影乘色'].default_value=(.76,.57,.60,1)
         if role=='face':n.inputs['部位过渡倍率'].default_value=1.5

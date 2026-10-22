@@ -10,7 +10,8 @@ def identify(pmx):
     matches=[x for x in catalog if x['pmx_sha256']==fingerprint]
     if not matches:
         from .specializations.generic import profile
-        return profile(p,fingerprint)
+        from .specializations.saved_presets import identify as saved_style
+        return saved_style(profile(p,fingerprint))
     profile=json.loads((PROFILES/(matches[0]['id']+'.json')).read_text(encoding='utf8'))
     overrides=json.loads((PROFILES.parent/'parameter_overrides.json').read_text(encoding='utf8'))['models'].get(profile['id'],{})
     profile['parameter_overrides']=overrides.get('materials',{});profile['override_reason']=overrides.get('reason','')
@@ -46,6 +47,12 @@ def preflight(pmx,texture_root,asset_root,preset='CURRENT'):
             if not matches:errors.append('缺少或内容变化的已配对素材：'+item['file'])
             else:inputs['maps'][idx][kind]=str(matches[0])
     if errors:raise ValueError('\n'.join(dict.fromkeys(errors)))
+    if profile.get('automatic_preset'):
+        from .specializations.saved_presets import prepare_inputs
+        prepare_inputs(profile,inputs,asset_root)
+    elif profile.get('uncalibrated') and asset_root:
+        from .materials.source_asset_match import resolve as match_source_assets
+        inputs['source_asset_matches']=match_source_assets(profile,inputs,asset_root)
     return profile,inputs
 
 def build(pmx,texture_root,asset_root,output,preset='CURRENT',personal_preset=None):
@@ -99,7 +106,15 @@ def build(pmx,texture_root,asset_root,output,preset='CURRENT',personal_preset=No
     add_nose_shadow(scene)
     from .materials.scene_response import apply as add_scene_response
     add_scene_response(scene)
-    if personal_preset:ui.apply_values(scene,personal_preset)
+    from .materials.swim_material_repairs import apply as repair_swimsuit, IDENTITY as swimsuit_identity
+    if profile.get('automatic_preset'):
+        from .specializations.saved_presets import apply_material_details
+        preset_details=apply_material_details(scene,profile,inputs)
+    elif profile['id']==swimsuit_identity and inputs['maps'].get('14',{}).get('LightMap'):
+        repair_swimsuit(scene,Path(inputs['maps']['14']['LightMap']).parent)
+    from .materials import patch_palette
+    patch_palette.apply(scene,patch_palette.infer(obj,profile,inputs))
+    if personal_preset and not profile.get('automatic_preset'):ui.apply_values(scene,personal_preset)
     # A complete camera and neutral backdrop are part of one-click reconstruction.
     coords=[obj.matrix_world@v.co for v in obj.data.vertices];lo=Vector(tuple(min(v[i] for v in coords) for i in range(3)));hi=Vector(tuple(max(v[i] for v in coords) for i in range(3)));center=(lo+hi)*.5
     cam=bpy.data.objects.new('RPT Camera',bpy.data.cameras.new('RPT Camera'));scene.collection.objects.link(cam);cam.data.type='ORTHO';height=max(hi.z-lo.z,(hi.x-lo.x)/.8,0.1);cam.data.ortho_scale=height*1.16;cam.location=center+Vector((0,-height*3,height*.12));cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();scene.camera=cam
@@ -107,14 +122,22 @@ def build(pmx,texture_root,asset_root,output,preset='CURRENT',personal_preset=No
     scene.view_settings.view_transform='Standard';scene.view_settings.look='None';scene.view_settings.exposure=0;scene.view_settings.gamma=1
     scene.world=bpy.data.worlds.new('RPT Neutral world');scene.world.use_nodes=True;scene.world.node_tree.nodes.get('Background').inputs['Color'].default_value=(.13,.13,.13,1)
     light=bpy.data.objects.new('RPT Scene sun',bpy.data.lights.new('RPT Scene sun','SUN'));scene.collection.objects.link(light);light.data.energy=1.6;light.rotation_euler=bpy.data.objects[registry['controller']].rotation_euler
+    automatic_preset=None
+    if profile.get('automatic_preset'):
+        from .specializations.saved_presets import apply_defaults
+        automatic_preset=apply_defaults(scene,profile,preset)
+        if personal_preset:ui.apply_values(scene,personal_preset)
     print('RANDOMPLAY 5/6 验证源数据保留并打包',flush=True)
     # Only material datablocks + added attributes/modifiers may differ.
     after=mesh_snapshot(obj);preserved={k:snapshot[k]==after[k] for k in snapshot}
     if not all(preserved.values()):raise RuntimeError('源模型数据意外改变：'+str(preserved))
     for im in bpy.data.images:
         if im.source=='FILE' and Path(bpy.path.abspath(im.filepath)).is_file():im.pack()
-    report={'status':'success','output':str(dest),'plugin':'RandomPlayToon','version':'0.9.12','profile':profile['id'],'character':profile['character'],'kind':profile['kind'],'source_preserved':preserved,'materials':[{k:m.get(k) for k in ['index','name','role','matching','atlas','maps']} for m in profile['materials']],'effects':effects,'eye_reveal':eye_enabled,'warnings':inputs['warnings'],'validation':'rebuilt; visual acceptance recorded separately','elapsed_seconds':round(time.time()-start,2)}
+    report={'status':'success','output':str(dest),'plugin':'RandomPlayToon','version':'0.9.13','profile':profile['id'],'character':profile['character'],'kind':profile['kind'],'source_preserved':preserved,'materials':[{k:m.get(k) for k in ['index','name','role','matching','atlas','maps']} for m in profile['materials']],'effects':effects,'eye_reveal':eye_enabled,'warnings':inputs['warnings'],'validation':'rebuilt; visual acceptance recorded separately','elapsed_seconds':round(time.time()-start,2)}
     report['parameter_overrides']=profile.get('parameter_overrides',{});report['override_reason']=profile.get('override_reason','')
+    if inputs.get('source_asset_matches'):report['source_asset_matches']=inputs['source_asset_matches']
+    if automatic_preset:
+        report['automatic_preset']=automatic_preset;report['preset_material_details']=preset_details
     report['detail_repairs']=json.loads(scene['rpt_detail_audit']);report['resolution']=[scene.render.resolution_x,scene.render.resolution_y]
     if character_refinement:report['character_refinement']=character_refinement
     for item in report['materials']:item['role']=next(e['role'] for e in ui.registry(scene)['materials'] if e['slot']==item['index'])

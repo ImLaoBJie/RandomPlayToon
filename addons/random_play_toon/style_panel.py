@@ -3,7 +3,7 @@
 All sliders edit the actual node inputs. No duplicate parameter storage or frame
 handlers. Rendering and saved parameters work even when this UI is not installed.
 """
-bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,9,12),'blender':(5,2,0),'location':'3D View / Shader Editor > N > Character','category':'Material'}
+bl_info={'name':'RandomPlayToon · 参数面板','author':'Vivian rendering experiment','version':(0,9,13),'blender':(5,2,0),'location':'3D View / Shader Editor > N > Character','category':'Material'}
 import bpy, json, copy, math, textwrap
 from bpy.props import EnumProperty, StringProperty
 from bpy_extras.io_utils import ExportHelper, ImportHelper
